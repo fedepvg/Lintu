@@ -16,6 +16,8 @@ public class SpaceShip : ShipBase
     bool IsFlying;
     public float CameraZOffset;
     public float CameraYOffset;
+    float LastRoll = 0;
+    public float Multiplier = 1;
 
     void Awake()
     {
@@ -32,6 +34,7 @@ public class SpaceShip : ShipBase
             //GetInput(ref InputPitch, ref InputRoll, ref InputYaw, ref Throttle);
 
             rigi.AddRelativeForce(new Vector3(0, 0, SpeedZ * Throttle), ForceMode.Force);
+            SetCameraPosition();
         }
     }
 
@@ -46,7 +49,6 @@ public class SpaceShip : ShipBase
         else
         {
             GetInput(ref InputPitch, ref InputRoll, ref InputYaw, ref Throttle);
-            SetCameraPosition();
             transform.Rotate(InputPitch * PitchRate * Time.deltaTime, InputYaw * YawRate * Time.deltaTime, InputRoll * RollRate * Time.deltaTime, Space.Self);
             //Gun.Attack();
         }
@@ -56,24 +58,32 @@ public class SpaceShip : ShipBase
     void SetCameraPosition()
     {
         Vector3 CameraNewPos = transform.position - transform.forward * CameraZOffset + Vector3.up * CameraYOffset;
-        Camera.main.transform.position = CameraNewPos;
-        Camera.main.transform.LookAt(transform.position);
+        Camera.main.transform.position = Camera.main.transform.position * 0.96f + CameraNewPos * 0.04f;
+        Camera.main.transform.LookAt(transform.position /*+ transform.forward * 30f*/);
     }
 
     void GetInput(ref float InputPitch, ref float InputRoll, ref float InputYaw, ref float Throttle)
     {
+        Vector3 mousePos = Input.mousePosition;
         if (IsFlying)
         {
-            Vector3 mousePos = Input.mousePosition;
+            //Vector3 mousePos = Input.mousePosition;
 
             InputPitch = (mousePos.y - (Screen.height * 0.5f)) / (Screen.height * 0.5f);
-            InputRoll = (mousePos.x - (Screen.width * 0.5f)) / (Screen.width * 0.5f);
+            //InputRoll = (mousePos.x - (Screen.width * 0.5f)) / (Screen.width * 0.5f);
 
             InputPitch = -Mathf.Clamp(InputPitch, -1.0f, 1.0f);
-            InputRoll = Mathf.Clamp(InputRoll, -1.0f, 1.0f);
+            //InputRoll = Mathf.Clamp(InputRoll, -1.0f, 1.0f);
         }
 
+        InputRoll = Input.GetAxis("Mouse X");
         InputYaw = Input.GetAxis("Horizontal");
+        
+        if(InputRoll!=0)
+        {
+            InputRoll = (mousePos.x - (Screen.width * 0.5f)) / (Screen.width * 0.5f);
+            InputRoll = Mathf.Clamp(InputRoll, -1.0f, 1.0f);
+        }
 
         bool AccInput;
         float Target = Throttle;
