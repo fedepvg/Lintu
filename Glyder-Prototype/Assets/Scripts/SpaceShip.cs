@@ -14,6 +14,8 @@ public class SpaceShip : ShipBase
     float InputYaw;
     float Throttle;
     bool IsFlying;
+    public float CameraZOffset;
+    public float CameraYOffset;
 
     void Awake()
     {
@@ -44,10 +46,18 @@ public class SpaceShip : ShipBase
         else
         {
             GetInput(ref InputPitch, ref InputRoll, ref InputYaw, ref Throttle);
+            SetCameraPosition();
             transform.Rotate(InputPitch * PitchRate * Time.deltaTime, InputYaw * YawRate * Time.deltaTime, InputRoll * RollRate * Time.deltaTime, Space.Self);
             //Gun.Attack();
         }
         Debug.Log(rigi.velocity.magnitude);
+    }
+
+    void SetCameraPosition()
+    {
+        Vector3 CameraNewPos = transform.position - transform.forward * CameraZOffset + Vector3.up * CameraYOffset;
+        Camera.main.transform.position = CameraNewPos;
+        Camera.main.transform.LookAt(transform.position);
     }
 
     void GetInput(ref float InputPitch, ref float InputRoll, ref float InputYaw, ref float Throttle)
