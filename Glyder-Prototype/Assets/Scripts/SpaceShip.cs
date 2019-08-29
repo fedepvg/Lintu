@@ -65,25 +65,25 @@ public class SpaceShip : ShipBase
     void GetInput(ref float InputPitch, ref float InputRoll, ref float InputYaw, ref float Throttle)
     {
         Vector3 mousePos = Input.mousePosition;
-        if (IsFlying)
-        {
+        //if (IsFlying)
+        //{
             //Vector3 mousePos = Input.mousePosition;
 
             InputPitch = (mousePos.y - (Screen.height * 0.5f)) / (Screen.height * 0.5f);
-            //InputRoll = (mousePos.x - (Screen.width * 0.5f)) / (Screen.width * 0.5f);
+            InputRoll = (mousePos.x - (Screen.width * 0.5f)) / (Screen.width * 0.5f);
 
             InputPitch = -Mathf.Clamp(InputPitch, -1.0f, 1.0f);
-            //InputRoll = Mathf.Clamp(InputRoll, -1.0f, 1.0f);
-        }
+            InputRoll = Mathf.Clamp(InputRoll, -1.0f, 1.0f);
+        //}
 
-        InputRoll = Input.GetAxis("Mouse X");
+        //InputRoll = Input.GetAxis("Mouse X");
         InputYaw = Input.GetAxis("Horizontal");
         
-        if(InputRoll!=0)
-        {
-            InputRoll = (mousePos.x - (Screen.width * 0.5f)) / (Screen.width * 0.5f);
-            InputRoll = Mathf.Clamp(InputRoll, -1.0f, 1.0f);
-        }
+        //if(InputRoll!=0)
+        //{
+        //    InputRoll = (mousePos.x - (Screen.width * 0.5f)) / (Screen.width * 0.5f);
+        //    InputRoll = Mathf.Clamp(InputRoll, -1.0f, 1.0f);
+        //}
 
         bool AccInput;
         float Target = Throttle;
