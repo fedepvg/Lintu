@@ -16,8 +16,7 @@ public class SpaceShip : ShipBase
     bool IsFlying;
     public float CameraZOffset;
     public float CameraYOffset;
-    float LastRoll = 0;
-    public float Multiplier = 1;
+    float AccMultiplier;
 
     void Awake()
     {
@@ -65,40 +64,41 @@ public class SpaceShip : ShipBase
     void GetInput(ref float InputPitch, ref float InputRoll, ref float InputYaw, ref float Throttle)
     {
         Vector3 mousePos = Input.mousePosition;
-        //if (IsFlying)
-        //{
-            //Vector3 mousePos = Input.mousePosition;
 
-            InputPitch = (mousePos.y - (Screen.height * 0.5f)) / (Screen.height * 0.5f);
-            InputRoll = (mousePos.x - (Screen.width * 0.5f)) / (Screen.width * 0.5f);
-
-            InputPitch = -Mathf.Clamp(InputPitch, -1.0f, 1.0f);
-            InputRoll = Mathf.Clamp(InputRoll, -1.0f, 1.0f);
-        //}
+        //InputPitch = (mousePos.y - (Screen.height * 0.5f)) / (Screen.height * 0.5f);
+        //InputRoll = (mousePos.x - (Screen.width * 0.5f)) / (Screen.width * 0.5f);
+        //
+        //InputPitch = -Mathf.Clamp(InputPitch, -1.0f, 1.0f);
+        //InputRoll = Mathf.Clamp(InputRoll, -1.0f, 1.0f);
 
         //InputRoll = Input.GetAxis("Mouse X");
-        InputYaw = Input.GetAxis("Horizontal");
-        
-        //if(InputRoll!=0)
-        //{
-        //    InputRoll = (mousePos.x - (Screen.width * 0.5f)) / (Screen.width * 0.5f);
-        //    InputRoll = Mathf.Clamp(InputRoll, -1.0f, 1.0f);
-        //}
+        //InputYaw = Input.GetAxis("Horizontal");
 
-        bool AccInput;
+        InputRoll = Input.GetAxis("Horizontal");
+        InputPitch = Input.GetAxis("Vertical");
+
+        bool AccInput = false;
         float Target = Throttle;
-        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
+        if (Input.GetKey(KeyCode.Space))  //Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
         {
             Target = 1.0f;
+            AccMultiplier = 0.2f;
             AccInput = true;
+        }
+        else if(Input.GetKey(KeyCode.LeftShift))
+        {
+            Target = 2.0f;
+            AccMultiplier = 0.5f;
         }
         else
         { 
             Target = 0f;
-            if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
-                AccInput = true;
-            else
-                AccInput = false;
+            AccInput = false;
+            AccMultiplier = 0.3f;
+            //if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
+            //    AccInput = true;
+            //else
+            //    AccInput = false;
         }
         
 
