@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class SpaceShip : ShipBase
 {
+    PlayerControls PlayerInput;
     private Rigidbody rigi;
     public float SpeedZ;
     public float PitchRate;
@@ -17,13 +19,37 @@ public class SpaceShip : ShipBase
     public float CameraZOffset;
     public float CameraYOffset;
     float AccMultiplier;
+    Vector2 Rot;
+    bool Accelerate;
+    bool Dashes;
 
     void Awake()
     {
         rigi = GetComponentInParent<Rigidbody>();
-        Physics.gravity = new Vector3(0f,-60f, 0f);
+        Physics.gravity = new Vector3(0f, -60f, 0f);
         Health = 200;
         Cursor.visible = false;
+
+        PlayerInput = new PlayerControls();
+        PlayerInput.Enable();
+
+        //PlayerInput.Gameplay.Yaw.performed += ctx => InputYaw = ctx.ReadValue<float>();
+        //PlayerInput.Gameplay.Yaw.canceled += ctx => InputYaw = 0;
+
+        PlayerInput.Gameplay.LeftYaw.performed += ctx => InputYaw = -1f;
+        PlayerInput.Gameplay.LeftYaw.canceled += ctx => InputYaw = InputYaw != 1 ? 0 : 1;
+
+        PlayerInput.Gameplay.RightYaw.performed += ctx => InputYaw = 1f;
+        PlayerInput.Gameplay.RightYaw.canceled += ctx => InputYaw = InputYaw != -1 ? 0 : -1;
+
+        PlayerInput.Gameplay.Rotate.performed += ctx => Rot = ctx.ReadValue<Vector2>();
+        PlayerInput.Gameplay.Rotate.canceled += ctx => Rot = Vector2.zero;
+
+        PlayerInput.Gameplay.Accelerate.performed += ctx => Accelerate = true;
+        PlayerInput.Gameplay.Accelerate.canceled += ctx => Accelerate = false;
+
+        PlayerInput.Gameplay.Dash.performed += ctx => Dashes = true;
+        PlayerInput.Gameplay.Dash.canceled += ctx => Dashes = false;
     }
 
     private void FixedUpdate()
@@ -74,24 +100,26 @@ public class SpaceShip : ShipBase
         //InputRoll = Input.GetAxis("Mouse X");
         //InputYaw = Input.GetAxis("Horizontal");
 
-        InputRoll = Input.GetAxis("Horizontal");
-        InputPitch = Input.GetAxis("Vertical");
+        //InputRoll = Input.GetAxis("Horizontal");
+        //InputPitch = Input.GetAxis("Vertical");
+        InputPitch = Rot.y;
+        InputRoll = Rot.x;
 
         bool AccInput = false;
         float Target = Throttle;
-        if (Input.GetKey(KeyCode.Space))  //Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
+        if (Accelerate)        //Input.GetKey(KeyCode.Space))  //Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
         {
             Target = 1.0f;
             AccMultiplier = 0.2f;
             AccInput = true;
         }
-        else if(Input.GetKey(KeyCode.LeftShift))
+        else if (Dashes)           //Input.GetKey(KeyCode.LeftShift))
         {
             Target = 2.0f;
             AccMultiplier = 0.5f;
         }
         else
-        { 
+        {
             Target = 0f;
             AccInput = false;
             AccMultiplier = 0.3f;
@@ -100,7 +128,7 @@ public class SpaceShip : ShipBase
             //else
             //    AccInput = false;
         }
-        
+
 
         if (AccInput)
         {
@@ -110,8 +138,8 @@ public class SpaceShip : ShipBase
         {
             Throttle = Mathf.MoveTowards(Throttle, Target, Time.deltaTime * 0.1f);
         }
-        
-    }    
+
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -120,12 +148,12 @@ public class SpaceShip : ShipBase
             Health = 0;
         }
 
-        if(other.tag=="EnemyBullet")
+        if (other.tag == "EnemyBullet")
         {
             Health -= 50;
         }
 
-        if(other.tag=="Enemy")
+        if (other.tag == "Enemy")
         {
             Health = 0;
         }
