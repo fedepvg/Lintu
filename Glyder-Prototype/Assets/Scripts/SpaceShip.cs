@@ -15,18 +15,18 @@ public class SpaceShip : ShipBase
     float InputRoll;
     float InputYaw;
     float Throttle;
-    bool IsFlying;
     public float CameraZOffset;
     public float CameraYOffset;
     float AccMultiplier;
     Vector2 Rot;
     bool Accelerate;
     bool Dashes;
+    public float Bias;
 
     void Awake()
     {
         rigi = GetComponentInParent<Rigidbody>();
-        Physics.gravity = new Vector3(0f, -60f, 0f);
+        Physics.gravity = new Vector3(0f, -20f, 0f);
         Health = 200;
         Cursor.visible = false;
 
@@ -83,7 +83,7 @@ public class SpaceShip : ShipBase
     void SetCameraPosition()
     {
         Vector3 CameraNewPos = transform.position - transform.forward * CameraZOffset + Vector3.up * CameraYOffset;
-        Camera.main.transform.position = Camera.main.transform.position * 0.96f + CameraNewPos * 0.04f;
+        Camera.main.transform.position = Camera.main.transform.position * Bias + CameraNewPos * (1f - Bias);
         Camera.main.transform.LookAt(transform.position /*+ transform.forward * 30f*/);
     }
 
@@ -107,7 +107,7 @@ public class SpaceShip : ShipBase
 
         bool AccInput = false;
         float Target = Throttle;
-        if (Accelerate)        //Input.GetKey(KeyCode.Space))  //Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
+        if (Accelerate && !Dashes)        //Input.GetKey(KeyCode.Space))  //Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
         {
             Target = 1.0f;
             AccMultiplier = 0.2f;
@@ -162,14 +162,14 @@ public class SpaceShip : ShipBase
 
     private void OnCollisionEnter(Collision collision)
     {
-        IsFlying = false;
-        rigi.useGravity = false;
+        Physics.gravity = new Vector3(0f, 0f, 0f);
+        //rigi.useGravity = false;
     }
 
     private void OnCollisionExit(Collision collision)
     {
-        rigi.useGravity = true;
-        IsFlying = true;
+        Physics.gravity = new Vector3(0f, -20f, 0f);
+        //IsFlying = true;
     }
 
     public int GetHealth()
