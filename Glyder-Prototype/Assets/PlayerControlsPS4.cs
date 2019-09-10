@@ -34,14 +34,6 @@ public class PlayerControlsPS4 : IInputActionCollection
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""Yaw"",
-                    ""type"": ""Value"",
-                    ""id"": ""e78f32d0-7d6b-4f1b-a59b-2c45eda12750"",
-                    ""expectedControlType"": ""Axis"",
-                    ""processors"": """",
-                    ""interactions"": """"
-                },
-                {
                     ""name"": ""Deaccelerate"",
                     ""type"": ""Button"",
                     ""id"": ""fea671da-b9d3-4128-a488-1e8cedd58d86"",
@@ -58,7 +50,7 @@ public class PlayerControlsPS4 : IInputActionCollection
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""LeftYaw"",
+                    ""name"": ""LeftRoll"",
                     ""type"": ""Button"",
                     ""id"": ""73f4611f-6390-45d4-86cc-8e5b37e68adb"",
                     ""expectedControlType"": """",
@@ -66,7 +58,7 @@ public class PlayerControlsPS4 : IInputActionCollection
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""RightYaw"",
+                    ""name"": ""RightRoll"",
                     ""type"": ""Button"",
                     ""id"": ""4d1a99ca-e754-4947-a2e6-0358f787de6a"",
                     ""expectedControlType"": """",
@@ -110,17 +102,6 @@ public class PlayerControlsPS4 : IInputActionCollection
                 },
                 {
                     ""name"": """",
-                    ""id"": ""e0042f44-37ef-456d-9bca-32665d848f5e"",
-                    ""path"": ""<Gamepad>/leftStick/x"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Yaw"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""7e98ff83-dfae-4666-a9de-409ba5d9a714"",
                     ""path"": ""<Gamepad>/leftTrigger"",
                     ""interactions"": """",
@@ -148,7 +129,7 @@ public class PlayerControlsPS4 : IInputActionCollection
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""LeftYaw"",
+                    ""action"": ""LeftRoll"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -159,7 +140,7 @@ public class PlayerControlsPS4 : IInputActionCollection
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""RightYaw"",
+                    ""action"": ""RightRoll"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -172,11 +153,10 @@ public class PlayerControlsPS4 : IInputActionCollection
         m_Gameplay = asset.GetActionMap("Gameplay");
         m_Gameplay_Accelerate = m_Gameplay.GetAction("Accelerate");
         m_Gameplay_Rotate = m_Gameplay.GetAction("Rotate");
-        m_Gameplay_Yaw = m_Gameplay.GetAction("Yaw");
         m_Gameplay_Deaccelerate = m_Gameplay.GetAction("Deaccelerate");
         m_Gameplay_Dash = m_Gameplay.GetAction("Dash");
-        m_Gameplay_LeftYaw = m_Gameplay.GetAction("LeftYaw");
-        m_Gameplay_RightYaw = m_Gameplay.GetAction("RightYaw");
+        m_Gameplay_LeftRoll = m_Gameplay.GetAction("LeftRoll");
+        m_Gameplay_RightRoll = m_Gameplay.GetAction("RightRoll");
     }
 
     ~PlayerControlsPS4()
@@ -228,22 +208,20 @@ public class PlayerControlsPS4 : IInputActionCollection
     private IGameplayActions m_GameplayActionsCallbackInterface;
     private readonly InputAction m_Gameplay_Accelerate;
     private readonly InputAction m_Gameplay_Rotate;
-    private readonly InputAction m_Gameplay_Yaw;
     private readonly InputAction m_Gameplay_Deaccelerate;
     private readonly InputAction m_Gameplay_Dash;
-    private readonly InputAction m_Gameplay_LeftYaw;
-    private readonly InputAction m_Gameplay_RightYaw;
+    private readonly InputAction m_Gameplay_LeftRoll;
+    private readonly InputAction m_Gameplay_RightRoll;
     public struct GameplayActions
     {
         private PlayerControlsPS4 m_Wrapper;
         public GameplayActions(PlayerControlsPS4 wrapper) { m_Wrapper = wrapper; }
         public InputAction @Accelerate => m_Wrapper.m_Gameplay_Accelerate;
         public InputAction @Rotate => m_Wrapper.m_Gameplay_Rotate;
-        public InputAction @Yaw => m_Wrapper.m_Gameplay_Yaw;
         public InputAction @Deaccelerate => m_Wrapper.m_Gameplay_Deaccelerate;
         public InputAction @Dash => m_Wrapper.m_Gameplay_Dash;
-        public InputAction @LeftYaw => m_Wrapper.m_Gameplay_LeftYaw;
-        public InputAction @RightYaw => m_Wrapper.m_Gameplay_RightYaw;
+        public InputAction @LeftRoll => m_Wrapper.m_Gameplay_LeftRoll;
+        public InputAction @RightRoll => m_Wrapper.m_Gameplay_RightRoll;
         public InputActionMap Get() { return m_Wrapper.m_Gameplay; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -259,21 +237,18 @@ public class PlayerControlsPS4 : IInputActionCollection
                 Rotate.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnRotate;
                 Rotate.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnRotate;
                 Rotate.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnRotate;
-                Yaw.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnYaw;
-                Yaw.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnYaw;
-                Yaw.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnYaw;
                 Deaccelerate.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnDeaccelerate;
                 Deaccelerate.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnDeaccelerate;
                 Deaccelerate.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnDeaccelerate;
                 Dash.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnDash;
                 Dash.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnDash;
                 Dash.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnDash;
-                LeftYaw.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnLeftYaw;
-                LeftYaw.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnLeftYaw;
-                LeftYaw.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnLeftYaw;
-                RightYaw.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnRightYaw;
-                RightYaw.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnRightYaw;
-                RightYaw.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnRightYaw;
+                LeftRoll.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnLeftRoll;
+                LeftRoll.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnLeftRoll;
+                LeftRoll.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnLeftRoll;
+                RightRoll.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnRightRoll;
+                RightRoll.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnRightRoll;
+                RightRoll.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnRightRoll;
             }
             m_Wrapper.m_GameplayActionsCallbackInterface = instance;
             if (instance != null)
@@ -284,21 +259,18 @@ public class PlayerControlsPS4 : IInputActionCollection
                 Rotate.started += instance.OnRotate;
                 Rotate.performed += instance.OnRotate;
                 Rotate.canceled += instance.OnRotate;
-                Yaw.started += instance.OnYaw;
-                Yaw.performed += instance.OnYaw;
-                Yaw.canceled += instance.OnYaw;
                 Deaccelerate.started += instance.OnDeaccelerate;
                 Deaccelerate.performed += instance.OnDeaccelerate;
                 Deaccelerate.canceled += instance.OnDeaccelerate;
                 Dash.started += instance.OnDash;
                 Dash.performed += instance.OnDash;
                 Dash.canceled += instance.OnDash;
-                LeftYaw.started += instance.OnLeftYaw;
-                LeftYaw.performed += instance.OnLeftYaw;
-                LeftYaw.canceled += instance.OnLeftYaw;
-                RightYaw.started += instance.OnRightYaw;
-                RightYaw.performed += instance.OnRightYaw;
-                RightYaw.canceled += instance.OnRightYaw;
+                LeftRoll.started += instance.OnLeftRoll;
+                LeftRoll.performed += instance.OnLeftRoll;
+                LeftRoll.canceled += instance.OnLeftRoll;
+                RightRoll.started += instance.OnRightRoll;
+                RightRoll.performed += instance.OnRightRoll;
+                RightRoll.canceled += instance.OnRightRoll;
             }
         }
     }
@@ -307,10 +279,9 @@ public class PlayerControlsPS4 : IInputActionCollection
     {
         void OnAccelerate(InputAction.CallbackContext context);
         void OnRotate(InputAction.CallbackContext context);
-        void OnYaw(InputAction.CallbackContext context);
         void OnDeaccelerate(InputAction.CallbackContext context);
         void OnDash(InputAction.CallbackContext context);
-        void OnLeftYaw(InputAction.CallbackContext context);
-        void OnRightYaw(InputAction.CallbackContext context);
+        void OnLeftRoll(InputAction.CallbackContext context);
+        void OnRightRoll(InputAction.CallbackContext context);
     }
 }

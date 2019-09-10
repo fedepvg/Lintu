@@ -1,5 +1,5 @@
 {
-    "name": "PlayerControls",
+    "name": "PlayerControlsPS4",
     "maps": [
         {
             "name": "Gameplay",
@@ -22,14 +22,6 @@
                     "interactions": ""
                 },
                 {
-                    "name": "Yaw",
-                    "type": "Value",
-                    "id": "e78f32d0-7d6b-4f1b-a59b-2c45eda12750",
-                    "expectedControlType": "Axis",
-                    "processors": "",
-                    "interactions": ""
-                },
-                {
                     "name": "Deaccelerate",
                     "type": "Button",
                     "id": "fea671da-b9d3-4128-a488-1e8cedd58d86",
@@ -46,7 +38,7 @@
                     "interactions": ""
                 },
                 {
-                    "name": "LeftYaw",
+                    "name": "LeftRoll",
                     "type": "Button",
                     "id": "73f4611f-6390-45d4-86cc-8e5b37e68adb",
                     "expectedControlType": "",
@@ -54,7 +46,7 @@
                     "interactions": ""
                 },
                 {
-                    "name": "RightYaw",
+                    "name": "RightRoll",
                     "type": "Button",
                     "id": "4d1a99ca-e754-4947-a2e6-0358f787de6a",
                     "expectedControlType": "",
@@ -98,17 +90,6 @@
                 },
                 {
                     "name": "",
-                    "id": "e0042f44-37ef-456d-9bca-32665d848f5e",
-                    "path": "<Gamepad>/leftStick/x",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Yaw",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "7e98ff83-dfae-4666-a9de-409ba5d9a714",
                     "path": "<Gamepad>/leftTrigger",
                     "interactions": "",
@@ -136,7 +117,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "LeftYaw",
+                    "action": "LeftRoll",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -147,7 +128,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "RightYaw",
+                    "action": "RightRoll",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
