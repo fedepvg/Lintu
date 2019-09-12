@@ -64,6 +64,14 @@ public class PlayerControlsPS4 : IInputActionCollection
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Jump"",
+                    ""type"": ""Button"",
+                    ""id"": ""e0034ca4-b9b0-407f-8c27-243a0b3e9559"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -104,17 +112,6 @@ public class PlayerControlsPS4 : IInputActionCollection
                     ""name"": """",
                     ""id"": ""911fcff9-be71-4613-956c-4b449bc95ea8"",
                     ""path"": ""<Gamepad>/rightStick"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Rotate"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""fe14aac6-fefb-49e7-a148-98613719e1bd"",
-                    ""path"": """",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -165,6 +162,28 @@ public class PlayerControlsPS4 : IInputActionCollection
                     ""action"": ""RightRoll"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ae341c0c-ebae-4a82-a2a6-08fa232193a3"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f916cb2d-9275-4a05-a186-d1b759d65c42"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -179,6 +198,7 @@ public class PlayerControlsPS4 : IInputActionCollection
         m_Gameplay_Dash = m_Gameplay.GetAction("Dash");
         m_Gameplay_LeftRoll = m_Gameplay.GetAction("LeftRoll");
         m_Gameplay_RightRoll = m_Gameplay.GetAction("RightRoll");
+        m_Gameplay_Jump = m_Gameplay.GetAction("Jump");
     }
 
     ~PlayerControlsPS4()
@@ -234,6 +254,7 @@ public class PlayerControlsPS4 : IInputActionCollection
     private readonly InputAction m_Gameplay_Dash;
     private readonly InputAction m_Gameplay_LeftRoll;
     private readonly InputAction m_Gameplay_RightRoll;
+    private readonly InputAction m_Gameplay_Jump;
     public struct GameplayActions
     {
         private PlayerControlsPS4 m_Wrapper;
@@ -244,6 +265,7 @@ public class PlayerControlsPS4 : IInputActionCollection
         public InputAction @Dash => m_Wrapper.m_Gameplay_Dash;
         public InputAction @LeftRoll => m_Wrapper.m_Gameplay_LeftRoll;
         public InputAction @RightRoll => m_Wrapper.m_Gameplay_RightRoll;
+        public InputAction @Jump => m_Wrapper.m_Gameplay_Jump;
         public InputActionMap Get() { return m_Wrapper.m_Gameplay; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -271,6 +293,9 @@ public class PlayerControlsPS4 : IInputActionCollection
                 RightRoll.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnRightRoll;
                 RightRoll.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnRightRoll;
                 RightRoll.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnRightRoll;
+                Jump.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnJump;
+                Jump.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnJump;
+                Jump.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnJump;
             }
             m_Wrapper.m_GameplayActionsCallbackInterface = instance;
             if (instance != null)
@@ -293,6 +318,9 @@ public class PlayerControlsPS4 : IInputActionCollection
                 RightRoll.started += instance.OnRightRoll;
                 RightRoll.performed += instance.OnRightRoll;
                 RightRoll.canceled += instance.OnRightRoll;
+                Jump.started += instance.OnJump;
+                Jump.performed += instance.OnJump;
+                Jump.canceled += instance.OnJump;
             }
         }
     }
@@ -305,5 +333,6 @@ public class PlayerControlsPS4 : IInputActionCollection
         void OnDash(InputAction.CallbackContext context);
         void OnLeftRoll(InputAction.CallbackContext context);
         void OnRightRoll(InputAction.CallbackContext context);
+        void OnJump(InputAction.CallbackContext context);
     }
 }
