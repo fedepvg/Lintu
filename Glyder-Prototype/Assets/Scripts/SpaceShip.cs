@@ -33,25 +33,25 @@ public class SpaceShip : ShipBase
         PlayerInput = new PlayerControlsPS4();
         PlayerInput.Enable();
 
-        PlayerInput.Gameplay.LeftRoll.performed += ctx => InputRoll = -1f;
-        PlayerInput.Gameplay.LeftRoll.canceled += ctx => InputRoll = InputRoll != 1 ? 0 : 1;
-
-
-        PlayerInput.Gameplay.RightRoll.performed += ctx => InputRoll = 1f;
-        PlayerInput.Gameplay.RightRoll.canceled += ctx => InputRoll = InputRoll != -1 ? 0 : -1;
-
-        PlayerInput.Gameplay.Rotate.performed += ctx => InputYaw = ctx.ReadValue<Vector2>().x;
-        PlayerInput.Gameplay.Rotate.canceled += ctx => InputYaw = 0f;
-
-        PlayerInput.Gameplay.Rotate.performed += ctx => InputPitch = ctx.ReadValue<Vector2>().y;
-        PlayerInput.Gameplay.Rotate.canceled += ctx => InputPitch = 0f;
-
-
-        PlayerInput.Gameplay.Accelerate.performed += ctx => Accelerate = true;
-        PlayerInput.Gameplay.Accelerate.canceled += ctx => Accelerate = false;
-
-        PlayerInput.Gameplay.Dash.performed += ctx => Dashes = true;
-        PlayerInput.Gameplay.Dash.canceled += ctx => Dashes = false;
+        //PlayerInput.Gameplay.LeftRoll.performed += ctx => InputRoll = -1f;
+        //PlayerInput.Gameplay.LeftRoll.canceled += ctx => InputRoll = InputRoll != 1 ? 0 : 1;
+        //
+        //
+        //PlayerInput.Gameplay.RightRoll.performed += ctx => InputRoll = 1f;
+        //PlayerInput.Gameplay.RightRoll.canceled += ctx => InputRoll = InputRoll != -1 ? 0 : -1;
+        //
+        //PlayerInput.Gameplay.Rotate.performed += ctx => InputYaw = ctx.ReadValue<Vector2>().x;
+        //PlayerInput.Gameplay.Rotate.canceled += ctx => InputYaw = 0f;
+        //
+        //PlayerInput.Gameplay.Rotate.performed += ctx => InputPitch = ctx.ReadValue<Vector2>().y;
+        //PlayerInput.Gameplay.Rotate.canceled += ctx => InputPitch = 0f;
+        //
+        //
+        //PlayerInput.Gameplay.Accelerate.performed += ctx => Accelerate = true;
+        //PlayerInput.Gameplay.Accelerate.canceled += ctx => Accelerate = false;
+        //
+        //PlayerInput.Gameplay.Dash.performed += ctx => Dashes = true;
+        //PlayerInput.Gameplay.Dash.canceled += ctx => Dashes = false;
     }
 
     private void FixedUpdate()

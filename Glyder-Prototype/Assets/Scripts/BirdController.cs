@@ -7,14 +7,18 @@ public class BirdController : MonoBehaviour
     public float Speed;
     public float JumpSpeed;
     public float GravityMultiplier;
-    public float HorizontalSpeed;
+    public float HorizontalMultiplier;
     public float CameraZOffset;
     public float CameraYOffset;
     public float Bias;
+    float HorizontalSpeed;
+    float LastHorizontalSpeed;
     float Gravity;
     Rigidbody Rigi;
     PlayerControlsPS4 PlayerInput;
     bool IsJumping;
+    Quaternion LerpBaseRot;
+    float LerpT;
 
     // Start is called before the first frame update
     void Start()
@@ -24,12 +28,15 @@ public class BirdController : MonoBehaviour
         PlayerInput.Enable();
         Gravity = 0f;
         IsJumping = false;
+        PlayerInput.Gameplay.Horizontal.performed += ctx => HorizontalSpeed = ctx.ReadValue<float>();
+        PlayerInput.Gameplay.Horizontal.canceled += ctx => HorizontalSpeed = 0f;
+        LastHorizontalSpeed = 0;
+        LerpT = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-
         Gravity -= GravityMultiplier * Time.deltaTime;
 
         if (PlayerInput.Gameplay.Jump.triggered)
@@ -38,10 +45,8 @@ public class BirdController : MonoBehaviour
             IsJumping = true;
         }
 
-        transform.position += transform.forward * Speed * Time.deltaTime;
+        transform.position += (transform.forward * Speed + Vector3.right * HorizontalSpeed * HorizontalMultiplier)* Time.deltaTime;
         Vector3 gravity = Vector3.zero;
-
-        
 
         if (IsJumping)
         {
@@ -56,8 +61,46 @@ public class BirdController : MonoBehaviour
             gravity.y = Gravity;
         }
         transform.position += gravity;
-        //if (Gravity <= -0.05f)
-        //    Gravity = -0.05f;
+
+        if(HorizontalSpeed < 0)
+        {
+            if (LastHorizontalSpeed >= 0)
+            {
+                LastHorizontalSpeed = HorizontalSpeed;
+                LerpBaseRot = transform.rotation;
+                LerpT = 0;
+            }
+            transform.rotation = Quaternion.Lerp(LerpBaseRot, Quaternion.identity * Quaternion.Euler(0f, 0f, 80f), LerpT);
+            LerpT = Mathf.Clamp01(LerpT);
+            LerpT += 2f * Time.deltaTime;
+        }
+        else if(HorizontalSpeed > 0)
+        {
+            if (LastHorizontalSpeed <= 0)
+            {
+                LastHorizontalSpeed = HorizontalSpeed;
+                LerpBaseRot = transform.rotation;
+                LerpT = 0;
+            }
+            transform.rotation = Quaternion.Lerp(LerpBaseRot, Quaternion.identity * Quaternion.Euler(0f, 0f, -80f), LerpT);
+            LerpT = Mathf.Clamp01(LerpT);
+            LerpT += 2f * Time.deltaTime;
+        }
+        else
+        {
+            if (LastHorizontalSpeed != 0)
+            {
+                LastHorizontalSpeed = HorizontalSpeed;
+                LerpBaseRot = transform.rotation;
+                LerpT = 0;
+            }
+            transform.rotation = Quaternion.Lerp(LerpBaseRot, Quaternion.identity * Quaternion.Euler(0f, 0f, 0f), LerpT);
+            LerpT = Mathf.Clamp01(LerpT);
+            LerpT += 4f * Time.deltaTime;
+        }
+
+        Camera.main.transform.position = transform.position - Vector3.forward * 10 + Vector3.up * 4;
+        Camera.main.transform.LookAt(transform.position);
     }
 
     private void FixedUpdate()
