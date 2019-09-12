@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BirdController : MonoBehaviour
 {
@@ -101,6 +102,11 @@ public class BirdController : MonoBehaviour
 
         Camera.main.transform.position = transform.position - Vector3.forward * 10 + Vector3.up * 4;
         Camera.main.transform.LookAt(transform.position);
+
+        if(Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
 
     private void FixedUpdate()
