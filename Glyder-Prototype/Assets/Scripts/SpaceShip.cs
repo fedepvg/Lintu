@@ -72,7 +72,8 @@ public class SpaceShip : ShipBase
         else
         {
             GetInput(ref InputPitch, ref InputRoll, ref InputYaw, ref Throttle);
-            transform.Rotate(InputPitch * PitchRate * Time.deltaTime, InputYaw * YawRate * Time.deltaTime, InputRoll * RollRate * Time.deltaTime, Space.Self);
+            Vector3 NewRot = new Vector3(InputPitch * PitchRate, InputYaw * YawRate, InputRoll * RollRate) * Time.deltaTime;
+            transform.Rotate(NewRot, Space.Self);
         }
         Debug.Log(rigi.velocity.magnitude);
     }

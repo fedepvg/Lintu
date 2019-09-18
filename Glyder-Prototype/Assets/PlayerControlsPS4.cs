@@ -32,6 +32,14 @@ public class PlayerControlsPS4 : IInputActionCollection
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Turbo"",
+                    ""type"": ""Button"",
+                    ""id"": ""5c7ff9ae-b1cf-4740-a692-24937e784178"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -111,6 +119,17 @@ public class PlayerControlsPS4 : IInputActionCollection
                     ""action"": ""Horizontal"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ce737a8e-b628-496f-a5b0-e9c23ec937f0"",
+                    ""path"": ""<Keyboard>/leftShift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Turbo"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -121,6 +140,7 @@ public class PlayerControlsPS4 : IInputActionCollection
         m_Gameplay = asset.GetActionMap("Gameplay");
         m_Gameplay_Jump = m_Gameplay.GetAction("Jump");
         m_Gameplay_Horizontal = m_Gameplay.GetAction("Horizontal");
+        m_Gameplay_Turbo = m_Gameplay.GetAction("Turbo");
     }
 
     ~PlayerControlsPS4()
@@ -172,12 +192,14 @@ public class PlayerControlsPS4 : IInputActionCollection
     private IGameplayActions m_GameplayActionsCallbackInterface;
     private readonly InputAction m_Gameplay_Jump;
     private readonly InputAction m_Gameplay_Horizontal;
+    private readonly InputAction m_Gameplay_Turbo;
     public struct GameplayActions
     {
         private PlayerControlsPS4 m_Wrapper;
         public GameplayActions(PlayerControlsPS4 wrapper) { m_Wrapper = wrapper; }
         public InputAction @Jump => m_Wrapper.m_Gameplay_Jump;
         public InputAction @Horizontal => m_Wrapper.m_Gameplay_Horizontal;
+        public InputAction @Turbo => m_Wrapper.m_Gameplay_Turbo;
         public InputActionMap Get() { return m_Wrapper.m_Gameplay; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -193,6 +215,9 @@ public class PlayerControlsPS4 : IInputActionCollection
                 Horizontal.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnHorizontal;
                 Horizontal.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnHorizontal;
                 Horizontal.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnHorizontal;
+                Turbo.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnTurbo;
+                Turbo.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnTurbo;
+                Turbo.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnTurbo;
             }
             m_Wrapper.m_GameplayActionsCallbackInterface = instance;
             if (instance != null)
@@ -203,6 +228,9 @@ public class PlayerControlsPS4 : IInputActionCollection
                 Horizontal.started += instance.OnHorizontal;
                 Horizontal.performed += instance.OnHorizontal;
                 Horizontal.canceled += instance.OnHorizontal;
+                Turbo.started += instance.OnTurbo;
+                Turbo.performed += instance.OnTurbo;
+                Turbo.canceled += instance.OnTurbo;
             }
         }
     }
@@ -211,5 +239,6 @@ public class PlayerControlsPS4 : IInputActionCollection
     {
         void OnJump(InputAction.CallbackContext context);
         void OnHorizontal(InputAction.CallbackContext context);
+        void OnTurbo(InputAction.CallbackContext context);
     }
 }
