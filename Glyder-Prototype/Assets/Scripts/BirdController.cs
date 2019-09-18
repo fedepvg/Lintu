@@ -15,6 +15,7 @@ public class BirdController : MonoBehaviour
     float HorizontalSpeed;
     float LastHorizontalSpeed;
     float Gravity;
+    Vector3 GravityVec;
     Rigidbody Rigi;
     PlayerControlsPS4 PlayerInput;
     bool IsJumping;
@@ -50,7 +51,7 @@ public class BirdController : MonoBehaviour
     {
         if (PlayerInput.Gameplay.Jump.triggered)
         {
-            Gravity = 2f;
+            Gravity = 5f;
             IsJumping = true;
             AnimatonController.SetTrigger("Fly");
         }
@@ -62,27 +63,26 @@ public class BirdController : MonoBehaviour
         else
             TurboMultiplier = 1f;
 
-        transform.position += (transform.forward * Speed + Vector3.right * HorizontalSpeed * HorizontalMultiplier) * TurboMultiplier * Time.deltaTime;
-        Vector3 gravity = Vector3.zero;
+        //transform.position += (transform.forward * Speed + Vector3.right * HorizontalSpeed * HorizontalMultiplier) * TurboMultiplier * Time.deltaTime;
 
         if (IsJumping)
         {
             Gravity -= GravityMultiplier * Time.deltaTime;
-            gravity.y += Gravity;
+            GravityVec.y += Gravity;
 
-            if (Gravity < -0.5f)
+            if (Gravity < -5f)
             {
-                Gravity = -0.5f;
-                gravity.y = Gravity;
+                Gravity = -5f;
+                GravityVec.y = Gravity;
                 IsJumping = false;
             }
         }
         else
         {
-            Gravity = -0.5f;
-            gravity.y = Gravity;
+            Gravity = -5f;
+            GravityVec.y = Gravity;
         }
-        transform.position += gravity;
+        //transform.position += GravityVec;
 
         if(HorizontalSpeed < 0)
         {
@@ -123,11 +123,19 @@ public class BirdController : MonoBehaviour
 
         Camera.main.transform.position = transform.position - Vector3.forward * 3 + Vector3.up * 1.1f;
         Camera.main.transform.LookAt(transform.position);
+        //SetCameraPosition();
 
         if(Input.GetKeyDown(KeyCode.R))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
+    }
+
+    private void FixedUpdate()
+    {
+        Rigi.velocity = transform.forward * Speed + Vector3.right * HorizontalSpeed * HorizontalMultiplier;
+        Rigi.velocity += GravityVec;
+        //SetCameraPosition();
     }
 
     void SetCameraPosition()
@@ -147,5 +155,10 @@ public class BirdController : MonoBehaviour
     {
         TurboMultiplier = TurboCurve.Evaluate(TurboTimer);
         TurboTimer = Mathf.Clamp01(TurboTimer -= Time.deltaTime);
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log("zarlanga");
     }
 }
