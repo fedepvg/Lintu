@@ -24,6 +24,7 @@ public class BirdController : MonoBehaviour
     public AnimationCurve TurboCurve;
     public float TurboTimer;
     bool TurboActivated;
+    public Animator AnimatonController;
 
     // Start is called before the first frame update
     void Start()
@@ -35,8 +36,8 @@ public class BirdController : MonoBehaviour
         IsJumping = false;
         PlayerInput.Gameplay.Horizontal.performed += ctx => HorizontalSpeed = ctx.ReadValue<float>();
         PlayerInput.Gameplay.Horizontal.canceled += ctx => HorizontalSpeed = 0f;
-        PlayerInput.Gameplay.Turbo.performed += ctx => TurboActivated = true; ;
-        PlayerInput.Gameplay.Turbo.canceled += ctx => TurboActivated = false; ;//TurboMultiplier = TurboMultiplier > 1f ? DeaccelerateTurbo() : 1f;
+        PlayerInput.Gameplay.Turbo.performed += ctx => TurboActivated = true;
+        PlayerInput.Gameplay.Turbo.canceled += ctx => TurboActivated = false;
         LastHorizontalSpeed = 0;
         LerpT = 0.1f;
         TurboMultiplier = 1f;
@@ -51,6 +52,7 @@ public class BirdController : MonoBehaviour
         {
             Gravity = 2f;
             IsJumping = true;
+            AnimatonController.SetTrigger("Fly");
         }
 
         if (TurboActivated)
@@ -126,16 +128,6 @@ public class BirdController : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
-    }
-
-    private void FixedUpdate()
-    {
-        //SetCameraPosition();
-        //Rigi.AddForce(transform.forward * Speed);
-        //if (PlayerInput.Gameplay.Jump.triggered)
-        //{
-        //    Rigi.AddForce(transform.up * JumpSpeed, ForceMode.Impulse);
-        //}
     }
 
     void SetCameraPosition()
