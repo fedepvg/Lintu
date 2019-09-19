@@ -26,6 +26,9 @@ public class BirdController : MonoBehaviour
     public float TurboTimer;
     bool TurboActivated;
     public Animator AnimatonController;
+    public AnimationCurve JumpCurve;
+    float JumpTimer;
+    Quaternion TurboBaseRot;
 
     // Start is called before the first frame update
     void Start()
@@ -49,11 +52,24 @@ public class BirdController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (PlayerInput.Gameplay.Jump.triggered)
+        if (PlayerInput.Gameplay.Jump.triggered && !IsJumping && !TurboActivated)
         {
-            Gravity = 5f;
             IsJumping = true;
             AnimatonController.SetTrigger("Fly");
+        }
+
+        if (IsJumping)
+        {
+            Gravity = JumpSpeed * JumpCurve.Evaluate(JumpTimer);
+            JumpTimer = Mathf.Clamp01(JumpTimer += Time.deltaTime * 2f);
+            
+            if (JumpTimer >= 1)
+                IsJumping = false;
+        }
+        else
+        {
+            JumpTimer = 0;
+            Gravity = -0.5f;
         }
 
         if (TurboActivated)
@@ -63,28 +79,10 @@ public class BirdController : MonoBehaviour
         else
             TurboMultiplier = 1f;
 
-        //transform.position += (transform.forward * Speed + Vector3.right * HorizontalSpeed * HorizontalMultiplier) * TurboMultiplier * Time.deltaTime;
+        Gravity *= TurboMultiplier * TurboMultiplier * TurboMultiplier;
+        GravityVec.y = Gravity;
 
-        if (IsJumping)
-        {
-            Gravity -= GravityMultiplier * Time.deltaTime;
-            GravityVec.y += Gravity;
-
-            if (Gravity < -5f)
-            {
-                Gravity = -5f;
-                GravityVec.y = Gravity;
-                IsJumping = false;
-            }
-        }
-        else
-        {
-            Gravity = -5f;
-            GravityVec.y = Gravity;
-        }
-        //transform.position += GravityVec;
-
-        if(HorizontalSpeed < 0)
+        if (HorizontalSpeed < 0)
         {
             if (LastHorizontalSpeed >= 0)
             {
@@ -121,9 +119,15 @@ public class BirdController : MonoBehaviour
             LerpT += 4f * Time.deltaTime;
         }
 
-        Camera.main.transform.position = transform.position - Vector3.forward * 3 + Vector3.up * 1.1f;
+        if (TurboMultiplier > 1)
+        {
+            transform.rotation = Quaternion.Lerp(LerpBaseRot, Quaternion.identity * Quaternion.Euler(30f, 0f, 0f), LerpT);
+            LerpT = Mathf.Clamp01(LerpT);
+            LerpT += 3f * Time.deltaTime;
+        }
+
+        Camera.main.transform.position = transform.position - Vector3.forward * 3 + Vector3.up * 0.2f;
         Camera.main.transform.LookAt(transform.position);
-        //SetCameraPosition();
 
         if(Input.GetKeyDown(KeyCode.R))
         {
@@ -133,16 +137,22 @@ public class BirdController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Rigi.velocity = transform.forward * Speed + Vector3.right * HorizontalSpeed * HorizontalMultiplier;
-        Rigi.velocity += GravityVec;
-        //SetCameraPosition();
+        Vector3 pos = transform.position;
+        pos += (Vector3.forward * Speed + Vector3.right * HorizontalSpeed * HorizontalMultiplier) * TurboMultiplier * Time.deltaTime;
+        pos += GravityVec;
+        Rigi.MovePosition(pos);
     }
 
-    void SetCameraPosition()
+    void ActivateTurbo()
     {
-        Vector3 CameraNewPos = transform.position - transform.forward * CameraZOffset + Vector3.up * CameraYOffset;
-        Camera.main.transform.position = Camera.main.transform.position * Bias + CameraNewPos * (1f - Bias);
-        Camera.main.transform.LookAt(transform.position + transform.forward * 2f);
+        TurboActivated = true;
+        TurboBaseRot = transform.rotation;
+    }
+
+    void DeactivateTurbo()
+    {
+        TurboActivated = false;
+        TurboBaseRot = transform.rotation;
     }
 
     void AccelerateTurbo()
