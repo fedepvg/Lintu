@@ -20,7 +20,7 @@ public class BirdController : MonoBehaviour
     PlayerControlsPS4 PlayerInput;
     bool IsJumping;
     Quaternion LerpBaseRot;
-    float LerpT;
+    float RotLerpT;
     public float TurboMultiplier;
     public AnimationCurve TurboCurve;
     public float TurboTimer;
@@ -29,6 +29,9 @@ public class BirdController : MonoBehaviour
     public AnimationCurve JumpCurve;
     float JumpTimer;
     Quaternion TurboBaseRot;
+    Quaternion TurboDestRot;
+    float TurboLerpT;
+    Quaternion TempRotation;
 
     // Start is called before the first frame update
     void Start()
@@ -40,13 +43,17 @@ public class BirdController : MonoBehaviour
         IsJumping = false;
         PlayerInput.Gameplay.Horizontal.performed += ctx => HorizontalSpeed = ctx.ReadValue<float>();
         PlayerInput.Gameplay.Horizontal.canceled += ctx => HorizontalSpeed = 0f;
-        PlayerInput.Gameplay.Turbo.performed += ctx => TurboActivated = true;
-        PlayerInput.Gameplay.Turbo.canceled += ctx => TurboActivated = false;
+        PlayerInput.Gameplay.Turbo.performed += ctx => ActivateTurbo();
+        PlayerInput.Gameplay.Turbo.canceled += ctx => DeactivateTurbo();
         LastHorizontalSpeed = 0;
-        LerpT = 0.1f;
+        RotLerpT = 0.1f;
         TurboMultiplier = 1f;
         TurboTimer = 0f;
         TurboActivated = false;
+        TurboLerpT = 0.1f;
+        TurboBaseRot = Quaternion.identity;
+        TurboDestRot = Quaternion.identity;
+        TempRotation = Quaternion.identity;
     }
 
     // Update is called once per frame
@@ -88,11 +95,11 @@ public class BirdController : MonoBehaviour
             {
                 LastHorizontalSpeed = HorizontalSpeed;
                 LerpBaseRot = transform.rotation;
-                LerpT = 0;
+                RotLerpT = 0;
             }
-            transform.rotation = Quaternion.Lerp(LerpBaseRot, Quaternion.identity * Quaternion.Euler(0f, 0f, 40f), LerpT);
-            LerpT = Mathf.Clamp01(LerpT);
-            LerpT += 3f * Time.deltaTime;
+            TempRotation = Quaternion.Lerp(LerpBaseRot, Quaternion.identity * Quaternion.Euler(0f, 0f, 40f), RotLerpT);
+            RotLerpT = Mathf.Clamp01(RotLerpT);
+            RotLerpT += 3f * Time.deltaTime;
         }
         else if(HorizontalSpeed > 0)
         {
@@ -100,11 +107,11 @@ public class BirdController : MonoBehaviour
             {
                 LastHorizontalSpeed = HorizontalSpeed;
                 LerpBaseRot = transform.rotation;
-                LerpT = 0;
+                RotLerpT = 0;
             }
-            transform.rotation = Quaternion.Lerp(LerpBaseRot, Quaternion.identity * Quaternion.Euler(0f, 0f, -40f), LerpT);
-            LerpT = Mathf.Clamp01(LerpT);
-            LerpT += 3f * Time.deltaTime;
+            TempRotation = Quaternion.Lerp(LerpBaseRot, Quaternion.identity * Quaternion.Euler(0f, 0f, -40f), RotLerpT);
+            RotLerpT = Mathf.Clamp01(RotLerpT);
+            RotLerpT += 3f * Time.deltaTime;
         }
         else
         {
@@ -112,19 +119,21 @@ public class BirdController : MonoBehaviour
             {
                 LastHorizontalSpeed = HorizontalSpeed;
                 LerpBaseRot = transform.rotation;
-                LerpT = 0;
+                RotLerpT = 0;
             }
-            transform.rotation = Quaternion.Lerp(LerpBaseRot, Quaternion.identity * Quaternion.Euler(0f, 0f, 0f), LerpT);
-            LerpT = Mathf.Clamp01(LerpT);
-            LerpT += 4f * Time.deltaTime;
+            TempRotation = Quaternion.Lerp(LerpBaseRot, Quaternion.identity * Quaternion.Euler(0f, 0f, 0f), RotLerpT);
+            RotLerpT = Mathf.Clamp01(RotLerpT);
+            RotLerpT += 4f * Time.deltaTime;
         }
 
-        if (TurboMultiplier > 1)
+        if (TurboActivated || transform.rotation != Quaternion.identity)
         {
-            transform.rotation = Quaternion.Lerp(LerpBaseRot, Quaternion.identity * Quaternion.Euler(30f, 0f, 0f), LerpT);
-            LerpT = Mathf.Clamp01(LerpT);
-            LerpT += 3f * Time.deltaTime;
+            TempRotation *= Quaternion.Lerp(TurboBaseRot, TurboDestRot, TurboLerpT);
+            TurboLerpT += 2f * Time.deltaTime;
+            TurboLerpT = Mathf.Clamp01(TurboLerpT);
+            Debug.Log(TurboLerpT);
         }
+        //transform.rotation = TempRotation;
 
         Camera.main.transform.position = transform.position - Vector3.forward * 3 + Vector3.up * 0.2f;
         Camera.main.transform.LookAt(transform.position);
@@ -141,18 +150,23 @@ public class BirdController : MonoBehaviour
         pos += (Vector3.forward * Speed + Vector3.right * HorizontalSpeed * HorizontalMultiplier) * TurboMultiplier * Time.deltaTime;
         pos += GravityVec;
         Rigi.MovePosition(pos);
+        Rigi.MoveRotation(TempRotation);
     }
 
     void ActivateTurbo()
     {
         TurboActivated = true;
         TurboBaseRot = transform.rotation;
+        TurboDestRot = Quaternion.Euler(10f, 0f, 0f);
+        TurboLerpT = 0.1f;
     }
 
     void DeactivateTurbo()
     {
         TurboActivated = false;
         TurboBaseRot = transform.rotation;
+        TurboDestRot = Quaternion.identity;
+        TurboLerpT = 0.1f;
     }
 
     void AccelerateTurbo()
