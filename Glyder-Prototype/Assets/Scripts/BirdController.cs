@@ -43,7 +43,7 @@ public class BirdController : MonoBehaviour
         PlayerInput.Enable();
         Gravity = 0f;
         IsJumping = false;
-        PlayerInput.Gameplay.Horizontal.performed += ctx => HorizontalSpeed = ctx.ReadValue<float>();
+        PlayerInput.Gameplay.Horizontal.performed += ctx => HorizontalSpeed = !TurboActivated ? ctx.ReadValue<float>() : 0f;//HorizontalSpeed = ctx.ReadValue<float>();
         PlayerInput.Gameplay.Horizontal.canceled += ctx => HorizontalSpeed = 0f;
         PlayerInput.Gameplay.Turbo.performed += ctx => ActivateTurbo();
         PlayerInput.Gameplay.Turbo.canceled += ctx => DeactivateTurbo();
@@ -63,7 +63,7 @@ public class BirdController : MonoBehaviour
         if (PlayerInput.Gameplay.Jump.triggered && !IsJumping)// && !TurboActivated)
         {
             IsJumping = true;
-            TurboActivated = false;
+            DeactivateTurbo();
             AnimatonController.SetTrigger("Fly");
         }
 
@@ -98,6 +98,7 @@ public class BirdController : MonoBehaviour
                 LastHorizontalSpeed = HorizontalSpeed;
                 LerpBaseRot = transform.rotation;
                 RotLerpT = 0;
+                TurboBaseRot = transform.rotation;
             }
             TempRotation = Quaternion.Lerp(LerpBaseRot, Quaternion.identity * Quaternion.Euler(0f, 0f, 40f), RotLerpT);
             RotLerpT = Mathf.Clamp01(RotLerpT);
@@ -110,6 +111,7 @@ public class BirdController : MonoBehaviour
                 LastHorizontalSpeed = HorizontalSpeed;
                 LerpBaseRot = transform.rotation;
                 RotLerpT = 0;
+                TurboBaseRot = transform.rotation;
             }
             TempRotation = Quaternion.Lerp(LerpBaseRot, Quaternion.identity * Quaternion.Euler(0f, 0f, -40f), RotLerpT);
             RotLerpT = Mathf.Clamp01(RotLerpT);
@@ -122,6 +124,7 @@ public class BirdController : MonoBehaviour
                 LastHorizontalSpeed = HorizontalSpeed;
                 LerpBaseRot = transform.rotation;
                 RotLerpT = 0;
+                TurboBaseRot = transform.rotation;
             }
             TempRotation = Quaternion.Lerp(LerpBaseRot, Quaternion.identity * Quaternion.Euler(0f, 0f, 0f), RotLerpT);
             RotLerpT = Mathf.Clamp01(RotLerpT);
