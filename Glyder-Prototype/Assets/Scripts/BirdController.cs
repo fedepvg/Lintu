@@ -32,8 +32,10 @@ public class BirdController : MonoBehaviour
     Quaternion TurboDestRot;
     float TurboLerpT;
     Quaternion TempRotation;
-
-    // Start is called before the first frame update
+    bool CanUseTurbo;
+    float TimeToNextTurbo;
+    const float TurboCooldown = 1.5f;
+    
     void Start()
     {
         Rigi = GetComponent<Rigidbody>();
@@ -55,13 +57,13 @@ public class BirdController : MonoBehaviour
         TurboDestRot = Quaternion.identity;
         TempRotation = Quaternion.identity;
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
-        if (PlayerInput.Gameplay.Jump.triggered && !IsJumping && !TurboActivated)
+        if (PlayerInput.Gameplay.Jump.triggered && !IsJumping)// && !TurboActivated)
         {
             IsJumping = true;
+            TurboActivated = false;
             AnimatonController.SetTrigger("Fly");
         }
 
@@ -131,17 +133,20 @@ public class BirdController : MonoBehaviour
             TempRotation *= Quaternion.Lerp(TurboBaseRot, TurboDestRot, TurboLerpT);
             TurboLerpT += 2f * Time.deltaTime;
             TurboLerpT = Mathf.Clamp01(TurboLerpT);
-            Debug.Log(TurboLerpT);
         }
-        //transform.rotation = TempRotation;
 
-        Camera.main.transform.position = transform.position - Vector3.forward * 3 + Vector3.up * 0.2f;
+        Camera.main.transform.position = transform.position - Vector3.forward * CameraZOffset + Vector3.up * CameraYOffset;
         Camera.main.transform.LookAt(transform.position);
 
         if(Input.GetKeyDown(KeyCode.R))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            RestartLevel();
         }
+    }
+
+    void RestartLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     private void FixedUpdate()
@@ -183,6 +188,15 @@ public class BirdController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("zarlanga");
+        if (collision.gameObject.tag == "Finish")
+        {
+            Debug.Log("win");
+            Invoke("RestartLevel", 3);
+        }
+        else
+        {
+            Debug.Log("Lose");
+            Invoke("RestartLevel", 1);
+        }
     }
 }
