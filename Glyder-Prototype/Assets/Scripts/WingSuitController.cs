@@ -1,13 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class WingSuitController : MonoBehaviour
 {
     public float Speed;
     Rigidbody Rigi;
     FlyingControls PlayerInput;
-    public float Gravity;
+    public float BaseGravity;
+    float Gravity;
     bool IsJumping;
     public float CameraZOffset;
     public float CameraYOffset;
@@ -23,6 +25,23 @@ public class WingSuitController : MonoBehaviour
     Vector3 DestPosition;
     float SpeedMultiplier;
     public float RotationSpeed;
+    public float HorizontalSpeed;
+    float MaxSpeedMultiplier = 1.8f;
+    float MinSpeedMultiplier = 0.2f;
+    public Animator AnimatonController;
+    public float JumpSpeed;
+    public AnimationCurve JumpCurve;
+    float JumpTimer;
+    float JumpGravity;
+    public float MaxEnergy;
+    float Energy;
+    float JumpEnergy = 20;
+    public Slider EnergyBar;
+    public Image EnergyBarFill;
+    public LayerMask RaycastLayer;
+    const float RayDistance = 1000f;
+    float FloorDistance;
+    public Text FloorDistanceText;
 
     // Start is called before the first frame update
     void Start()
@@ -39,13 +58,35 @@ public class WingSuitController : MonoBehaviour
         PlayerInput.Gameplay.Vertical.canceled += ctx => XAxisFrameRotation = 0f;
         DestRotation = Quaternion.identity;
         DestPosition = transform.position;
-        SpeedMultiplier = 0.9f;
+        SpeedMultiplier = 0.8f;
+        Energy = MaxEnergy;
     }
 
     // Update is called once per frame
     void Update()
     {
-        XAxisRotation += XAxisFrameRotation * RotationSpeed * Time.deltaTime;
+        if (PlayerInput.Gameplay.Jump.triggered && !IsJumping && Energy > JumpEnergy)
+        {
+            IsJumping = true;
+            AnimatonController.SetTrigger("Fly");
+            Energy -= JumpEnergy;
+        }
+
+        if (IsJumping)
+        {
+            JumpGravity = JumpSpeed * JumpCurve.Evaluate(JumpTimer);
+            JumpTimer = Mathf.Clamp01(JumpTimer += Time.deltaTime * 2f);
+
+            if (JumpTimer >= 1)
+                IsJumping = false;
+        }
+        else
+        {
+            JumpTimer = 0;
+            JumpGravity = 0f;
+        }
+
+            XAxisRotation += XAxisFrameRotation * RotationSpeed * Time.deltaTime;
         ZAxisRotation += ZAxisFrameRotation * RotationSpeed * Time.deltaTime;
         if(XAxisRotation < MinXRotation)
         {
@@ -65,21 +106,50 @@ public class WingSuitController : MonoBehaviour
         }
         DestRotation = Quaternion.Euler(XAxisRotation, 0f, ZAxisRotation);
 
-        if (XAxisRotation < -1f || XAxisRotation > 1f)
+        float speedCoefficient = 0.05f;
+
+        if (XAxisRotation < 4f)
+            speedCoefficient = 0.025f;
+
+        SpeedMultiplier += (SpeedMultiplier * speedCoefficient * XAxisRotation - speedCoefficient) * Time.deltaTime;
+
+        SpeedMultiplier = Mathf.Clamp(SpeedMultiplier, MinSpeedMultiplier, MaxSpeedMultiplier);
+
+        Vector3 horizontalMovement = new Vector3
         {
-            SpeedMultiplier = XAxisRotation / MaxXRotation * 1.5f;
-            SpeedMultiplier += 2f;
-        }
-        else
-        {
-            SpeedMultiplier = 1f;
-        }
+            x = -ZAxisRotation * speedCoefficient * HorizontalSpeed * Time.deltaTime
+        };
+
+        Gravity = BaseGravity / SpeedMultiplier + JumpGravity;
 
         DestPosition += transform.forward * Speed * SpeedMultiplier * Time.deltaTime;
+        DestPosition += horizontalMovement;
         DestPosition += new Vector3(0f, Gravity, 0f);
 
         Camera.main.transform.position = transform.position - Vector3.forward * CameraZOffset + Vector3.up * CameraYOffset;
         Camera.main.transform.LookAt(transform.position);
+
+        //ENERGY-------------------------------------
+        Energy += 10 * Time.deltaTime;
+        Energy = Mathf.Clamp(Energy, 0, MaxEnergy);
+        EnergyBar.value = Energy;
+        if (Energy < 20)
+            EnergyBarFill.color = Color.red;
+        else
+            EnergyBarFill.color = Color.white;
+        //FLOOR DISTANCE-------------------------------
+        RaycastHit hit;
+        string layerHitted;
+        if (Physics.Raycast(transform.position, - Vector3.up, out hit, RayDistance, RaycastLayer))
+        {
+            layerHitted = LayerMask.LayerToName(hit.transform.gameObject.layer);
+
+            if (layerHitted == "Floor")
+            {
+                FloorDistance = hit.distance;
+            }
+        }
+        FloorDistanceText.text = FloorDistance.ToString("F2") + " mts.";
     }
 
     private void FixedUpdate()
