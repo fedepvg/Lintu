@@ -8711,8 +8711,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 697463986}
-  m_LocalRotation: {x: 0.07760722, y: 0.09106208, z: 0.0070916703, w: -0.9927913}
-  m_LocalPosition: {x: 295.04807, y: -12.152557, z: -2073.7952}
+  m_LocalRotation: {x: -0.077540904, y: 0.6446902, z: 0.06601009, w: 0.7576309}
+  m_LocalPosition: {x: 285.1484, y: -117.61551, z: -2041.1321}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -19303,8 +19303,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1524257767}
-  m_LocalRotation: {x: 0.07760722, y: 0.09106208, z: 0.0070916703, w: -0.9927913}
-  m_LocalPosition: {x: 25.268005, y: 28.091476, z: -7782.795}
+  m_LocalRotation: {x: -0.077540904, y: 0.6446902, z: 0.06601009, w: 0.7576309}
+  m_LocalPosition: {x: 15.368347, y: -77.371475, z: -7750.132}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 460646034}
@@ -26360,9 +26360,9 @@ GameObject:
   - component: {fileID: 2071959507}
   - component: {fileID: 2071959506}
   - component: {fileID: 2071959505}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Plane (2)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27805,6 +27805,7 @@ GameObject:
   - component: {fileID: 522726652443582366}
   - component: {fileID: 434025100718422460}
   - component: {fileID: 528997800879448085}
+  - component: {fileID: 528997800879448088}
   - component: {fileID: 528997800879448086}
   - component: {fileID: 528997800879448087}
   m_Layer: 0
@@ -27821,7 +27822,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 528997800879448084}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 67f2917bcba56504c8e7d940db987735, type: 3}
   m_Name: 
@@ -27931,6 +27932,27 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 3
+--- !u!114 &528997800879448088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 528997800879448084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0eea91b617339284aa5ff7a6d56af6fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Speed: 500
+  Gravity: -0.5
+  CameraZOffset: 7
+  CameraYOffset: 2
+  MinXRotation: -20
+  MaxXRotation: 20
+  MinZRotation: -30
+  MaxZRotation: 30
+  RotationSpeed: 60
 --- !u!1 &529041400964277638
 GameObject:
   m_ObjectHideFlags: 0

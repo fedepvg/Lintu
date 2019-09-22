@@ -1,21 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
 
-    private List<PlayerControlsPS4> PS4Contollers;
-
-    private void Awake()
+    private void Update()
     {
-        PlayerControlsPS4 P1 = new PlayerControlsPS4();
-        PlayerControlsPS4 P2 = new PlayerControlsPS4();
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            RestartLevel();
 
-        PS4Contollers = new List<PlayerControlsPS4>();
-        PS4Contollers.Add(P1);
-        PS4Contollers.Add(P2);
+        }
+    }
 
-        
+    void RestartLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

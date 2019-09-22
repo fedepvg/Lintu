@@ -1,72 +1,39 @@
 {
-    "name": "PlayerControlsPS4",
+    "name": "FlyingControls",
     "maps": [
         {
             "name": "Gameplay",
-            "id": "fc259474-d6af-4d86-b764-6b9312e92bd6",
+            "id": "5a3d63c5-292e-4559-ba6c-871fbf53a14d",
             "actions": [
-                {
-                    "name": "Jump",
-                    "type": "Button",
-                    "id": "e0034ca4-b9b0-407f-8c27-243a0b3e9559",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": ""
-                },
                 {
                     "name": "Horizontal",
                     "type": "Button",
-                    "id": "96b0c4d5-b59a-4fe8-801f-2e005b721486",
+                    "id": "bd2b8383-21ab-4a39-a486-5dad5d7ed36e",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": ""
                 },
                 {
-                    "name": "Turbo",
+                    "name": "Vertical",
                     "type": "Button",
-                    "id": "5c7ff9ae-b1cf-4740-a692-24937e784178",
-                    "expectedControlType": "Button",
+                    "id": "d06ca969-8b9a-4e6c-9c9d-670f9421de6f",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Jump",
+                    "type": "Button",
+                    "id": "444770ce-54dd-47ad-af7e-ecf05b90702d",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": ""
                 }
             ],
             "bindings": [
                 {
-                    "name": "",
-                    "id": "ae341c0c-ebae-4a82-a2a6-08fa232193a3",
-                    "path": "<Gamepad>/buttonSouth",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Jump",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "f916cb2d-9275-4a05-a186-d1b759d65c42",
-                    "path": "<Keyboard>/space",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Jump",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "f30e5135-00f0-446d-83c6-545d29ef161e",
-                    "path": "<Gamepad>/leftStick/x",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Horizontal",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
                     "name": "1D Axis",
-                    "id": "29929091-88a5-41cc-b6ce-50ab24f087ec",
+                    "id": "c9e43401-4676-48a6-9560-ab12744a7b0d",
                     "path": "1DAxis",
                     "interactions": "",
                     "processors": "",
@@ -77,18 +44,7 @@
                 },
                 {
                     "name": "negative",
-                    "id": "5a5dd848-e873-400e-9db7-507caf52319f",
-                    "path": "<Keyboard>/a",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Horizontal",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "positive",
-                    "id": "e022228c-0610-49dc-9fe3-41f1d7a93532",
+                    "id": "b613adc9-8b25-4d86-8db0-6160f18e56a7",
                     "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
@@ -98,24 +54,57 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "",
-                    "id": "b12478e5-2120-4ddb-b31c-d6489c22e846",
-                    "path": "<Gamepad>/rightStick/x",
+                    "name": "positive",
+                    "id": "a6f5e4e6-0ada-4cab-a09b-d53c8c12573e",
+                    "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Horizontal",
                     "isComposite": false,
-                    "isPartOfComposite": false
+                    "isPartOfComposite": true
                 },
                 {
-                    "name": "",
-                    "id": "ce737a8e-b628-496f-a5b0-e9c23ec937f0",
-                    "path": "<Keyboard>/leftShift",
+                    "name": "1D Axis",
+                    "id": "59e31bfb-5d78-400b-9583-8bd0e7b6d287",
+                    "path": "1DAxis",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Turbo",
+                    "action": "Vertical",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "4b1a8160-fc02-493a-a9a3-035edb41df3c",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Vertical",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "011b6c00-abeb-44ed-a10d-53e8fa32bb0f",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Vertical",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "05b913a0-a4b9-4830-a495-d3263fce607f",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
