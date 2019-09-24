@@ -53,7 +53,7 @@ public class WingSuitController : MonoBehaviour
         IsJumping = false;
         XAxisRotation = 0f;
         ZAxisRotation = 0f;
-        PlayerInput.Gameplay.Horizontal.performed += ctx => ZAxisFrameRotation = ctx.ReadValue<float>();
+        PlayerInput.Gameplay.Horizontal.performed += ctx => ZAxisFrameRotation = -ctx.ReadValue<float>();
         PlayerInput.Gameplay.Horizontal.canceled += ctx => ZAxisFrameRotation = 0f;
         PlayerInput.Gameplay.Vertical.performed += ctx => XAxisFrameRotation = ctx.ReadValue<float>();
         PlayerInput.Gameplay.Vertical.canceled += ctx => XAxisFrameRotation = 0f;
