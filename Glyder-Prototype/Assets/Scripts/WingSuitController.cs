@@ -26,8 +26,8 @@ public class WingSuitController : MonoBehaviour
     float SpeedMultiplier;
     public float RotationSpeed;
     public float HorizontalSpeed;
-    float MaxSpeedMultiplier = 1.8f;
-    float MinSpeedMultiplier = 0.2f;
+    float MaxSpeedMultiplier = 3f;
+    float MinSpeedMultiplier = 0.05f;
     public Animator AnimatonController;
     public float JumpSpeed;
     public AnimationCurve JumpCurve;
@@ -39,9 +39,10 @@ public class WingSuitController : MonoBehaviour
     public Slider EnergyBar;
     public Image EnergyBarFill;
     public LayerMask RaycastLayer;
-    const float RayDistance = 1000f;
+    const float RayDistance = 300f;
     float FloorDistance;
     public Text FloorDistanceText;
+    float FinalSpeed;
 
     // Start is called before the first frame update
     void Start()
@@ -86,8 +87,9 @@ public class WingSuitController : MonoBehaviour
             JumpGravity = 0f;
         }
 
-            XAxisRotation += XAxisFrameRotation * RotationSpeed * Time.deltaTime;
+        XAxisRotation += XAxisFrameRotation * RotationSpeed * Time.deltaTime;
         ZAxisRotation += ZAxisFrameRotation * RotationSpeed * Time.deltaTime;
+
         if(XAxisRotation < MinXRotation)
         {
             XAxisRotation = MinXRotation;
@@ -109,19 +111,19 @@ public class WingSuitController : MonoBehaviour
         float speedCoefficient = 0.05f;
 
         if (XAxisRotation < 4f)
-            speedCoefficient = 0.025f;
+            speedCoefficient = 0.03f;
 
-        SpeedMultiplier += (SpeedMultiplier * speedCoefficient * XAxisRotation - speedCoefficient) * Time.deltaTime;
+        SpeedMultiplier += (SpeedMultiplier * speedCoefficient * XAxisRotation) * Time.deltaTime;
 
         SpeedMultiplier = Mathf.Clamp(SpeedMultiplier, MinSpeedMultiplier, MaxSpeedMultiplier);
 
         Vector3 horizontalMovement = new Vector3
         {
-            x = -ZAxisRotation * speedCoefficient * HorizontalSpeed * Time.deltaTime
+            x = -ZAxisRotation * HorizontalSpeed * Time.deltaTime
         };
 
         Gravity = BaseGravity / SpeedMultiplier + JumpGravity;
-
+        
         DestPosition += transform.forward * Speed * SpeedMultiplier * Time.deltaTime;
         DestPosition += horizontalMovement;
         DestPosition += new Vector3(0f, Gravity, 0f);
