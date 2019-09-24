@@ -26,7 +26,7 @@ public class WingSuitController : MonoBehaviour
     float SpeedMultiplier;
     public float RotationSpeed;
     public float HorizontalSpeed;
-    float MaxSpeedMultiplier = 3f;
+    float MaxSpeedMultiplier = 2f;
     float MinSpeedMultiplier = 0.05f;
     public Animator AnimatonController;
     public float JumpSpeed;
@@ -111,7 +111,11 @@ public class WingSuitController : MonoBehaviour
         float speedCoefficient = 0.05f;
 
         if (XAxisRotation < 4f)
+        {
             speedCoefficient = 0.03f;
+            if (XAxisRotation > 0)
+                speedCoefficient = -0.01f;
+        }
 
         SpeedMultiplier += (SpeedMultiplier * speedCoefficient * XAxisRotation) * Time.deltaTime;
 
@@ -158,5 +162,10 @@ public class WingSuitController : MonoBehaviour
     {
         Rigi.MovePosition(DestPosition);
         Rigi.MoveRotation(DestRotation);
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        GameManager.RestartLevel();
     }
 }

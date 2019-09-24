@@ -11,11 +11,10 @@ public class GameManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R))
         {
             RestartLevel();
-
         }
     }
 
-    void RestartLevel()
+    public static void RestartLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
