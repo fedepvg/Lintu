@@ -132,7 +132,9 @@ public class WingSuitController : MonoBehaviour
         DestPosition += horizontalMovement;
         DestPosition += new Vector3(0f, Gravity, 0f);
 
-        Camera.main.transform.position = transform.position - Vector3.forward * CameraZOffset + Vector3.up * CameraYOffset;
+        Vector3 NewCam = transform.position - Vector3.forward * CameraZOffset + transform.up * CameraYOffset;
+        NewCam.x = transform.position.x;
+        Camera.main.transform.position = NewCam;
         Camera.main.transform.LookAt(transform.position);
 
         //ENERGY-------------------------------------
