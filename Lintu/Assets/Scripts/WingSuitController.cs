@@ -42,7 +42,7 @@ public class WingSuitController : MonoBehaviour
     const float RayDistance = 300f;
     float FloorDistance;
     public Text FloorDistanceText;
-    float FinalSpeed;
+    public GameObject []BlobShadows;
 
     // Start is called before the first frame update
     void Start()
@@ -158,12 +158,25 @@ public class WingSuitController : MonoBehaviour
             }
         }
         FloorDistanceText.text = FloorDistance.ToString("F2") + " mts.";
+
+        UpdateBlobShadowPosition();
     }
 
     private void FixedUpdate()
     {
-        Rigi.MovePosition(DestPosition);
+        Rigi.velocity = transform.forward * Speed * SpeedMultiplier;
+        Rigi.velocity += new Vector3(0f, Gravity, 0f);
+        Rigi.velocity += transform.right * -ZAxisRotation * HorizontalSpeed;
+        //Rigi.MovePosition(DestPosition);
         Rigi.MoveRotation(DestRotation);
+    }
+
+    private void UpdateBlobShadowPosition()
+    {
+        for (int i = 0; i < BlobShadows.Length; i++)
+        {
+            BlobShadows[i].transform.position = transform.position;
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
