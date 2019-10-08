@@ -7215,7 +7215,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 3
+  m_CollisionDetection: 2
 --- !u!114 &528997800879448088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7229,17 +7229,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 130
-  BaseGravity: -0.1
+  BaseGravity: -5
+  Gravity: 0
   CameraZOffset: 6
   CameraYOffset: 0.3
   MinXRotation: -20
   MaxXRotation: 20
   MinZRotation: -30
   MaxZRotation: 30
+  SpeedMultiplier: 0
   RotationSpeed: 60
   HorizontalSpeed: 4
   AnimatonController: {fileID: 434025100718422460}
-  JumpSpeed: 1.5
+  JumpSpeed: 150
   JumpCurve:
     serializedVersion: 2
     m_Curve:

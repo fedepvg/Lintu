@@ -9,7 +9,7 @@ public class BirdController : MonoBehaviour
     Rigidbody Rigi;
     FlyingControls PlayerInput;
     public float BaseGravity;
-    float Gravity;
+    public float Gravity;
     bool IsJumping;
     public float CameraZOffset;
     public float CameraYOffset;
@@ -23,7 +23,7 @@ public class BirdController : MonoBehaviour
     public float MaxZRotation;
     Quaternion DestRotation;
     Vector3 DestPosition;
-    float SpeedMultiplier;
+    public float SpeedMultiplier;
     public float RotationSpeed;
     public float HorizontalSpeed;
     float MaxSpeedMultiplier = 2f;
@@ -101,6 +101,10 @@ public class BirdController : MonoBehaviour
         {
             XAxisRotation = MaxXRotation;
         }
+        if(XAxisRotation == 0)
+        {
+            XAxisRotation = 0.1f;
+        }
         if (ZAxisRotation < MinZRotation)
         {   
             ZAxisRotation = MinZRotation;
@@ -174,7 +178,6 @@ public class BirdController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Speed = 0;
-        //GameManager.RestartLevel();
+        GameManager.RestartLevel();
     }
 }
