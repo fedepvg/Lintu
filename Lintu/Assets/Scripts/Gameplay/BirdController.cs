@@ -28,7 +28,7 @@ public class BirdController : MonoBehaviour
     public LayerMask FloorRaycastLayer;
     public Text FloorDistanceText;
     public GameObject []BlobShadows;
-    public CameraController ActualCamera;
+    public SceneLoader SceneManagement;
     #endregion
 
     #region PrivateVariables
@@ -179,6 +179,6 @@ public class BirdController : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        GameManager.RestartLevel();
+        SceneManagement.LoadGOScene();
     }
 }
