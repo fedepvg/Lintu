@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class WingSuitController : MonoBehaviour
+public class BirdController : MonoBehaviour
 {
     public float Speed;
     Rigidbody Rigi;
@@ -135,7 +135,7 @@ public class WingSuitController : MonoBehaviour
         Vector3 NewCam = transform.position - Vector3.forward * CameraZOffset + transform.up * CameraYOffset;
         NewCam.x = transform.position.x;
         Camera.main.transform.position = NewCam;
-        Camera.main.transform.LookAt(transform.position);
+        Camera.main.transform.LookAt(transform.position + Vector3.up * CameraYOffset * 1.3f);
 
         //ENERGY-------------------------------------
         Energy += 10 * Time.deltaTime;
