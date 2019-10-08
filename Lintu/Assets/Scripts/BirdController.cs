@@ -38,11 +38,14 @@ public class BirdController : MonoBehaviour
     float JumpEnergy = 20;
     public Slider EnergyBar;
     public Image EnergyBarFill;
+    public LayerMask FloorRaycastLayer;
+    const float FloorRayDistance = 300f;
     public LayerMask RaycastLayer;
-    const float RayDistance = 300f;
+    const float RayDistance = 200f;
     float FloorDistance;
     public Text FloorDistanceText;
     public GameObject []BlobShadows;
+    public CameraManager CameraMan;
 
     // Start is called before the first frame update
     void Start()
@@ -127,15 +130,6 @@ public class BirdController : MonoBehaviour
         };
 
         Gravity = BaseGravity / SpeedMultiplier + JumpGravity;
-        
-        DestPosition += transform.forward * Speed * SpeedMultiplier * Time.deltaTime;
-        DestPosition += horizontalMovement;
-        DestPosition += new Vector3(0f, Gravity, 0f);
-
-        //Vector3 NewCam = transform.position - Vector3.forward * CameraZOffset + Vector3.up * CameraYOffset;
-        //NewCam.x = transform.position.x;
-        //Camera.main.transform.position = NewCam;
-        //Camera.main.transform.LookAt(transform.position + Vector3.up * CameraYOffset * 1.3f);
 
         //ENERGY-------------------------------------
         Energy += 10 * Time.deltaTime;
@@ -148,7 +142,7 @@ public class BirdController : MonoBehaviour
         //FLOOR DISTANCE-------------------------------
         RaycastHit hit;
         string layerHitted;
-        if (Physics.Raycast(transform.position, - Vector3.up, out hit, RayDistance, RaycastLayer))
+        if (Physics.Raycast(transform.position, - Vector3.up, out hit, FloorRayDistance, FloorRaycastLayer))
         {
             layerHitted = LayerMask.LayerToName(hit.transform.gameObject.layer);
 
@@ -166,8 +160,7 @@ public class BirdController : MonoBehaviour
     {
         Rigi.velocity = transform.forward * Speed * SpeedMultiplier;
         Rigi.velocity += new Vector3(0f, Gravity, 0f);
-        Rigi.velocity += transform.right * -ZAxisRotation * HorizontalSpeed;
-        //Rigi.MovePosition(DestPosition);
+        Rigi.velocity += Vector3.right * -ZAxisRotation * HorizontalSpeed;
         Rigi.MoveRotation(DestRotation);
     }
 
@@ -181,6 +174,7 @@ public class BirdController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        GameManager.RestartLevel();
+        Speed = 0;
+        //GameManager.RestartLevel();
     }
 }

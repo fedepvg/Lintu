@@ -29,7 +29,7 @@ public class CameraManager : MonoBehaviour
 
     void Update()
     {
-        CameraYSpeed = CameraYSpeedMultiplier * Time.deltaTime;
+        CameraYSpeed = Time.deltaTime;
         switch (CameraPosition)
         {
             case CameraPositions.up:
@@ -50,7 +50,7 @@ public class CameraManager : MonoBehaviour
         transform.LookAt(PlayerTransform.position + Vector3.up * CameraYOffset);
     }
 
-    void SetCameraNextPosition(CameraPositions newPos)
+    public void SetCameraNextPosition(CameraPositions newPos)
     {
         CameraLastposition = CameraPosition;
         CameraPosition = newPos;

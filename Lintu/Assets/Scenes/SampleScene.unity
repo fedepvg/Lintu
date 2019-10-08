@@ -1733,8 +1733,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CameraYOffset: 0.3
   CameraZOffset: 6
-  CameraMaxYOffset: 0.3
-  CameraMiddleYOffset: 0
+  CameraMaxYOffset: 0.5
+  CameraMiddleYOffset: 0.3
   CameraMinYOffset: -0.3
   PlayerTransform: {fileID: 522726652443582366}
   CameraYSpeedMultiplier: 0.5
@@ -7285,13 +7285,17 @@ MonoBehaviour:
   MaxEnergy: 100
   EnergyBar: {fileID: 1246215138}
   EnergyBarFill: {fileID: 1733836189}
-  RaycastLayer:
+  FloorRaycastLayer:
     serializedVersion: 2
     m_Bits: 1024
+  RaycastLayer:
+    serializedVersion: 2
+    m_Bits: 4294967295
   FloorDistanceText: {fileID: 1981158735}
   BlobShadows:
   - {fileID: 614078301}
   - {fileID: 1372763072}
+  CameraMan: {fileID: 534669906}
 --- !u!1 &529041400964277638
 GameObject:
   m_ObjectHideFlags: 0
