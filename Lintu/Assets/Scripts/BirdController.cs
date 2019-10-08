@@ -5,63 +5,74 @@ using UnityEngine.UI;
 
 public class BirdController : MonoBehaviour
 {
+    #region PublicVariables
     public float Speed;
-    Rigidbody Rigi;
-    FlyingControls PlayerInput;
+    public float HorizontalSpeed;
     public float BaseGravity;
-    public float Gravity;
-    bool IsJumping;
     public float CameraZOffset;
     public float CameraYOffset;
-    float XAxisFrameRotation;
-    float ZAxisFrameRotation;
-    float XAxisRotation;
-    float ZAxisRotation;
     public float MinXRotation;
     public float MaxXRotation;
     public float MinZRotation;
     public float MaxZRotation;
-    Quaternion DestRotation;
-    Vector3 DestPosition;
-    public float SpeedMultiplier;
     public float RotationSpeed;
-    public float HorizontalSpeed;
-    float MaxSpeedMultiplier = 2f;
-    float MinSpeedMultiplier = 0.05f;
-    public Animator AnimatonController;
+    public float DownRotationCoefficient;
+    public float MiddleRotationCoefficient;
+    public float UpRotationCoefficient;
     public float JumpSpeed;
-    public AnimationCurve JumpCurve;
-    float JumpTimer;
-    float JumpGravity;
     public float MaxEnergy;
-    float Energy;
-    float JumpEnergy = 20;
+    public Animator AnimatonController;
+    public AnimationCurve JumpCurve;
     public Slider EnergyBar;
     public Image EnergyBarFill;
     public LayerMask FloorRaycastLayer;
-    const float FloorRayDistance = 300f;
-    public LayerMask RaycastLayer;
-    const float RayDistance = 200f;
-    float FloorDistance;
     public Text FloorDistanceText;
     public GameObject []BlobShadows;
-    public CameraManager CameraMan;
+    public CameraController ActualCamera;
+    #endregion
+
+    #region PrivateVariables
+    Rigidbody Rigi;
+    FlyingControls PlayerInput;
+    bool IsJumping;
+    float XAxisFrameRotation;
+    float ZAxisFrameRotation;
+    float XAxisRotation;
+    float ZAxisRotation;
+    Quaternion DestRotation;
+    float SpeedMultiplier;
+    float MaxSpeedMultiplier = 2f;
+    float MinSpeedMultiplier = 0.05f;
+    float Gravity;
+    float JumpTimer;
+    float JumpGravity;
+    float Energy;
+    float JumpEnergy = 20;
+    const float FloorRayDistance = 300f;
+    float FloorDistance;
+    float rotationCoefficient;
+    #endregion
 
     // Start is called before the first frame update
     void Start()
     {
         Rigi = GetComponent<Rigidbody>();
+
         PlayerInput = new FlyingControls();
         PlayerInput.Enable();
+
         IsJumping = false;
+
         XAxisRotation = 0f;
         ZAxisRotation = 0f;
+
         PlayerInput.Gameplay.Horizontal.performed += ctx => ZAxisFrameRotation = -ctx.ReadValue<float>();
         PlayerInput.Gameplay.Horizontal.canceled += ctx => ZAxisFrameRotation = 0f;
         PlayerInput.Gameplay.Vertical.performed += ctx => XAxisFrameRotation = ctx.ReadValue<float>();
         PlayerInput.Gameplay.Vertical.canceled += ctx => XAxisFrameRotation = 0f;
+
         DestRotation = Quaternion.identity;
-        DestPosition = transform.position;
+
         SpeedMultiplier = 0.8f;
         Energy = MaxEnergy;
     }
@@ -69,6 +80,7 @@ public class BirdController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        #region Jump
         if (PlayerInput.Gameplay.Jump.triggered && !IsJumping && Energy > JumpEnergy)
         {
             IsJumping = true;
@@ -89,42 +101,29 @@ public class BirdController : MonoBehaviour
             JumpTimer = 0;
             JumpGravity = 0f;
         }
+        #endregion
 
+        #region Rotation
         XAxisRotation += XAxisFrameRotation * RotationSpeed * Time.deltaTime;
         ZAxisRotation += ZAxisFrameRotation * RotationSpeed * Time.deltaTime;
 
-        if(XAxisRotation < MinXRotation)
-        {
-            XAxisRotation = MinXRotation;
-        }
-        if (XAxisRotation > MaxXRotation)
-        {
-            XAxisRotation = MaxXRotation;
-        }
-        if(XAxisRotation == 0)
-        {
-            XAxisRotation = 0.1f;
-        }
-        if (ZAxisRotation < MinZRotation)
-        {   
-            ZAxisRotation = MinZRotation;
-        }   
-        if (ZAxisRotation > MaxZRotation)
-        {   
-            ZAxisRotation = MaxZRotation;
-        }
+        XAxisRotation = Mathf.Clamp(XAxisRotation, MinXRotation, MaxXRotation);
+        ZAxisRotation = Mathf.Clamp(ZAxisRotation, MinZRotation, MaxZRotation);
+
         DestRotation = Quaternion.Euler(XAxisRotation, 0f, ZAxisRotation);
+        #endregion
 
-        float speedCoefficient = 0.05f;
-
+        #region MovementCalculations
         if (XAxisRotation < 4f)
         {
-            speedCoefficient = 0.03f;
+            rotationCoefficient = DownRotationCoefficient;
             if (XAxisRotation > 0)
-                speedCoefficient = -0.01f;
+                rotationCoefficient = MiddleRotationCoefficient;
         }
+        else
+            rotationCoefficient = UpRotationCoefficient;
 
-        SpeedMultiplier += (SpeedMultiplier * speedCoefficient * XAxisRotation) * Time.deltaTime;
+        SpeedMultiplier += (SpeedMultiplier * rotationCoefficient * XAxisRotation) * Time.deltaTime;
 
         SpeedMultiplier = Mathf.Clamp(SpeedMultiplier, MinSpeedMultiplier, MaxSpeedMultiplier);
 
@@ -134,6 +133,7 @@ public class BirdController : MonoBehaviour
         };
 
         Gravity = BaseGravity / SpeedMultiplier + JumpGravity;
+        #endregion
 
         //ENERGY-------------------------------------
         Energy += 10 * Time.deltaTime;
@@ -143,6 +143,7 @@ public class BirdController : MonoBehaviour
             EnergyBarFill.color = Color.red;
         else
             EnergyBarFill.color = Color.white;
+
         //FLOOR DISTANCE-------------------------------
         RaycastHit hit;
         string layerHitted;
@@ -160,15 +161,15 @@ public class BirdController : MonoBehaviour
         UpdateBlobShadowPosition();
     }
 
-    private void FixedUpdate()
+    void FixedUpdate()
     {
         Rigi.velocity = transform.forward * Speed * SpeedMultiplier;
         Rigi.velocity += new Vector3(0f, Gravity, 0f);
-        Rigi.velocity += Vector3.right * -ZAxisRotation * HorizontalSpeed;
+        Rigi.velocity += Vector3.right * -ZAxisRotation * HorizontalSpeed * Time.fixedDeltaTime;
         Rigi.MoveRotation(DestRotation);
     }
 
-    private void UpdateBlobShadowPosition()
+    void UpdateBlobShadowPosition()
     {
         for (int i = 0; i < BlobShadows.Length; i++)
         {
@@ -176,7 +177,7 @@ public class BirdController : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
+    void OnCollisionEnter(Collision collision)
     {
         GameManager.RestartLevel();
     }

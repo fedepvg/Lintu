@@ -7230,7 +7230,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 130
   BaseGravity: -5
-  Gravity: 0
   CameraZOffset: 6
   CameraYOffset: 0.3
   MinXRotation: -20
@@ -7240,8 +7239,12 @@ MonoBehaviour:
   SpeedMultiplier: 0
   RotationSpeed: 60
   HorizontalSpeed: 4
-  AnimatonController: {fileID: 434025100718422460}
+  DownRotationCoefficient: 0.03
+  MiddleRotationCoefficient: -0.1
+  UpRotationCoefficient: 0.05
   JumpSpeed: 150
+  MaxEnergy: 100
+  AnimatonController: {fileID: 434025100718422460}
   JumpCurve:
     serializedVersion: 2
     m_Curve:
@@ -7284,20 +7287,16 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  MaxEnergy: 100
   EnergyBar: {fileID: 1246215138}
   EnergyBarFill: {fileID: 1733836189}
   FloorRaycastLayer:
     serializedVersion: 2
     m_Bits: 1024
-  RaycastLayer:
-    serializedVersion: 2
-    m_Bits: 4294967295
   FloorDistanceText: {fileID: 1981158735}
   BlobShadows:
   - {fileID: 614078301}
   - {fileID: 1372763072}
-  CameraMan: {fileID: 534669906}
+  ActualCamera: {fileID: 0}
 --- !u!1 &529041400964277638
 GameObject:
   m_ObjectHideFlags: 0

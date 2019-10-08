@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraManager : MonoBehaviour
+public class CameraController : MonoBehaviour
 {
     public float CameraYOffset;
     public float CameraZOffset;
@@ -11,8 +11,8 @@ public class CameraManager : MonoBehaviour
     public float CameraMinYOffset;
     public Transform PlayerTransform;
     public float CameraYSpeedMultiplier;
-
     public CameraPositions CameraPosition;
+
     CameraPositions CameraLastposition;
     float CameraYSpeed;
 
