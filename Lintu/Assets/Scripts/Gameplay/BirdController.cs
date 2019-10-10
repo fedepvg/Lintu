@@ -21,6 +21,8 @@ public class BirdController : MonoBehaviour
     public float UpRotationCoefficient;
     public float JumpSpeed;
     public float MaxEnergy;
+    public float MaxSpeedMultiplier;
+    public float MinSpeedMultiplier;
     public Animator AnimatonController;
     public AnimationCurve JumpCurve;
     public Slider EnergyBar;
@@ -40,10 +42,8 @@ public class BirdController : MonoBehaviour
     float XAxisRotation;
     float ZAxisRotation;
     Quaternion DestRotation;
-    float SpeedMultiplier;
-    float MaxSpeedMultiplier = 2f;
-    float MinSpeedMultiplier = 0.05f;
-    float Gravity;
+    public float SpeedMultiplier;
+    public float Gravity;
     float JumpTimer;
     float JumpGravity;
     float Energy;
@@ -167,6 +167,7 @@ public class BirdController : MonoBehaviour
         Rigi.velocity += new Vector3(0f, Gravity, 0f);
         Rigi.velocity += Vector3.right * -ZAxisRotation * HorizontalSpeed * Time.fixedDeltaTime;
         Rigi.MoveRotation(DestRotation);
+        Debug.Log(Rigi.velocity.magnitude);
     }
 
     void UpdateBlobShadowPosition()

@@ -5104,29 +5104,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_RepeatDelay: 0.5
   m_RepeatRate: 0.1
-  m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018,
+  m_ActionsAsset: {fileID: -944628639613478452, guid: a4d14a5ffb834ce4ebd4b9b84b690b71,
     type: 3}
-  m_PointAction: {fileID: 1054132383583890850, guid: ca9f5fa95ffab41fb9a615ab714db018,
+  m_PointAction: {fileID: 1054132383583890850, guid: a4d14a5ffb834ce4ebd4b9b84b690b71,
     type: 3}
-  m_MoveAction: {fileID: 3710738434707379630, guid: ca9f5fa95ffab41fb9a615ab714db018,
+  m_MoveAction: {fileID: 3710738434707379630, guid: a4d14a5ffb834ce4ebd4b9b84b690b71,
     type: 3}
-  m_SubmitAction: {fileID: 2064916234097673511, guid: ca9f5fa95ffab41fb9a615ab714db018,
+  m_SubmitAction: {fileID: 2064916234097673511, guid: a4d14a5ffb834ce4ebd4b9b84b690b71,
     type: 3}
-  m_CancelAction: {fileID: -1967631576421560919, guid: ca9f5fa95ffab41fb9a615ab714db018,
+  m_CancelAction: {fileID: -1967631576421560919, guid: a4d14a5ffb834ce4ebd4b9b84b690b71,
     type: 3}
-  m_LeftClickAction: {fileID: 8056856818456041789, guid: ca9f5fa95ffab41fb9a615ab714db018,
+  m_LeftClickAction: {fileID: 8056856818456041789, guid: a4d14a5ffb834ce4ebd4b9b84b690b71,
     type: 3}
-  m_MiddleClickAction: {fileID: 3279352641294131588, guid: ca9f5fa95ffab41fb9a615ab714db018,
+  m_MiddleClickAction: {fileID: 3279352641294131588, guid: a4d14a5ffb834ce4ebd4b9b84b690b71,
     type: 3}
-  m_RightClickAction: {fileID: 3837173908680883260, guid: ca9f5fa95ffab41fb9a615ab714db018,
+  m_RightClickAction: {fileID: 3837173908680883260, guid: a4d14a5ffb834ce4ebd4b9b84b690b71,
     type: 3}
-  m_ScrollWheelAction: {fileID: 4502412055082496612, guid: ca9f5fa95ffab41fb9a615ab714db018,
+  m_ScrollWheelAction: {fileID: 4502412055082496612, guid: a4d14a5ffb834ce4ebd4b9b84b690b71,
     type: 3}
-  m_TrackedDevicePositionAction: {fileID: 4754684134866288074, guid: ca9f5fa95ffab41fb9a615ab714db018,
+  m_TrackedDevicePositionAction: {fileID: 4754684134866288074, guid: a4d14a5ffb834ce4ebd4b9b84b690b71,
     type: 3}
-  m_TrackedDeviceOrientationAction: {fileID: 1025543830046995696, guid: ca9f5fa95ffab41fb9a615ab714db018,
+  m_TrackedDeviceOrientationAction: {fileID: 1025543830046995696, guid: a4d14a5ffb834ce4ebd4b9b84b690b71,
     type: 3}
-  m_TrackedDeviceSelectAction: {fileID: 2559092417903258184, guid: ca9f5fa95ffab41fb9a615ab714db018,
+  m_TrackedDeviceSelectAction: {fileID: 2559092417903258184, guid: a4d14a5ffb834ce4ebd4b9b84b690b71,
     type: 3}
 --- !u!114 &1585405521
 MonoBehaviour:
@@ -6723,8 +6723,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2121749478}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 46.819946, y: 101.535995, z: -807.8042}
+  m_LocalRotation: {x: 0.103569955, y: 0.03191874, z: 0.003325416, w: -0.9941044}
+  m_LocalPosition: {x: 46.94043, y: 101.46254, z: -805.0425}
   m_LocalScale: {x: 0.8760718, y: 0.22889476, z: 0.22889476}
   m_Children: []
   m_Father: {fileID: 1786819709}
@@ -7336,9 +7336,11 @@ MonoBehaviour:
   RotationSpeed: 60
   DownRotationCoefficient: 0.03
   MiddleRotationCoefficient: -0.1
-  UpRotationCoefficient: 0.05
+  UpRotationCoefficient: 0.06
   JumpSpeed: 150
   MaxEnergy: 100
+  MaxSpeedMultiplier: 2
+  MinSpeedMultiplier: 0.2
   AnimatonController: {fileID: 434025100718422460}
   JumpCurve:
     serializedVersion: 2
@@ -7364,15 +7366,15 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 0.5915822
       value: 0.13310242
-      inSlope: -0.7692056
-      outSlope: -0.7692056
+      inSlope: -0.6481988
+      outSlope: -0.6481988
       tangentMode: 136
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 0.9976899
-      value: -0.101296544
+      time: 0.9852082
+      value: 0.0013340712
       inSlope: 0
       outSlope: 0
       tangentMode: 136
@@ -7392,6 +7394,8 @@ MonoBehaviour:
   - {fileID: 614078301}
   - {fileID: 1372763072}
   SceneManagement: {fileID: 1243345019}
+  SpeedMultiplier: 0
+  Gravity: 0
 --- !u!1 &529041400964277638
 GameObject:
   m_ObjectHideFlags: 0
