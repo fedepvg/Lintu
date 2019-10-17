@@ -167,7 +167,6 @@ public class BirdController : MonoBehaviour
         Rigi.velocity += new Vector3(0f, Gravity, 0f);
         Rigi.velocity += Vector3.right * -ZAxisRotation * HorizontalSpeed * Time.fixedDeltaTime;
         Rigi.MoveRotation(DestRotation);
-        Debug.Log(Rigi.velocity.magnitude);
     }
 
     void UpdateBlobShadowPosition()
