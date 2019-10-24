@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Floor
+  - Wall
   layers:
   - Default
   - TransparentFX
@@ -18,8 +19,8 @@ TagManager:
   - Finish
   - Floor
   - Player
-  - 
-  - 
+  - Wall
+  - Obstacle
   - 
   - 
   - 
