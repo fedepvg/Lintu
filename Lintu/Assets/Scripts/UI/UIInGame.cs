@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
+using UnityEngine.InputSystem;
 
 public class UIInGame : MonoBehaviour
 {
@@ -20,7 +22,7 @@ public class UIInGame : MonoBehaviour
 
     private void Start()
     {
-        Player.PlayerInput.Gameplay.Pause.performed += ctx => SetPauseState();
+        GameManager.Instance.GameInput.Gameplay.Pause.performed += ctx => SetPauseState();
     }
 
     void Update()
@@ -36,12 +38,25 @@ public class UIInGame : MonoBehaviour
             EnergyBarFill.color = Color.red;
         else
             EnergyBarFill.color = Color.white;
+
+        if (!EventSystem.current.currentSelectedGameObject && PausePanel.activeSelf && GameManager.Instance.GameInput.UI.Navigate.triggered)
+            EventSystem.current.SetSelectedGameObject(EventSystem.current.firstSelectedGameObject);
+        else if (!PausePanel.activeSelf)
+            EventSystem.current.SetSelectedGameObject(null);
     }
 
     public void SetPauseState()
     {
-        PausePanel.SetActive(!PausePanel.activeSelf);
-        Player.enabled = !Player.enabled;
-        Time.timeScale = Mathf.Abs(Time.timeScale - 1);
+        if (PausePanel)
+        {
+            PausePanel.SetActive(!PausePanel.activeSelf);
+            if(PausePanel.activeSelf)
+                EventSystem.current.SetSelectedGameObject(EventSystem.current.firstSelectedGameObject);
+            else
+                EventSystem.current.SetSelectedGameObject(null);
+
+            Player.enabled = !Player.enabled;
+            Time.timeScale = Mathf.Abs(Time.timeScale - 1);
+        }
     }
 }

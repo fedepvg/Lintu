@@ -5,16 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviourSingleton<GameManager>
 {
-    private void Update()
+    public PlayerControls GameInput;
+
+    public override void Awake()
     {
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            RestartLevel();
-        }
+        base.Awake();
+        GameInput = new PlayerControls();
+        GameInput.Enable();
     }
 
-    public static void RestartLevel()
+    public PlayerControls Input
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        get { return GameInput; }
     }
 }

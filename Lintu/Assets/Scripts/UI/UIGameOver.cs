@@ -1,18 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class UIMenu : MonoBehaviour
+public class UIGameOver : MonoBehaviour
 {
-    public Text VersionText;
-
-    void Start()
-    {
-        VersionText.text = "v" + Application.version;
-    }
-
     private void Update()
     {
         if (!EventSystem.current.currentSelectedGameObject && GameManager.Instance.GameInput.UI.Navigate.triggered)

@@ -56,13 +56,15 @@ public class BirdController : MonoBehaviour
 
     private void Awake()
     {
-        PlayerInput = new PlayerControls();
-        PlayerInput.Enable();
+        //PlayerInput = new PlayerControls();
+        //PlayerInput.Enable();
     }
 
     void Start()
     {
         Rigi = GetComponent<Rigidbody>();
+
+        PlayerInput = GameManager.Instance.GameInput;
 
         IsJumping = false;
 
