@@ -35,18 +35,18 @@ public class BirdController : MonoBehaviour
     public float Energy;
     public float JumpEnergy;
     public float EnergyLossCoefficient;
+    public PlayerControls PlayerInput;
     #endregion
 
     #region PrivateVariables
     Rigidbody Rigi;
-    FlyingControls PlayerInput;
     bool IsJumping;
     float XAxisFrameRotation;
     float ZAxisFrameRotation;
     float XAxisRotation;
     float ZAxisRotation;
     Quaternion DestRotation;
-    public float SpeedMultiplier;
+    float SpeedMultiplier;
     float Gravity;
     float JumpTimer;
     float JumpGravity;
@@ -54,13 +54,15 @@ public class BirdController : MonoBehaviour
     float rotationCoefficient;
     #endregion
 
-    // Start is called before the first frame update
+    private void Awake()
+    {
+        PlayerInput = new PlayerControls();
+        PlayerInput.Enable();
+    }
+
     void Start()
     {
         Rigi = GetComponent<Rigidbody>();
-
-        PlayerInput = new FlyingControls();
-        PlayerInput.Enable();
 
         IsJumping = false;
 

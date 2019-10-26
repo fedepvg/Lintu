@@ -10,12 +10,18 @@ public class UIInGame : MonoBehaviour
     public Slider EnergyBar;
     public Image EnergyBarFill;
     public BirdController Player;
+    public GameObject PausePanel;
     #endregion
 
     #region PrivateVariables
     float FloorDistance;
     float ActualEnergy;
     #endregion
+
+    private void Start()
+    {
+        Player.PlayerInput.Gameplay.Pause.performed += ctx => SetPauseState();
+    }
 
     void Update()
     {
@@ -30,5 +36,12 @@ public class UIInGame : MonoBehaviour
             EnergyBarFill.color = Color.red;
         else
             EnergyBarFill.color = Color.white;
+    }
+
+    public void SetPauseState()
+    {
+        PausePanel.SetActive(!PausePanel.activeSelf);
+        Player.enabled = !Player.enabled;
+        Time.timeScale = Mathf.Abs(Time.timeScale - 1);
     }
 }

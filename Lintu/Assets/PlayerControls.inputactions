@@ -1,5 +1,5 @@
 {
-    "name": "FlyingControls",
+    "name": "PlayerControls",
     "maps": [
         {
             "name": "Gameplay",
@@ -25,6 +25,14 @@
                     "name": "Jump",
                     "type": "Button",
                     "id": "444770ce-54dd-47ad-af7e-ecf05b90702d",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Pause",
+                    "type": "Button",
+                    "id": "84eaa7db-cc37-437b-81c9-4f6e1a56101c",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": ""
@@ -204,6 +212,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c7d05c3d-c043-4e9c-8a2a-4bad444ed0c7",
+                    "path": "<Gamepad>/start",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b37287b1-7e36-4985-87f0-2130feee0c25",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pause",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

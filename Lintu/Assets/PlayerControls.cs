@@ -1,17 +1,17 @@
-// GENERATED AUTOMATICALLY FROM 'Assets/FlyingControls.inputactions'
+// GENERATED AUTOMATICALLY FROM 'Assets/PlayerControls.inputactions'
 
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Utilities;
 
-public class FlyingControls : IInputActionCollection
+public class PlayerControls : IInputActionCollection
 {
     private InputActionAsset asset;
-    public FlyingControls()
+    public PlayerControls()
     {
         asset = InputActionAsset.FromJson(@"{
-    ""name"": ""FlyingControls"",
+    ""name"": ""PlayerControls"",
     ""maps"": [
         {
             ""name"": ""Gameplay"",
@@ -37,6 +37,14 @@ public class FlyingControls : IInputActionCollection
                     ""name"": ""Jump"",
                     ""type"": ""Button"",
                     ""id"": ""444770ce-54dd-47ad-af7e-ecf05b90702d"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Pause"",
+                    ""type"": ""Button"",
+                    ""id"": ""84eaa7db-cc37-437b-81c9-4f6e1a56101c"",
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """"
@@ -216,6 +224,28 @@ public class FlyingControls : IInputActionCollection
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c7d05c3d-c043-4e9c-8a2a-4bad444ed0c7"",
+                    ""path"": ""<Gamepad>/start"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b37287b1-7e36-4985-87f0-2130feee0c25"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pause"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -721,6 +751,7 @@ public class FlyingControls : IInputActionCollection
         m_Gameplay_Horizontal = m_Gameplay.FindAction("Horizontal", throwIfNotFound: true);
         m_Gameplay_Vertical = m_Gameplay.FindAction("Vertical", throwIfNotFound: true);
         m_Gameplay_Jump = m_Gameplay.FindAction("Jump", throwIfNotFound: true);
+        m_Gameplay_Pause = m_Gameplay.FindAction("Pause", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -736,7 +767,7 @@ public class FlyingControls : IInputActionCollection
         m_UI_TrackedDeviceSelect = m_UI.FindAction("TrackedDeviceSelect", throwIfNotFound: true);
     }
 
-    ~FlyingControls()
+    ~PlayerControls()
     {
         UnityEngine.Object.Destroy(asset);
     }
@@ -786,13 +817,15 @@ public class FlyingControls : IInputActionCollection
     private readonly InputAction m_Gameplay_Horizontal;
     private readonly InputAction m_Gameplay_Vertical;
     private readonly InputAction m_Gameplay_Jump;
+    private readonly InputAction m_Gameplay_Pause;
     public struct GameplayActions
     {
-        private FlyingControls m_Wrapper;
-        public GameplayActions(FlyingControls wrapper) { m_Wrapper = wrapper; }
+        private PlayerControls m_Wrapper;
+        public GameplayActions(PlayerControls wrapper) { m_Wrapper = wrapper; }
         public InputAction @Horizontal => m_Wrapper.m_Gameplay_Horizontal;
         public InputAction @Vertical => m_Wrapper.m_Gameplay_Vertical;
         public InputAction @Jump => m_Wrapper.m_Gameplay_Jump;
+        public InputAction @Pause => m_Wrapper.m_Gameplay_Pause;
         public InputActionMap Get() { return m_Wrapper.m_Gameplay; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -811,6 +844,9 @@ public class FlyingControls : IInputActionCollection
                 Jump.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnJump;
                 Jump.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnJump;
                 Jump.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnJump;
+                Pause.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnPause;
+                Pause.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnPause;
+                Pause.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnPause;
             }
             m_Wrapper.m_GameplayActionsCallbackInterface = instance;
             if (instance != null)
@@ -824,6 +860,9 @@ public class FlyingControls : IInputActionCollection
                 Jump.started += instance.OnJump;
                 Jump.performed += instance.OnJump;
                 Jump.canceled += instance.OnJump;
+                Pause.started += instance.OnPause;
+                Pause.performed += instance.OnPause;
+                Pause.canceled += instance.OnPause;
             }
         }
     }
@@ -845,8 +884,8 @@ public class FlyingControls : IInputActionCollection
     private readonly InputAction m_UI_TrackedDeviceSelect;
     public struct UIActions
     {
-        private FlyingControls m_Wrapper;
-        public UIActions(FlyingControls wrapper) { m_Wrapper = wrapper; }
+        private PlayerControls m_Wrapper;
+        public UIActions(PlayerControls wrapper) { m_Wrapper = wrapper; }
         public InputAction @Navigate => m_Wrapper.m_UI_Navigate;
         public InputAction @Submit => m_Wrapper.m_UI_Submit;
         public InputAction @Cancel => m_Wrapper.m_UI_Cancel;
@@ -946,6 +985,7 @@ public class FlyingControls : IInputActionCollection
         void OnHorizontal(InputAction.CallbackContext context);
         void OnVertical(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
+        void OnPause(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {

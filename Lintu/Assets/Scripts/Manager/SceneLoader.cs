@@ -5,17 +5,33 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
-    public void LoadGameplayScene()
+    public string ThisScene;
+    public string NextScene;
+    public string GameOverScene;
+    public string MenuScene;
+
+    public void ReloadScene()
     {
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene(ThisScene);
     }
+
+    public void LoadNextScene()
+    {
+        SceneManager.LoadScene(NextScene);
+    }
+
     public void LoadMenuScene()
     {
-        SceneManager.LoadScene("MenuScene");
+        SceneManager.LoadScene(MenuScene);
     }
     public void LoadGOScene()
     {
-        SceneManager.LoadScene("EndGameScene");
+        SceneManager.LoadScene(GameOverScene);
+    }
+
+    public void LoadTargetScene(string target)
+    {
+        SceneManager.LoadScene(target);
     }
 
     public void QuitGame()
