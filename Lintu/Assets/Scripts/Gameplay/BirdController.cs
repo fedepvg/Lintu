@@ -46,7 +46,7 @@ public class BirdController : MonoBehaviour
     float XAxisRotation;
     float ZAxisRotation;
     Quaternion DestRotation;
-    float SpeedMultiplier;
+    public float SpeedMultiplier;
     float Gravity;
     float JumpTimer;
     float JumpGravity;
@@ -84,7 +84,7 @@ public class BirdController : MonoBehaviour
     void Update()
     {
         #region Jump
-        if (PlayerInput.Gameplay.Jump.triggered && !IsJumping)
+        if (PlayerInput.Gameplay.Jump.triggered && !IsJumping && Energy > EnergyLossCoefficient)
         {
             IsJumping = true;
             AnimatonController.SetTrigger("Fly");
@@ -119,7 +119,7 @@ public class BirdController : MonoBehaviour
         #endregion
 
         #region MovementCalculations
-        if (XAxisRotation < 4f)
+        if (XAxisRotation < 4f && Energy > 0)
         {
             rotationCoefficient = DownRotationCoefficient;
             if (XAxisRotation > 0)

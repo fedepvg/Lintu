@@ -7,6 +7,6 @@ public class Mill : MonoBehaviour
     public float RotSpeed;
     void Update()
     {
-        transform.Rotate(new Vector3(0f, RotSpeed * Time.deltaTime, 0f));
+        transform.Rotate(Vector3.right * RotSpeed * Time.deltaTime);
     }
 }
