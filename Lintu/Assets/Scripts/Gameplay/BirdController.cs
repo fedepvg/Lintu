@@ -81,7 +81,7 @@ public class BirdController : MonoBehaviour
     void Update()
     {
         #region Jump
-        if (PlayerInput.Gameplay.Jump.triggered && !IsJumping && Energy > JumpEnergy)
+        if (PlayerInput.Gameplay.Jump.triggered && !IsJumping /*&& Energy > JumpEnergy*/)
         {
             IsJumping = true;
             AnimatonController.SetTrigger("Fly");
@@ -99,7 +99,7 @@ public class BirdController : MonoBehaviour
         else
         {
             JumpTimer = 0;
-            JumpGravity = 0f;
+            JumpGravity = 1f;
         }
         #endregion
 
@@ -132,11 +132,11 @@ public class BirdController : MonoBehaviour
             x = -ZAxisRotation * HorizontalSpeed * Time.deltaTime
         };
 
-        Gravity = BaseGravity / SpeedMultiplier + JumpGravity;
+        Gravity = BaseGravity / SpeedMultiplier;// + JumpGravity;
         #endregion
 
         //ENERGY-------------------------------------
-        Energy += 10 * Time.deltaTime;
+        Energy -= 2 * Time.deltaTime;
         Energy = Mathf.Clamp(Energy, 0, MaxEnergy);
 
         //FLOOR DISTANCE-------------------------------
@@ -157,7 +157,7 @@ public class BirdController : MonoBehaviour
 
     void FixedUpdate()
     {
-        Rigi.velocity = transform.forward * Speed * SpeedMultiplier;
+        Rigi.velocity = transform.forward * Speed * SpeedMultiplier * JumpGravity;
         Rigi.velocity += new Vector3(0f, Gravity, 0f);
         Rigi.velocity += Vector3.right * -ZAxisRotation * HorizontalSpeed * Time.fixedDeltaTime;
         Rigi.MoveRotation(DestRotation);
