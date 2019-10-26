@@ -31,6 +31,8 @@ public class BirdController : MonoBehaviour
     public Text FloorDistanceText;
     public GameObject []BlobShadows;
     public SceneLoader SceneManagement;
+    public float FloorDistance;
+    public float Energy;
     #endregion
 
     #region PrivateVariables
@@ -42,14 +44,12 @@ public class BirdController : MonoBehaviour
     float XAxisRotation;
     float ZAxisRotation;
     Quaternion DestRotation;
-    public float SpeedMultiplier;
-    public float Gravity;
+    float SpeedMultiplier;
+    float Gravity;
     float JumpTimer;
     float JumpGravity;
-    float Energy;
     float JumpEnergy = 20;
     const float FloorRayDistance = 300f;
-    float FloorDistance;
     float rotationCoefficient;
     #endregion
 
@@ -138,11 +138,6 @@ public class BirdController : MonoBehaviour
         //ENERGY-------------------------------------
         Energy += 10 * Time.deltaTime;
         Energy = Mathf.Clamp(Energy, 0, MaxEnergy);
-        EnergyBar.value = Energy;
-        if (Energy < 20)
-            EnergyBarFill.color = Color.red;
-        else
-            EnergyBarFill.color = Color.white;
 
         //FLOOR DISTANCE-------------------------------
         RaycastHit hit;
@@ -156,7 +151,6 @@ public class BirdController : MonoBehaviour
                 FloorDistance = hit.distance;
             }
         }
-        FloorDistanceText.text = FloorDistance.ToString("F2") + " mts.";
 
         UpdateBlobShadowPosition();
     }
