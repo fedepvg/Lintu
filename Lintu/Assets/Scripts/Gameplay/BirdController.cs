@@ -33,6 +33,8 @@ public class BirdController : MonoBehaviour
     public SceneLoader SceneManagement;
     public float FloorDistance;
     public float Energy;
+    public float JumpEnergy;
+    public float EnergyLossCoefficient;
     #endregion
 
     #region PrivateVariables
@@ -48,7 +50,6 @@ public class BirdController : MonoBehaviour
     float Gravity;
     float JumpTimer;
     float JumpGravity;
-    float JumpEnergy = 20;
     const float FloorRayDistance = 300f;
     float rotationCoefficient;
     #endregion
@@ -75,17 +76,18 @@ public class BirdController : MonoBehaviour
 
         SpeedMultiplier = 0.8f;
         Energy = MaxEnergy;
+
+        OrbBehaviour.OnOrbPickup = AddEnergy;
     }
 
     // Update is called once per frame
     void Update()
     {
         #region Jump
-        if (PlayerInput.Gameplay.Jump.triggered && !IsJumping /*&& Energy > JumpEnergy*/)
+        if (PlayerInput.Gameplay.Jump.triggered && !IsJumping)
         {
             IsJumping = true;
             AnimatonController.SetTrigger("Fly");
-            Energy -= JumpEnergy;
         }
 
         if (IsJumping)
@@ -95,11 +97,14 @@ public class BirdController : MonoBehaviour
 
             if (JumpTimer >= 1)
                 IsJumping = false;
+
+            JumpEnergy = JumpGravity + 1;
         }
         else
         {
             JumpTimer = 0;
             JumpGravity = 1f;
+            JumpEnergy = 1f;
         }
         #endregion
 
@@ -132,11 +137,11 @@ public class BirdController : MonoBehaviour
             x = -ZAxisRotation * HorizontalSpeed * Time.deltaTime
         };
 
-        Gravity = BaseGravity / SpeedMultiplier;// + JumpGravity;
+        Gravity = BaseGravity / SpeedMultiplier;
         #endregion
 
         //ENERGY-------------------------------------
-        Energy -= 2 * Time.deltaTime;
+        Energy -= EnergyLossCoefficient  * JumpEnergy * Time.deltaTime;
         Energy = Mathf.Clamp(Energy, 0, MaxEnergy);
 
         //FLOOR DISTANCE-------------------------------
@@ -169,6 +174,13 @@ public class BirdController : MonoBehaviour
         {
             BlobShadows[i].transform.position = transform.position;
         }
+    }
+
+    void AddEnergy(int energy)
+    {
+        Energy += energy;
+        if (Energy >= MaxEnergy)
+            Energy = MaxEnergy;
     }
 
     void OnCollisionEnter(Collision collision)
