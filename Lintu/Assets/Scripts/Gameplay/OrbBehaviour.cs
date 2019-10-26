@@ -17,8 +17,11 @@ public class OrbBehaviour : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (OnOrbPickup != null)
-            OnOrbPickup(EnergyRecovered);
-        Destroy(gameObject);
+        if (other.tag == "Player")
+        {
+            if (OnOrbPickup != null)
+                OnOrbPickup(EnergyRecovered);
+            Destroy(gameObject);
+        }
     }
 }

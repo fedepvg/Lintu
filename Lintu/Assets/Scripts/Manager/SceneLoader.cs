@@ -7,6 +7,7 @@ public class SceneLoader : MonoBehaviour
 {
     public string ThisScene;
     public string NextScene;
+    public string LastScene;
     public string GameOverScene;
     public string MenuScene;
 
@@ -18,6 +19,11 @@ public class SceneLoader : MonoBehaviour
     public void LoadNextScene()
     {
         SceneManager.LoadScene(NextScene);
+    }
+
+    public void LoadLastScene()
+    {
+        SceneManager.LoadScene(LastScene);
     }
 
     public void LoadMenuScene()
