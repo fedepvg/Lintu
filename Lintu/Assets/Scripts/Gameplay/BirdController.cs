@@ -219,12 +219,12 @@ public class BirdController : MonoBehaviour
             if (Rigi.velocity.x > 0)
             {
                 OffRightLimit = true;
-                OffLimitsSpeed = -100;
+                OffLimitsSpeed = -200;
             }
             else
             {
                 OffLeftLimit = true;
-                OffLimitsSpeed = 100;
+                OffLimitsSpeed = 200;
             }
         }
     }
