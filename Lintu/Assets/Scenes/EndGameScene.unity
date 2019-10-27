@@ -284,7 +284,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ThisScene: EndGameScene
   NextScene: MenuScene
-  LastScene: GameScene
+  LastScene: Level1
   GameOverScene: EndGameScene
   MenuScene: MenuScene
 --- !u!4 &254020303

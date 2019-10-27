@@ -120,130 +120,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &34014550
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 9062217408589599166, guid: dbb7018cf14c43d4a951fdf311cef417,
-        type: 3}
-      propertyPath: m_Name
-      value: CanvasLoader
-      objectReference: {fileID: 0}
-    - target: {fileID: 9062217408589599157, guid: dbb7018cf14c43d4a951fdf311cef417,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9062217408589599157, guid: dbb7018cf14c43d4a951fdf311cef417,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9062217408589599157, guid: dbb7018cf14c43d4a951fdf311cef417,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9062217408589599157, guid: dbb7018cf14c43d4a951fdf311cef417,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9062217408589599157, guid: dbb7018cf14c43d4a951fdf311cef417,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9062217408589599157, guid: dbb7018cf14c43d4a951fdf311cef417,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9062217408589599157, guid: dbb7018cf14c43d4a951fdf311cef417,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9062217408589599157, guid: dbb7018cf14c43d4a951fdf311cef417,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9062217408589599157, guid: dbb7018cf14c43d4a951fdf311cef417,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9062217408589599157, guid: dbb7018cf14c43d4a951fdf311cef417,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9062217408589599157, guid: dbb7018cf14c43d4a951fdf311cef417,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9062217408589599157, guid: dbb7018cf14c43d4a951fdf311cef417,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9062217408589599157, guid: dbb7018cf14c43d4a951fdf311cef417,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9062217408589599157, guid: dbb7018cf14c43d4a951fdf311cef417,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9062217408589599157, guid: dbb7018cf14c43d4a951fdf311cef417,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9062217408589599157, guid: dbb7018cf14c43d4a951fdf311cef417,
-        type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9062217408589599157, guid: dbb7018cf14c43d4a951fdf311cef417,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9062217408589599157, guid: dbb7018cf14c43d4a951fdf311cef417,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9062217408589599157, guid: dbb7018cf14c43d4a951fdf311cef417,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9062217408589599157, guid: dbb7018cf14c43d4a951fdf311cef417,
-        type: 3}
-      propertyPath: m_Pivot.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9062217408589599157, guid: dbb7018cf14c43d4a951fdf311cef417,
-        type: 3}
-      propertyPath: m_Pivot.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9062217409617057307, guid: dbb7018cf14c43d4a951fdf311cef417,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: dbb7018cf14c43d4a951fdf311cef417, type: 3}
 --- !u!1 &58152410
 GameObject:
   m_ObjectHideFlags: 0
@@ -321,8 +197,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 58152410}
-  m_LocalRotation: {x: 0.03976299, y: -0.039521158, z: 0.0030377856, w: -0.9984226}
-  m_LocalPosition: {x: 271.91565, y: 218.86763, z: -926.4723}
+  m_LocalRotation: {x: -0.11137804, y: -0.0019717151, z: -0.004930471, w: 0.993764}
+  m_LocalPosition: {x: 217.37111, y: 97.576904, z: -1230.0555}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -415,8 +291,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 73999189}
-  m_LocalRotation: {x: 0.03026472, y: -0.73393714, z: -0.025968641, w: -0.67804575}
-  m_LocalPosition: {x: 428.42575, y: -103.77457, z: -149.71887}
+  m_LocalRotation: {x: -0.08224254, y: 0.701303, z: 0.075269796, w: 0.7040914}
+  m_LocalPosition: {x: -583.5185, y: -508.07697, z: 32.09635}
   m_LocalScale: {x: 3.333334, y: 3.333333, z: 3.333334}
   m_Children: []
   m_Father: {fileID: 110240402}
@@ -836,8 +712,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 190379050}
-  m_LocalRotation: {x: 0.03026472, y: -0.73393714, z: -0.025968641, w: -0.67804575}
-  m_LocalPosition: {x: 428.42575, y: -103.77457, z: -149.71887}
+  m_LocalRotation: {x: -0.08224254, y: 0.701303, z: 0.075269796, w: 0.7040914}
+  m_LocalPosition: {x: -583.5185, y: -508.07697, z: 32.09635}
   m_LocalScale: {x: 3.333334, y: 3.333333, z: 3.333334}
   m_Children: []
   m_Father: {fileID: 110240402}
@@ -872,6 +748,10 @@ PrefabInstance:
     - target: {fileID: 100006, guid: b544816461f324e56a39767fdeb5b114, type: 3}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: b544816461f324e56a39767fdeb5b114, type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: b544816461f324e56a39767fdeb5b114, type: 3}
       propertyPath: m_Layer
@@ -1084,6 +964,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: b544816461f324e56a39767fdeb5b114, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: b544816461f324e56a39767fdeb5b114, type: 3}
       propertyPath: m_Layer
       value: 10
@@ -1173,6 +1057,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Molino_BaseRedondo_IK
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 5703986b22dbd544f847c591186babab,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: -2985933584109988023, guid: 5703986b22dbd544f847c591186babab,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3839675043739984471, guid: 5703986b22dbd544f847c591186babab,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5808637369092515436, guid: 5703986b22dbd544f847c591186babab,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5435591701551493022, guid: 5703986b22dbd544f847c591186babab,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 5703986b22dbd544f847c591186babab,
         type: 3}
@@ -1666,6 +1575,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: b544816461f324e56a39767fdeb5b114, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: b544816461f324e56a39767fdeb5b114, type: 3}
       propertyPath: m_Layer
       value: 10
@@ -1831,8 +1744,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 355470854}
-  m_LocalRotation: {x: 0.03026472, y: -0.73393714, z: -0.025968641, w: -0.67804575}
-  m_LocalPosition: {x: 428.42575, y: -103.77457, z: -149.71887}
+  m_LocalRotation: {x: -0.08224254, y: 0.701303, z: 0.075269796, w: 0.7040914}
+  m_LocalPosition: {x: -583.5185, y: -508.07697, z: 32.09635}
   m_LocalScale: {x: 3.333334, y: 3.333333, z: 3.333334}
   m_Children: []
   m_Father: {fileID: 110240402}
@@ -2306,8 +2219,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 470617774}
-  m_LocalRotation: {x: 0.03026472, y: -0.73393714, z: -0.025968641, w: -0.67804575}
-  m_LocalPosition: {x: 428.42575, y: -103.77457, z: -149.71887}
+  m_LocalRotation: {x: -0.08224254, y: 0.701303, z: 0.075269796, w: 0.7040914}
+  m_LocalPosition: {x: -583.5185, y: -508.07697, z: 32.09635}
   m_LocalScale: {x: 3.333334, y: 3.333333, z: 3.333334}
   m_Children: []
   m_Father: {fileID: 110240402}
@@ -2332,7 +2245,7 @@ GameObject:
   m_Component:
   - component: {fileID: 474888709}
   - component: {fileID: 474888708}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Finish
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2670,8 +2583,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 576758161}
-  m_LocalRotation: {x: 0.03026472, y: -0.73393714, z: -0.025968641, w: -0.67804575}
-  m_LocalPosition: {x: 428.42575, y: -103.77457, z: -149.71887}
+  m_LocalRotation: {x: -0.08224254, y: 0.701303, z: 0.075269796, w: 0.7040914}
+  m_LocalPosition: {x: -583.5185, y: -508.07697, z: 32.09635}
   m_LocalScale: {x: 3.333334, y: 3.333333, z: 3.333334}
   m_Children: []
   m_Father: {fileID: 110240402}
@@ -2755,6 +2668,50 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 100.000015, y: 6.123234e-15, z: 100.00003}
   m_Center: {x: 0.0002746582, y: 6.352746e-22, z: -0.00004005432}
+--- !u!1 &658946927
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 658946928}
+  - component: {fileID: 658946929}
+  m_Layer: 0
+  m_Name: GameObject (2)
+  m_TagString: CityLimit
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &658946928
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 658946927}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 17000, z: -18026}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6415062174908485803}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &658946929
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 658946927}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 398943.25, y: 16626.775, z: 29452.781}
+  m_Center: {x: 4793.885, y: 450.8438, z: -2219.5652}
 --- !u!1 &674751090
 GameObject:
   m_ObjectHideFlags: 0
@@ -2965,7 +2922,7 @@ GameObject:
   - component: {fileID: 791075507}
   m_Layer: 0
   m_Name: Obstacles
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3228,8 +3185,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 802033011}
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -343.66663, y: -169.19992, z: -85.3333}
+  m_LocalRotation: {x: 0.053489488, y: -0.70644593, z: -0.04701599, w: -0.7041751}
+  m_LocalPosition: {x: 2746.7104, y: -943.1304, z: 759.6639}
   m_LocalScale: {x: 3.333334, y: 3.333333, z: 3.333334}
   m_Children: []
   m_Father: {fileID: 110240402}
@@ -3312,8 +3269,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 841664512}
-  m_LocalRotation: {x: 0.03026472, y: -0.73393714, z: -0.025968641, w: -0.67804575}
-  m_LocalPosition: {x: 428.42575, y: -103.77457, z: -149.71887}
+  m_LocalRotation: {x: -0.08224254, y: 0.701303, z: 0.075269796, w: 0.7040914}
+  m_LocalPosition: {x: -583.5185, y: -508.07697, z: 32.09635}
   m_LocalScale: {x: 3.333334, y: 3.333333, z: 3.333334}
   m_Children: []
   m_Father: {fileID: 110240402}
@@ -3528,8 +3485,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 881415918}
-  m_LocalRotation: {x: 0.03026472, y: -0.73393714, z: -0.025968641, w: -0.67804575}
-  m_LocalPosition: {x: 428.42575, y: -103.77457, z: -149.71887}
+  m_LocalRotation: {x: -0.08224254, y: 0.701303, z: 0.075269796, w: 0.7040914}
+  m_LocalPosition: {x: -583.5185, y: -508.07697, z: 32.09635}
   m_LocalScale: {x: 3.333334, y: 3.333333, z: 3.333334}
   m_Children: []
   m_Father: {fileID: 110240402}
@@ -3759,6 +3716,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 931688356}
   m_CullTransparentMesh: 0
+--- !u!1 &938066240
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 938066241}
+  - component: {fileID: 938066242}
+  m_Layer: 0
+  m_Name: GameObject (1)
+  m_TagString: CityLimit
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &938066241
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 938066240}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 17000, z: 28640.723}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6415062174908485803}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &938066242
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 938066240}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 398943.25, y: 16626.775, z: 29452.781}
+  m_Center: {x: 4793.885, y: 450.8438, z: -2219.5652}
 --- !u!1 &950382049 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 5de7a2d0343bf274ca2b9a1f37ff9aec,
@@ -3892,8 +3893,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 961013423}
-  m_LocalRotation: {x: 0.03026472, y: -0.73393714, z: -0.025968641, w: -0.67804575}
-  m_LocalPosition: {x: 428.42575, y: -103.77457, z: -149.71887}
+  m_LocalRotation: {x: -0.08224254, y: 0.701303, z: 0.075269796, w: 0.7040914}
+  m_LocalPosition: {x: -583.5185, y: -508.07697, z: 32.09635}
   m_LocalScale: {x: 3.333334, y: 3.333333, z: 3.333334}
   m_Children: []
   m_Father: {fileID: 110240402}
@@ -3999,6 +4000,10 @@ PrefabInstance:
     - target: {fileID: 100006, guid: b544816461f324e56a39767fdeb5b114, type: 3}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: b544816461f324e56a39767fdeb5b114, type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: b544816461f324e56a39767fdeb5b114, type: 3}
       propertyPath: m_Layer
@@ -4131,6 +4136,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: puente final flor
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 5de7a2d0343bf274ca2b9a1f37ff9aec,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6267832713710706808, guid: 5de7a2d0343bf274ca2b9a1f37ff9aec,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: -8946120960862327987, guid: 5de7a2d0343bf274ca2b9a1f37ff9aec,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: -3211906275130605721, guid: 5de7a2d0343bf274ca2b9a1f37ff9aec,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 470679063803411100, guid: 5de7a2d0343bf274ca2b9a1f37ff9aec,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 5de7a2d0343bf274ca2b9a1f37ff9aec,
         type: 3}
@@ -4362,11 +4392,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1178928577}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 175129, y: -8307.805, z: 17250}
+  m_LocalPosition: {x: 0, y: 0, z: 28640.723}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1220893305636382756}
-  m_RootOrder: 74
+  m_Father: {fileID: 6415062174908485803}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1178928579
 BoxCollider:
@@ -4606,6 +4636,10 @@ PrefabInstance:
     - target: {fileID: 100006, guid: b544816461f324e56a39767fdeb5b114, type: 3}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: b544816461f324e56a39767fdeb5b114, type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: b544816461f324e56a39767fdeb5b114, type: 3}
       propertyPath: m_Layer
@@ -4957,6 +4991,10 @@ PrefabInstance:
     - target: {fileID: 100006, guid: b544816461f324e56a39767fdeb5b114, type: 3}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: b544816461f324e56a39767fdeb5b114, type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: b544816461f324e56a39767fdeb5b114, type: 3}
       propertyPath: m_Layer
@@ -5380,6 +5418,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: b544816461f324e56a39767fdeb5b114, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: b544816461f324e56a39767fdeb5b114, type: 3}
       propertyPath: m_Layer
       value: 10
@@ -5536,6 +5578,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: b544816461f324e56a39767fdeb5b114, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: b544816461f324e56a39767fdeb5b114, type: 3}
       propertyPath: m_Layer
       value: 10
@@ -5628,6 +5674,10 @@ PrefabInstance:
     - target: {fileID: 100006, guid: b544816461f324e56a39767fdeb5b114, type: 3}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: b544816461f324e56a39767fdeb5b114, type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: b544816461f324e56a39767fdeb5b114, type: 3}
       propertyPath: m_Layer
@@ -5742,17 +5792,33 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: b544816461f324e56a39767fdeb5b114, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: b544816461f324e56a39767fdeb5b114, type: 3}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: b544816461f324e56a39767fdeb5b114, type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: b544816461f324e56a39767fdeb5b114, type: 3}
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: b544816461f324e56a39767fdeb5b114, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: b544816461f324e56a39767fdeb5b114, type: 3}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: b544816461f324e56a39767fdeb5b114, type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: b544816461f324e56a39767fdeb5b114, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5814,9 +5880,17 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: b544816461f324e56a39767fdeb5b114, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 100014, guid: b544816461f324e56a39767fdeb5b114, type: 3}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100014, guid: b544816461f324e56a39767fdeb5b114, type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b544816461f324e56a39767fdeb5b114, type: 3}
@@ -5982,8 +6056,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1600548367}
-  m_LocalRotation: {x: 0.03976299, y: -0.039521158, z: 0.0030377856, w: -0.9984226}
-  m_LocalPosition: {x: 271.91565, y: 218.86763, z: -926.4723}
+  m_LocalRotation: {x: -0.11137804, y: -0.0019717151, z: -0.004930471, w: 0.993764}
+  m_LocalPosition: {x: 217.37111, y: 97.576904, z: -1230.0555}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6063,8 +6137,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1643005186}
-  m_LocalRotation: {x: 0.03026472, y: -0.73393714, z: -0.025968641, w: -0.67804575}
-  m_LocalPosition: {x: 428.42575, y: -103.77457, z: -149.71887}
+  m_LocalRotation: {x: -0.08224254, y: 0.701303, z: 0.075269796, w: 0.7040914}
+  m_LocalPosition: {x: -583.5185, y: -508.07697, z: 32.09635}
   m_LocalScale: {x: 3.333334, y: 3.333333, z: 3.333334}
   m_Children: []
   m_Father: {fileID: 110240402}
@@ -6147,8 +6221,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1653574443}
-  m_LocalRotation: {x: 0.03026472, y: -0.73393714, z: -0.025968641, w: -0.67804575}
-  m_LocalPosition: {x: 428.42575, y: -103.77457, z: -149.71887}
+  m_LocalRotation: {x: -0.08224254, y: 0.701303, z: 0.075269796, w: 0.7040914}
+  m_LocalPosition: {x: -583.5185, y: -508.07697, z: 32.09635}
   m_LocalScale: {x: 3.333334, y: 3.333333, z: 3.333334}
   m_Children: []
   m_Father: {fileID: 110240402}
@@ -6196,6 +6270,10 @@ PrefabInstance:
     - target: {fileID: 100006, guid: b544816461f324e56a39767fdeb5b114, type: 3}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: b544816461f324e56a39767fdeb5b114, type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: b544816461f324e56a39767fdeb5b114, type: 3}
       propertyPath: m_Layer
@@ -6428,6 +6506,10 @@ PrefabInstance:
     - target: {fileID: 100006, guid: b544816461f324e56a39767fdeb5b114, type: 3}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: b544816461f324e56a39767fdeb5b114, type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: b544816461f324e56a39767fdeb5b114, type: 3}
       propertyPath: m_Layer
@@ -6803,8 +6885,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1773893719}
-  m_LocalRotation: {x: 0.03976299, y: -0.039521158, z: 0.0030377856, w: -0.9984226}
-  m_LocalPosition: {x: 271.91565, y: 218.86763, z: -926.4723}
+  m_LocalRotation: {x: -0.11137804, y: -0.0019717151, z: -0.004930471, w: 0.993764}
+  m_LocalPosition: {x: 217.37111, y: 97.576904, z: -1230.0555}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6975,6 +7057,10 @@ PrefabInstance:
     - target: {fileID: 100006, guid: b544816461f324e56a39767fdeb5b114, type: 3}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: b544816461f324e56a39767fdeb5b114, type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: b544816461f324e56a39767fdeb5b114, type: 3}
       propertyPath: m_Layer
@@ -7239,6 +7325,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: puente final flor (1)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 5de7a2d0343bf274ca2b9a1f37ff9aec,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6267832713710706808, guid: 5de7a2d0343bf274ca2b9a1f37ff9aec,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: -8946120960862327987, guid: 5de7a2d0343bf274ca2b9a1f37ff9aec,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: -3211906275130605721, guid: 5de7a2d0343bf274ca2b9a1f37ff9aec,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 470679063803411100, guid: 5de7a2d0343bf274ca2b9a1f37ff9aec,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 5de7a2d0343bf274ca2b9a1f37ff9aec,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7376,6 +7487,10 @@ PrefabInstance:
     - target: {fileID: 100006, guid: b544816461f324e56a39767fdeb5b114, type: 3}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: b544816461f324e56a39767fdeb5b114, type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: b544816461f324e56a39767fdeb5b114, type: 3}
       propertyPath: m_Layer
@@ -7689,8 +7804,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2132262131}
-  m_LocalRotation: {x: 0, y: -0.000000029802319, z: 0, w: 1}
-  m_LocalPosition: {x: 252.6, y: 199.24002, z: -1158.1}
+  m_LocalRotation: {x: -0.11137804, y: -0.0019717151, z: -0.004930471, w: 0.993764}
+  m_LocalPosition: {x: 217.37111, y: 97.576904, z: -1230.0555}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -7729,7 +7844,7 @@ GameObject:
   - component: {fileID: 46703987333445940}
   m_Layer: 0
   m_Name: polySurface746
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7836,7 +7951,7 @@ GameObject:
   - component: {fileID: 70040886056410359}
   m_Layer: 0
   m_Name: polySurface682
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7877,7 +7992,7 @@ GameObject:
   - component: {fileID: 98099725553908796}
   m_Layer: 0
   m_Name: polySurface673
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7910,7 +8025,7 @@ GameObject:
   - component: {fileID: 111402111841945559}
   m_Layer: 0
   m_Name: pCube205
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8202,7 +8317,7 @@ GameObject:
   - component: {fileID: 201775341910178014}
   m_Layer: 0
   m_Name: polySurface765
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8348,7 +8463,7 @@ GameObject:
   - component: {fileID: 314453878655312385}
   m_Layer: 0
   m_Name: polySurface730
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8448,7 +8563,7 @@ GameObject:
   - component: {fileID: 364401061425359972}
   m_Layer: 13
   m_Name: polySurface654
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8551,7 +8666,7 @@ GameObject:
   - component: {fileID: 410253789661656796}
   m_Layer: 0
   m_Name: polySurface657
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8822,13 +8937,28 @@ GameObject:
   - component: {fileID: 5574627101627795218}
   - component: {fileID: 1670445903683193835}
   - component: {fileID: 4259936849291341350}
+  - component: {fileID: 508584331192911440}
   m_Layer: 0
   m_Name: Casa_chica_A_015
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &508584331192911440
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 508584331192911439}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -9147731637708489027, guid: 6ba524dc1d2fc4843b18e5dc298f73ac, type: 3}
 --- !u!1 &508751289519038725
 GameObject:
   m_ObjectHideFlags: 0
@@ -8843,7 +8973,7 @@ GameObject:
   - component: {fileID: 508751289519038726}
   m_Layer: 0
   m_Name: polySurface648
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9769,7 +9899,7 @@ GameObject:
   - component: {fileID: 676320475838857106}
   m_Layer: 0
   m_Name: polySurface672
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9874,7 +10004,7 @@ GameObject:
   - component: {fileID: 771029384159313600}
   m_Layer: 0
   m_Name: polySurface745
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9907,7 +10037,7 @@ GameObject:
   - component: {fileID: 776815222811056298}
   m_Layer: 0
   m_Name: polySurface139
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10132,7 +10262,7 @@ GameObject:
   - component: {fileID: 881698425620396051}
   m_Layer: 0
   m_Name: polySurface722
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10488,13 +10618,28 @@ GameObject:
   - component: {fileID: 8568220294964461355}
   - component: {fileID: 3095570209467289546}
   - component: {fileID: 3842783485894661815}
+  - component: {fileID: 1090435544748921191}
   m_Layer: 0
   m_Name: Casa_chica_A_026
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &1090435544748921191
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1090435544748921190}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 384992193306095615, guid: 6ba524dc1d2fc4843b18e5dc298f73ac, type: 3}
 --- !u!4 &1091100779128863910
 Transform:
   m_ObjectHideFlags: 0
@@ -10631,7 +10776,7 @@ GameObject:
   - component: {fileID: 1113316261515687972}
   m_Layer: 0
   m_Name: polySurface686
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10925,7 +11070,6 @@ Transform:
   - {fileID: 1011682719288468416}
   - {fileID: 7648894893663489952}
   - {fileID: 7409090446774161315}
-  - {fileID: 1178928578}
   - {fileID: 6415062174908485803}
   m_Father: {fileID: 1656224948870839898}
   m_RootOrder: 3
@@ -11006,7 +11150,7 @@ GameObject:
   - component: {fileID: 1268483653324849379}
   m_Layer: 0
   m_Name: pCube185
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11344,13 +11488,28 @@ GameObject:
   - component: {fileID: 1552622456379074076}
   - component: {fileID: 7983546098234350049}
   - component: {fileID: 8304101700068636492}
+  - component: {fileID: 1403135261647856450}
   m_Layer: 0
   m_Name: Casa_chica_A_022
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &1403135261647856450
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403135261647856449}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -4511166322480045994, guid: 6ba524dc1d2fc4843b18e5dc298f73ac, type: 3}
 --- !u!1 &1405723449768344388
 GameObject:
   m_ObjectHideFlags: 0
@@ -11383,7 +11542,7 @@ GameObject:
   - component: {fileID: 1421453108779369465}
   m_Layer: 0
   m_Name: pCube223
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11468,7 +11627,7 @@ GameObject:
   - component: {fileID: 1447518739342468215}
   m_Layer: 0
   m_Name: polySurface724
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11501,7 +11660,7 @@ GameObject:
   - component: {fileID: 1476351844809390939}
   m_Layer: 0
   m_Name: pCube161
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11664,7 +11823,7 @@ GameObject:
   - component: {fileID: 1536136591153659082}
   m_Layer: 0
   m_Name: pCube216
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11744,13 +11903,28 @@ GameObject:
   - component: {fileID: 5213510793196192510}
   - component: {fileID: 4522199945799528587}
   - component: {fileID: 7437973985647168049}
+  - component: {fileID: 1559624201858629977}
   m_Layer: 0
   m_Name: Casa_chica_A_012
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &1559624201858629977
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559624201858629976}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -7137266681164588435, guid: 6ba524dc1d2fc4843b18e5dc298f73ac, type: 3}
 --- !u!33 &1561446065023390159
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -11788,13 +11962,28 @@ GameObject:
   - component: {fileID: 9123880617014390787}
   - component: {fileID: 8818151983869218361}
   - component: {fileID: 2571070480611836374}
+  - component: {fileID: 1573110318029722369}
   m_Layer: 0
   m_Name: Casa_chica_A_031
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &1573110318029722369
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1573110318029722368}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 2000525929180424215, guid: 6ba524dc1d2fc4843b18e5dc298f73ac, type: 3}
 --- !u!33 &1578612070279855682
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -11818,7 +12007,7 @@ GameObject:
   - component: {fileID: 1597279882650710902}
   m_Layer: 0
   m_Name: polySurface661
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11869,7 +12058,7 @@ GameObject:
   - component: {fileID: 1609224728742420547}
   m_Layer: 0
   m_Name: polySurface655
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11938,7 +12127,7 @@ GameObject:
   - component: {fileID: 1637188142292967569}
   m_Layer: 0
   m_Name: polySurface753
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12014,7 +12203,7 @@ GameObject:
   - component: {fileID: 1658629292038687421}
   m_Layer: 0
   m_Name: polySurface685
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12373,7 +12562,7 @@ GameObject:
   - component: {fileID: 1759568576285765899}
   m_Layer: 0
   m_Name: polySurface669
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12458,7 +12647,7 @@ GameObject:
   - component: {fileID: 1842807950295190497}
   m_Layer: 0
   m_Name: polySurface698
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12631,13 +12820,28 @@ GameObject:
   - component: {fileID: 4662333880901892159}
   - component: {fileID: 6765425750027741626}
   - component: {fileID: 3551598153345886150}
+  - component: {fileID: 1945503863409376693}
   m_Layer: 0
   m_Name: Casa_chica_A_025
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &1945503863409376693
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1945503863409376692}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 6012361636498989978, guid: 6ba524dc1d2fc4843b18e5dc298f73ac, type: 3}
 --- !u!4 &1955252495108524798
 Transform:
   m_ObjectHideFlags: 0
@@ -12663,13 +12867,28 @@ GameObject:
   - component: {fileID: 2648802377588592341}
   - component: {fileID: 3386857172571853637}
   - component: {fileID: 4202336129590317207}
+  - component: {fileID: 1962597690814920298}
   m_Layer: 0
   m_Name: Casa_chica_A_027
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &1962597690814920298
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1962597690814920297}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -4121633761157302384, guid: 6ba524dc1d2fc4843b18e5dc298f73ac, type: 3}
 --- !u!1 &1962989122347885874
 GameObject:
   m_ObjectHideFlags: 0
@@ -12684,7 +12903,7 @@ GameObject:
   - component: {fileID: 1962989122347885875}
   m_Layer: 0
   m_Name: polySurface741
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12731,7 +12950,7 @@ GameObject:
   - component: {fileID: 1976979259728085184}
   m_Layer: 0
   m_Name: polySurface721
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12761,13 +12980,28 @@ GameObject:
   - component: {fileID: 2798394580745013239}
   - component: {fileID: 1065717779331947204}
   - component: {fileID: 3761688218929623387}
+  - component: {fileID: 1979052637206609219}
   m_Layer: 0
   m_Name: Casa_chica_A_04
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &1979052637206609219
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1979052637206609218}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4943333762746153722, guid: 6ba524dc1d2fc4843b18e5dc298f73ac, type: 3}
 --- !u!4 &2012198990973149590
 Transform:
   m_ObjectHideFlags: 0
@@ -12895,13 +13129,28 @@ GameObject:
   - component: {fileID: 7722679641414215758}
   - component: {fileID: 6511951695431665206}
   - component: {fileID: 9051153375445035532}
+  - component: {fileID: 2028379965136238616}
   m_Layer: 0
   m_Name: Casa_chica_A_036
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &2028379965136238616
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028379965136238615}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -197342686939487456, guid: 6ba524dc1d2fc4843b18e5dc298f73ac, type: 3}
 --- !u!33 &2037087071978544867
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -13084,7 +13333,7 @@ GameObject:
   - component: {fileID: 2106899716414129869}
   m_Layer: 0
   m_Name: polySurface663
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13233,7 +13482,7 @@ GameObject:
   - component: {fileID: 2187136201457966667}
   m_Layer: 0
   m_Name: polySurface727
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13366,13 +13615,28 @@ GameObject:
   - component: {fileID: 4518266305500966226}
   - component: {fileID: 8953258527586573429}
   - component: {fileID: 5043556784990549381}
+  - component: {fileID: 2213092675837635256}
   m_Layer: 0
   m_Name: Casa_chica_A_08
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &2213092675837635256
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2213092675837635255}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 7584111236566191114, guid: 6ba524dc1d2fc4843b18e5dc298f73ac, type: 3}
 --- !u!33 &2218757850167713769
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -13455,7 +13719,7 @@ GameObject:
   - component: {fileID: 2232781624140362100}
   m_Layer: 0
   m_Name: polySurface667
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13570,7 +13834,7 @@ GameObject:
   - component: {fileID: 2286864252972683315}
   m_Layer: 0
   m_Name: polySurface687
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13697,7 +13961,7 @@ GameObject:
   - component: {fileID: 2324687290817936488}
   m_Layer: 0
   m_Name: polySurface747
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13765,13 +14029,28 @@ GameObject:
   - component: {fileID: 6074912759950401192}
   - component: {fileID: 5007508547460629607}
   - component: {fileID: 4644737602450032698}
+  - component: {fileID: 2352640145064121289}
   m_Layer: 0
   m_Name: Casa_chica_A_033
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &2352640145064121289
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2352640145064121288}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -6133099726121038830, guid: 6ba524dc1d2fc4843b18e5dc298f73ac, type: 3}
 --- !u!4 &2352919970199426671
 Transform:
   m_ObjectHideFlags: 0
@@ -13852,13 +14131,28 @@ GameObject:
   - component: {fileID: 3175158671221046358}
   - component: {fileID: 8754085220271884955}
   - component: {fileID: 4512050952996933834}
+  - component: {fileID: 2367825300186725959}
   m_Layer: 0
   m_Name: Casa_chica_A_017
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &2367825300186725959
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2367825300186725958}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -9007650098687800521, guid: 6ba524dc1d2fc4843b18e5dc298f73ac, type: 3}
 --- !u!33 &2370930262661095502
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -13934,7 +14228,7 @@ GameObject:
   - component: {fileID: 2382568468689078616}
   m_Layer: 0
   m_Name: polySurface659
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14074,7 +14368,7 @@ GameObject:
   - component: {fileID: 2403812836834501071}
   m_Layer: 0
   m_Name: polySurface751
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14197,7 +14491,7 @@ GameObject:
   - component: {fileID: 2428777188420245995}
   m_Layer: 0
   m_Name: polySurface679
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14348,7 +14642,7 @@ GameObject:
   - component: {fileID: 2452560867646877848}
   m_Layer: 0
   m_Name: polySurface662
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14381,7 +14675,7 @@ GameObject:
   - component: {fileID: 2453146435963857729}
   m_Layer: 0
   m_Name: pCube207
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14428,7 +14722,7 @@ GameObject:
   - component: {fileID: 2477558357493479814}
   m_Layer: 0
   m_Name: polySurface726
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14533,7 +14827,7 @@ GameObject:
   - component: {fileID: 2515080607863296690}
   m_Layer: 0
   m_Name: polySurface740
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14580,7 +14874,7 @@ GameObject:
   - component: {fileID: 2525589905508084112}
   m_Layer: 0
   m_Name: polySurface738
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14725,7 +15019,7 @@ GameObject:
   - component: {fileID: 2590129053605149966}
   m_Layer: 0
   m_Name: pCube208
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14774,7 +15068,7 @@ GameObject:
   - component: {fileID: 2603606253561832956}
   m_Layer: 0
   m_Name: polySurface699
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14823,7 +15117,7 @@ GameObject:
   - component: {fileID: 2628146701560307799}
   m_Layer: 0
   m_Name: polySurface734
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14856,7 +15150,7 @@ GameObject:
   - component: {fileID: 2630000946309918295}
   m_Layer: 0
   m_Name: polySurface640
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15182,7 +15476,7 @@ GameObject:
   - component: {fileID: 2883340182363289679}
   m_Layer: 0
   m_Name: polySurface764
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15229,13 +15523,28 @@ GameObject:
   - component: {fileID: 2225070680261774221}
   - component: {fileID: 8129323659662349904}
   - component: {fileID: 4194367033375559046}
+  - component: {fileID: 2896548723903564318}
   m_Layer: 0
   m_Name: Casa_chica_A_018
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &2896548723903564318
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2896548723903564317}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -7824776513147921625, guid: 6ba524dc1d2fc4843b18e5dc298f73ac, type: 3}
 --- !u!33 &2910006483081667079
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -15255,13 +15564,28 @@ GameObject:
   - component: {fileID: 3784905387337658260}
   - component: {fileID: 2721489725881472203}
   - component: {fileID: 5758513922358111663}
+  - component: {fileID: 2911396738189638435}
   m_Layer: 0
   m_Name: Casa_chica_A_05
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &2911396738189638435
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2911396738189638434}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 1346985906323398614, guid: 6ba524dc1d2fc4843b18e5dc298f73ac, type: 3}
 --- !u!4 &2920290301527274483
 Transform:
   m_ObjectHideFlags: 0
@@ -15509,7 +15833,7 @@ GameObject:
   - component: {fileID: 2978440989524487544}
   m_Layer: 0
   m_Name: polySurface697
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15539,13 +15863,28 @@ GameObject:
   - component: {fileID: 3216298369676416727}
   - component: {fileID: 5686101219011127230}
   - component: {fileID: 8118321921360145914}
+  - component: {fileID: 2997690155363928526}
   m_Layer: 0
   m_Name: Casa_chica_A_021
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &2997690155363928526
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2997690155363928525}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 2625169171703409293, guid: 6ba524dc1d2fc4843b18e5dc298f73ac, type: 3}
 --- !u!4 &3003521930646547161
 Transform:
   m_ObjectHideFlags: 0
@@ -15734,7 +16073,7 @@ GameObject:
   - component: {fileID: 3113712009319051979}
   m_Layer: 0
   m_Name: polySurface695
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15764,13 +16103,28 @@ GameObject:
   - component: {fileID: 2565095684935715526}
   - component: {fileID: 166346526902919543}
   - component: {fileID: 1274276066432550726}
+  - component: {fileID: 3138580175637759794}
   m_Layer: 0
   m_Name: Casa_chica_A_034
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &3138580175637759794
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3138580175637759793}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 104718414718905328, guid: 6ba524dc1d2fc4843b18e5dc298f73ac, type: 3}
 --- !u!4 &3160804831661855138
 Transform:
   m_ObjectHideFlags: 0
@@ -15845,7 +16199,7 @@ GameObject:
   - component: {fileID: 3188974384693540110}
   m_Layer: 0
   m_Name: pCube212
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15896,7 +16250,7 @@ GameObject:
   - component: {fileID: 3205229797345585032}
   m_Layer: 0
   m_Name: polySurface664
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15943,7 +16297,7 @@ GameObject:
   - component: {fileID: 3240223717001330390}
   m_Layer: 0
   m_Name: polySurface649
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16090,7 +16444,7 @@ GameObject:
   - component: {fileID: 3255830610855493523}
   m_Layer: 0
   m_Name: polySurface693
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16239,7 +16593,7 @@ GameObject:
   - component: {fileID: 2952849426372012345}
   m_Layer: 0
   m_Name: Casas_chicas_AB_pointLight1
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16258,7 +16612,7 @@ GameObject:
   - component: {fileID: 3363702794097596653}
   m_Layer: 0
   m_Name: pCube206
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16291,7 +16645,7 @@ GameObject:
   - component: {fileID: 3368891705373661907}
   m_Layer: 0
   m_Name: pCube204
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16488,7 +16842,7 @@ GameObject:
   - component: {fileID: 3433060877407123680}
   m_Layer: 0
   m_Name: pCube220
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16563,7 +16917,7 @@ GameObject:
   - component: {fileID: 3472178915465739162}
   m_Layer: 0
   m_Name: polySurface761
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16641,7 +16995,7 @@ GameObject:
   - component: {fileID: 3505575744882674703}
   m_Layer: 0
   m_Name: polySurface674
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16712,7 +17066,7 @@ GameObject:
   - component: {fileID: 3523693992093150127}
   m_Layer: 0
   m_Name: polySurface744
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16997,7 +17351,7 @@ GameObject:
   - component: {fileID: 3633961285440336471}
   m_Layer: 0
   m_Name: polySurface748
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17030,7 +17384,7 @@ GameObject:
   - component: {fileID: 3645761120724763663}
   m_Layer: 0
   m_Name: pCube225
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17063,7 +17417,7 @@ GameObject:
   - component: {fileID: 3649864217448956512}
   m_Layer: 0
   m_Name: polySurface668
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17154,7 +17508,7 @@ GameObject:
   - component: {fileID: 3692872124524967440}
   m_Layer: 0
   m_Name: polySurface743
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17196,7 +17550,7 @@ GameObject:
   - component: {fileID: 3702136719173970550}
   m_Layer: 0
   m_Name: polySurface756
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17246,7 +17600,7 @@ GameObject:
   - component: {fileID: 3707131348698813167}
   m_Layer: 0
   m_Name: pCube162
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17388,13 +17742,28 @@ GameObject:
   - component: {fileID: 2439921679543881156}
   - component: {fileID: 2760892543101603434}
   - component: {fileID: 4940505407829081212}
+  - component: {fileID: 3745936238572983806}
   m_Layer: 0
   m_Name: Casa_chica_A_06
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &3745936238572983806
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3745936238572983805}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -6691554995036026682, guid: 6ba524dc1d2fc4843b18e5dc298f73ac, type: 3}
 --- !u!23 &3761688218929623387
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17447,7 +17816,7 @@ GameObject:
   - component: {fileID: 3763457257122863895}
   m_Layer: 0
   m_Name: polySurface739
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17532,7 +17901,7 @@ GameObject:
   - component: {fileID: 3772645838750214483}
   m_Layer: 0
   m_Name: polySurface671
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17617,7 +17986,7 @@ GameObject:
   - component: {fileID: 3813799941758307097}
   m_Layer: 0
   m_Name: polySurface690
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17647,13 +18016,28 @@ GameObject:
   - component: {fileID: 450769574054255045}
   - component: {fileID: 1218321712502318618}
   - component: {fileID: 2025543912641433533}
+  - component: {fileID: 3818322256652704089}
   m_Layer: 0
   m_Name: Casa_chica_A_030
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &3818322256652704089
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3818322256652704088}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -3157902081587954709, guid: 6ba524dc1d2fc4843b18e5dc298f73ac, type: 3}
 --- !u!33 &3832172480320699593
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -17694,7 +18078,7 @@ GameObject:
   - component: {fileID: 3841926285019207177}
   m_Layer: 0
   m_Name: polySurface694
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17765,7 +18149,7 @@ GameObject:
   - component: {fileID: 3843413907776954182}
   m_Layer: 0
   m_Name: pCube213
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17795,13 +18179,28 @@ GameObject:
   - component: {fileID: 8571393232983225296}
   - component: {fileID: 1549408072949945471}
   - component: {fileID: 2292961176589553790}
+  - component: {fileID: 3853412753765118967}
   m_Layer: 0
   m_Name: Casa_chica_A_010
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &3853412753765118967
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3853412753765118966}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -1524089442845322010, guid: 6ba524dc1d2fc4843b18e5dc298f73ac, type: 3}
 --- !u!23 &3855499676445910348
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17998,7 +18397,7 @@ GameObject:
   - component: {fileID: 3931356979268755773}
   m_Layer: 0
   m_Name: pCube215
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18091,7 +18490,7 @@ GameObject:
   - component: {fileID: 3964796569776781773}
   m_Layer: 0
   m_Name: pCube211
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18153,13 +18552,28 @@ GameObject:
   - component: {fileID: 7890424065842741660}
   - component: {fileID: 3586082060512458832}
   - component: {fileID: 147390997560378161}
+  - component: {fileID: 4012246219965118785}
   m_Layer: 0
   m_Name: Casa_chica_A_011
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &4012246219965118785
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4012246219965118784}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -3920994676139374951, guid: 6ba524dc1d2fc4843b18e5dc298f73ac, type: 3}
 --- !u!1 &4022340577411757312
 GameObject:
   m_ObjectHideFlags: 0
@@ -18417,7 +18831,7 @@ GameObject:
   - component: {fileID: 4112221625946943442}
   m_Layer: 0
   m_Name: polySurface760
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18639,7 +19053,7 @@ GameObject:
   - component: {fileID: 4182201066951368960}
   m_Layer: 0
   m_Name: polySurface720
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18951,7 +19365,7 @@ GameObject:
   - component: {fileID: 4371466001415911718}
   m_Layer: 0
   m_Name: polySurface763
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19036,13 +19450,28 @@ GameObject:
   - component: {fileID: 8583198840034417257}
   - component: {fileID: 7322594782799668565}
   - component: {fileID: 7820944742833489587}
+  - component: {fileID: 4410416078341369566}
   m_Layer: 0
   m_Name: Casa_chica_A_020
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &4410416078341369566
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4410416078341369565}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -6970835156144502623, guid: 6ba524dc1d2fc4843b18e5dc298f73ac, type: 3}
 --- !u!1 &4414888499269279238
 GameObject:
   m_ObjectHideFlags: 0
@@ -19113,7 +19542,7 @@ GameObject:
   - component: {fileID: 4435877498576901129}
   m_Layer: 0
   m_Name: polySurface642
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19216,7 +19645,7 @@ GameObject:
   - component: {fileID: 4480056259075206023}
   m_Layer: 0
   m_Name: polySurface691
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19405,7 +19834,7 @@ GameObject:
   - component: {fileID: 4518477816651808999}
   m_Layer: 0
   m_Name: polySurface678
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19531,7 +19960,7 @@ GameObject:
   - component: {fileID: 4544205444900205933}
   m_Layer: 13
   m_Name: polySurface652
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19582,7 +20011,7 @@ GameObject:
   - component: {fileID: 4547050129559367712}
   m_Layer: 0
   m_Name: polySurface755
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20249,13 +20678,28 @@ GameObject:
   - component: {fileID: 8037405058589832018}
   - component: {fileID: 7537215971921583091}
   - component: {fileID: 6260808549505653239}
+  - component: {fileID: 4802478328645027144}
   m_Layer: 0
   m_Name: Casa_chica_A_032
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &4802478328645027144
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4802478328645027143}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -3134603084361950173, guid: 6ba524dc1d2fc4843b18e5dc298f73ac, type: 3}
 --- !u!1 &4837160110007962309
 GameObject:
   m_ObjectHideFlags: 0
@@ -20270,7 +20714,7 @@ GameObject:
   - component: {fileID: 4837160110007962310}
   m_Layer: 0
   m_Name: polySurface732
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20452,7 +20896,7 @@ GameObject:
   - component: {fileID: 4942141669948418898}
   m_Layer: 0
   m_Name: polySurface660
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20601,7 +21045,7 @@ GameObject:
   - component: {fileID: 4982581544623605227}
   m_Layer: 0
   m_Name: polySurface754
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20681,6 +21125,135 @@ Transform:
   m_Father: {fileID: 791075507}
   m_RootOrder: 129
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &5039269213569573300
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 9062217408589599166, guid: dbb7018cf14c43d4a951fdf311cef417,
+        type: 3}
+      propertyPath: m_Name
+      value: CanvasLoader
+      objectReference: {fileID: 0}
+    - target: {fileID: 9062217408589599166, guid: dbb7018cf14c43d4a951fdf311cef417,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9062217408589599157, guid: dbb7018cf14c43d4a951fdf311cef417,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9062217408589599157, guid: dbb7018cf14c43d4a951fdf311cef417,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9062217408589599157, guid: dbb7018cf14c43d4a951fdf311cef417,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9062217408589599157, guid: dbb7018cf14c43d4a951fdf311cef417,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9062217408589599157, guid: dbb7018cf14c43d4a951fdf311cef417,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9062217408589599157, guid: dbb7018cf14c43d4a951fdf311cef417,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9062217408589599157, guid: dbb7018cf14c43d4a951fdf311cef417,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9062217408589599157, guid: dbb7018cf14c43d4a951fdf311cef417,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9062217408589599157, guid: dbb7018cf14c43d4a951fdf311cef417,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9062217408589599157, guid: dbb7018cf14c43d4a951fdf311cef417,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9062217408589599157, guid: dbb7018cf14c43d4a951fdf311cef417,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9062217408589599157, guid: dbb7018cf14c43d4a951fdf311cef417,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9062217408589599157, guid: dbb7018cf14c43d4a951fdf311cef417,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9062217408589599157, guid: dbb7018cf14c43d4a951fdf311cef417,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9062217408589599157, guid: dbb7018cf14c43d4a951fdf311cef417,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9062217408589599157, guid: dbb7018cf14c43d4a951fdf311cef417,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9062217408589599157, guid: dbb7018cf14c43d4a951fdf311cef417,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9062217408589599157, guid: dbb7018cf14c43d4a951fdf311cef417,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9062217408589599157, guid: dbb7018cf14c43d4a951fdf311cef417,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9062217408589599157, guid: dbb7018cf14c43d4a951fdf311cef417,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9062217408589599157, guid: dbb7018cf14c43d4a951fdf311cef417,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9062217409617057307, guid: dbb7018cf14c43d4a951fdf311cef417,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: dbb7018cf14c43d4a951fdf311cef417, type: 3}
 --- !u!33 &5043444969589524451
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -20738,13 +21311,28 @@ GameObject:
   - component: {fileID: 7739546539752718794}
   - component: {fileID: 1052409964359808000}
   - component: {fileID: 6064065511001944332}
+  - component: {fileID: 5045787512089454945}
   m_Layer: 0
   m_Name: Casa_chica_A_01
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &5045787512089454945
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5045787512089454944}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4484892739892670383, guid: 6ba524dc1d2fc4843b18e5dc298f73ac, type: 3}
 --- !u!23 &5051640158267688605
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20828,13 +21416,28 @@ GameObject:
   - component: {fileID: 6325511938447539924}
   - component: {fileID: 8471185128694311200}
   - component: {fileID: 629252078761742159}
+  - component: {fileID: 5092259828443733477}
   m_Layer: 0
   m_Name: Casa_chica_A_024
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &5092259828443733477
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5092259828443733476}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 3362243501233483179, guid: 6ba524dc1d2fc4843b18e5dc298f73ac, type: 3}
 --- !u!4 &5096405786176619939
 Transform:
   m_ObjectHideFlags: 0
@@ -21163,7 +21766,7 @@ GameObject:
   - component: {fileID: 4040308267735517084}
   m_Layer: 0
   m_Name: Casas_chicas_AB_pointLight2
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21358,7 +21961,7 @@ GameObject:
   - component: {fileID: 5402913981862652642}
   m_Layer: 0
   m_Name: pCube224
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21641,7 +22244,7 @@ GameObject:
   - component: {fileID: 5516354710771350915}
   m_Layer: 0
   m_Name: pCube222
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21690,7 +22293,7 @@ GameObject:
   - component: {fileID: 5532784525891857545}
   m_Layer: 0
   m_Name: polySurface729
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21851,7 +22454,7 @@ GameObject:
   - component: {fileID: 5701639272033295946}
   m_Layer: 0
   m_Name: pCube152
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21884,7 +22487,7 @@ GameObject:
   - component: {fileID: 5715884142147677883}
   m_Layer: 0
   m_Name: polySurface742
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21917,7 +22520,7 @@ GameObject:
   - component: {fileID: 5720317099855318550}
   m_Layer: 0
   m_Name: pCube217
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22023,13 +22626,28 @@ GameObject:
   - component: {fileID: 9084836608386856937}
   - component: {fileID: 2596530669391196039}
   - component: {fileID: 3524102714696272735}
+  - component: {fileID: 5748236662826908593}
   m_Layer: 0
   m_Name: Casa_chica_A_035
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &5748236662826908593
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5748236662826908592}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 6723269381460185507, guid: 6ba524dc1d2fc4843b18e5dc298f73ac, type: 3}
 --- !u!23 &5751230260935110753
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22167,7 +22785,7 @@ GameObject:
   - component: {fileID: 5785053255312975327}
   m_Layer: 0
   m_Name: polySurface758
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22331,7 +22949,7 @@ GameObject:
   - component: {fileID: 5842479792231083148}
   m_Layer: 0
   m_Name: polySurface719
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22546,7 +23164,7 @@ GameObject:
   - component: {fileID: 5882314809154499574}
   m_Layer: 0
   m_Name: polySurface696
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22593,7 +23211,7 @@ GameObject:
   - component: {fileID: 5896833428479780376}
   m_Layer: 0
   m_Name: pCube218
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22631,13 +23249,28 @@ GameObject:
   - component: {fileID: 369551662159459755}
   - component: {fileID: 5016814595364195514}
   - component: {fileID: 4607669343601483686}
+  - component: {fileID: 5912124899688699613}
   m_Layer: 0
   m_Name: Casa_chica_A_016
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &5912124899688699613
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5912124899688699612}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 3235231327613440054, guid: 6ba524dc1d2fc4843b18e5dc298f73ac, type: 3}
 --- !u!33 &5920479631195709252
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -23034,7 +23667,7 @@ GameObject:
   - component: {fileID: 6043920806191028901}
   m_Layer: 0
   m_Name: polySurface675
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23186,7 +23819,7 @@ GameObject:
   - component: {fileID: 6077923161978255234}
   m_Layer: 0
   m_Name: polySurface759
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23274,7 +23907,7 @@ GameObject:
   - component: {fileID: 6113429523137993353}
   m_Layer: 0
   m_Name: pCube219
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23361,7 +23994,7 @@ GameObject:
   - component: {fileID: 6182163154499598762}
   m_Layer: 0
   m_Name: pCube221
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23395,7 +24028,7 @@ GameObject:
   - component: {fileID: 6189473639084345684}
   m_Layer: 0
   m_Name: polySurface658
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23442,13 +24075,28 @@ GameObject:
   - component: {fileID: 142208003841581802}
   - component: {fileID: 2181137531212843622}
   - component: {fileID: 2028221176347336112}
+  - component: {fileID: 6202096579978983514}
   m_Layer: 0
   m_Name: Casa_chica_A_02
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &6202096579978983514
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6202096579978983513}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -8450681175283831653, guid: 6ba524dc1d2fc4843b18e5dc298f73ac, type: 3}
 --- !u!4 &6214536081643845810
 Transform:
   m_ObjectHideFlags: 0
@@ -23523,7 +24171,7 @@ GameObject:
   - component: {fileID: 6249836397634179123}
   m_Layer: 0
   m_Name: polySurface718
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23591,13 +24239,28 @@ GameObject:
   - component: {fileID: 7962462910721064741}
   - component: {fileID: 56760555538023568}
   - component: {fileID: 827952547088782433}
+  - component: {fileID: 6263137702210600359}
   m_Layer: 0
   m_Name: Casa_chica_A_03
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &6263137702210600359
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6263137702210600358}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -3140063978799708801, guid: 6ba524dc1d2fc4843b18e5dc298f73ac, type: 3}
 --- !u!23 &6278879637502650892
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23664,7 +24327,7 @@ GameObject:
   - component: {fileID: 6293198536334015634}
   m_Layer: 0
   m_Name: polySurface591
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23838,7 +24501,7 @@ GameObject:
   - component: {fileID: 6367170154488423750}
   m_Layer: 0
   m_Name: polySurface757
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23926,7 +24589,7 @@ GameObject:
   - component: {fileID: 6402924888901460999}
   m_Layer: 0
   m_Name: polySurface750
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24007,9 +24670,12 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 175129.05, y: -8307.805, z: -11390.723}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1178928578}
+  - {fileID: 938066241}
+  - {fileID: 658946928}
   m_Father: {fileID: 1220893305636382756}
-  m_RootOrder: 75
+  m_RootOrder: 74
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &6415149302292866668
 Transform:
@@ -24057,7 +24723,7 @@ GameObject:
   - component: {fileID: 6422766633001907831}
   m_Layer: 0
   m_Name: polySurface145
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24090,7 +24756,7 @@ GameObject:
   - component: {fileID: 6429487230230090634}
   m_Layer: 0
   m_Name: polySurface683
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24249,7 +24915,7 @@ GameObject:
   - component: {fileID: 6481461386753636581}
   m_Layer: 0
   m_Name: polySurface592
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24348,7 +25014,7 @@ GameObject:
   - component: {fileID: 6591897337899775829}
   m_Layer: 0
   m_Name: polySurface692
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24445,7 +25111,7 @@ GameObject:
   - component: {fileID: 6639901733473449694}
   m_Layer: 0
   m_Name: polySurface598
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24493,7 +25159,7 @@ GameObject:
   - component: {fileID: 6644081693494893910}
   m_Layer: 13
   m_Name: polySurface633
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24611,7 +25277,7 @@ GameObject:
   - component: {fileID: 6726005477843037548}
   m_Layer: 0
   m_Name: polySurface752
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24644,7 +25310,7 @@ GameObject:
   - component: {fileID: 6741830263008276228}
   m_Layer: 0
   m_Name: polySurface737
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24848,13 +25514,28 @@ GameObject:
   - component: {fileID: 8353170481674258460}
   - component: {fileID: 2061000771637454694}
   - component: {fileID: 3539159647739684775}
+  - component: {fileID: 6860951821890728022}
   m_Layer: 0
   m_Name: Casa_chica_A_029
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &6860951821890728022
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6860951821890728021}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 6686118328042469611, guid: 6ba524dc1d2fc4843b18e5dc298f73ac, type: 3}
 --- !u!33 &6872210784965555286
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -25099,7 +25780,7 @@ GameObject:
   - component: {fileID: 7047561902422433167}
   m_Layer: 0
   m_Name: pCube173
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25424,7 +26105,7 @@ GameObject:
   - component: {fileID: 7222951095323947180}
   m_Layer: 0
   m_Name: pCube203
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25569,7 +26250,7 @@ GameObject:
   - component: {fileID: 7255590603347675158}
   m_Layer: 0
   m_Name: pCube214
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25824,7 +26505,7 @@ GameObject:
   - component: {fileID: 7331838180398559720}
   m_Layer: 0
   m_Name: polySurface676
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25959,7 +26640,7 @@ GameObject:
   - component: {fileID: 7376445394857183827}
   m_Layer: 0
   m_Name: polySurface736
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26509,7 +27190,7 @@ GameObject:
   - component: {fileID: 7586605697697798510}
   m_Layer: 0
   m_Name: polySurface762
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26587,7 +27268,7 @@ GameObject:
   - component: {fileID: 7623239846500088146}
   m_Layer: 0
   m_Name: polySurface666
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26620,7 +27301,7 @@ GameObject:
   - component: {fileID: 7635463801614375967}
   m_Layer: 0
   m_Name: polySurface723
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26778,13 +27459,28 @@ GameObject:
   - component: {fileID: 5294652693937154545}
   - component: {fileID: 7880442023554215888}
   - component: {fileID: 9191724056851834855}
+  - component: {fileID: 7754450510805203821}
   m_Layer: 0
   m_Name: Casa_chica_A_09
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &7754450510805203821
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7754450510805203820}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -7224682894611148321, guid: 6ba524dc1d2fc4843b18e5dc298f73ac, type: 3}
 --- !u!33 &7777211341413067361
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -27067,7 +27763,7 @@ GameObject:
   - component: {fileID: 7931538381959733531}
   m_Layer: 0
   m_Name: polySurface135
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27111,13 +27807,28 @@ GameObject:
   - component: {fileID: 3087389395469833706}
   - component: {fileID: 7390995911462023432}
   - component: {fileID: 1150517303628920757}
+  - component: {fileID: 7945091426729023922}
   m_Layer: 0
   m_Name: Casa_chica_A_028
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &7945091426729023922
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7945091426729023921}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -1016935705715308138, guid: 6ba524dc1d2fc4843b18e5dc298f73ac, type: 3}
 --- !u!4 &7954656500536270355
 Transform:
   m_ObjectHideFlags: 0
@@ -27198,7 +27909,7 @@ GameObject:
   - component: {fileID: 7974627702148137052}
   m_Layer: 0
   m_Name: polySurface735
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27250,13 +27961,28 @@ GameObject:
   - component: {fileID: 2175864160798089740}
   - component: {fileID: 7158592449263444453}
   - component: {fileID: 3861310982169051499}
+  - component: {fileID: 8004422570000893455}
   m_Layer: 0
   m_Name: Casa_chica_A_07
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &8004422570000893455
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8004422570000893454}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4228107946196600113, guid: 6ba524dc1d2fc4843b18e5dc298f73ac, type: 3}
 --- !u!23 &8005245254958226852
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -27361,7 +28087,7 @@ GameObject:
   - component: {fileID: 8032032065319836595}
   m_Layer: 0
   m_Name: polySurface728
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27408,7 +28134,7 @@ GameObject:
   - component: {fileID: 8042336626318609026}
   m_Layer: 0
   m_Name: polySurface665
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27651,7 +28377,7 @@ GameObject:
   - component: {fileID: 8187204136971766871}
   m_Layer: 0
   m_Name: polySurface680
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27873,13 +28599,28 @@ GameObject:
   - component: {fileID: 5233457681281727225}
   - component: {fileID: 7909507704909377112}
   - component: {fileID: 5724862264980270376}
+  - component: {fileID: 8296711026393636562}
   m_Layer: 0
   m_Name: Casa_chica_A_013
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &8296711026393636562
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8296711026393636561}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -7663160186080538930, guid: 6ba524dc1d2fc4843b18e5dc298f73ac, type: 3}
 --- !u!4 &8303668922186088854
 Transform:
   m_ObjectHideFlags: 0
@@ -28254,7 +28995,7 @@ GameObject:
   - component: {fileID: 8449608854059537981}
   m_Layer: 0
   m_Name: polySurface677
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28287,7 +29028,7 @@ GameObject:
   - component: {fileID: 8454849091075761279}
   m_Layer: 0
   m_Name: polySurface731
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28480,7 +29221,7 @@ GameObject:
   - component: {fileID: 8505459785311051684}
   m_Layer: 0
   m_Name: polySurface670
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28848,7 +29589,7 @@ GameObject:
   - component: {fileID: 8639600033685240311}
   m_Layer: 13
   m_Name: polySurface653
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29246,13 +29987,28 @@ GameObject:
   - component: {fileID: 4881114178944308383}
   - component: {fileID: 5864310438638857122}
   - component: {fileID: 6070528697081824740}
+  - component: {fileID: 8745248816624622840}
   m_Layer: 0
   m_Name: Casa_chica_A_019
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &8745248816624622840
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8745248816624622839}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -1087891943895799326, guid: 6ba524dc1d2fc4843b18e5dc298f73ac, type: 3}
 --- !u!33 &8754085220271884955
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -29275,7 +30031,7 @@ GameObject:
   - component: {fileID: 8758157048257702631}
   m_Layer: 0
   m_Name: polySurface681
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29356,7 +30112,7 @@ GameObject:
   - component: {fileID: 8775065712324063028}
   m_Layer: 0
   m_Name: polySurface639
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29435,7 +30191,7 @@ GameObject:
   - component: {fileID: 8791885934701994580}
   m_Layer: 0
   m_Name: pCube186
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29852,7 +30608,7 @@ GameObject:
   - component: {fileID: 8974469647653323769}
   m_Layer: 0
   m_Name: pCube210
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29923,7 +30679,7 @@ GameObject:
   - component: {fileID: 8993533734926357977}
   m_Layer: 0
   m_Name: polySurface725
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30002,7 +30758,7 @@ GameObject:
   - component: {fileID: 9003613972292549875}
   m_Layer: 0
   m_Name: polySurface733
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30057,7 +30813,7 @@ GameObject:
   - component: {fileID: 9035369652935440521}
   m_Layer: 0
   m_Name: polySurface644
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30101,13 +30857,28 @@ GameObject:
   - component: {fileID: 7942214651411723967}
   - component: {fileID: 3410786397384280234}
   - component: {fileID: 8257190777747129824}
+  - component: {fileID: 9049720274551389758}
   m_Layer: 0
   m_Name: Casa_chica_A_014
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &9049720274551389758
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9049720274551389757}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -7523688436644553387, guid: 6ba524dc1d2fc4843b18e5dc298f73ac, type: 3}
 --- !u!23 &9051153375445035532
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -30157,13 +30928,28 @@ GameObject:
   - component: {fileID: 8085233749128278311}
   - component: {fileID: 1823611563346195856}
   - component: {fileID: 586127192504132317}
+  - component: {fileID: 9077030187733196065}
   m_Layer: 0
   m_Name: Casa_chica_A_023
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &9077030187733196065
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9077030187733196064}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 2089706029944692664, guid: 6ba524dc1d2fc4843b18e5dc298f73ac, type: 3}
 --- !u!4 &9084836608386856937
 Transform:
   m_ObjectHideFlags: 0
@@ -30192,7 +30978,7 @@ GameObject:
   - component: {fileID: 9092469972937709994}
   m_Layer: 0
   m_Name: polySurface684
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30333,7 +31119,7 @@ GameObject:
   - component: {fileID: 9167000272042942848}
   m_Layer: 0
   m_Name: polySurface749
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30366,7 +31152,7 @@ GameObject:
   - component: {fileID: 9169351247294884209}
   m_Layer: 0
   m_Name: polySurface641
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

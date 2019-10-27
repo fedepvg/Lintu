@@ -52,13 +52,10 @@ public class BirdController : MonoBehaviour
     float JumpGravity;
     const float FloorRayDistance = 300f;
     float rotationCoefficient;
+    bool OffLeftLimit = false;
+    bool OffRightLimit = false;
+    float OffLimitsSpeed;
     #endregion
-
-    private void Awake()
-    {
-        //PlayerInput = new PlayerControls();
-        //PlayerInput.Enable();
-    }
 
     void Start()
     {
@@ -113,11 +110,28 @@ public class BirdController : MonoBehaviour
         #endregion
 
         #region Rotation
+        if (OffLeftLimit)
+            ZAxisFrameRotation = -3;
+        else if (OffRightLimit)
+            ZAxisFrameRotation = 3;
+
         XAxisRotation += XAxisFrameRotation * RotationSpeed * Time.deltaTime;
         ZAxisRotation += ZAxisFrameRotation * RotationSpeed * Time.deltaTime;
 
         XAxisRotation = Mathf.Clamp(XAxisRotation, MinXRotation, MaxXRotation);
-        ZAxisRotation = Mathf.Clamp(ZAxisRotation, MinZRotation, MaxZRotation);
+
+        if(OffLeftLimit)
+            ZAxisRotation = Mathf.Clamp(ZAxisRotation, 0, MaxZRotation);
+        else if(OffRightLimit)
+            ZAxisRotation = Mathf.Clamp(ZAxisRotation, MinZRotation, 0);
+        else
+            ZAxisRotation = Mathf.Clamp(ZAxisRotation, MinZRotation, MaxZRotation);
+
+        if (ZAxisRotation == 0)
+        {
+            OffRightLimit = false;
+            OffLeftLimit = false;
+        }
 
         DestRotation = Quaternion.Euler(XAxisRotation, 0f, ZAxisRotation);
         #endregion
@@ -168,7 +182,10 @@ public class BirdController : MonoBehaviour
     {
         Rigi.velocity = transform.forward * Speed * SpeedMultiplier * JumpGravity;
         Rigi.velocity += new Vector3(0f, Gravity, 0f);
-        Rigi.velocity += Vector3.right * -ZAxisRotation * HorizontalSpeed * Time.fixedDeltaTime;
+        if (!OffLeftLimit && !OffRightLimit)
+            Rigi.velocity += Vector3.right * -ZAxisRotation * HorizontalSpeed * Time.fixedDeltaTime;
+        else
+            Rigi.velocity += Vector3.right * OffLimitsSpeed * Time.fixedDeltaTime;
         Rigi.MoveRotation(DestRotation);
     }
 
@@ -189,6 +206,26 @@ public class BirdController : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        SceneManagement.LoadGOScene(false);
+        if (collision.gameObject.tag == "Wall" || collision.gameObject.tag == "Obstacle" || collision.gameObject.tag == "Floor")
+            SceneManagement.LoadGOScene(false);
+        else if (collision.gameObject.tag == "Finish")
+            SceneManagement.LoadNextScene(true);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "CityLimit")
+        {
+            if (Rigi.velocity.x > 0)
+            {
+                OffRightLimit = true;
+                OffLimitsSpeed = -100;
+            }
+            else
+            {
+                OffLeftLimit = true;
+                OffLimitsSpeed = 100;
+            }
+        }
     }
 }
