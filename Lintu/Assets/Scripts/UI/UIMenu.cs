@@ -8,7 +8,7 @@ public class UIMenu : MonoBehaviour
 {
     public Text VersionText;
 
-    void Start()
+    private void Start()
     {
         VersionText.text = "v" + Application.version;
     }
@@ -18,4 +18,6 @@ public class UIMenu : MonoBehaviour
         if (!EventSystem.current.currentSelectedGameObject && GameManager.Instance.GameInput.UI.Navigate.triggered)
             EventSystem.current.SetSelectedGameObject(EventSystem.current.firstSelectedGameObject);
     }
+
+
 }

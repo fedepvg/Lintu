@@ -30,9 +30,20 @@ public class SceneLoader : MonoBehaviour
     {
         LoaderManager.Instance.LoadScene(MenuScene, fakeLoad);
     }
+
     public void LoadGOScene(bool fakeLoad)
     {
         LoaderManager.Instance.LoadScene(GameOverScene, fakeLoad);
+    }
+
+    public void LoadTargetSceneWithFake(string target)
+    {
+        LoaderManager.Instance.LoadScene(target, true);
+    }
+    
+    public void LoadTargetScene(string target)
+    {
+        LoaderManager.Instance.LoadScene(target, false);
     }
 
     public void QuitGame()
