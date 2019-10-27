@@ -5,20 +5,19 @@ using UnityEngine.SceneManagement;
 public class LoaderManager : MonoBehaviourSingleton<LoaderManager>
 {
     public float LoadingProgress;
-    public bool FakeLoad;
-    public float TimeLoading;
-    public float MinTimeToLoad = 2;
-    public void LoadScene(string sceneName)
+    public float MinTimeToLoad;
+
+    float TimeLoading;
+    
+    public void LoadScene(string target, bool fakeLoad)
     {
-        UILoadingScreen.Instance.SetVisible(true);
-        if (FakeLoad)
+        if (fakeLoad)
         {
-            StartCoroutine(AsynchronousLoadWithFake(sceneName));  
+            UILoadingScreen.Instance.SetVisible(true);
+            StartCoroutine(AsynchronousLoadWithFake(target));
         }
         else
-        {
-            StartCoroutine(AsynchronousLoad(sceneName));    
-        }
+            SceneManager.LoadScene(target);
     }
 
     IEnumerator AsynchronousLoad(string scene)

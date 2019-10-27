@@ -11,33 +11,28 @@ public class SceneLoader : MonoBehaviour
     public string GameOverScene;
     public string MenuScene;
 
-    public void ReloadScene()
+    public void ReloadScene(bool fakeLoad)
     {
-        SceneManager.LoadScene(ThisScene);
+        LoaderManager.Instance.LoadScene(ThisScene, fakeLoad);
     }
 
-    public void LoadNextScene()
+    public void LoadNextScene(bool fakeLoad)
     {
-        SceneManager.LoadScene(NextScene);
+        LoaderManager.Instance.LoadScene(NextScene, fakeLoad);
     }
 
-    public void LoadLastScene()
+    public void LoadLastScene(bool fakeLoad)
     {
-        SceneManager.LoadScene(LastScene);
+        LoaderManager.Instance.LoadScene(LastScene, fakeLoad);
     }
 
-    public void LoadMenuScene()
+    public void LoadMenuScene(bool fakeLoad)
     {
-        SceneManager.LoadScene(MenuScene);
+        LoaderManager.Instance.LoadScene(MenuScene, fakeLoad);
     }
-    public void LoadGOScene()
+    public void LoadGOScene(bool fakeLoad)
     {
-        SceneManager.LoadScene(GameOverScene);
-    }
-
-    public void LoadTargetScene(string target)
-    {
-        SceneManager.LoadScene(target);
+        LoaderManager.Instance.LoadScene(GameOverScene, fakeLoad);
     }
 
     public void QuitGame()

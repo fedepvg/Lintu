@@ -189,6 +189,6 @@ public class BirdController : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        SceneManagement.LoadGOScene();
+        SceneManagement.LoadGOScene(false);
     }
 }
