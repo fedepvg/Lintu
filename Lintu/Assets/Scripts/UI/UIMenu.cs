@@ -8,9 +8,9 @@ using TMPro;
 public class UIMenu : MonoBehaviour
 {
     public TextMeshProUGUI VersionText;
-    public GameObject SelectionSprite;
 
     GameObject PreviousButtonSelected;
+    bool HasToFill = false;
 
     private void Start()
     {
@@ -27,14 +27,17 @@ public class UIMenu : MonoBehaviour
 
         if (PreviousButtonSelected != ActualButton && ActualButton)
         {
-            if (!SelectionSprite.activeSelf)
-                SelectionSprite.SetActive(true);
-            SelectionSprite.transform.position = ActualButton.transform.position + Vector3.right * ActualButton.GetComponent<RectTransform>().sizeDelta.x / 2;
+            if (ActualButton.GetComponent<Image>().fillAmount == 1)
+                ActualButton.GetComponent<Image>().fillAmount = 0;
+            HasToFill = true;
+            if(PreviousButtonSelected)
+                PreviousButtonSelected.GetComponent<Image>().fillAmount = 0;
             PreviousButtonSelected = ActualButton;
         }
-        else if (!ActualButton)
-            SelectionSprite.SetActive(false);
+
+        if (HasToFill)
+            ActualButton.GetComponent<Image>().fillAmount = Mathf.Clamp01(ActualButton.GetComponent<Image>().fillAmount += Time.deltaTime * 2);
+        if (ActualButton.GetComponent<Image>().fillAmount == 1)
+            HasToFill = false;
     }
-
-
 }
