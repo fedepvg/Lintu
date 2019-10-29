@@ -7,9 +7,16 @@ public class SceneLoader : MonoBehaviour
 {
     public string ThisScene;
     public string NextScene;
-    public string LastScene;
     public string GameOverScene;
     public string MenuScene;
+    
+    public string PreviousScene;
+
+    private void Start()
+    {
+        PreviousScene = LoaderManager.Instance.ActualScene;
+        LoaderManager.Instance.ActualScene = ThisScene;
+    }
 
     public void ReloadScene(bool fakeLoad)
     {
@@ -23,7 +30,7 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadLastScene(bool fakeLoad)
     {
-        LoaderManager.Instance.LoadScene(LastScene, fakeLoad);
+        LoaderManager.Instance.LoadScene(PreviousScene, fakeLoad);
     }
 
     public void LoadMenuScene(bool fakeLoad)

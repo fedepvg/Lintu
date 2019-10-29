@@ -22,7 +22,6 @@ public class UIInGame : MonoBehaviour
 
     void Update()
     {
-
         EnergyBar.value = Player.Energy;
         if (Player.Energy < 20)
             EnergyBarFill.color = Color.red;

@@ -8,6 +8,7 @@ public class LoaderManager : MonoBehaviourSingleton<LoaderManager>
     public float MinTimeToLoad;
 
     float TimeLoading;
+    string LoadedScene;
     
     public void LoadScene(string target, bool fakeLoad)
     {
@@ -18,6 +19,12 @@ public class LoaderManager : MonoBehaviourSingleton<LoaderManager>
         }
         else
             SceneManager.LoadScene(target);
+    }
+
+    public string ActualScene
+    {
+        get { return LoadedScene; }
+        set { LoadedScene = value; }
     }
 
     IEnumerator AsynchronousLoad(string scene)
