@@ -25,6 +25,8 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadNextScene(bool fakeLoad)
     {
+        if (NextScene == GameOverScene)
+            GameManager.Instance.Won = true;
         LoaderManager.Instance.LoadScene(NextScene, fakeLoad);
     }
 

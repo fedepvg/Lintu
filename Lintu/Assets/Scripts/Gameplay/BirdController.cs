@@ -209,7 +209,10 @@ public class BirdController : MonoBehaviour
         if (collision.gameObject.tag == "Wall" || collision.gameObject.tag == "Obstacle" || collision.gameObject.tag == "Floor")
             SceneManagement.LoadGOScene(false);
         else if (collision.gameObject.tag == "Finish")
+        {
             SceneManagement.LoadNextScene(true);
+            Destroy(this);
+        }
     }
 
     private void OnTriggerEnter(Collider other)

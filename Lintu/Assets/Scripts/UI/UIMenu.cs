@@ -25,19 +25,22 @@ public class UIMenu : MonoBehaviour
 
         GameObject ActualButton = EventSystem.current.currentSelectedGameObject;
 
-        if (PreviousButtonSelected != ActualButton && ActualButton)
+        if (ActualButton)
         {
-            if (ActualButton.GetComponent<Image>().fillAmount == 1)
-                ActualButton.GetComponent<Image>().fillAmount = 0;
-            HasToFill = true;
-            if(PreviousButtonSelected)
-                PreviousButtonSelected.GetComponent<Image>().fillAmount = 0;
-            PreviousButtonSelected = ActualButton;
-        }
+            if (PreviousButtonSelected != ActualButton)
+            {
+                if (ActualButton.GetComponent<Image>().fillAmount == 1)
+                    ActualButton.GetComponent<Image>().fillAmount = 0;
+                HasToFill = true;
+                if (PreviousButtonSelected)
+                    PreviousButtonSelected.GetComponent<Image>().fillAmount = 0;
+                PreviousButtonSelected = ActualButton;
+            }
 
-        if (HasToFill)
-            ActualButton.GetComponent<Image>().fillAmount = Mathf.Clamp01(ActualButton.GetComponent<Image>().fillAmount += Time.deltaTime * 2);
-        if (ActualButton.GetComponent<Image>().fillAmount == 1)
-            HasToFill = false;
+            if (HasToFill)
+                ActualButton.GetComponent<Image>().fillAmount = Mathf.Clamp01(ActualButton.GetComponent<Image>().fillAmount += Time.unscaledDeltaTime * 3);
+            if (ActualButton.GetComponent<Image>().fillAmount == 1)
+                HasToFill = false;
+        }
     }
 }
