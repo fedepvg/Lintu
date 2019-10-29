@@ -252,6 +252,7 @@ GameObject:
   - component: {fileID: 110932515}
   - component: {fileID: 110932513}
   - component: {fileID: 110932512}
+  - component: {fileID: 110932516}
   m_Layer: 5
   m_Name: Settings
   m_TagString: Untagged
@@ -362,6 +363,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 110932511}
   m_CullTransparentMesh: 0
+--- !u!95 &110932516
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110932511}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 62b7aab6b6887754d8b6ef9c368ad607, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &349379502
 GameObject:
   m_ObjectHideFlags: 0
@@ -651,7 +671,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   VersionText: {fileID: 1981708255}
-  SelectionSprite: {fileID: 37823168}
+  SelectionSprite: {fileID: 37823167}
 --- !u!1 &652622772
 GameObject:
   m_ObjectHideFlags: 0
