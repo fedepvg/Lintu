@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1efc582de88e2f5489a9e9ee366f4b1b
+guid: 9e049040f02f4714c85d0d75c37192be
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable:
@@ -11,7 +11,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: aiStandardSurface1
-    second: {fileID: 2100000, guid: 842c521dd05c22c449df3286c07b911f, type: 2}
+    second: {fileID: 2100000, guid: 47e0e62ec6e4a9048955bd0a67e43439, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -44,7 +44,7 @@ ModelImporter:
       takeName: Take 001
       internalID: 1827226128182048838
       firstFrame: 1
-      lastFrame: 38
+      lastFrame: 37
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
