@@ -25,10 +25,7 @@ public class BirdController : MonoBehaviour
     public float MinSpeedMultiplier;
     public Animator AnimatonController;
     public AnimationCurve JumpCurve;
-    public Slider EnergyBar;
-    public Image EnergyBarFill;
     public LayerMask FloorRaycastLayer;
-    public Text FloorDistanceText;
     public GameObject []BlobShadows;
     public SceneLoader SceneManagement;
     public float FloorDistance;
@@ -94,9 +91,9 @@ public class BirdController : MonoBehaviour
         if (IsJumping)
         {
             JumpGravity = JumpSpeed * JumpCurve.Evaluate(JumpTimer);
-            JumpTimer = Mathf.Clamp01(JumpTimer += Time.deltaTime * 2f);
+            JumpTimer = Mathf.Clamp01(JumpTimer += Time.deltaTime);
 
-            if (JumpTimer >= 1)
+            if (JumpTimer >= 0.9f)
                 IsJumping = false;
 
             JumpEnergy = JumpGravity + 1;
