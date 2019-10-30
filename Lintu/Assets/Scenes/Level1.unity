@@ -291,8 +291,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 73999189}
-  m_LocalRotation: {x: 0.07774925, y: -0.81279665, z: -0.1051754, w: -0.5676749}
-  m_LocalPosition: {x: -1881.7167, y: -1773.824, z: 1945.3682}
+  m_LocalRotation: {x: -0.04508281, y: 0.76873994, z: 0.054527342, w: 0.63563603}
+  m_LocalPosition: {x: -992.01337, y: -526.1715, z: 140.85437}
   m_LocalScale: {x: 3.333334, y: 3.333333, z: 3.333334}
   m_Children: []
   m_Father: {fileID: 110240402}
@@ -712,8 +712,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 190379050}
-  m_LocalRotation: {x: 0.07774925, y: -0.81279665, z: -0.1051754, w: -0.5676749}
-  m_LocalPosition: {x: -1881.7167, y: -1773.824, z: 1945.3682}
+  m_LocalRotation: {x: -0.04508281, y: 0.76873994, z: 0.054527342, w: 0.63563603}
+  m_LocalPosition: {x: -992.01337, y: -526.1715, z: 140.85437}
   m_LocalScale: {x: 3.333334, y: 3.333333, z: 3.333334}
   m_Children: []
   m_Father: {fileID: 110240402}
@@ -984,26 +984,6 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Obstacle
       objectReference: {fileID: 0}
-    - target: {fileID: -2985933584109988023, guid: 5703986b22dbd544f847c591186babab,
-        type: 3}
-      propertyPath: m_TagString
-      value: Obstacle
-      objectReference: {fileID: 0}
-    - target: {fileID: 3839675043739984471, guid: 5703986b22dbd544f847c591186babab,
-        type: 3}
-      propertyPath: m_TagString
-      value: Obstacle
-      objectReference: {fileID: 0}
-    - target: {fileID: 5808637369092515436, guid: 5703986b22dbd544f847c591186babab,
-        type: 3}
-      propertyPath: m_TagString
-      value: Obstacle
-      objectReference: {fileID: 0}
-    - target: {fileID: 5435591701551493022, guid: 5703986b22dbd544f847c591186babab,
-        type: 3}
-      propertyPath: m_TagString
-      value: Obstacle
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 5703986b22dbd544f847c591186babab,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1073,6 +1053,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -2985933584109988023, guid: 5703986b22dbd544f847c591186babab,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3839675043739984471, guid: 5703986b22dbd544f847c591186babab,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5435591701551493022, guid: 5703986b22dbd544f847c591186babab,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5808637369092515436, guid: 5703986b22dbd544f847c591186babab,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5703986b22dbd544f847c591186babab, type: 3}
@@ -1431,8 +1431,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 355470854}
-  m_LocalRotation: {x: 0.07774925, y: -0.81279665, z: -0.1051754, w: -0.5676749}
-  m_LocalPosition: {x: -1881.7167, y: -1773.824, z: 1945.3682}
+  m_LocalRotation: {x: -0.04508281, y: 0.76873994, z: 0.054527342, w: 0.63563603}
+  m_LocalPosition: {x: -992.01337, y: -526.1715, z: 140.85437}
   m_LocalScale: {x: 3.333334, y: 3.333333, z: 3.333334}
   m_Children: []
   m_Father: {fileID: 110240402}
@@ -1637,8 +1637,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 418620296}
-  m_LocalRotation: {x: 0.07774925, y: -0.81279665, z: -0.1051754, w: -0.5676749}
-  m_LocalPosition: {x: -1881.7167, y: -1773.824, z: 1945.3682}
+  m_LocalRotation: {x: -0.04508281, y: 0.76873994, z: 0.054527342, w: 0.63563603}
+  m_LocalPosition: {x: -992.01337, y: -526.1715, z: 140.85437}
   m_LocalScale: {x: 3.333334, y: 3.333333, z: 3.333334}
   m_Children: []
   m_Father: {fileID: 110240402}
@@ -1906,8 +1906,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 470617774}
-  m_LocalRotation: {x: 0.07774925, y: -0.81279665, z: -0.1051754, w: -0.5676749}
-  m_LocalPosition: {x: -1881.7167, y: -1773.824, z: 1945.3682}
+  m_LocalRotation: {x: -0.04508281, y: 0.76873994, z: 0.054527342, w: 0.63563603}
+  m_LocalPosition: {x: -992.01337, y: -526.1715, z: 140.85437}
   m_LocalScale: {x: 3.333334, y: 3.333333, z: 3.333334}
   m_Children: []
   m_Father: {fileID: 110240402}
@@ -2270,8 +2270,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 576758161}
-  m_LocalRotation: {x: 0.07774925, y: -0.81279665, z: -0.1051754, w: -0.5676749}
-  m_LocalPosition: {x: -1881.7167, y: -1773.824, z: 1945.3682}
+  m_LocalRotation: {x: -0.04508281, y: 0.76873994, z: 0.054527342, w: 0.63563603}
+  m_LocalPosition: {x: -992.01337, y: -526.1715, z: 140.85437}
   m_LocalScale: {x: 3.333334, y: 3.333333, z: 3.333334}
   m_Children: []
   m_Father: {fileID: 110240402}
@@ -2872,8 +2872,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 802033011}
-  m_LocalRotation: {x: 0.07774925, y: -0.81279665, z: -0.1051754, w: -0.5676749}
-  m_LocalPosition: {x: -1881.7167, y: -1773.824, z: 1945.3682}
+  m_LocalRotation: {x: -0.04508281, y: 0.76873994, z: 0.054527342, w: 0.63563603}
+  m_LocalPosition: {x: -992.01337, y: -526.1715, z: 140.85437}
   m_LocalScale: {x: 3.333334, y: 3.333333, z: 3.333334}
   m_Children: []
   m_Father: {fileID: 110240402}
@@ -2956,8 +2956,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 841664512}
-  m_LocalRotation: {x: 0.07774925, y: -0.81279665, z: -0.1051754, w: -0.5676749}
-  m_LocalPosition: {x: -1881.7167, y: -1773.824, z: 1945.3682}
+  m_LocalRotation: {x: -0.04508281, y: 0.76873994, z: 0.054527342, w: 0.63563603}
+  m_LocalPosition: {x: -992.01337, y: -526.1715, z: 140.85437}
   m_LocalScale: {x: 3.333334, y: 3.333333, z: 3.333334}
   m_Children: []
   m_Father: {fileID: 110240402}
@@ -3172,8 +3172,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 881415918}
-  m_LocalRotation: {x: 0.07774925, y: -0.81279665, z: -0.1051754, w: -0.5676749}
-  m_LocalPosition: {x: -1881.7167, y: -1773.824, z: 1945.3682}
+  m_LocalRotation: {x: -0.04508281, y: 0.76873994, z: 0.054527342, w: 0.63563603}
+  m_LocalPosition: {x: -992.01337, y: -526.1715, z: 140.85437}
   m_LocalScale: {x: 3.333334, y: 3.333333, z: 3.333334}
   m_Children: []
   m_Father: {fileID: 110240402}
@@ -3436,8 +3436,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 961013423}
-  m_LocalRotation: {x: 0.07774925, y: -0.81279665, z: -0.1051754, w: -0.5676749}
-  m_LocalPosition: {x: -1881.7167, y: -1773.824, z: 1945.3682}
+  m_LocalRotation: {x: -0.04508281, y: 0.76873994, z: 0.054527342, w: 0.63563603}
+  m_LocalPosition: {x: -992.01337, y: -526.1715, z: 140.85437}
   m_LocalScale: {x: 3.333334, y: 3.333333, z: 3.333334}
   m_Children: []
   m_Father: {fileID: 110240402}
@@ -3685,22 +3685,7 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Obstacle
       objectReference: {fileID: 0}
-    - target: {fileID: 6267832713710706808, guid: 5de7a2d0343bf274ca2b9a1f37ff9aec,
-        type: 3}
-      propertyPath: m_TagString
-      value: Obstacle
-      objectReference: {fileID: 0}
     - target: {fileID: -8946120960862327987, guid: 5de7a2d0343bf274ca2b9a1f37ff9aec,
-        type: 3}
-      propertyPath: m_TagString
-      value: Obstacle
-      objectReference: {fileID: 0}
-    - target: {fileID: -3211906275130605721, guid: 5de7a2d0343bf274ca2b9a1f37ff9aec,
-        type: 3}
-      propertyPath: m_TagString
-      value: Obstacle
-      objectReference: {fileID: 0}
-    - target: {fileID: 470679063803411100, guid: 5de7a2d0343bf274ca2b9a1f37ff9aec,
         type: 3}
       propertyPath: m_TagString
       value: Obstacle
@@ -3775,6 +3760,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 3.333336
       objectReference: {fileID: 0}
+    - target: {fileID: -3211906275130605721, guid: 5de7a2d0343bf274ca2b9a1f37ff9aec,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 362906835942537512, guid: 5de7a2d0343bf274ca2b9a1f37ff9aec,
         type: 3}
       propertyPath: m_LocalRotation.x
@@ -3794,6 +3784,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 470679063803411100, guid: 5de7a2d0343bf274ca2b9a1f37ff9aec,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6267832713710706808, guid: 5de7a2d0343bf274ca2b9a1f37ff9aec,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5de7a2d0343bf274ca2b9a1f37ff9aec, type: 3}
@@ -4022,8 +4022,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1182145846}
-  m_LocalRotation: {x: 0.07774925, y: -0.81279665, z: -0.1051754, w: -0.5676749}
-  m_LocalPosition: {x: -1881.7167, y: -1773.824, z: 1945.3682}
+  m_LocalRotation: {x: -0.04508281, y: 0.76873994, z: 0.054527342, w: 0.63563603}
+  m_LocalPosition: {x: -992.01337, y: -526.1715, z: 140.85437}
   m_LocalScale: {x: 3.333334, y: 3.333333, z: 3.333334}
   m_Children: []
   m_Father: {fileID: 110240402}
@@ -4746,8 +4746,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1387571903}
-  m_LocalRotation: {x: 0.07774925, y: -0.81279665, z: -0.1051754, w: -0.5676749}
-  m_LocalPosition: {x: -1881.7167, y: -1773.824, z: 1945.3682}
+  m_LocalRotation: {x: -0.04508281, y: 0.76873994, z: 0.054527342, w: 0.63563603}
+  m_LocalPosition: {x: -992.01337, y: -526.1715, z: 140.85437}
   m_LocalScale: {x: 3.333334, y: 3.333333, z: 3.333334}
   m_Children: []
   m_Father: {fileID: 110240402}
@@ -5534,8 +5534,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1643005186}
-  m_LocalRotation: {x: 0.07774925, y: -0.81279665, z: -0.1051754, w: -0.5676749}
-  m_LocalPosition: {x: -1881.7167, y: -1773.824, z: 1945.3682}
+  m_LocalRotation: {x: -0.04508281, y: 0.76873994, z: 0.054527342, w: 0.63563603}
+  m_LocalPosition: {x: -992.01337, y: -526.1715, z: 140.85437}
   m_LocalScale: {x: 3.333334, y: 3.333333, z: 3.333334}
   m_Children: []
   m_Father: {fileID: 110240402}
@@ -5618,8 +5618,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1653574443}
-  m_LocalRotation: {x: 0.07774925, y: -0.81279665, z: -0.1051754, w: -0.5676749}
-  m_LocalPosition: {x: -1881.7167, y: -1773.824, z: 1945.3682}
+  m_LocalRotation: {x: -0.04508281, y: 0.76873994, z: 0.054527342, w: 0.63563603}
+  m_LocalPosition: {x: -992.01337, y: -526.1715, z: 140.85437}
   m_LocalScale: {x: 3.333334, y: 3.333333, z: 3.333334}
   m_Children: []
   m_Father: {fileID: 110240402}
@@ -6521,22 +6521,7 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Obstacle
       objectReference: {fileID: 0}
-    - target: {fileID: 6267832713710706808, guid: 5de7a2d0343bf274ca2b9a1f37ff9aec,
-        type: 3}
-      propertyPath: m_TagString
-      value: Obstacle
-      objectReference: {fileID: 0}
     - target: {fileID: -8946120960862327987, guid: 5de7a2d0343bf274ca2b9a1f37ff9aec,
-        type: 3}
-      propertyPath: m_TagString
-      value: Obstacle
-      objectReference: {fileID: 0}
-    - target: {fileID: -3211906275130605721, guid: 5de7a2d0343bf274ca2b9a1f37ff9aec,
-        type: 3}
-      propertyPath: m_TagString
-      value: Obstacle
-      objectReference: {fileID: 0}
-    - target: {fileID: 470679063803411100, guid: 5de7a2d0343bf274ca2b9a1f37ff9aec,
         type: 3}
       propertyPath: m_TagString
       value: Obstacle
@@ -6611,6 +6596,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 3.333336
       objectReference: {fileID: 0}
+    - target: {fileID: -3211906275130605721, guid: 5de7a2d0343bf274ca2b9a1f37ff9aec,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 362906835942537512, guid: 5de7a2d0343bf274ca2b9a1f37ff9aec,
         type: 3}
       propertyPath: m_LocalRotation.x
@@ -6630,6 +6620,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 470679063803411100, guid: 5de7a2d0343bf274ca2b9a1f37ff9aec,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6267832713710706808, guid: 5de7a2d0343bf274ca2b9a1f37ff9aec,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5de7a2d0343bf274ca2b9a1f37ff9aec, type: 3}

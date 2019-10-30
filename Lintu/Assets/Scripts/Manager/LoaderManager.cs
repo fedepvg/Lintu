@@ -61,7 +61,7 @@ public class LoaderManager : MonoBehaviourSingleton<LoaderManager>
 
         while (!ao.isDone)
         {
-            TimeLoading += Time.deltaTime;
+            TimeLoading += Time.deltaTime * 2;
             LoadingProgress = ao.progress + 0.1f;
             LoadingProgress = LoadingProgress * TimeLoading / MinTimeToLoad;
 
