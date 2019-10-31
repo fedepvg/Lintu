@@ -33,6 +33,8 @@ public class BirdController : MonoBehaviour
     public float JumpEnergy;
     public float EnergyLossCoefficient;
     public PlayerControls PlayerInput;
+    public delegate void OnEndLevel();
+    public static OnEndLevel EndLevelAction;
     #endregion
 
     #region PrivateVariables
@@ -51,6 +53,7 @@ public class BirdController : MonoBehaviour
     float rotationCoefficient;
     bool OffLeftLimit = false;
     bool OffRightLimit = false;
+    bool EndedLevel = false;
     float OffLimitsSpeed;
     #endregion
 
@@ -59,6 +62,7 @@ public class BirdController : MonoBehaviour
         Rigi = GetComponent<Rigidbody>();
 
         PlayerInput = GameManager.Instance.GameInput;
+        PlayerInput.Enable();
 
         IsJumping = false;
 
@@ -111,6 +115,8 @@ public class BirdController : MonoBehaviour
             ZAxisFrameRotation = -3;
         else if (OffRightLimit)
             ZAxisFrameRotation = 3;
+        if (EndedLevel)
+            XAxisFrameRotation = -2;
 
         XAxisRotation += XAxisFrameRotation * RotationSpeed * Time.deltaTime;
         ZAxisRotation += ZAxisFrameRotation * RotationSpeed * Time.deltaTime;
@@ -155,11 +161,12 @@ public class BirdController : MonoBehaviour
         Gravity = BaseGravity / SpeedMultiplier;
         #endregion
 
-        //ENERGY-------------------------------------
+        #region EnergyCalculation
         Energy -= EnergyLossCoefficient  * JumpEnergy * Time.deltaTime;
         Energy = Mathf.Clamp(Energy, 0, MaxEnergy);
+        #endregion
 
-        //FLOOR DISTANCE-------------------------------
+        #region FloorDistance
         RaycastHit hit;
         string layerHitted;
         if (Physics.Raycast(transform.position, - Vector3.up, out hit, FloorRayDistance, FloorRaycastLayer))
@@ -171,6 +178,7 @@ public class BirdController : MonoBehaviour
                 FloorDistance = hit.distance;
             }
         }
+        #endregion
 
         UpdateBlobShadowPosition();
     }
@@ -208,11 +216,6 @@ public class BirdController : MonoBehaviour
     {
         if (collision.gameObject.tag == "Wall" || collision.gameObject.tag == "Obstacle" || collision.gameObject.tag == "Floor")
             SceneManagement.LoadGOScene(false);
-        else if (collision.gameObject.tag == "Finish")
-        {
-            SceneManagement.LoadNextScene(true);
-            Destroy(this);
-        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -230,5 +233,26 @@ public class BirdController : MonoBehaviour
                 OffLimitsSpeed = 200;
             }
         }
+
+        if (other.tag == "Finish")
+        {
+            StartCoroutine(EndLevel());
+            //SceneManagement.LoadNextScene(true);
+            //Destroy(this);
+        }
+    }
+
+    IEnumerator EndLevel()
+    {
+        PlayerInput.Disable();
+        EndedLevel = true;
+        BaseGravity = 0;
+        if(EndLevelAction!=null)
+            EndLevelAction();
+
+        yield return new WaitForSeconds(2);
+
+        SceneManagement.LoadNextScene(true);
+        Destroy(this);
     }
 }
