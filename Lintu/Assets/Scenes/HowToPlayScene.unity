@@ -215,8 +215,9 @@ GameObject:
   - component: {fileID: 493004002}
   - component: {fileID: 493004001}
   - component: {fileID: 493004000}
+  - component: {fileID: 493004004}
   m_Layer: 5
-  m_Name: CreditsCanvas
+  m_Name: HTPCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -302,6 +303,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &493004004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493003999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b2878fc85a7cd488db3a2bee9cdf07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VersionText: {fileID: 0}
 --- !u!1 &703541392
 GameObject:
   m_ObjectHideFlags: 0
@@ -331,11 +345,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19ef1e5c6721bfd44819c4cb6f4e1439, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ThisScene: CreditsScene
+  ThisScene: HowToPlayScene
   NextScene: 
   GameOverScene: EndGameScene
   MenuScene: MenuScene
-  PreviousScene: 
+  PreviousScene: MenuScene
 --- !u!4 &703541394
 Transform:
   m_ObjectHideFlags: 0
@@ -737,6 +751,7 @@ GameObject:
   - component: {fileID: 1729542867}
   - component: {fileID: 1729542869}
   - component: {fileID: 1729542868}
+  - component: {fileID: 1729542870}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -784,7 +799,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: f0dec164d4491144bbf78d2f544fc1c6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 05229cc1841b49b4d9386db78a0d2672, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -802,6 +817,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1729542866}
   m_CullTransparentMesh: 0
+--- !u!95 &1729542870
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1729542866}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a2f21154820f8c24e8f9eb256b9b247a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1790176477
 GameObject:
   m_ObjectHideFlags: 0
