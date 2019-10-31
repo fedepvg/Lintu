@@ -47,7 +47,7 @@ public class CameraController : MonoBehaviour
         Vector3 NewCameraPosition = PlayerTransform.position - Vector3.forward * CameraZOffset + Vector3.up * CameraYOffset;
         NewCameraPosition.x = PlayerTransform.position.x;
         transform.position = NewCameraPosition;
-        transform.LookAt(PlayerTransform.position + Vector3.up * CameraYOffset);
+        transform.LookAt(PlayerTransform.position + Vector3.up * 0.85f);
     }
 
     public void SetCameraNextPosition(CameraPositions newPos)
