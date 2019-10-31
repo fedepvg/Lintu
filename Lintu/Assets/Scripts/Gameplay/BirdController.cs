@@ -188,10 +188,13 @@ public class BirdController : MonoBehaviour
 
     void UpdateBlobShadowPosition()
     {
-        for (int i = 0; i < BlobShadows.Length; i++)
-        {
-            BlobShadows[i].transform.position = transform.position;
-        }
+        BlobShadows[0].transform.forward = transform.forward;
+        BlobShadows[0].transform.position = transform.position;
+        BlobShadows[1].transform.position = transform.position;
+        //for (int i = 0; i < BlobShadows.Length; i++)
+        //{
+        //    BlobShadows[i].transform.position = transform.position;
+        //}
     }
 
     void AddEnergy(int energy)
