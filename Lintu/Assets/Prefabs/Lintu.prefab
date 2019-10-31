@@ -111,7 +111,6 @@ MonoBehaviour:
     m_Bits: 1024
   BlobShadows:
   - {fileID: 0}
-  - {fileID: 0}
   SceneManagement: {fileID: 0}
   FloorDistance: 0
   Energy: 0
@@ -153,11 +152,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 824619557451100236}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 9e049040f02f4714c85d0d75c37192be,
-        type: 3}
-      propertyPath: m_Name
-      value: Bird
-      objectReference: {fileID: 0}
     - target: {fileID: -6057140222963153312, guid: 9e049040f02f4714c85d0d75c37192be,
         type: 3}
       propertyPath: m_Avatar
@@ -168,6 +162,11 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 1a944efbb0f1eb0419da019a690b8a54, type: 2}
+    - target: {fileID: -927199367670048503, guid: 9e049040f02f4714c85d0d75c37192be,
+        type: 3}
+      propertyPath: m_Name
+      value: Bird
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 9e049040f02f4714c85d0d75c37192be,
         type: 3}
       propertyPath: m_LocalPosition.x
