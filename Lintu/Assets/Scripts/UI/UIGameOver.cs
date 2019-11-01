@@ -16,7 +16,6 @@ public class UIGameOver : MonoBehaviour
         {
             WinCanvas.SetActive(true);
             LoseCanvas.SetActive(false);
-            GameManager.Instance.Won = false;
             EventSystem.current.firstSelectedGameObject = WinCanvasFirstButton;
             EventSystem.current.SetSelectedGameObject(WinCanvasFirstButton);
         }
