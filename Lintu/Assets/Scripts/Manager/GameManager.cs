@@ -31,4 +31,14 @@ public class GameManager : MonoBehaviourSingleton<GameManager>
     {
         get { return GameInput; }
     }
+
+    public void EnableInput()
+    {
+        GameInput.Enable();
+    }
+    
+    public void DisableInput()
+    {
+        GameInput.Disable();
+    }
 }

@@ -27,33 +27,11 @@ public class LoaderManager : MonoBehaviourSingleton<LoaderManager>
         set { LoadedScene = value; }
     }
 
-    IEnumerator AsynchronousLoad(string scene)
-    {
-        LoadingProgress = 0;
-
-        yield return null;
-
-        AsyncOperation ao = SceneManager.LoadSceneAsync(scene);
-        ao.allowSceneActivation = false;
-
-        while (!ao.isDone)
-        {
-            LoadingProgress = ao.progress + 0.1f;
-
-            // Loading completed
-            if (ao.progress >= 0.9f)
-            {
-                ao.allowSceneActivation = true;
-            }
-
-            yield return null;
-        }
-    }
-
     IEnumerator AsynchronousLoadWithFake(string scene)
     {
         LoadingProgress = 0;
         TimeLoading = 0;
+        GameManager.Instance.DisableInput();
         yield return null;
 
         AsyncOperation ao = SceneManager.LoadSceneAsync(scene);
@@ -69,6 +47,7 @@ public class LoaderManager : MonoBehaviourSingleton<LoaderManager>
             if (LoadingProgress >= 1)
             {
                 ao.allowSceneActivation = true;
+                GameManager.Instance.EnableInput();
             }
 
             yield return null;
