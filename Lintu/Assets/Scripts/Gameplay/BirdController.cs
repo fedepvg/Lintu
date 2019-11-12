@@ -46,7 +46,7 @@ public class BirdController : MonoBehaviour
     float ZAxisRotation;
     Quaternion DestRotation;
     float SpeedMultiplier;
-    float Gravity;
+    public float Gravity;
     float JumpTimer;
     float JumpGravity;
     const float FloorRayDistance = 300f;
@@ -100,12 +100,12 @@ public class BirdController : MonoBehaviour
             if (JumpTimer >= 0.9f)
                 IsJumping = false;
 
-            JumpEnergy = JumpGravity + 1;
+            JumpEnergy = JumpGravity / 2;
         }
         else
         {
             JumpTimer = 0;
-            JumpGravity = 1f;
+            JumpGravity = 0f;
             JumpEnergy = 1f;
         }
         #endregion
@@ -158,7 +158,7 @@ public class BirdController : MonoBehaviour
             x = -ZAxisRotation * HorizontalSpeed * Time.deltaTime
         };
 
-        Gravity = BaseGravity / SpeedMultiplier;
+        Gravity = BaseGravity / SpeedMultiplier + JumpGravity;
         #endregion
 
         #region EnergyCalculation
@@ -185,7 +185,7 @@ public class BirdController : MonoBehaviour
 
     void FixedUpdate()
     {
-        Rigi.velocity = transform.forward * Speed * SpeedMultiplier * JumpGravity;
+        Rigi.velocity = transform.forward * Speed * SpeedMultiplier;// * JumpGravity;
         Rigi.velocity += new Vector3(0f, Gravity, 0f);
         if (!OffLeftLimit && !OffRightLimit)
             Rigi.velocity += Vector3.right * -ZAxisRotation * HorizontalSpeed * Time.fixedDeltaTime;
