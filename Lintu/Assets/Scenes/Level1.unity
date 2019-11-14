@@ -2528,6 +2528,11 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 134.9
       objectReference: {fileID: 0}
+    - target: {fileID: 9062217408589599163, guid: dbb7018cf14c43d4a951fdf311cef417,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dbb7018cf14c43d4a951fdf311cef417, type: 3}
 --- !u!1001 &5072129332091485099
@@ -2684,6 +2689,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8699359805433019056, guid: 7d58e0aab3bdf2149a00bbc96980a373,
+        type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    - target: {fileID: 8699359805433019056, guid: 7d58e0aab3bdf2149a00bbc96980a373,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3982610111611832390, guid: 7d58e0aab3bdf2149a00bbc96980a373,
         type: 3}
@@ -11655,20 +11670,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 5190.0977
       objectReference: {fileID: 0}
-    - target: {fileID: 8699359805433019056, guid: 7d58e0aab3bdf2149a00bbc96980a373,
-        type: 3}
-      propertyPath: m_TagString
-      value: Floor
-      objectReference: {fileID: 0}
-    - target: {fileID: 8699359805433019056, guid: 7d58e0aab3bdf2149a00bbc96980a373,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 8699359805439545168, guid: 7d58e0aab3bdf2149a00bbc96980a373,
         type: 3}
       propertyPath: textureSize
-      value: 1080
+      value: 256
       objectReference: {fileID: 0}
     - target: {fileID: 8699359805439545168, guid: 7d58e0aab3bdf2149a00bbc96980a373,
         type: 3}

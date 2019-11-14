@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class LoaderManager : MonoBehaviourSingleton<LoaderManager>
 {
@@ -31,7 +32,7 @@ public class LoaderManager : MonoBehaviourSingleton<LoaderManager>
     {
         LoadingProgress = 0;
         TimeLoading = 0;
-        GameManager.Instance.DisableInput();
+        EventSystem.current.currentInputModule.enabled = false;
         yield return null;
 
         AsyncOperation ao = SceneManager.LoadSceneAsync(scene);
