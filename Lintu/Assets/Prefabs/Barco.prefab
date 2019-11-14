@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5914356738963821481}
   - component: {fileID: 2518172055524260933}
   - component: {fileID: 8418305825847443389}
+  - component: {fileID: 2344001806297798382}
   m_Layer: 0
   m_Name: Barco
   m_TagString: Untagged
@@ -78,3 +79,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &2344001806297798382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4313636559270095234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66b05153ccf60a745be69b17c7fccdc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Speed: 7
+  RaycastLayer:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  MeshXExtent: 0
