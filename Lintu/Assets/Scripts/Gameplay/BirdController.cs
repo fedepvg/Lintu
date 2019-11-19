@@ -56,6 +56,11 @@ public class BirdController : MonoBehaviour
     bool EndedLevel = false;
     #endregion
 
+    private void Awake()
+    {
+        GetComponent<AkBank>().UnloadBank(this.gameObject);
+    }
+
     void Start()
     {
         Rigi = GetComponent<Rigidbody>();
@@ -220,6 +225,7 @@ public class BirdController : MonoBehaviour
     {
         if (collision.gameObject.tag == "Wall" || collision.gameObject.tag == "Obstacle" || collision.gameObject.tag == "Floor")
             SceneManagement.LoadGOScene(false);
+        Destroy(this);
     }
 
     private void OnTriggerEnter(Collider other)
