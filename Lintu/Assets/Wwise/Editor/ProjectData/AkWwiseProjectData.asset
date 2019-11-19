@@ -12,14 +12,286 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8880c1512f09e9845877fdbfa27c72b3, type: 3}
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
-  AcousticTextureWwu: []
-  AuxBusWwu: []
-  BankWwu: []
-  EventWwu: []
-  RtpcWwu: []
-  StateWwu: []
-  SwitchWwu: []
-  TriggerWwu: []
-  ExpandedItems: []
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: d20c70a524a215419f1fc816d77a231d
+    GuidInternal: 
+    m_lastTime: -8586278319694775808
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 51716223e9d22a4f903a43ce359f8123
+    GuidInternal: 
+    m_lastTime: -8586278319694775808
+    List: []
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: d124bd5d8a78314ea75dff208c839db6
+    GuidInternal: 
+    m_lastTime: -8586274165720143904
+    List:
+    - name: Main
+      guid: 10666bd03b52b7419b47aa3e6b0a6ac8
+      id: 3161908922
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Main
+        ObjectType: 7
+      Path: Default Work Unit\Main
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: d5209640f8a20341a1f6811a6d049633
+    GuidInternal: 
+    m_lastTime: -8586276891719672849
+    List:
+    - name: Barcos_Idle
+      guid: 1de55918fc98a7478aa9cb3ff9fb4113
+      id: 1876704714
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Barcos_Idle
+        ObjectType: 3
+      Path: Default Work Unit\Barcos_Idle
+      maxAttenuation: 0
+      maxDuration: 842750
+      minDuration: 842750
+    - name: Click_Mouse
+      guid: fc55c2cef5d08e43b418887fca8cc5bd
+      id: 2013887443
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Click_Mouse
+        ObjectType: 3
+      Path: Default Work Unit\Click_Mouse
+      maxAttenuation: 0
+      maxDuration: 842750
+      minDuration: 842750
+    - name: Colision_Agua
+      guid: 16146eb05c6bd34583bd75fae2d4cd42
+      id: 3661761514
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Colision_Agua
+        ObjectType: 3
+      Path: Default Work Unit\Colision_Agua
+      maxAttenuation: 0
+      maxDuration: 842750
+      minDuration: 842750
+    - name: Colision_Madera
+      guid: 5eaff9e81965f84f9d9c046973014a18
+      id: 3999760164
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Colision_Madera
+        ObjectType: 3
+      Path: Default Work Unit\Colision_Madera
+      maxAttenuation: 0
+      maxDuration: 842750
+      minDuration: 842750
+    - name: Ganar
+      guid: eb84b33fce54b842ac08698de349afe9
+      id: 3575068712
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ganar
+        ObjectType: 3
+      Path: Default Work Unit\Ganar
+      maxAttenuation: 0
+      maxDuration: 842750
+      minDuration: 842750
+    - name: Inicio_Juego
+      guid: 286aa49644092c458abbaaf3a095821a
+      id: 1460932951
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Inicio_Juego
+        ObjectType: 3
+      Path: Default Work Unit\Inicio_Juego
+      maxAttenuation: 0
+      maxDuration: 842750
+      minDuration: 842750
+    - name: Inicio_Menu
+      guid: 3b4cf7b870e8734ab2b30c9322fbcc31
+      id: 880580374
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Inicio_Menu
+        ObjectType: 3
+      Path: Default Work Unit\Inicio_Menu
+      maxAttenuation: 0
+      maxDuration: 842750
+      minDuration: 842750
+    - name: Inicio_Start
+      guid: c2490ea9758015429df535271ea6a134
+      id: 194776941
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Inicio_Start
+        ObjectType: 3
+      Path: Default Work Unit\Inicio_Start
+      maxAttenuation: 0
+      maxDuration: 842750
+      minDuration: 842750
+    - name: Menu_Creditos
+      guid: 0288337fc40f8647ac6c0d3cb807c41c
+      id: 1063492266
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Menu_Creditos
+        ObjectType: 3
+      Path: Default Work Unit\Menu_Creditos
+      maxAttenuation: 0
+      maxDuration: 842750
+      minDuration: 842750
+    - name: Orb_pickup
+      guid: 999fb02881f4dd4c89eab0e953587c67
+      id: 3042702347
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Orb_pickup
+        ObjectType: 3
+      Path: Default Work Unit\Orb_pickup
+      maxAttenuation: 0
+      maxDuration: 842750
+      minDuration: 842750
+    - name: Pajaro_Aletea
+      guid: 89fd509ba43cf04c8c44286e457862a2
+      id: 4246722315
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Pajaro_Aletea
+        ObjectType: 3
+      Path: Default Work Unit\Pajaro_Aletea
+      maxAttenuation: 0
+      maxDuration: 842750
+      minDuration: 842750
+    - name: Pajaro_Voz
+      guid: d4af1be862d0dd488569f2582c994dde
+      id: 2577500974
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Pajaro_Voz
+        ObjectType: 3
+      Path: Default Work Unit\Pajaro_Voz
+      maxAttenuation: 0
+      maxDuration: 842750
+      minDuration: 842750
+    - name: Pausa_Juego
+      guid: ce5674d42880014cbe85a002214ba089
+      id: 1935209442
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Pausa_Juego
+        ObjectType: 3
+      Path: Default Work Unit\Pausa_Juego
+      maxAttenuation: 0
+      maxDuration: 842750
+      minDuration: 842750
+    - name: Perder
+      guid: fbb8b99d07263e40937bff6e4fe46559
+      id: 2433235219
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Perder
+        ObjectType: 3
+      Path: Default Work Unit\Perder
+      maxAttenuation: 0
+      maxDuration: 842750
+      minDuration: 842750
+    - name: Restart
+      guid: dc5984c9e8712a4bb025377c5aa048ce
+      id: 1203400786
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Restart
+        ObjectType: 3
+      Path: Default Work Unit\Restart
+      maxAttenuation: 0
+      maxDuration: 842750
+      minDuration: 842750
+    - name: Volver_a_Menu
+      guid: 90119147d213be43815b6796f79b4594
+      id: 3332192915
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Volver_a_Menu
+        ObjectType: 3
+      Path: Default Work Unit\Volver_a_Menu
+      maxAttenuation: 0
+      maxDuration: 842750
+      minDuration: 842750
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 1edc21d7eb91a849a512ee400c2fbddb
+    GuidInternal: 
+    m_lastTime: -8586276898650592635
+    List:
+    - name: Altura_Pajaro
+      guid: 76c4e5c4b950f34cb572038b88ce0796
+      id: 1768459312
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Altura_Pajaro
+        ObjectType: 13
+      Path: Default Work Unit\Altura_Pajaro
+    - name: Energia_Pajaro
+      guid: 6973bb1bcf4c2e4e805252c5fdd6be07
+      id: 201235242
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Energia_Pajaro
+        ObjectType: 13
+      Path: Default Work Unit\Energia_Pajaro
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: e551c34f8c574a49a909551aab9fe874
+    GuidInternal: 
+    m_lastTime: -8586278319694775808
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: d923c3652e58ca42b01c925600dcc99a
+    GuidInternal: 
+    m_lastTime: -8586278319694775808
+    List: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 20caf9f6f9a4ea4ea0903dee7059a30d
+    GuidInternal: 
+    m_lastTime: -8586278319694775808
+    List: []
+  ExpandedItems:
+  - /Lintu_WwiseProject
+  - /Lintu_WwiseProject/Events
+  - /Lintu_WwiseProject/Events/Default Work Unit
+  - /Lintu_WwiseProject/SoundBanks
+  - /Lintu_WwiseProject/SoundBanks/Default Work Unit
   autoPopulateEnabled: 1
-  CurrentPluginConfig: 
+  CurrentPluginConfig: Profile

@@ -1,6 +1,185 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{409620D5-A2F8-4103-A1F6-811A6D049633}" SchemaVersion="94">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{409620D5-A2F8-4103-A1F6-811A6D049633}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{409620D5-A2F8-4103-A1F6-811A6D049633}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Inicio_Start" ID="{A90E49C2-8075-4215-9DF5-35271EA6A134}">
+					<ChildrenList>
+						<Action Name="" ID="{268507A6-BB8B-48B6-BE97-5B1543A10F4B}" ShortID="659064698">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="itm_potionuse_02" ID="{7A32904A-7C8D-45AB-9AD3-22B4060BCEB8}" WorkUnitID="{6FF59BFE-21E3-484D-B73F-F7C53E23C38B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Inicio_Menu" ID="{B8F74C3B-E870-4A73-B2B3-0C9322FBCC31}">
+					<ChildrenList>
+						<Action Name="" ID="{51114A3A-5869-4C47-B541-1B21C0AD553E}" ShortID="616361758">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="itm_potionuse_02" ID="{7A32904A-7C8D-45AB-9AD3-22B4060BCEB8}" WorkUnitID="{6FF59BFE-21E3-484D-B73F-F7C53E23C38B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Inicio_Juego" ID="{96A46A28-0944-452C-8ABB-AAF3A095821A}">
+					<ChildrenList>
+						<Action Name="" ID="{50BCFBF8-B052-4715-9779-926663303658}" ShortID="134161782">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="itm_potionuse_02" ID="{7A32904A-7C8D-45AB-9AD3-22B4060BCEB8}" WorkUnitID="{6FF59BFE-21E3-484D-B73F-F7C53E23C38B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Ganar" ID="{3FB384EB-54CE-42B8-AC08-698DE349AFE9}">
+					<ChildrenList>
+						<Action Name="" ID="{187E3BCD-1DFF-4D5A-B735-0828D6D04D8E}" ShortID="1001022647">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="itm_potionuse_02" ID="{7A32904A-7C8D-45AB-9AD3-22B4060BCEB8}" WorkUnitID="{6FF59BFE-21E3-484D-B73F-F7C53E23C38B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Perder" ID="{9DB9B8FB-2607-403E-937B-FF6E4FE46559}">
+					<ChildrenList>
+						<Action Name="" ID="{F42E3DBA-D030-49C0-A8F6-D8AC001A05D8}" ShortID="437630925">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="itm_potionuse_02" ID="{7A32904A-7C8D-45AB-9AD3-22B4060BCEB8}" WorkUnitID="{6FF59BFE-21E3-484D-B73F-F7C53E23C38B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Pausa_Juego" ID="{D47456CE-8028-4C01-BE85-A002214BA089}">
+					<ChildrenList>
+						<Action Name="" ID="{FC297645-2955-4D61-AD69-2521452437A5}" ShortID="503200965">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="itm_potionuse_02" ID="{7A32904A-7C8D-45AB-9AD3-22B4060BCEB8}" WorkUnitID="{6FF59BFE-21E3-484D-B73F-F7C53E23C38B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Menu_Creditos" ID="{7F338802-0FC4-4786-AC6C-0D3CB807C41C}">
+					<ChildrenList>
+						<Action Name="" ID="{B8867487-ADFF-4279-9FDF-6504C0B2D1A6}" ShortID="1022112443">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="itm_potionuse_02" ID="{7A32904A-7C8D-45AB-9AD3-22B4060BCEB8}" WorkUnitID="{6FF59BFE-21E3-484D-B73F-F7C53E23C38B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Restart" ID="{C98459DC-71E8-4B2A-B025-377C5AA048CE}">
+					<ChildrenList>
+						<Action Name="" ID="{5EAB46FF-2034-40BE-B4C6-F43E0E55AFF7}" ShortID="286740404">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="itm_potionuse_02" ID="{7A32904A-7C8D-45AB-9AD3-22B4060BCEB8}" WorkUnitID="{6FF59BFE-21E3-484D-B73F-F7C53E23C38B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Volver_a_Menu" ID="{47911190-13D2-43BE-815B-6796F79B4594}">
+					<ChildrenList>
+						<Action Name="" ID="{3EF18520-AC4B-478E-820D-02A396AABC8B}" ShortID="716960556">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="itm_potionuse_02" ID="{7A32904A-7C8D-45AB-9AD3-22B4060BCEB8}" WorkUnitID="{6FF59BFE-21E3-484D-B73F-F7C53E23C38B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Orb_pickup" ID="{28B09F99-F481-4CDD-89EA-B0E953587C67}">
+					<ChildrenList>
+						<Action Name="" ID="{F2B7A4D4-07AA-43B0-89BD-91072CC7D3F3}" ShortID="633618359">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="itm_potionuse_02" ID="{7A32904A-7C8D-45AB-9AD3-22B4060BCEB8}" WorkUnitID="{6FF59BFE-21E3-484D-B73F-F7C53E23C38B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Click_Mouse" ID="{CEC255FC-D0F5-438E-B418-887FCA8CC5BD}">
+					<ChildrenList>
+						<Action Name="" ID="{79362CA0-561E-4FB8-847C-5A47F335473E}" ShortID="40104501">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="itm_potionuse_02" ID="{7A32904A-7C8D-45AB-9AD3-22B4060BCEB8}" WorkUnitID="{6FF59BFE-21E3-484D-B73F-F7C53E23C38B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Pajaro_Aletea" ID="{9B50FD89-3CA4-4CF0-8C44-286E457862A2}">
+					<ChildrenList>
+						<Action Name="" ID="{2BCAE51F-55D6-4430-8049-EFFCE9724A40}" ShortID="529035887">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="itm_potionuse_02" ID="{7A32904A-7C8D-45AB-9AD3-22B4060BCEB8}" WorkUnitID="{6FF59BFE-21E3-484D-B73F-F7C53E23C38B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Pajaro_Voz" ID="{E81BAFD4-D062-48DD-8569-F2582C994DDE}">
+					<ChildrenList>
+						<Action Name="" ID="{97FA2BA4-D3E5-4DCD-A79C-5CD31A82DB8F}" ShortID="215339755">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="itm_potionuse_02" ID="{7A32904A-7C8D-45AB-9AD3-22B4060BCEB8}" WorkUnitID="{6FF59BFE-21E3-484D-B73F-F7C53E23C38B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Colision_Agua" ID="{B06E1416-6B5C-45D3-83BD-75FAE2D4CD42}">
+					<ChildrenList>
+						<Action Name="" ID="{D6022CE8-2D9D-411D-B36E-F93F339D8832}" ShortID="624759816">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="itm_potionuse_02" ID="{7A32904A-7C8D-45AB-9AD3-22B4060BCEB8}" WorkUnitID="{6FF59BFE-21E3-484D-B73F-F7C53E23C38B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Colision_Madera" ID="{E8F9AF5E-6519-4FF8-9D9C-046973014A18}">
+					<ChildrenList>
+						<Action Name="" ID="{3606A4B4-9878-4B30-BB8A-A32AC7DE3FE3}" ShortID="105342546">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="itm_potionuse_02" ID="{7A32904A-7C8D-45AB-9AD3-22B4060BCEB8}" WorkUnitID="{6FF59BFE-21E3-484D-B73F-F7C53E23C38B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Barcos_Idle" ID="{1859E51D-98FC-47A7-8AA9-CB3FF9FB4113}">
+					<ChildrenList>
+						<Action Name="" ID="{7AD55A7E-197C-488A-AA15-C2ACC8DCBF46}" ShortID="1068462329">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="itm_potionuse_02" ID="{7A32904A-7C8D-45AB-9AD3-22B4060BCEB8}" WorkUnitID="{6FF59BFE-21E3-484D-B73F-F7C53E23C38B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

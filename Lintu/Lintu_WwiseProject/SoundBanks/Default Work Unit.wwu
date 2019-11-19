@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{5DBD24D1-788A-4E31-A75D-FF208C839DB6}" SchemaVersion="94">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{5DBD24D1-788A-4E31-A75D-FF208C839DB6}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{5DBD24D1-788A-4E31-A75D-FF208C839DB6}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Main" ID="{D06B6610-523B-41B7-9B47-AA3E6B0A6AC8}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Perder" ID="{9DB9B8FB-2607-403E-937B-FF6E4FE46559}" WorkUnitID="{409620D5-A2F8-4103-A1F6-811A6D049633}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Inicio_Start" ID="{A90E49C2-8075-4215-9DF5-35271EA6A134}" WorkUnitID="{409620D5-A2F8-4103-A1F6-811A6D049633}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Ganar" ID="{3FB384EB-54CE-42B8-AC08-698DE349AFE9}" WorkUnitID="{409620D5-A2F8-4103-A1F6-811A6D049633}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Click_Mouse" ID="{CEC255FC-D0F5-438E-B418-887FCA8CC5BD}" WorkUnitID="{409620D5-A2F8-4103-A1F6-811A6D049633}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Volver_a_Menu" ID="{47911190-13D2-43BE-815B-6796F79B4594}" WorkUnitID="{409620D5-A2F8-4103-A1F6-811A6D049633}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Inicio_Juego" ID="{96A46A28-0944-452C-8ABB-AAF3A095821A}" WorkUnitID="{409620D5-A2F8-4103-A1F6-811A6D049633}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Colision_Agua" ID="{B06E1416-6B5C-45D3-83BD-75FAE2D4CD42}" WorkUnitID="{409620D5-A2F8-4103-A1F6-811A6D049633}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Menu_Creditos" ID="{7F338802-0FC4-4786-AC6C-0D3CB807C41C}" WorkUnitID="{409620D5-A2F8-4103-A1F6-811A6D049633}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Barcos_Idle" ID="{1859E51D-98FC-47A7-8AA9-CB3FF9FB4113}" WorkUnitID="{409620D5-A2F8-4103-A1F6-811A6D049633}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Pajaro_Voz" ID="{E81BAFD4-D062-48DD-8569-F2582C994DDE}" WorkUnitID="{409620D5-A2F8-4103-A1F6-811A6D049633}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Inicio_Menu" ID="{B8F74C3B-E870-4A73-B2B3-0C9322FBCC31}" WorkUnitID="{409620D5-A2F8-4103-A1F6-811A6D049633}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Restart" ID="{C98459DC-71E8-4B2A-B025-377C5AA048CE}" WorkUnitID="{409620D5-A2F8-4103-A1F6-811A6D049633}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Pausa_Juego" ID="{D47456CE-8028-4C01-BE85-A002214BA089}" WorkUnitID="{409620D5-A2F8-4103-A1F6-811A6D049633}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Orb_pickup" ID="{28B09F99-F481-4CDD-89EA-B0E953587C67}" WorkUnitID="{409620D5-A2F8-4103-A1F6-811A6D049633}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Pajaro_Aletea" ID="{9B50FD89-3CA4-4CF0-8C44-286E457862A2}" WorkUnitID="{409620D5-A2F8-4103-A1F6-811A6D049633}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Colision_Madera" ID="{E8F9AF5E-6519-4FF8-9D9C-046973014A18}" WorkUnitID="{409620D5-A2F8-4103-A1F6-811A6D049633}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>

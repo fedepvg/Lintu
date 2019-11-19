@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="134">
+	<RootPaths>
+		<ProjectRoot>Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1876704714" Name="Barcos_Idle" ObjectPath="\Events\Default Work Unit\Barcos_Idle" DurationType="OneShot" DurationMin="0.842750" DurationMax="0.842750"/>
+				<Event Id="2013887443" Name="Click_Mouse" ObjectPath="\Events\Default Work Unit\Click_Mouse" DurationType="OneShot" DurationMin="0.842750" DurationMax="0.842750"/>
+				<Event Id="3661761514" Name="Colision_Agua" ObjectPath="\Events\Default Work Unit\Colision_Agua" DurationType="OneShot" DurationMin="0.842750" DurationMax="0.842750"/>
+				<Event Id="3999760164" Name="Colision_Madera" ObjectPath="\Events\Default Work Unit\Colision_Madera" DurationType="OneShot" DurationMin="0.842750" DurationMax="0.842750"/>
+				<Event Id="3575068712" Name="Ganar" ObjectPath="\Events\Default Work Unit\Ganar" DurationType="OneShot" DurationMin="0.842750" DurationMax="0.842750"/>
+				<Event Id="1460932951" Name="Inicio_Juego" ObjectPath="\Events\Default Work Unit\Inicio_Juego" DurationType="OneShot" DurationMin="0.842750" DurationMax="0.842750"/>
+				<Event Id="880580374" Name="Inicio_Menu" ObjectPath="\Events\Default Work Unit\Inicio_Menu" DurationType="OneShot" DurationMin="0.842750" DurationMax="0.842750"/>
+				<Event Id="194776941" Name="Inicio_Start" ObjectPath="\Events\Default Work Unit\Inicio_Start" DurationType="OneShot" DurationMin="0.842750" DurationMax="0.842750"/>
+				<Event Id="1063492266" Name="Menu_Creditos" ObjectPath="\Events\Default Work Unit\Menu_Creditos" DurationType="OneShot" DurationMin="0.842750" DurationMax="0.842750"/>
+				<Event Id="3042702347" Name="Orb_pickup" ObjectPath="\Events\Default Work Unit\Orb_pickup" DurationType="OneShot" DurationMin="0.842750" DurationMax="0.842750"/>
+				<Event Id="4246722315" Name="Pajaro_Aletea" ObjectPath="\Events\Default Work Unit\Pajaro_Aletea" DurationType="OneShot" DurationMin="0.842750" DurationMax="0.842750"/>
+				<Event Id="2577500974" Name="Pajaro_Voz" ObjectPath="\Events\Default Work Unit\Pajaro_Voz" DurationType="OneShot" DurationMin="0.842750" DurationMax="0.842750"/>
+				<Event Id="1935209442" Name="Pausa_Juego" ObjectPath="\Events\Default Work Unit\Pausa_Juego" DurationType="OneShot" DurationMin="0.842750" DurationMax="0.842750"/>
+				<Event Id="2433235219" Name="Perder" ObjectPath="\Events\Default Work Unit\Perder" DurationType="OneShot" DurationMin="0.842750" DurationMax="0.842750"/>
+				<Event Id="1203400786" Name="Restart" ObjectPath="\Events\Default Work Unit\Restart" DurationType="OneShot" DurationMin="0.842750" DurationMax="0.842750"/>
+				<Event Id="3332192915" Name="Volver_a_Menu" ObjectPath="\Events\Default Work Unit\Volver_a_Menu" DurationType="OneShot" DurationMin="0.842750" DurationMax="0.842750"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="231066604" Language="SFX">
+					<ShortName>itm_potionuse_02.wav</ShortName>
+					<Path>SFX\itm_potionuse_02_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

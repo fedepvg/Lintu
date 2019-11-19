@@ -1,0 +1,21 @@
+Event	ID	Name			Wwise Object Path	Notes
+	194776941	Inicio_Start			\Default Work Unit\Inicio_Start	
+	880580374	Inicio_Menu			\Default Work Unit\Inicio_Menu	
+	1063492266	Menu_Creditos			\Default Work Unit\Menu_Creditos	
+	1203400786	Restart			\Default Work Unit\Restart	
+	1460932951	Inicio_Juego			\Default Work Unit\Inicio_Juego	
+	1876704714	Barcos_Idle			\Default Work Unit\Barcos_Idle	
+	1935209442	Pausa_Juego			\Default Work Unit\Pausa_Juego	
+	2013887443	Click_Mouse			\Default Work Unit\Click_Mouse	
+	2433235219	Perder			\Default Work Unit\Perder	
+	2577500974	Pajaro_Voz			\Default Work Unit\Pajaro_Voz	
+	3042702347	Orb_pickup			\Default Work Unit\Orb_pickup	
+	3332192915	Volver_a_Menu			\Default Work Unit\Volver_a_Menu	
+	3575068712	Ganar			\Default Work Unit\Ganar	
+	3661761514	Colision_Agua			\Default Work Unit\Colision_Agua	
+	3999760164	Colision_Madera			\Default Work Unit\Colision_Madera	
+	4246722315	Pajaro_Aletea			\Default Work Unit\Pajaro_Aletea	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	231066604	itm_potionuse_02	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Windows\SFX\itm_potionuse_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\itm_potionuse_02		54000
+

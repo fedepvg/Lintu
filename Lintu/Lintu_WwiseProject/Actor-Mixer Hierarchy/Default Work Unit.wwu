@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{6FF59BFE-21E3-484D-B73F-F7C53E23C38B}" SchemaVersion="94">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{6FF59BFE-21E3-484D-B73F-F7C53E23C38B}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{6FF59BFE-21E3-484D-B73F-F7C53E23C38B}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="itm_potionuse_02" ID="{7A32904A-7C8D-45AB-9AD3-22B4060BCEB8}" ShortID="409458295">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D5B942A2-578C-459A-9515-894F12FD53E1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{23627151-D2E9-4F2A-903A-43CE359F8123}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="itm_potionuse_02" ID="{0916AFC4-B673-4D57-BE39-1572774C0B9B}" ShortID="231066604">
+							<Language>SFX</Language>
+							<AudioFile>itm_potionuse_02.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="itm_potionuse_02" ID="{0916AFC4-B673-4D57-BE39-1572774C0B9B}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>
