@@ -54,7 +54,6 @@ public class BirdController : MonoBehaviour
     bool OffLeftLimit = false;
     bool OffRightLimit = false;
     bool EndedLevel = false;
-    float OffLimitsSpeed;
     #endregion
 
     void Start()
@@ -112,9 +111,17 @@ public class BirdController : MonoBehaviour
 
         #region Rotation
         if (OffLeftLimit)
-            ZAxisFrameRotation = -3;
+        {
+            if (ZAxisFrameRotation > 0)
+                ZAxisFrameRotation = 0;
+            ZAxisFrameRotation += -6 * Time.deltaTime;
+        }
         else if (OffRightLimit)
-            ZAxisFrameRotation = 3;
+        {
+            if (ZAxisFrameRotation < 0)
+                ZAxisFrameRotation = 0;
+            ZAxisFrameRotation += 6 * Time.deltaTime;
+        }
         if (EndedLevel)
             XAxisFrameRotation = -2;
 
@@ -123,16 +130,16 @@ public class BirdController : MonoBehaviour
 
         XAxisRotation = Mathf.Clamp(XAxisRotation, MinXRotation, MaxXRotation);
 
-        if(OffLeftLimit)
-            ZAxisRotation = Mathf.Clamp(ZAxisRotation, 0, MaxZRotation);
-        else if(OffRightLimit)
-            ZAxisRotation = Mathf.Clamp(ZAxisRotation, MinZRotation, 0);
-        else
-            ZAxisRotation = Mathf.Clamp(ZAxisRotation, MinZRotation, MaxZRotation);
+        ZAxisRotation = Mathf.Clamp(ZAxisRotation, MinZRotation, MaxZRotation);
 
-        if (ZAxisRotation == 0)
+        if (ZAxisRotation >= MaxZRotation && OffRightLimit)
         {
+            PlayerInput.Gameplay.Horizontal.Enable();
             OffRightLimit = false;
+        }
+        else if (ZAxisRotation <= MinZRotation && OffLeftLimit)
+        {
+            PlayerInput.Gameplay.Horizontal.Enable();
             OffLeftLimit = false;
         }
 
@@ -187,10 +194,7 @@ public class BirdController : MonoBehaviour
     {
         Rigi.velocity = transform.forward * Speed * SpeedMultiplier;// * JumpGravity;
         Rigi.velocity += new Vector3(0f, Gravity, 0f);
-        if (!OffLeftLimit && !OffRightLimit)
-            Rigi.velocity += Vector3.right * -ZAxisRotation * HorizontalSpeed * Time.fixedDeltaTime;
-        else
-            Rigi.velocity += Vector3.right * OffLimitsSpeed * Time.fixedDeltaTime;
+        Rigi.velocity += Vector3.right * -ZAxisRotation * HorizontalSpeed * Time.fixedDeltaTime;
         Rigi.MoveRotation(DestRotation);
     }
 
@@ -225,12 +229,12 @@ public class BirdController : MonoBehaviour
             if (Rigi.velocity.x > 0)
             {
                 OffRightLimit = true;
-                OffLimitsSpeed = -200;
+                PlayerInput.Gameplay.Horizontal.Disable();
             }
             else
             {
                 OffLeftLimit = true;
-                OffLimitsSpeed = 200;
+                PlayerInput.Gameplay.Horizontal.Disable();
             }
         }
 
