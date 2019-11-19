@@ -3,10 +3,10 @@ using UnityEditor;
 
 public class PrefabReplace : ScriptableObject
 {
-    [MenuItem("Helper/Replace Objects With Prefab")]
+    [MenuItem("Prefab/Replace Barco With Prefab")]
     static void HelperReplaceObjectsWithPrefab()
     {
-        var prefab = AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Prefabs/Viga.prefab"); // put the location of the prefab here
+        var prefab = AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Prefabs/Barco.prefab"); // put the location of the prefab here
 
         // go over all selected objects. Change this if you want to go
         // through other objects, e.g. GameObject.FindWithTag ...
@@ -15,7 +15,7 @@ public class PrefabReplace : ScriptableObject
         {
             // create a new prefab
             GameObject go = (GameObject)PrefabUtility.InstantiatePrefab(prefab);
-            go.name = "Viga_" + i; // remember name
+            go.name =  prefab.name + "_" + i; // remember name
             go.transform.parent = s.transform.parent; // put into hierarchy
             EditorUtility.CopySerialized(s.transform, go.transform); // remember position/rotation etc..
             PrefabUtility.RecordPrefabInstancePropertyModifications(go); // fix modified properties
