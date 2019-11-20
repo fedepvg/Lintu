@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 821865918770499530}
   - component: {fileID: 821865918770499524}
   - component: {fileID: 821865918770499525}
-  - component: {fileID: 1450943259149521132}
   m_Layer: 11
   m_Name: Lintu
   m_TagString: Player
@@ -138,31 +137,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
---- !u!114 &1450943259149521132
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 821865918770499526}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fbad85bb35bd614d89e7c133ba2f80b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: f7e1664c
-  useOtherObject: 0
-  data:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: b5ecdbe40af9c144e802299e782fd7e4,
-      type: 2}
-  decodeBank: 0
-  loadAsynchronous: 0
-  saveDecodedBank: 0
-  unloadTriggerList: 958ca0ea
-  bankNameInternal: 
-  valueGuidInternal: 
 --- !u!1001 &3002035598518984555
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -170,6 +144,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 824619557451100236}
     m_Modifications:
+    - target: {fileID: -6057140222963153312, guid: 9e049040f02f4714c85d0d75c37192be,
+        type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: 9e049040f02f4714c85d0d75c37192be, type: 3}
+    - target: {fileID: -6057140222963153312, guid: 9e049040f02f4714c85d0d75c37192be,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 1a944efbb0f1eb0419da019a690b8a54, type: 2}
     - target: {fileID: -927199367670048503, guid: 9e049040f02f4714c85d0d75c37192be,
         type: 3}
       propertyPath: m_Name
@@ -260,16 +244,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 30
       objectReference: {fileID: 0}
-    - target: {fileID: -6057140222963153312, guid: 9e049040f02f4714c85d0d75c37192be,
-        type: 3}
-      propertyPath: m_Avatar
-      value: 
-      objectReference: {fileID: 9000000, guid: 9e049040f02f4714c85d0d75c37192be, type: 3}
-    - target: {fileID: -6057140222963153312, guid: 9e049040f02f4714c85d0d75c37192be,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 1a944efbb0f1eb0419da019a690b8a54, type: 2}
     - target: {fileID: -4679649364715901358, guid: 9e049040f02f4714c85d0d75c37192be,
         type: 3}
       propertyPath: m_Layer

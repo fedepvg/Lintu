@@ -12030,6 +12030,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 6512298855389079210, guid: 42daa039aa50c0844a67e490b7c19c1d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42daa039aa50c0844a67e490b7c19c1d, type: 3}
 --- !u!1 &1029404939 stripped
@@ -12461,7 +12466,7 @@ Transform:
   - {fileID: 1078699426}
   - {fileID: 1288196237}
   m_Father: {fileID: 6247378743995580612}
-  m_RootOrder: 43
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1073167931 stripped
 Transform:
@@ -14237,7 +14242,7 @@ Transform:
   - {fileID: 833269014}
   - {fileID: 875149308}
   m_Father: {fileID: 6247378743995580612}
-  m_RootOrder: 44
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1246215136
 GameObject:
@@ -37373,11 +37378,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6247378743995580612}
     m_Modifications:
-    - target: {fileID: 3845324736242046977, guid: d99cc26746b48d94baf179626917da1b,
-        type: 3}
-      propertyPath: m_Name
-      value: CityPart
-      objectReference: {fileID: 0}
     - target: {fileID: 856735631004773647, guid: d99cc26746b48d94baf179626917da1b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -37432,6 +37432,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845324736242046977, guid: d99cc26746b48d94baf179626917da1b,
+        type: 3}
+      propertyPath: m_Name
+      value: CityPart
       objectReference: {fileID: 0}
     - target: {fileID: 7049250978950611897, guid: d99cc26746b48d94baf179626917da1b,
         type: 3}
@@ -37703,7 +37708,7 @@ Transform:
   m_Children:
   - {fileID: 695069799}
   m_Father: {fileID: 6247378743995580612}
-  m_RootOrder: 19
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &6187250774259477464
 PrefabInstance:
@@ -44240,6 +44245,8 @@ Transform:
   - {fileID: 1844616121}
   - {fileID: 1392091580}
   - {fileID: 2146498780}
+  - {fileID: 1071966108}
+  - {fileID: 1244367623}
   - {fileID: 318246183}
   - {fileID: 15777196}
   - {fileID: 413588392}
@@ -44249,8 +44256,8 @@ Transform:
   - {fileID: 349244734}
   - {fileID: 628771151}
   - {fileID: 1358816487}
-  - {fileID: 6023960133384605783}
   - {fileID: 1384015544}
+  - {fileID: 6023960133384605783}
   - {fileID: 703588953}
   - {fileID: 513408755}
   - {fileID: 573222698}
@@ -44273,8 +44280,6 @@ Transform:
   - {fileID: 624227035}
   - {fileID: 517082215}
   - {fileID: 1648535374}
-  - {fileID: 1071966108}
-  - {fileID: 1244367623}
   m_Father: {fileID: 3982610111678532449}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

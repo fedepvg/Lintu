@@ -56,11 +56,6 @@ public class BirdController : MonoBehaviour
     bool EndedLevel = false;
     #endregion
 
-    private void Awake()
-    {
-        GetComponent<AkBank>().UnloadBank(this.gameObject);
-    }
-
     void Start()
     {
         Rigi = GetComponent<Rigidbody>();

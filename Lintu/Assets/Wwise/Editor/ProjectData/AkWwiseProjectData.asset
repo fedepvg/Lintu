@@ -17,21 +17,21 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: d20c70a524a215419f1fc816d77a231d
     GuidInternal: 
-    m_lastTime: -8586278319694775808
+    m_lastTime: -8586273333442606952
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 51716223e9d22a4f903a43ce359f8123
     GuidInternal: 
-    m_lastTime: -8586278319694775808
+    m_lastTime: -8586273333442686903
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: d124bd5d8a78314ea75dff208c839db6
     GuidInternal: 
-    m_lastTime: -8586274165720143904
+    m_lastTime: -8586273333442636936
     List:
     - name: Main
       guid: 10666bd03b52b7419b47aa3e6b0a6ac8
@@ -47,7 +47,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: d5209640f8a20341a1f6811a6d049633
     GuidInternal: 
-    m_lastTime: -8586276891719672849
+    m_lastTime: -8586273333442816831
     List:
     - name: Barcos_Idle
       guid: 1de55918fc98a7478aa9cb3ff9fb4113
@@ -246,7 +246,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 1edc21d7eb91a849a512ee400c2fbddb
     GuidInternal: 
-    m_lastTime: -8586276898650592635
+    m_lastTime: -8586273333442806832
     List:
     - name: Altura_Pajaro
       guid: 76c4e5c4b950f34cb572038b88ce0796
@@ -271,25 +271,27 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: e551c34f8c574a49a909551aab9fe874
     GuidInternal: 
-    m_lastTime: -8586278319694775808
+    m_lastTime: -8586273333442626942
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: d923c3652e58ca42b01c925600dcc99a
     GuidInternal: 
-    m_lastTime: -8586278319694775808
+    m_lastTime: -8586273333442616945
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 20caf9f6f9a4ea4ea0903dee7059a30d
     GuidInternal: 
-    m_lastTime: -8586278319694775808
+    m_lastTime: -8586273333442616945
     List: []
   ExpandedItems:
   - /Lintu_WwiseProject
   - /Lintu_WwiseProject/Events
   - /Lintu_WwiseProject/Events/Default Work Unit
+  - /Lintu_WwiseProject/SoundBanks
+  - /Lintu_WwiseProject/SoundBanks/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: Profile
