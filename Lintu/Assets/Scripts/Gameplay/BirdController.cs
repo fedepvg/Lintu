@@ -25,10 +25,10 @@ public class BirdController : MonoBehaviour
     public float MinSpeedMultiplier;
     public Animator AnimatonController;
     public AnimationCurve JumpCurve;
-    public LayerMask FloorRaycastLayer;
+    public LayerMask LevelRaycastLayer;
     public GameObject []BlobShadows;
     public SceneLoader SceneManagement;
-    public float FloorDistance;
+    public float LevelDistanceLeft;
     public float Energy;
     public float JumpEnergy;
     public float EnergyLossCoefficient;
@@ -49,8 +49,8 @@ public class BirdController : MonoBehaviour
     public float Gravity;
     float JumpTimer;
     float JumpGravity;
-    const float FloorRayDistance = 300f;
-    float rotationCoefficient;
+    const float LevelRayDistance = 2000f;
+    float RotationCoefficient;
     bool OffLeftLimit = false;
     bool OffRightLimit = false;
     bool EndedLevel = false;
@@ -149,14 +149,14 @@ public class BirdController : MonoBehaviour
         #region MovementCalculations
         if (XAxisRotation < 4f && Energy > 0)
         {
-            rotationCoefficient = DownRotationCoefficient;
+            RotationCoefficient = DownRotationCoefficient;
             if (XAxisRotation > 0)
-                rotationCoefficient = MiddleRotationCoefficient;
+                RotationCoefficient = MiddleRotationCoefficient;
         }
         else
-            rotationCoefficient = UpRotationCoefficient;
+            RotationCoefficient = UpRotationCoefficient;
 
-        SpeedMultiplier += (SpeedMultiplier * rotationCoefficient * XAxisRotation) * Time.deltaTime;
+        SpeedMultiplier += (SpeedMultiplier * RotationCoefficient * XAxisRotation) * Time.deltaTime;
 
         SpeedMultiplier = Mathf.Clamp(SpeedMultiplier, MinSpeedMultiplier, MaxSpeedMultiplier);
 
@@ -173,16 +173,16 @@ public class BirdController : MonoBehaviour
         Energy = Mathf.Clamp(Energy, 0, MaxEnergy);
         #endregion
 
-        #region FloorDistance
+        #region LevelDistance
         RaycastHit hit;
         string layerHitted;
-        if (Physics.Raycast(transform.position, - Vector3.up, out hit, FloorRayDistance, FloorRaycastLayer))
+        if (Physics.Raycast(transform.position, Vector3.forward, out hit, LevelRayDistance, LevelRaycastLayer))
         {
             layerHitted = LayerMask.LayerToName(hit.transform.gameObject.layer);
 
-            if (layerHitted == "Floor")
+            if (layerHitted == "Finish")
             {
-                FloorDistance = hit.distance;
+                LevelDistanceLeft = hit.distance;
             }
         }
         #endregion

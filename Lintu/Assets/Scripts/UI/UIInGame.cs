@@ -13,11 +13,16 @@ public class UIInGame : MonoBehaviour
     public Slider AltitudeBar;
     public BirdController Player;
     public GameObject PausePanel;
+    public Transform StartTransform;
+    public Transform FinishTransform;
     #endregion
+
+    float LevelDistance;
 
     private void Start()
     {
         GameManager.Instance.GameInput.Gameplay.Pause.performed += ctx => SetPauseState();
+        LevelDistance = FinishTransform.position.z - StartTransform.position.z;
     }
 
     void Update()
@@ -28,7 +33,7 @@ public class UIInGame : MonoBehaviour
         else
             EnergyBarFill.color = Color.white;
 
-        AltitudeBar.value = Player.FloorDistance;
+        AltitudeBar.value = Player.LevelDistanceLeft * 100 / LevelDistance;
 
         if (!EventSystem.current.currentSelectedGameObject && PausePanel.activeSelf && GameManager.Instance.GameInput.UI.Navigate.triggered)
             EventSystem.current.SetSelectedGameObject(EventSystem.current.firstSelectedGameObject);

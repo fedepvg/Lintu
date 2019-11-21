@@ -97,9 +97,9 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  FloorRaycastLayer:
+  LevelRaycastLayer:
     serializedVersion: 2
-    m_Bits: 1024
+    m_Bits: 512
   BlobShadows:
   - {fileID: 0}
   SceneManagement: {fileID: 0}
