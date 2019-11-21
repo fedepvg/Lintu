@@ -26,7 +26,7 @@ public class BirdController : MonoBehaviour
     public Animator AnimatonController;
     public AnimationCurve JumpCurve;
     public LayerMask LevelRaycastLayer;
-    public GameObject []BlobShadows;
+    public GameObject BlobShadow;
     public SceneLoader SceneManagement;
     public float LevelDistanceLeft;
     public float Energy;
@@ -192,7 +192,7 @@ public class BirdController : MonoBehaviour
 
     void FixedUpdate()
     {
-        Rigi.velocity = transform.forward * Speed * SpeedMultiplier;// * JumpGravity;
+        Rigi.velocity = transform.forward * Speed * SpeedMultiplier;
         Rigi.velocity += new Vector3(0f, Gravity, 0f);
         Rigi.velocity += Vector3.right * -ZAxisRotation * HorizontalSpeed * Time.fixedDeltaTime;
         Rigi.MoveRotation(DestRotation);
@@ -200,13 +200,7 @@ public class BirdController : MonoBehaviour
 
     void UpdateBlobShadowPosition()
     {
-        BlobShadows[0].transform.forward = transform.forward;
-        BlobShadows[0].transform.position = transform.position;
-        BlobShadows[1].transform.position = transform.position;
-        //for (int i = 0; i < BlobShadows.Length; i++)
-        //{
-        //    BlobShadows[i].transform.position = transform.position;
-        //}
+        BlobShadow.transform.position = transform.position;
     }
 
     void AddEnergy(int energy)

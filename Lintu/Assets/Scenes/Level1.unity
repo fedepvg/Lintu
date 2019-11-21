@@ -877,10 +877,15 @@ PrefabInstance:
         type: 3}
       propertyPath: BlobShadows.Array.data[0]
       value: 
-      objectReference: {fileID: 1785609929}
+      objectReference: {fileID: 0}
     - target: {fileID: 821865918770499530, guid: 160755c619e561341874febe56b3ea4a,
         type: 3}
       propertyPath: BlobShadows.Array.data[1]
+      value: 
+      objectReference: {fileID: 1785609928}
+    - target: {fileID: 821865918770499530, guid: 160755c619e561341874febe56b3ea4a,
+        type: 3}
+      propertyPath: BlobShadow
       value: 
       objectReference: {fileID: 1785609928}
     - target: {fileID: 6523660249029822050, guid: 160755c619e561341874febe56b3ea4a,
@@ -1511,12 +1516,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1785609927}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1785609929 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6512298855389079210, guid: 42daa039aa50c0844a67e490b7c19c1d,
-    type: 3}
-  m_PrefabInstance: {fileID: 1785609927}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1907262333
 GameObject:
   m_ObjectHideFlags: 0
@@ -2002,7 +2001,7 @@ PrefabInstance:
     - target: {fileID: 9062217408589599166, guid: dbb7018cf14c43d4a951fdf311cef417,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9062217408589599157, guid: dbb7018cf14c43d4a951fdf311cef417,
         type: 3}
@@ -2112,7 +2111,7 @@ PrefabInstance:
     - target: {fileID: 9062217409617057307, guid: dbb7018cf14c43d4a951fdf311cef417,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9062217408589599163, guid: dbb7018cf14c43d4a951fdf311cef417,
         type: 3}
