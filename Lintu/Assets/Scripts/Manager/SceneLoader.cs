@@ -40,6 +40,7 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadMenuScene(bool fakeLoad)
     {
+        GameManager.Instance.Won = false;
         LoaderManager.Instance.LoadScene(MenuScene, fakeLoad);
     }
 
