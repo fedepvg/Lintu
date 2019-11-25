@@ -31,10 +31,38 @@ namespace AK
         static const AkUniqueID VOLVER_A_MENU = 3332192915U;
     } // namespace EVENTS
 
+    namespace STATES
+    {
+        namespace MUSICA
+        {
+            static const AkUniqueID GROUP = 1730564739U;
+
+            namespace STATE
+            {
+                static const AkUniqueID GAMEPLAY = 89505537U;
+                static const AkUniqueID MENU = 2607556080U;
+                static const AkUniqueID OFF = 930712164U;
+            } // namespace STATE
+        } // namespace MUSICA
+
+        namespace PAUSE
+        {
+            static const AkUniqueID GROUP = 3092587493U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace PAUSE
+
+    } // namespace STATES
+
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID ALTURA_PAJARO = 1768459312U;
         static const AkUniqueID ENERGIA_PAJARO = 201235242U;
+        static const AkUniqueID VELOCIDAD_PAJARO = 2822622896U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS

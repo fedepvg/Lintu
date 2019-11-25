@@ -24,14 +24,14 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 51716223e9d22a4f903a43ce359f8123
     GuidInternal: 
-    m_lastTime: -8586273333442686903
+    m_lastTime: -8586272236391660030
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: d124bd5d8a78314ea75dff208c839db6
     GuidInternal: 
-    m_lastTime: -8586273333442636936
+    m_lastTime: -8586272190223030302
     List:
     - name: Main
       guid: 10666bd03b52b7419b47aa3e6b0a6ac8
@@ -47,7 +47,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: d5209640f8a20341a1f6811a6d049633
     GuidInternal: 
-    m_lastTime: -8586273333442816831
+    m_lastTime: -8586272229215955410
     List:
     - name: Barcos_Idle
       guid: 1de55918fc98a7478aa9cb3ff9fb4113
@@ -59,8 +59,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Barcos_Idle
       maxAttenuation: 0
-      maxDuration: 842750
-      minDuration: 842750
+      maxDuration: 0
+      minDuration: 0
     - name: Click_Mouse
       guid: fc55c2cef5d08e43b418887fca8cc5bd
       id: 2013887443
@@ -71,8 +71,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Click_Mouse
       maxAttenuation: 0
-      maxDuration: 842750
-      minDuration: 842750
+      maxDuration: 316537
+      minDuration: 261178
     - name: Colision_Agua
       guid: 16146eb05c6bd34583bd75fae2d4cd42
       id: 3661761514
@@ -83,8 +83,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Colision_Agua
       maxAttenuation: 0
-      maxDuration: 842750
-      minDuration: 842750
+      maxDuration: 0
+      minDuration: 0
     - name: Colision_Madera
       guid: 5eaff9e81965f84f9d9c046973014a18
       id: 3999760164
@@ -95,8 +95,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Colision_Madera
       maxAttenuation: 0
-      maxDuration: 842750
-      minDuration: 842750
+      maxDuration: 0
+      minDuration: 0
     - name: Ganar
       guid: eb84b33fce54b842ac08698de349afe9
       id: 3575068712
@@ -107,8 +107,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Ganar
       maxAttenuation: 0
-      maxDuration: 842750
-      minDuration: 842750
+      maxDuration: 0
+      minDuration: 0
     - name: Inicio_Juego
       guid: 286aa49644092c458abbaaf3a095821a
       id: 1460932951
@@ -119,8 +119,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Inicio_Juego
       maxAttenuation: 0
-      maxDuration: 842750
-      minDuration: 842750
+      maxDuration: -1
+      minDuration: -1
     - name: Inicio_Menu
       guid: 3b4cf7b870e8734ab2b30c9322fbcc31
       id: 880580374
@@ -131,8 +131,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Inicio_Menu
       maxAttenuation: 0
-      maxDuration: 842750
-      minDuration: 842750
+      maxDuration: 66842544
+      minDuration: 66842544
     - name: Inicio_Start
       guid: c2490ea9758015429df535271ea6a134
       id: 194776941
@@ -143,8 +143,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Inicio_Start
       maxAttenuation: 0
-      maxDuration: 842750
-      minDuration: 842750
+      maxDuration: 9596750
+      minDuration: 9596750
     - name: Menu_Creditos
       guid: 0288337fc40f8647ac6c0d3cb807c41c
       id: 1063492266
@@ -155,8 +155,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Menu_Creditos
       maxAttenuation: 0
-      maxDuration: 842750
-      minDuration: 842750
+      maxDuration: 0
+      minDuration: 0
     - name: Orb_pickup
       guid: 999fb02881f4dd4c89eab0e953587c67
       id: 3042702347
@@ -167,8 +167,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Orb_pickup
       maxAttenuation: 0
-      maxDuration: 842750
-      minDuration: 842750
+      maxDuration: 0
+      minDuration: 0
     - name: Pajaro_Aletea
       guid: 89fd509ba43cf04c8c44286e457862a2
       id: 4246722315
@@ -179,8 +179,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Pajaro_Aletea
       maxAttenuation: 0
-      maxDuration: 842750
-      minDuration: 842750
+      maxDuration: 0
+      minDuration: 0
     - name: Pajaro_Voz
       guid: d4af1be862d0dd488569f2582c994dde
       id: 2577500974
@@ -191,8 +191,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Pajaro_Voz
       maxAttenuation: 0
-      maxDuration: 842750
-      minDuration: 842750
+      maxDuration: 0
+      minDuration: 0
     - name: Pausa_Juego
       guid: ce5674d42880014cbe85a002214ba089
       id: 1935209442
@@ -203,8 +203,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Pausa_Juego
       maxAttenuation: 0
-      maxDuration: 842750
-      minDuration: 842750
+      maxDuration: 0
+      minDuration: 0
     - name: Perder
       guid: fbb8b99d07263e40937bff6e4fe46559
       id: 2433235219
@@ -215,8 +215,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Perder
       maxAttenuation: 0
-      maxDuration: 842750
-      minDuration: 842750
+      maxDuration: 0
+      minDuration: 0
     - name: Restart
       guid: dc5984c9e8712a4bb025377c5aa048ce
       id: 1203400786
@@ -227,8 +227,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Restart
       maxAttenuation: 0
-      maxDuration: 842750
-      minDuration: 842750
+      maxDuration: 0
+      minDuration: 0
     - name: Volver_a_Menu
       guid: 90119147d213be43815b6796f79b4594
       id: 3332192915
@@ -239,8 +239,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Volver_a_Menu
       maxAttenuation: 0
-      maxDuration: 842750
-      minDuration: 842750
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -271,8 +271,76 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: e551c34f8c574a49a909551aab9fe874
     GuidInternal: 
-    m_lastTime: -8586273333442626942
-    List: []
+    m_lastTime: -8586272236391759945
+    List:
+    - name: Musica
+      guid: 16c38de61c2b0a4db8ebd498ac81d42d
+      id: 1730564739
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Musica
+        ObjectType: 9
+      Path: Default Work Unit\Musica
+      values:
+      - name: Gameplay
+        guid: 46288af79d9e4d4c880a9a6d589af13a
+        id: 89505537
+        PathAndIcons:
+        - ElementName: Gameplay
+          ObjectType: 8
+      - name: Menu
+        guid: ca70071d11e9294ea7c5435687960234
+        id: 2607556080
+        PathAndIcons:
+        - ElementName: Menu
+          ObjectType: 8
+      - name: None
+        guid: 440325ada203bb4bb92de0ce09f03962
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: Off
+        guid: 2ff4dea37600eb49989126dc101744ee
+        id: 930712164
+        PathAndIcons:
+        - ElementName: Off
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Pause
+      guid: 572a33274217d84b80d63eeebe03e27d
+      id: 3092587493
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Pause
+        ObjectType: 9
+      Path: Default Work Unit\Pause
+      values:
+      - name: None
+        guid: 00ddf5080d5c3d4392e6f07ba2e78d62
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: Off
+        guid: 6234ce11b84bd04b81834ab4cb6740b0
+        id: 930712164
+        PathAndIcons:
+        - ElementName: Off
+          ObjectType: 8
+      - name: On
+        guid: d78709b53d21f64ab3ddd5a3b1c551aa
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: On
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -289,9 +357,10 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /Lintu_WwiseProject
-  - /Lintu_WwiseProject/Events
-  - /Lintu_WwiseProject/Events/Default Work Unit
   - /Lintu_WwiseProject/SoundBanks
   - /Lintu_WwiseProject/SoundBanks/Default Work Unit
+  - /Lintu_WwiseProject/States
+  - /Lintu_WwiseProject/States/Default Work Unit
+  - /Lintu_WwiseProject/States/Default Work Unit/Musica
   autoPopulateEnabled: 1
   CurrentPluginConfig: Profile

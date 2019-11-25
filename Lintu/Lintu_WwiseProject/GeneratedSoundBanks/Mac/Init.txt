@@ -1,0 +1,23 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	1730564739	Musica			\Default Work Unit\Musica	
+	3092587493	Pause			\Default Work Unit\Pause	
+
+State	ID	Name	State Group			Notes
+	0	None	Musica			
+	89505537	Gameplay	Musica			
+	930712164	Off	Musica			
+	2607556080	Menu	Musica			
+	0	None	Pause			
+	930712164	Off	Pause			
+	1651971902	On	Pause			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	565456171	On	Pause	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus		
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+

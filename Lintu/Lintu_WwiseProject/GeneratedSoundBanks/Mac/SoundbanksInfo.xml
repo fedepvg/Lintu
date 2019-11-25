@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="134">
+	<RootPaths>
+		<ProjectRoot>Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1876704714" Name="Barcos_Idle" ObjectPath="\Events\Default Work Unit\Barcos_Idle" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2013887443" Name="Click_Mouse" ObjectPath="\Events\Default Work Unit\Click_Mouse" DurationType="OneShot" DurationMin="0.261178" DurationMax="0.316537"/>
+				<Event Id="3661761514" Name="Colision_Agua" ObjectPath="\Events\Default Work Unit\Colision_Agua" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3999760164" Name="Colision_Madera" ObjectPath="\Events\Default Work Unit\Colision_Madera" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3575068712" Name="Ganar" ObjectPath="\Events\Default Work Unit\Ganar" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1460932951" Name="Inicio_Juego" ObjectPath="\Events\Default Work Unit\Inicio_Juego" DurationType="Infinite"/>
+				<Event Id="880580374" Name="Inicio_Menu" ObjectPath="\Events\Default Work Unit\Inicio_Menu" DurationType="OneShot" DurationMin="66.842545" DurationMax="66.842545"/>
+				<Event Id="194776941" Name="Inicio_Start" ObjectPath="\Events\Default Work Unit\Inicio_Start" DurationType="OneShot" DurationMin="9.596750" DurationMax="9.596750"/>
+				<Event Id="1063492266" Name="Menu_Creditos" ObjectPath="\Events\Default Work Unit\Menu_Creditos" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3042702347" Name="Orb_pickup" ObjectPath="\Events\Default Work Unit\Orb_pickup" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="4246722315" Name="Pajaro_Aletea" ObjectPath="\Events\Default Work Unit\Pajaro_Aletea" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2577500974" Name="Pajaro_Voz" ObjectPath="\Events\Default Work Unit\Pajaro_Voz" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1935209442" Name="Pausa_Juego" ObjectPath="\Events\Default Work Unit\Pausa_Juego" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2433235219" Name="Perder" ObjectPath="\Events\Default Work Unit\Perder" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1203400786" Name="Restart" ObjectPath="\Events\Default Work Unit\Restart" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3332192915" Name="Volver_a_Menu" ObjectPath="\Events\Default Work Unit\Volver_a_Menu" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="4877514" Language="SFX">
+					<ShortName>AMB_Agua_Mid.wav</ShortName>
+					<Path>SFX\AMB_Agua_Mid_7BC8BA2B.wem</Path>
+				</File>
+				<File Id="58941351" Language="SFX">
+					<ShortName>AMB_Agua_Far.wav</ShortName>
+					<Path>SFX\AMB_Agua_Far_2082D15A.wem</Path>
+				</File>
+				<File Id="91386589" Language="SFX">
+					<ShortName>AMB_Wind_Low.wav</ShortName>
+					<Path>SFX\AMB_Wind_Low_960F0CC2.wem</Path>
+				</File>
+				<File Id="140594307" Language="SFX">
+					<ShortName>AMB_Wind_Mid.wav</ShortName>
+					<Path>SFX\AMB_Wind_Mid_CD286D9D.wem</Path>
+				</File>
+				<File Id="145689268" Language="SFX">
+					<ShortName>Lintu_Musica_Demo_V1.wav</ShortName>
+					<Path>SFX\Lintu_Musica_Demo_V1_D79FB2B7.wem</Path>
+				</File>
+				<File Id="151221291" Language="SFX">
+					<ShortName>AMB_Agua_Mid.wav</ShortName>
+					<Path>SFX\AMB_Agua_Mid_C7167F42.wem</Path>
+				</File>
+				<File Id="179366856" Language="SFX">
+					<ShortName>AMB_Wind_Mid.wav</ShortName>
+					<Path>SFX\AMB_Wind_Mid_5DCE75EB.wem</Path>
+				</File>
+				<File Id="191642802" Language="SFX">
+					<ShortName>UI_Click_1.wav</ShortName>
+					<Path>SFX\UI_Click_1_10C4C929.wem</Path>
+				</File>
+				<File Id="244667752" Language="SFX">
+					<ShortName>LOW-HIT_Unseenly_Dark.wav</ShortName>
+					<Path>SFX\LOW-HIT_Unseenly_Dark_10C4C929.wem</Path>
+				</File>
+				<File Id="395782009" Language="SFX">
+					<ShortName>AMB_Agua_Far.wav</ShortName>
+					<Path>SFX\AMB_Agua_Far_71992D9C.wem</Path>
+				</File>
+				<File Id="410093424" Language="SFX">
+					<ShortName>AMB_Wind_Mid.wav</ShortName>
+					<Path>SFX\AMB_Wind_Mid_C04F3762.wem</Path>
+				</File>
+				<File Id="429338678" Language="SFX">
+					<ShortName>AMB_Wind_Low.wav</ShortName>
+					<Path>SFX\AMB_Wind_Low_DC84D4BB.wem</Path>
+				</File>
+				<File Id="447816968" Language="SFX">
+					<ShortName>AMB_Wind_Hi.wav</ShortName>
+					<Path>SFX\AMB_Wind_Hi_19DB01A6.wem</Path>
+				</File>
+				<File Id="451158218" Language="SFX">
+					<ShortName>AMB_Wind_Hi.wav</ShortName>
+					<Path>SFX\AMB_Wind_Hi_A674C1EE.wem</Path>
+				</File>
+				<File Id="530385853" Language="SFX">
+					<ShortName>AMB_Wind_Hi.wav</ShortName>
+					<Path>SFX\AMB_Wind_Hi_96DDCFCE.wem</Path>
+				</File>
+				<File Id="584762346" Language="SFX">
+					<ShortName>AMB_Wind_Mid.wav</ShortName>
+					<Path>SFX\AMB_Wind_Mid_3585615B.wem</Path>
+				</File>
+				<File Id="604139594" Language="SFX">
+					<ShortName>AMB_Agua_Far.wav</ShortName>
+					<Path>SFX\AMB_Agua_Far_533763A9.wem</Path>
+				</File>
+				<File Id="616754748" Language="SFX">
+					<ShortName>AMB_Agua_Mid.wav</ShortName>
+					<Path>SFX\AMB_Agua_Mid_9CE71B28.wem</Path>
+				</File>
+				<File Id="677773626" Language="SFX">
+					<ShortName>UI_Click_2.wav</ShortName>
+					<Path>SFX\UI_Click_2_10C4C929.wem</Path>
+				</File>
+				<File Id="729757640" Language="SFX">
+					<ShortName>AMB_Wind_Low.wav</ShortName>
+					<Path>SFX\AMB_Wind_Low_D0212B18.wem</Path>
+				</File>
+				<File Id="798872062" Language="SFX">
+					<ShortName>AMB_Wind_Low.wav</ShortName>
+					<Path>SFX\AMB_Wind_Low_FBE2FC0A.wem</Path>
+				</File>
+				<File Id="889366811" Language="SFX">
+					<ShortName>AMB_Agua_Far.wav</ShortName>
+					<Path>SFX\AMB_Agua_Far_1D3F39BA.wem</Path>
+				</File>
+				<File Id="945435898" Language="SFX">
+					<ShortName>AMB_Wind_Hi.wav</ShortName>
+					<Path>SFX\AMB_Wind_Hi_F95A0E3D.wem</Path>
+				</File>
+				<File Id="1045454988" Language="SFX">
+					<ShortName>AMB_Agua_Mid.wav</ShortName>
+					<Path>SFX\AMB_Agua_Mid_C55C1FE5.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
