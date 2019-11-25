@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{4FC351E5-578C-494A-A909-551AAB9FE874}" SchemaVersion="94">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{4FC351E5-578C-494A-A909-551AAB9FE874}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{4FC351E5-578C-494A-A909-551AAB9FE874}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Musica" ID="{E68DC316-2B1C-4D0A-B8EB-D498AC81D42D}">
+					<ChildrenList>
+						<State Name="None" ID="{AD250344-03A2-4BBB-B92D-E0CE09F03962}"/>
+						<State Name="Off" ID="{A3DEF42F-0076-49EB-9891-26DC101744EE}"/>
+						<State Name="Menu" ID="{1D0770CA-E911-4E29-A7C5-435687960234}"/>
+						<State Name="Gameplay" ID="{F78A2846-9E9D-4C4D-880A-9A6D589AF13A}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Pause" ID="{27332A57-1742-4BD8-80D6-3EEEBE03E27D}">
+					<ChildrenList>
+						<State Name="None" ID="{08F5DD00-5C0D-433D-92E6-F07BA2E78D62}"/>
+						<State Name="On" ID="{B50987D7-213D-4AF6-B3DD-D5A3B1C551AA}"/>
+						<State Name="Off" ID="{11CE3462-4BB8-4BD0-8183-4AB4CB6740B0}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

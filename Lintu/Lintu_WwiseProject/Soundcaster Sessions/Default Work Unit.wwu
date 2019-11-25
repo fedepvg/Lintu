@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{3BF0CBB3-487D-4A03-A8C7-9F50758DFEC7}" SchemaVersion="94">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{3BF0CBB3-487D-4A03-A8C7-9F50758DFEC7}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{3BF0CBB3-487D-4A03-A8C7-9F50758DFEC7}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="New Soundcaster Session" ID="{CEB8F96A-485B-4B0E-8600-B303CB227F09}">
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Altura_Pajaro" ID="{C4E5C476-50B9-4CF3-B572-038B88CE0796}"/>
+							<Value>31.0531053105311</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Velocidad_Pajaro" ID="{63A3F995-3419-4D84-8546-71B2C98C0595}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Energia_Pajaro" ID="{1BBB7369-4CCF-4E2E-8052-52C5FDD6BE07}"/>
+							<Value>50</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Off" ID="{11CE3462-4BB8-4BD0-8183-4AB4CB6740B0}"/>
+						<CurrentStateRef Name="Menu" ID="{1D0770CA-E911-4E29-A7C5-435687960234}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>
