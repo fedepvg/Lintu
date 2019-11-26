@@ -63,7 +63,7 @@ MonoBehaviour:
   MaxEnergy: 100
   MaxSpeedMultiplier: 2
   MinSpeedMultiplier: 0.2
-  AnimatonController: {fileID: 634976405412885257}
+  AnimationController: {fileID: 634976405412885257}
   JumpCurve:
     serializedVersion: 2
     m_Curve:
@@ -106,7 +106,8 @@ MonoBehaviour:
   Energy: 0
   JumpEnergy: 5
   EnergyLossCoefficient: 5
-  Gravity: 0
+  TimeToEndLevel: 2
+  TimeToGameOverScreen: 1
 --- !u!65 &821865918770499524
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -23,7 +23,7 @@ public class BirdController : MonoBehaviour
     public float MaxEnergy;
     public float MaxSpeedMultiplier;
     public float MinSpeedMultiplier;
-    public Animator AnimatonController;
+    public Animator AnimationController;
     public AnimationCurve JumpCurve;
     public LayerMask LevelRaycastLayer;
     public GameObject BlobShadow;
@@ -35,6 +35,8 @@ public class BirdController : MonoBehaviour
     public PlayerControls PlayerInput;
     public delegate void OnEndLevel();
     public static OnEndLevel EndLevelAction;
+    public float TimeToEndLevel;
+    public float TimeToGameOverScreen;
     #endregion
 
     #region PrivateVariables
@@ -46,7 +48,7 @@ public class BirdController : MonoBehaviour
     float ZAxisRotation;
     Quaternion DestRotation;
     float SpeedMultiplier;
-    public float Gravity;
+    float Gravity;
     float JumpTimer;
     float JumpGravity;
     const float LevelRayDistance = 2000f;
@@ -88,7 +90,7 @@ public class BirdController : MonoBehaviour
         if (PlayerInput.Gameplay.Jump.triggered && !IsJumping && Energy > EnergyLossCoefficient)
         {
             IsJumping = true;
-            AnimatonController.SetTrigger("Fly");
+            AnimationController.SetTrigger("Fly");
             AkSoundEngine.PostEvent("Pajaro_Aletea", gameObject);
         }
 
@@ -153,9 +155,16 @@ public class BirdController : MonoBehaviour
             RotationCoefficient = DownRotationCoefficient;
             if (XAxisRotation > 0)
                 RotationCoefficient = MiddleRotationCoefficient;
+            AnimationController.SetBool("GoingDown", false);
         }
         else
+        {
             RotationCoefficient = UpRotationCoefficient;
+            if (XAxisRotation >= 4f)
+                AnimationController.SetBool("GoingDown", true);
+            else
+                AnimationController.SetBool("GoingDown", false);
+        }
 
         SpeedMultiplier += (SpeedMultiplier * RotationCoefficient * XAxisRotation) * Time.deltaTime;
 
@@ -215,10 +224,8 @@ public class BirdController : MonoBehaviour
     {
         if (collision.gameObject.tag == "Wall" || collision.gameObject.tag == "Obstacle" || collision.gameObject.tag == "Floor")
         {
-            SceneManagement.LoadGOScene(false);
-            AkSoundEngine.PostEvent("Perder", gameObject);
+            Die(TimeToGameOverScreen);
         }
-        Destroy(this);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -239,13 +246,26 @@ public class BirdController : MonoBehaviour
 
         if (other.tag == "Finish")
         {
-            StartCoroutine(EndLevel());
-            //SceneManagement.LoadNextScene(true);
-            //Destroy(this);
+            StartCoroutine(EndLevel(TimeToEndLevel));
         }
     }
 
-    IEnumerator EndLevel()
+    void Die(float t)
+    {
+        AkSoundEngine.PostEvent("Perder", gameObject);
+        AnimationController.SetTrigger("Death");
+        if (EndLevelAction != null)
+            EndLevelAction();
+        PlayerInput.Disable();
+        Rigi.velocity /= 2;
+        Rigi.useGravity = true;
+        Rigi.mass = 100;
+        Rigi.freezeRotation = true;
+        SceneManagement.LoadGOScene(t);
+        Destroy(this);
+    }
+
+    IEnumerator EndLevel(float t)
     {
         PlayerInput.Disable();
         EndedLevel = true;
@@ -253,7 +273,7 @@ public class BirdController : MonoBehaviour
         if(EndLevelAction!=null)
             EndLevelAction();
 
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(t);
 
         SceneManagement.LoadNextScene(true);
         Destroy(this);

@@ -44,9 +44,15 @@ public class SceneLoader : MonoBehaviour
         LoaderManager.Instance.LoadScene(MenuScene, fakeLoad);
     }
 
-    public void LoadGOScene(bool fakeLoad)
+    public void LoadGOScene(float time)
     {
-        LoaderManager.Instance.LoadScene(GameOverScene, fakeLoad);
+        StartCoroutine(LoadGOCorutine(time));
+    }
+
+    IEnumerator LoadGOCorutine(float t)
+    {
+        yield return new WaitForSeconds(t);
+        LoaderManager.Instance.LoadScene(GameOverScene, false);
     }
 
     public void LoadTargetSceneWithFake(string target)

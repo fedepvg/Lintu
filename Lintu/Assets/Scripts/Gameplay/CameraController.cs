@@ -20,7 +20,6 @@ public class CameraController : MonoBehaviour
     float CameraYSpeed;
     bool LevelEnded = false;
 
-
     public enum CameraPositions
     {
         up, middle, down
