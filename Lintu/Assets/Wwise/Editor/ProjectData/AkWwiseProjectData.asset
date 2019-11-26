@@ -17,21 +17,21 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: d20c70a524a215419f1fc816d77a231d
     GuidInternal: 
-    m_lastTime: -8586273333442606952
+    m_lastTime: -8586268357602335099
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 51716223e9d22a4f903a43ce359f8123
     GuidInternal: 
-    m_lastTime: -8586272236391660030
+    m_lastTime: -8586268357605593471
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: d124bd5d8a78314ea75dff208c839db6
     GuidInternal: 
-    m_lastTime: -8586272190223030302
+    m_lastTime: -8586268357602355037
     List:
     - name: Main
       guid: 10666bd03b52b7419b47aa3e6b0a6ac8
@@ -47,7 +47,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: d5209640f8a20341a1f6811a6d049633
     GuidInternal: 
-    m_lastTime: -8586272229215955410
+    m_lastTime: -8586268357609003432
     List:
     - name: Barcos_Idle
       guid: 1de55918fc98a7478aa9cb3ff9fb4113
@@ -246,7 +246,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 1edc21d7eb91a849a512ee400c2fbddb
     GuidInternal: 
-    m_lastTime: -8586273333442806832
+    m_lastTime: -8586268357608993461
     List:
     - name: Altura_Pajaro
       guid: 76c4e5c4b950f34cb572038b88ce0796
@@ -266,12 +266,21 @@ MonoBehaviour:
       - ElementName: Energia_Pajaro
         ObjectType: 13
       Path: Default Work Unit\Energia_Pajaro
+    - name: Velocidad_Pajaro
+      guid: 95f9a3631934844d854671b2c98c0595
+      id: 2822622896
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Velocidad_Pajaro
+        ObjectType: 13
+      Path: Default Work Unit\Velocidad_Pajaro
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: e551c34f8c574a49a909551aab9fe874
     GuidInternal: 
-    m_lastTime: -8586272236391759945
+    m_lastTime: -8586268357602355037
     List:
     - name: Musica
       guid: 16c38de61c2b0a4db8ebd498ac81d42d
@@ -346,21 +355,20 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: d923c3652e58ca42b01c925600dcc99a
     GuidInternal: 
-    m_lastTime: -8586273333442616945
+    m_lastTime: -8586268357602345077
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 20caf9f6f9a4ea4ea0903dee7059a30d
     GuidInternal: 
-    m_lastTime: -8586273333442616945
+    m_lastTime: -8586268357602345077
     List: []
   ExpandedItems:
   - /Lintu_WwiseProject
+  - /Lintu_WwiseProject/Events
+  - /Lintu_WwiseProject/Events/Default Work Unit
   - /Lintu_WwiseProject/SoundBanks
   - /Lintu_WwiseProject/SoundBanks/Default Work Unit
-  - /Lintu_WwiseProject/States
-  - /Lintu_WwiseProject/States/Default Work Unit
-  - /Lintu_WwiseProject/States/Default Work Unit/Musica
   autoPopulateEnabled: 1
   CurrentPluginConfig: Profile

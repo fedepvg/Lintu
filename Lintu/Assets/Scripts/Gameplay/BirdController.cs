@@ -89,6 +89,7 @@ public class BirdController : MonoBehaviour
         {
             IsJumping = true;
             AnimatonController.SetTrigger("Fly");
+            AkSoundEngine.PostEvent("Pajaro_Aletea", gameObject);
         }
 
         if (IsJumping)
@@ -213,7 +214,10 @@ public class BirdController : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Wall" || collision.gameObject.tag == "Obstacle" || collision.gameObject.tag == "Floor")
+        {
             SceneManagement.LoadGOScene(false);
+            AkSoundEngine.PostEvent("Perder", gameObject);
+        }
         Destroy(this);
     }
 

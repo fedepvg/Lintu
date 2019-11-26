@@ -1665,7 +1665,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -2410,11 +2410,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 928728257}
     m_Modifications:
-    - target: {fileID: 4993997698522652040, guid: 042c345eda87e1842ae666eefdef532c,
-        type: 3}
-      propertyPath: m_Name
-      value: Ending
-      objectReference: {fileID: 0}
     - target: {fileID: 3231819535370579428, guid: 042c345eda87e1842ae666eefdef532c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2469,6 +2464,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4993997698522652040, guid: 042c345eda87e1842ae666eefdef532c,
+        type: 3}
+      propertyPath: m_Name
+      value: Ending
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 042c345eda87e1842ae666eefdef532c, type: 3}
@@ -12491,6 +12491,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PausePanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 6310973450198903807, guid: 2dbd4a012d31bcb46a5aad836925a12b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6310973450198903802, guid: 2dbd4a012d31bcb46a5aad836925a12b,
         type: 3}
