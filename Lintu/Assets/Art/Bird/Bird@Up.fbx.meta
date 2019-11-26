@@ -1,17 +1,12 @@
 fileFormatVersion: 2
-guid: d9a80be2941663144ba5467ed19a651e
+guid: 47abcf0ec63dbb7459b8dd008ef6458f
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable:
   - first:
       74: 1827226128182048838
     second: Take 001
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: aiStandardSurface1
-    second: {fileID: 2100000, guid: 47e0e62ec6e4a9048955bd0a67e43439, type: 2}
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
@@ -40,18 +35,18 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Idle
+      name: Up
       takeName: Take 001
       internalID: 1827226128182048838
       firstFrame: 1
-      lastFrame: 13
+      lastFrame: 67
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0

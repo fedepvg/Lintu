@@ -290,6 +290,7 @@ GameObject:
   - component: {fileID: 515002515}
   - component: {fileID: 515002514}
   - component: {fileID: 515002516}
+  - component: {fileID: 515002517}
   m_Layer: 11
   m_Name: Start
   m_TagString: Untagged
@@ -346,7 +347,7 @@ MonoBehaviour:
   valueGuidInternal: 
   m_callbackDataInternal: {fileID: 0}
   MultiPositionType: 1
-  multiPositionTypeLabel: 1
+  multiPositionTypeLabel: 0
   LargeModePositions:
   - {fileID: 884921775}
   - {fileID: 750183554}
@@ -400,6 +401,19 @@ MonoBehaviour:
   groupIdInternal: 0
   valueGuidInternal: 
   groupGuidInternal: 
+--- !u!65 &515002517
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 515002512}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 297.47067, y: 129.22676, z: 7839.784}
+  m_Center: {x: -3.279276, y: -205.07419, z: 3917.796}
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
@@ -689,7 +703,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 750183552}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 154, y: -232.4, z: 0}
+  m_LocalPosition: {x: 12, y: -232.4, z: 2210}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 515002513}
@@ -750,7 +764,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 884921773}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -138.5, y: -232.4, z: 0}
+  m_LocalPosition: {x: 14, y: -232.4, z: 1255}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 515002513}
