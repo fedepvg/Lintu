@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7282094816394953728}
   - component: {fileID: 2082012035708546984}
   - component: {fileID: 3959358454396249399}
-  - component: {fileID: 7369730778417654918}
+  - component: {fileID: 4165889085426005884}
   m_Layer: 13
   m_Name: Viga
   m_TagString: Obstacle
@@ -79,8 +79,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &7369730778417654918
-BoxCollider:
+--- !u!64 &4165889085426005884
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -89,6 +89,7 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.061026216, y: 0.6418834, z: 0.061996937}
-  m_Center: {x: -0.0007700324, y: 0, z: 0.00080418587}
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -7613332433117009229, guid: 57c7cc43a8438ea4d9b7893301769107, type: 3}
