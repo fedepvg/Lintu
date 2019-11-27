@@ -37,14 +37,14 @@ RenderSettings:
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
-  m_Sun: {fileID: 0}
+  m_Sun: {fileID: 2088879360}
   m_IndirectSpecularColor: {r: 1.1766397, g: 0.79107636, b: 0.52239406, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -52,7 +52,7 @@ LightmapSettings:
     m_AlbedoBoost: 1
     m_EnvironmentLightingMode: 0
     m_EnableBakedLightmaps: 1
-    m_EnableRealtimeLightmaps: 1
+    m_EnableRealtimeLightmaps: 0
   m_LightmapEditorSettings:
     serializedVersion: 12
     m_Resolution: 2
@@ -96,7 +96,8 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 8dee1c73647ade34091aa3cbcb305ebe,
+    type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
@@ -131,6 +132,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_CasaBueno_IK (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
@@ -206,6 +212,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: torre_b_02 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7777338403649477734, guid: f7ce2a9aba2f9a84488099e4b61dcccb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6752569068346224245, guid: f7ce2a9aba2f9a84488099e4b61dcccb,
         type: 3}
@@ -327,6 +338,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_CasaBueno_IK (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
@@ -491,6 +507,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_CasaBueno_IK (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -565,6 +586,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_CasaBueno_IK (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
@@ -819,6 +845,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_CasaBueno_IK (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -903,6 +934,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: castillo grande flor (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751132971082430295, guid: 66459ca7c04b30c488044bb249bf0736,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6758451162887308612, guid: 66459ca7c04b30c488044bb249bf0736,
         type: 3}
@@ -993,6 +1029,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_CasaBueno_IK (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
@@ -1204,6 +1245,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: terreno
       objectReference: {fileID: 0}
+    - target: {fileID: 4073716388163381689, guid: 1357c4a706b6af14cbc8b6ecbf3329d1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1068451112958073770, guid: 1357c4a706b6af14cbc8b6ecbf3329d1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1264,6 +1310,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -43
       objectReference: {fileID: 0}
+    - target: {fileID: 6464116659425091007, guid: 1357c4a706b6af14cbc8b6ecbf3329d1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2869054012678130656, guid: 1357c4a706b6af14cbc8b6ecbf3329d1,
         type: 3}
       propertyPath: m_Layer
@@ -1273,6 +1324,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 2869054012678130656, guid: 1357c4a706b6af14cbc8b6ecbf3329d1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1357c4a706b6af14cbc8b6ecbf3329d1, type: 3}
@@ -1293,6 +1349,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Medium_MaloTorre_IK
+      objectReference: {fileID: 0}
+    - target: {fileID: 2660745578032571570, guid: 4481f666be975db45b96e04cf5b27648,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1348695981239326369, guid: 4481f666be975db45b96e04cf5b27648,
         type: 3}
@@ -1378,6 +1439,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_CasaBueno_IK (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
@@ -1647,6 +1713,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_CasaBueno_IK (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1722,6 +1793,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_CasaBueno_IK (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1796,6 +1872,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: casa chica flor (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5775175718004455520, guid: 6c13468eee3296841b6b268c95fa551e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7385571814401575539, guid: 6c13468eee3296841b6b268c95fa551e,
         type: 3}
@@ -1887,6 +1968,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: torre_b_02 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7777338403649477734, guid: f7ce2a9aba2f9a84488099e4b61dcccb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6752569068346224245, guid: f7ce2a9aba2f9a84488099e4b61dcccb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1961,6 +2047,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_CasaBueno_IK (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
@@ -2074,6 +2165,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_CasaBueno_IK (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2148,6 +2244,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_CasaBueno_IK (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
@@ -2224,6 +2325,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Molino_BaseRedondo_IK (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 954362065397083340, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4280050106193878751, guid: fe69f108889997f4b94eff948146cfcb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2277,6 +2383,16 @@ PrefabInstance:
     - target: {fileID: 4280050106193878751, guid: fe69f108889997f4b94eff948146cfcb,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6287609504191467896, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4880212654362576234, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -2377,6 +2493,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: torre_b_01 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 4682671210313676563, guid: 35b568310c980384ea078b6a78ea6f2e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8549918411854382336, guid: 35b568310c980384ea078b6a78ea6f2e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2451,6 +2572,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_CasaBueno_IK (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
@@ -2527,6 +2653,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Big_MaloIglesia_IK (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1492650135031729047, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2516857687524227460, guid: 107f7744ca1d9eb449a80996c8df5d48,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2582,6 +2713,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 115945785759100226, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3717047127504533753, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1389668861886370584, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982940278985542600, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994436925206372170, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 107f7744ca1d9eb449a80996c8df5d48, type: 3}
 --- !u!4 &133599623 stripped
@@ -2601,6 +2757,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Big_BuenoIglesia_IK (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6869973888446882353, guid: 0d18fdb89ded61243b325a77cfb8cecd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7569518543910408226, guid: 0d18fdb89ded61243b325a77cfb8cecd,
         type: 3}
@@ -2687,6 +2848,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_CasaBueno_IK (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2771,6 +2937,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: casa chica flor
+      objectReference: {fileID: 0}
+    - target: {fileID: 5775175718004455520, guid: 6c13468eee3296841b6b268c95fa551e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7385571814401575539, guid: 6c13468eee3296841b6b268c95fa551e,
         type: 3}
@@ -2967,6 +3138,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_CasaBueno_IK (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3156,6 +3332,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: casa chica flor (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5775175718004455520, guid: 6c13468eee3296841b6b268c95fa551e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7385571814401575539, guid: 6c13468eee3296841b6b268c95fa551e,
         type: 3}
@@ -3416,6 +3597,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: casa mala mediana flor (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5523794241927010488, guid: 2d617dd580a19ce49b8f145516fbb913,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8859473546129091243, guid: 2d617dd580a19ce49b8f145516fbb913,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3491,6 +3677,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Molino_BaseRedondo_IK (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 954362065397083340, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4280050106193878751, guid: fe69f108889997f4b94eff948146cfcb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3546,6 +3737,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6287609504191467896, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4880212654362576234, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe69f108889997f4b94eff948146cfcb, type: 3}
 --- !u!4 &170900070 stripped
@@ -3565,6 +3766,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_CasaBueno_IK (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
@@ -3640,6 +3846,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_CasaBueno_IK (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
@@ -3726,6 +3937,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: atlas_2_casas (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8781357517561090285, guid: 150585d2184e24d44888ba7ca70e4d5d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5730549025493066494, guid: 150585d2184e24d44888ba7ca70e4d5d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3781,6 +3997,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7880136826952963499, guid: 150585d2184e24d44888ba7ca70e4d5d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5643662138654407032, guid: 150585d2184e24d44888ba7ca70e4d5d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 150585d2184e24d44888ba7ca70e4d5d, type: 3}
 --- !u!4 &182645673 stripped
@@ -3800,6 +4026,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_CasaBueno_IK (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
@@ -3875,6 +4106,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: casa chica flor
+      objectReference: {fileID: 0}
+    - target: {fileID: 5775175718004455520, guid: 6c13468eee3296841b6b268c95fa551e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7385571814401575539, guid: 6c13468eee3296841b6b268c95fa551e,
         type: 3}
@@ -4056,6 +4292,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_CasaBueno_IK (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4130,6 +4371,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_CasaBueno_IK (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
@@ -4216,6 +4462,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_CasaBueno_IK (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4300,6 +4551,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_CasaBueno_IK (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
@@ -4545,6 +4801,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_CasaBueno_IK (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4619,6 +4880,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Medium_MaloTorre_IK
+      objectReference: {fileID: 0}
+    - target: {fileID: 2660745578032571570, guid: 4481f666be975db45b96e04cf5b27648,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1348695981239326369, guid: 4481f666be975db45b96e04cf5b27648,
         type: 3}
@@ -4825,6 +5091,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: atlas_2_casas
       objectReference: {fileID: 0}
+    - target: {fileID: 8781357517561090285, guid: 150585d2184e24d44888ba7ca70e4d5d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5730549025493066494, guid: 150585d2184e24d44888ba7ca70e4d5d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4880,6 +5151,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7880136826952963499, guid: 150585d2184e24d44888ba7ca70e4d5d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5643662138654407032, guid: 150585d2184e24d44888ba7ca70e4d5d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 150585d2184e24d44888ba7ca70e4d5d, type: 3}
 --- !u!4 &230787355 stripped
@@ -4899,6 +5180,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Molino_BaseRedondo_IK
+      objectReference: {fileID: 0}
+    - target: {fileID: 954362065397083340, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4280050106193878751, guid: fe69f108889997f4b94eff948146cfcb,
         type: 3}
@@ -4955,6 +5241,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6287609504191467896, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4880212654362576234, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe69f108889997f4b94eff948146cfcb, type: 3}
 --- !u!4 &234550091 stripped
@@ -4974,6 +5270,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: casa mala mediana flor
+      objectReference: {fileID: 0}
+    - target: {fileID: 5523794241927010488, guid: 2d617dd580a19ce49b8f145516fbb913,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8859473546129091243, guid: 2d617dd580a19ce49b8f145516fbb913,
         type: 3}
@@ -5243,6 +5544,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_CasaBueno_IK (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5496,6 +5802,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: atlas_2_casas (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8781357517561090285, guid: 150585d2184e24d44888ba7ca70e4d5d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5730549025493066494, guid: 150585d2184e24d44888ba7ca70e4d5d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5551,6 +5862,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7880136826952963499, guid: 150585d2184e24d44888ba7ca70e4d5d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5643662138654407032, guid: 150585d2184e24d44888ba7ca70e4d5d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 150585d2184e24d44888ba7ca70e4d5d, type: 3}
 --- !u!4 &262515009 stripped
@@ -5570,6 +5891,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_CasaBueno_IK (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
@@ -5737,6 +6063,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: torre_b_02 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7777338403649477734, guid: f7ce2a9aba2f9a84488099e4b61dcccb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6752569068346224245, guid: f7ce2a9aba2f9a84488099e4b61dcccb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5811,6 +6142,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_CasaBueno_IK (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
@@ -5896,6 +6232,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: casa chica flor (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5775175718004455520, guid: 6c13468eee3296841b6b268c95fa551e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7385571814401575539, guid: 6c13468eee3296841b6b268c95fa551e,
         type: 3}
@@ -5986,6 +6327,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: torre_b_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 7777338403649477734, guid: f7ce2a9aba2f9a84488099e4b61dcccb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6752569068346224245, guid: f7ce2a9aba2f9a84488099e4b61dcccb,
         type: 3}
@@ -6139,6 +6485,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Big_BuenoIglesia_IK (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6869973888446882353, guid: 0d18fdb89ded61243b325a77cfb8cecd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7569518543910408226, guid: 0d18fdb89ded61243b325a77cfb8cecd,
         type: 3}
@@ -6340,6 +6691,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_CasaBueno_IK (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6424,6 +6780,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: casa mala mediana flor (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5523794241927010488, guid: 2d617dd580a19ce49b8f145516fbb913,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8859473546129091243, guid: 2d617dd580a19ce49b8f145516fbb913,
         type: 3}
@@ -6578,6 +6939,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: castillo grande flor (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7751132971082430295, guid: 66459ca7c04b30c488044bb249bf0736,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6758451162887308612, guid: 66459ca7c04b30c488044bb249bf0736,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6668,6 +7034,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Molino_BaseRedondo_IK (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 954362065397083340, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4280050106193878751, guid: fe69f108889997f4b94eff948146cfcb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6723,6 +7094,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6287609504191467896, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4880212654362576234, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe69f108889997f4b94eff948146cfcb, type: 3}
 --- !u!4 &353657397 stripped
@@ -6742,6 +7123,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: torre_b_02 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7777338403649477734, guid: f7ce2a9aba2f9a84488099e4b61dcccb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6752569068346224245, guid: f7ce2a9aba2f9a84488099e4b61dcccb,
         type: 3}
@@ -6902,6 +7288,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: torre_b_02 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7777338403649477734, guid: f7ce2a9aba2f9a84488099e4b61dcccb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6752569068346224245, guid: f7ce2a9aba2f9a84488099e4b61dcccb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6976,6 +7367,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_CasaBueno_IK (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
@@ -7061,6 +7457,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Medium_BuenoRecinto_IK
+      objectReference: {fileID: 0}
+    - target: {fileID: 5739301795789187729, guid: 94a0c4d76176bb548bff0b2553da345d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8790253841620686978, guid: 94a0c4d76176bb548bff0b2553da345d,
         type: 3}
@@ -7203,6 +7604,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: atlas_2_casas (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8781357517561090285, guid: 150585d2184e24d44888ba7ca70e4d5d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5730549025493066494, guid: 150585d2184e24d44888ba7ca70e4d5d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7258,6 +7664,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7880136826952963499, guid: 150585d2184e24d44888ba7ca70e4d5d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5643662138654407032, guid: 150585d2184e24d44888ba7ca70e4d5d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 150585d2184e24d44888ba7ca70e4d5d, type: 3}
 --- !u!4 &387926602 stripped
@@ -7277,6 +7693,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: atlas_2_casas (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8781357517561090285, guid: 150585d2184e24d44888ba7ca70e4d5d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5730549025493066494, guid: 150585d2184e24d44888ba7ca70e4d5d,
         type: 3}
@@ -7333,6 +7754,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7880136826952963499, guid: 150585d2184e24d44888ba7ca70e4d5d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5643662138654407032, guid: 150585d2184e24d44888ba7ca70e4d5d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 150585d2184e24d44888ba7ca70e4d5d, type: 3}
 --- !u!4 &393643221 stripped
@@ -7352,6 +7783,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: torre_b_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 7777338403649477734, guid: f7ce2a9aba2f9a84488099e4b61dcccb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6752569068346224245, guid: f7ce2a9aba2f9a84488099e4b61dcccb,
         type: 3}
@@ -7428,6 +7864,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_CasaBueno_IK (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7502,6 +7943,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_CasaBueno_IK (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
@@ -7588,6 +8034,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_CasaBueno_IK (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7673,6 +8124,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: casa mala mediana flor
       objectReference: {fileID: 0}
+    - target: {fileID: 5523794241927010488, guid: 2d617dd580a19ce49b8f145516fbb913,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8859473546129091243, guid: 2d617dd580a19ce49b8f145516fbb913,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7747,6 +8203,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Medium_MaloTorre_IK (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2660745578032571570, guid: 4481f666be975db45b96e04cf5b27648,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1348695981239326369, guid: 4481f666be975db45b96e04cf5b27648,
         type: 3}
@@ -7833,6 +8294,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_CasaBueno_IK (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7908,6 +8374,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_CasaBueno_IK (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7982,6 +8453,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_CasaBueno_IK (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
@@ -8068,6 +8544,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Molino_BaseRedondo_IK (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 954362065397083340, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4280050106193878751, guid: fe69f108889997f4b94eff948146cfcb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8123,6 +8604,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6287609504191467896, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4880212654362576234, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe69f108889997f4b94eff948146cfcb, type: 3}
 --- !u!4 &456147963 stripped
@@ -8142,6 +8633,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: torre_b_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682671210313676563, guid: 35b568310c980384ea078b6a78ea6f2e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8549918411854382336, guid: 35b568310c980384ea078b6a78ea6f2e,
         type: 3}
@@ -8217,6 +8713,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: torre_b_01 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682671210313676563, guid: 35b568310c980384ea078b6a78ea6f2e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8549918411854382336, guid: 35b568310c980384ea078b6a78ea6f2e,
         type: 3}
@@ -8383,6 +8884,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: mezquita flor (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7234267389420387101, guid: 4705dffa1f05ec54ea5af5801c21a960,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5926207163454114062, guid: 4705dffa1f05ec54ea5af5801c21a960,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8457,6 +8963,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: casa chica flor (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5775175718004455520, guid: 6c13468eee3296841b6b268c95fa551e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7385571814401575539, guid: 6c13468eee3296841b6b268c95fa551e,
         type: 3}
@@ -8547,6 +9058,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: casa mala mediana flor (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5523794241927010488, guid: 2d617dd580a19ce49b8f145516fbb913,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8859473546129091243, guid: 2d617dd580a19ce49b8f145516fbb913,
         type: 3}
@@ -8728,6 +9244,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_MaloTorre_IK (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 2660745578032571570, guid: 4481f666be975db45b96e04cf5b27648,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1348695981239326369, guid: 4481f666be975db45b96e04cf5b27648,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8812,6 +9333,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: casa chica flor (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5775175718004455520, guid: 6c13468eee3296841b6b268c95fa551e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7385571814401575539, guid: 6c13468eee3296841b6b268c95fa551e,
         type: 3}
@@ -8903,6 +9429,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: torre_b_01
       objectReference: {fileID: 0}
+    - target: {fileID: 4682671210313676563, guid: 35b568310c980384ea078b6a78ea6f2e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8549918411854382336, guid: 35b568310c980384ea078b6a78ea6f2e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8977,6 +9508,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_CasaBueno_IK (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
@@ -9053,6 +9589,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: atlas_2_casas (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8781357517561090285, guid: 150585d2184e24d44888ba7ca70e4d5d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5730549025493066494, guid: 150585d2184e24d44888ba7ca70e4d5d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9108,6 +9649,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7880136826952963499, guid: 150585d2184e24d44888ba7ca70e4d5d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5643662138654407032, guid: 150585d2184e24d44888ba7ca70e4d5d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 150585d2184e24d44888ba7ca70e4d5d, type: 3}
 --- !u!4 &481395761 stripped
@@ -9127,6 +9678,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: casa chica flor (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5775175718004455520, guid: 6c13468eee3296841b6b268c95fa551e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7385571814401575539, guid: 6c13468eee3296841b6b268c95fa551e,
         type: 3}
@@ -9218,6 +9774,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_CasaBueno_IK (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9302,6 +9863,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: castillo grande flor (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751132971082430295, guid: 66459ca7c04b30c488044bb249bf0736,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6758451162887308612, guid: 66459ca7c04b30c488044bb249bf0736,
         type: 3}
@@ -9393,6 +9959,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_CasaBueno_IK (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9467,6 +10038,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: torre_b_02 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7777338403649477734, guid: f7ce2a9aba2f9a84488099e4b61dcccb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6752569068346224245, guid: f7ce2a9aba2f9a84488099e4b61dcccb,
         type: 3}
@@ -9543,6 +10119,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Molino_BaseRedondo_IK (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 954362065397083340, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4280050106193878751, guid: fe69f108889997f4b94eff948146cfcb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9598,6 +10179,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6287609504191467896, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4880212654362576234, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe69f108889997f4b94eff948146cfcb, type: 3}
 --- !u!4 &503063364 stripped
@@ -9617,6 +10208,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Big_BuenoIglesia_IK (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6869973888446882353, guid: 0d18fdb89ded61243b325a77cfb8cecd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7569518543910408226, guid: 0d18fdb89ded61243b325a77cfb8cecd,
         type: 3}
@@ -9702,6 +10298,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_CasaBueno_IK (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
@@ -9868,6 +10469,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_CasaBueno_IK (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9942,6 +10548,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_CasaBueno_IK (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
@@ -10028,6 +10639,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Big_MaloIglesia_IK (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1492650135031729047, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2516857687524227460, guid: 107f7744ca1d9eb449a80996c8df5d48,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10081,6 +10697,31 @@ PrefabInstance:
     - target: {fileID: 2516857687524227460, guid: 107f7744ca1d9eb449a80996c8df5d48,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 115945785759100226, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3717047127504533753, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1389668861886370584, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982940278985542600, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994436925206372170, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -10271,6 +10912,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: atlas_2_casas (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8781357517561090285, guid: 150585d2184e24d44888ba7ca70e4d5d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5730549025493066494, guid: 150585d2184e24d44888ba7ca70e4d5d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10326,6 +10972,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7880136826952963499, guid: 150585d2184e24d44888ba7ca70e4d5d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5643662138654407032, guid: 150585d2184e24d44888ba7ca70e4d5d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 150585d2184e24d44888ba7ca70e4d5d, type: 3}
 --- !u!4 &542939682 stripped
@@ -10345,6 +11001,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: mezquita flor (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7234267389420387101, guid: 4705dffa1f05ec54ea5af5801c21a960,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5926207163454114062, guid: 4705dffa1f05ec54ea5af5801c21a960,
         type: 3}
@@ -10420,6 +11081,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_CasaBueno_IK (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
@@ -10505,6 +11171,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Big_BuenoIglesia_IK
+      objectReference: {fileID: 0}
+    - target: {fileID: 6869973888446882353, guid: 0d18fdb89ded61243b325a77cfb8cecd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7569518543910408226, guid: 0d18fdb89ded61243b325a77cfb8cecd,
         type: 3}
@@ -10669,6 +11340,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Big_BuenoIglesia_IK (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6869973888446882353, guid: 0d18fdb89ded61243b325a77cfb8cecd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7569518543910408226, guid: 0d18fdb89ded61243b325a77cfb8cecd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10754,6 +11430,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_BuenoRecinto_IK (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5739301795789187729, guid: 94a0c4d76176bb548bff0b2553da345d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8790253841620686978, guid: 94a0c4d76176bb548bff0b2553da345d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10838,6 +11519,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_CasaBueno_IK (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
@@ -11001,6 +11687,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: mezquita flor
+      objectReference: {fileID: 0}
+    - target: {fileID: 7234267389420387101, guid: 4705dffa1f05ec54ea5af5801c21a960,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5926207163454114062, guid: 4705dffa1f05ec54ea5af5801c21a960,
         type: 3}
@@ -11167,6 +11858,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_CasaBueno_IK (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11252,6 +11948,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: casa mala mediana flor (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5523794241927010488, guid: 2d617dd580a19ce49b8f145516fbb913,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8859473546129091243, guid: 2d617dd580a19ce49b8f145516fbb913,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11326,6 +12027,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_CasaBueno_IK (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
@@ -11564,6 +12270,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Big_MaloIglesia_IK (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1492650135031729047, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2516857687524227460, guid: 107f7744ca1d9eb449a80996c8df5d48,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11619,6 +12330,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 115945785759100226, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3717047127504533753, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1389668861886370584, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982940278985542600, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994436925206372170, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 107f7744ca1d9eb449a80996c8df5d48, type: 3}
 --- !u!4 &581886315 stripped
@@ -11638,6 +12374,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: torre_b_01 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682671210313676563, guid: 35b568310c980384ea078b6a78ea6f2e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8549918411854382336, guid: 35b568310c980384ea078b6a78ea6f2e,
         type: 3}
@@ -11713,6 +12454,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: torre_b_02 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7777338403649477734, guid: f7ce2a9aba2f9a84488099e4b61dcccb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6752569068346224245, guid: f7ce2a9aba2f9a84488099e4b61dcccb,
         type: 3}
@@ -11878,6 +12624,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: casa chica flor
+      objectReference: {fileID: 0}
+    - target: {fileID: 5775175718004455520, guid: 6c13468eee3296841b6b268c95fa551e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7385571814401575539, guid: 6c13468eee3296841b6b268c95fa551e,
         type: 3}
@@ -12059,6 +12810,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_CasaBueno_IK (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12232,6 +12988,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_CasaBueno_IK (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12385,6 +13146,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_CasaBueno_IK (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12470,6 +13236,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Molino_BaseRedondo_IK (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 954362065397083340, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4280050106193878751, guid: fe69f108889997f4b94eff948146cfcb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12525,6 +13296,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6287609504191467896, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4880212654362576234, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe69f108889997f4b94eff948146cfcb, type: 3}
 --- !u!4 &643498689 stripped
@@ -12544,6 +13325,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: torre_b_01 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682671210313676563, guid: 35b568310c980384ea078b6a78ea6f2e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8549918411854382336, guid: 35b568310c980384ea078b6a78ea6f2e,
         type: 3}
@@ -12619,6 +13405,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_CasaBueno_IK (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
@@ -12779,6 +13570,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: torre_b_01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4682671210313676563, guid: 35b568310c980384ea078b6a78ea6f2e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8549918411854382336, guid: 35b568310c980384ea078b6a78ea6f2e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12853,6 +13649,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_CasaBueno_IK (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
@@ -12929,6 +13730,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: atlas_2_casas (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8781357517561090285, guid: 150585d2184e24d44888ba7ca70e4d5d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5730549025493066494, guid: 150585d2184e24d44888ba7ca70e4d5d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12984,6 +13790,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7880136826952963499, guid: 150585d2184e24d44888ba7ca70e4d5d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5643662138654407032, guid: 150585d2184e24d44888ba7ca70e4d5d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 150585d2184e24d44888ba7ca70e4d5d, type: 3}
 --- !u!4 &675818627 stripped
@@ -13003,6 +13819,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_CasaBueno_IK (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
@@ -13184,6 +14005,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: casa chica flor (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5775175718004455520, guid: 6c13468eee3296841b6b268c95fa551e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7385571814401575539, guid: 6c13468eee3296841b6b268c95fa551e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13363,6 +14189,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Medium_MaloTorre_IK (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2660745578032571570, guid: 4481f666be975db45b96e04cf5b27648,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1348695981239326369, guid: 4481f666be975db45b96e04cf5b27648,
         type: 3}
@@ -13612,6 +14443,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_CasaBueno_IK (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13775,6 +14611,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Big_MaloIglesia_IK
       objectReference: {fileID: 0}
+    - target: {fileID: 1492650135031729047, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2516857687524227460, guid: 107f7744ca1d9eb449a80996c8df5d48,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13830,6 +14671,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 115945785759100226, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3717047127504533753, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1389668861886370584, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982940278985542600, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994436925206372170, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 107f7744ca1d9eb449a80996c8df5d48, type: 3}
 --- !u!4 &729301026 stripped
@@ -13849,6 +14715,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: castillo grande flor (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751132971082430295, guid: 66459ca7c04b30c488044bb249bf0736,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6758451162887308612, guid: 66459ca7c04b30c488044bb249bf0736,
         type: 3}
@@ -14137,6 +15008,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: castillo grande flor
       objectReference: {fileID: 0}
+    - target: {fileID: 7751132971082430295, guid: 66459ca7c04b30c488044bb249bf0736,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6758451162887308612, guid: 66459ca7c04b30c488044bb249bf0736,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14227,6 +15103,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_CasaBueno_IK (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14301,6 +15182,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Medium_BuenoRecinto_IK
+      objectReference: {fileID: 0}
+    - target: {fileID: 5739301795789187729, guid: 94a0c4d76176bb548bff0b2553da345d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8790253841620686978, guid: 94a0c4d76176bb548bff0b2553da345d,
         type: 3}
@@ -14477,6 +15363,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: casa chica flor (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5775175718004455520, guid: 6c13468eee3296841b6b268c95fa551e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7385571814401575539, guid: 6c13468eee3296841b6b268c95fa551e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14566,6 +15457,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: casa chica flor (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5775175718004455520, guid: 6c13468eee3296841b6b268c95fa551e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7385571814401575539, guid: 6c13468eee3296841b6b268c95fa551e,
         type: 3}
@@ -14657,6 +15553,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_CasaBueno_IK (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14742,6 +15643,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: torre_b_01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4682671210313676563, guid: 35b568310c980384ea078b6a78ea6f2e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8549918411854382336, guid: 35b568310c980384ea078b6a78ea6f2e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14817,6 +15723,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: atlas_2_casas (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8781357517561090285, guid: 150585d2184e24d44888ba7ca70e4d5d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5730549025493066494, guid: 150585d2184e24d44888ba7ca70e4d5d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14870,6 +15781,16 @@ PrefabInstance:
     - target: {fileID: 5730549025493066494, guid: 150585d2184e24d44888ba7ca70e4d5d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7880136826952963499, guid: 150585d2184e24d44888ba7ca70e4d5d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5643662138654407032, guid: 150585d2184e24d44888ba7ca70e4d5d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -15072,6 +15993,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_MaloTorre_IK (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2660745578032571570, guid: 4481f666be975db45b96e04cf5b27648,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1348695981239326369, guid: 4481f666be975db45b96e04cf5b27648,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15157,6 +16083,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_CasaBueno_IK (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15232,6 +16163,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: torre_b_01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4682671210313676563, guid: 35b568310c980384ea078b6a78ea6f2e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8549918411854382336, guid: 35b568310c980384ea078b6a78ea6f2e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15306,6 +16242,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: castillo grande flor (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751132971082430295, guid: 66459ca7c04b30c488044bb249bf0736,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6758451162887308612, guid: 66459ca7c04b30c488044bb249bf0736,
         type: 3}
@@ -15485,6 +16426,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: castillo grande flor (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7751132971082430295, guid: 66459ca7c04b30c488044bb249bf0736,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6758451162887308612, guid: 66459ca7c04b30c488044bb249bf0736,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15575,6 +16521,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Molino_BaseRedondo_IK (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 954362065397083340, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4280050106193878751, guid: fe69f108889997f4b94eff948146cfcb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15628,6 +16579,16 @@ PrefabInstance:
     - target: {fileID: 4280050106193878751, guid: fe69f108889997f4b94eff948146cfcb,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6287609504191467896, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4880212654362576234, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -15867,6 +16828,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Big_MaloIglesia_IK (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1492650135031729047, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2516857687524227460, guid: 107f7744ca1d9eb449a80996c8df5d48,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15922,6 +16888,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 115945785759100226, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3717047127504533753, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1389668861886370584, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982940278985542600, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994436925206372170, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 107f7744ca1d9eb449a80996c8df5d48, type: 3}
 --- !u!4 &878814285 stripped
@@ -15941,6 +16932,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_CasaBueno_IK (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
@@ -16017,6 +17013,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_CasaBueno_IK (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16091,6 +17092,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Medium_MaloTorre_IK (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2660745578032571570, guid: 4481f666be975db45b96e04cf5b27648,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1348695981239326369, guid: 4481f666be975db45b96e04cf5b27648,
         type: 3}
@@ -16176,6 +17182,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: casa chica flor (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5775175718004455520, guid: 6c13468eee3296841b6b268c95fa551e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7385571814401575539, guid: 6c13468eee3296841b6b268c95fa551e,
         type: 3}
@@ -16266,6 +17277,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: torre_b_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 7777338403649477734, guid: f7ce2a9aba2f9a84488099e4b61dcccb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6752569068346224245, guid: f7ce2a9aba2f9a84488099e4b61dcccb,
         type: 3}
@@ -16393,7 +17409,7 @@ PrefabInstance:
     - target: {fileID: 9062217408589599166, guid: dbb7018cf14c43d4a951fdf311cef417,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9062217408589599157, guid: dbb7018cf14c43d4a951fdf311cef417,
         type: 3}
@@ -16503,7 +17519,7 @@ PrefabInstance:
     - target: {fileID: 9062217409617057307, guid: dbb7018cf14c43d4a951fdf311cef417,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3636497824663743746, guid: dbb7018cf14c43d4a951fdf311cef417,
         type: 3}
@@ -16629,6 +17645,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: torre_b_01 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 4682671210313676563, guid: 35b568310c980384ea078b6a78ea6f2e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8549918411854382336, guid: 35b568310c980384ea078b6a78ea6f2e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16703,6 +17724,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_CasaBueno_IK (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
@@ -16857,6 +17883,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Molino_BaseRedondo_IK (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 954362065397083340, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4280050106193878751, guid: fe69f108889997f4b94eff948146cfcb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16910,6 +17941,16 @@ PrefabInstance:
     - target: {fileID: 4280050106193878751, guid: fe69f108889997f4b94eff948146cfcb,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6287609504191467896, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4880212654362576234, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -17039,6 +18080,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Molino_BaseRedondo_IK
       objectReference: {fileID: 0}
+    - target: {fileID: 954362065397083340, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4280050106193878751, guid: fe69f108889997f4b94eff948146cfcb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17092,6 +18138,16 @@ PrefabInstance:
     - target: {fileID: 4280050106193878751, guid: fe69f108889997f4b94eff948146cfcb,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6287609504191467896, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4880212654362576234, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -17194,6 +18250,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Medium_BuenoRecinto_IK (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5739301795789187729, guid: 94a0c4d76176bb548bff0b2553da345d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8790253841620686978, guid: 94a0c4d76176bb548bff0b2553da345d,
         type: 3}
@@ -17385,6 +18446,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_MaloTorre_IK (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2660745578032571570, guid: 4481f666be975db45b96e04cf5b27648,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1348695981239326369, guid: 4481f666be975db45b96e04cf5b27648,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17560,6 +18626,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Big_MaloIglesia_IK (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1492650135031729047, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2516857687524227460, guid: 107f7744ca1d9eb449a80996c8df5d48,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17615,6 +18686,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 115945785759100226, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3717047127504533753, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1389668861886370584, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982940278985542600, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994436925206372170, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 107f7744ca1d9eb449a80996c8df5d48, type: 3}
 --- !u!4 &980286781 stripped
@@ -17634,6 +18730,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: torre_b_01 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682671210313676563, guid: 35b568310c980384ea078b6a78ea6f2e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8549918411854382336, guid: 35b568310c980384ea078b6a78ea6f2e,
         type: 3}
@@ -17788,6 +18889,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Molino_BaseRedondo_IK (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 954362065397083340, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4280050106193878751, guid: fe69f108889997f4b94eff948146cfcb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17841,6 +18947,16 @@ PrefabInstance:
     - target: {fileID: 4280050106193878751, guid: fe69f108889997f4b94eff948146cfcb,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6287609504191467896, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4880212654362576234, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -17953,6 +19069,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: torre_b_01 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4682671210313676563, guid: 35b568310c980384ea078b6a78ea6f2e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8549918411854382336, guid: 35b568310c980384ea078b6a78ea6f2e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18028,6 +19149,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Molino_BaseRedondo_IK (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 954362065397083340, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4280050106193878751, guid: fe69f108889997f4b94eff948146cfcb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18083,6 +19209,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6287609504191467896, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4880212654362576234, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe69f108889997f4b94eff948146cfcb, type: 3}
 --- !u!4 &1036542111 stripped
@@ -18102,6 +19238,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: atlas_2_casas (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8781357517561090285, guid: 150585d2184e24d44888ba7ca70e4d5d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5730549025493066494, guid: 150585d2184e24d44888ba7ca70e4d5d,
         type: 3}
@@ -18158,6 +19299,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7880136826952963499, guid: 150585d2184e24d44888ba7ca70e4d5d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5643662138654407032, guid: 150585d2184e24d44888ba7ca70e4d5d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 150585d2184e24d44888ba7ca70e4d5d, type: 3}
 --- !u!4 &1044932195 stripped
@@ -18177,6 +19328,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_CasaBueno_IK (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
@@ -18253,6 +19409,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Molino_BaseRedondo_IK (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 954362065397083340, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4280050106193878751, guid: fe69f108889997f4b94eff948146cfcb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18306,6 +19467,16 @@ PrefabInstance:
     - target: {fileID: 4280050106193878751, guid: fe69f108889997f4b94eff948146cfcb,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6287609504191467896, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4880212654362576234, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -18405,6 +19576,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_CasaBueno_IK (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
@@ -18570,6 +19746,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Medium_MaloTorre_IK
+      objectReference: {fileID: 0}
+    - target: {fileID: 2660745578032571570, guid: 4481f666be975db45b96e04cf5b27648,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1348695981239326369, guid: 4481f666be975db45b96e04cf5b27648,
         type: 3}
@@ -18740,6 +19921,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: torre_b_02 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7777338403649477734, guid: f7ce2a9aba2f9a84488099e4b61dcccb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6752569068346224245, guid: f7ce2a9aba2f9a84488099e4b61dcccb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18815,6 +20001,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Big_MaloIglesia_IK
       objectReference: {fileID: 0}
+    - target: {fileID: 1492650135031729047, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2516857687524227460, guid: 107f7744ca1d9eb449a80996c8df5d48,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18870,6 +20061,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 115945785759100226, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3717047127504533753, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1389668861886370584, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982940278985542600, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994436925206372170, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 107f7744ca1d9eb449a80996c8df5d48, type: 3}
 --- !u!4 &1089314509 stripped
@@ -18889,6 +20105,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_CasaBueno_IK (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
@@ -18965,6 +20186,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: mezquita flor (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7234267389420387101, guid: 4705dffa1f05ec54ea5af5801c21a960,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5926207163454114062, guid: 4705dffa1f05ec54ea5af5801c21a960,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -19040,6 +20266,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Molino_BaseRedondo_IK
       objectReference: {fileID: 0}
+    - target: {fileID: 954362065397083340, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4280050106193878751, guid: fe69f108889997f4b94eff948146cfcb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -19093,6 +20324,16 @@ PrefabInstance:
     - target: {fileID: 4280050106193878751, guid: fe69f108889997f4b94eff948146cfcb,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6287609504191467896, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4880212654362576234, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -19283,6 +20524,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_CasaBueno_IK (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -19357,6 +20603,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Medium_MaloTorre_IK (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2660745578032571570, guid: 4481f666be975db45b96e04cf5b27648,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1348695981239326369, guid: 4481f666be975db45b96e04cf5b27648,
         type: 3}
@@ -19443,6 +20694,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_CasaBueno_IK
       objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -19528,6 +20784,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_CasaBueno_IK (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -19602,6 +20863,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_CasaBueno_IK (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
@@ -20231,6 +21497,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: casa chica flor (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5775175718004455520, guid: 6c13468eee3296841b6b268c95fa551e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7385571814401575539, guid: 6c13468eee3296841b6b268c95fa551e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20435,6 +21706,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_CasaBueno_IK (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
@@ -20798,6 +22074,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_CasaBueno_IK (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20883,6 +22164,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_CasaBueno_IK (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20958,6 +22244,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_CasaBueno_IK (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21032,6 +22323,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_CasaBueno_IK (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
@@ -21202,6 +22498,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Molino_BaseRedondo_IK (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 954362065397083340, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4280050106193878751, guid: fe69f108889997f4b94eff948146cfcb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21257,6 +22558,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6287609504191467896, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4880212654362576234, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe69f108889997f4b94eff948146cfcb, type: 3}
 --- !u!4 &1293378575 stripped
@@ -21276,6 +22587,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Big_BuenoIglesia_IK
+      objectReference: {fileID: 0}
+    - target: {fileID: 6869973888446882353, guid: 0d18fdb89ded61243b325a77cfb8cecd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7569518543910408226, guid: 0d18fdb89ded61243b325a77cfb8cecd,
         type: 3}
@@ -21362,6 +22678,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_CasaBueno_IK (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21436,6 +22757,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: torre_b_01 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682671210313676563, guid: 35b568310c980384ea078b6a78ea6f2e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8549918411854382336, guid: 35b568310c980384ea078b6a78ea6f2e,
         type: 3}
@@ -21512,6 +22838,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: torre_b_02 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7777338403649477734, guid: f7ce2a9aba2f9a84488099e4b61dcccb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6752569068346224245, guid: f7ce2a9aba2f9a84488099e4b61dcccb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21586,6 +22917,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: casa chica flor (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5775175718004455520, guid: 6c13468eee3296841b6b268c95fa551e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7385571814401575539, guid: 6c13468eee3296841b6b268c95fa551e,
         type: 3}
@@ -21677,6 +23013,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_CasaBueno_IK (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21751,6 +23092,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_CasaBueno_IK (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
@@ -21905,6 +23251,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_CasaBueno_IK (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21979,6 +23330,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: mezquita flor (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7234267389420387101, guid: 4705dffa1f05ec54ea5af5801c21a960,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5926207163454114062, guid: 4705dffa1f05ec54ea5af5801c21a960,
         type: 3}
@@ -22133,6 +23489,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_CasaBueno_IK (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22245,6 +23606,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_MaloTorre_IK (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2660745578032571570, guid: 4481f666be975db45b96e04cf5b27648,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1348695981239326369, guid: 4481f666be975db45b96e04cf5b27648,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22329,6 +23695,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Big_BuenoIglesia_IK (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6869973888446882353, guid: 0d18fdb89ded61243b325a77cfb8cecd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7569518543910408226, guid: 0d18fdb89ded61243b325a77cfb8cecd,
         type: 3}
@@ -22595,6 +23966,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Big_BuenoIglesia_IK (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6869973888446882353, guid: 0d18fdb89ded61243b325a77cfb8cecd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7569518543910408226, guid: 0d18fdb89ded61243b325a77cfb8cecd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22795,6 +24171,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: casa mala mediana flor (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5523794241927010488, guid: 2d617dd580a19ce49b8f145516fbb913,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8859473546129091243, guid: 2d617dd580a19ce49b8f145516fbb913,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22870,6 +24251,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Molino_BaseRedondo_IK (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 954362065397083340, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4280050106193878751, guid: fe69f108889997f4b94eff948146cfcb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22925,6 +24311,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6287609504191467896, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4880212654362576234, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe69f108889997f4b94eff948146cfcb, type: 3}
 --- !u!4 &1382263898 stripped
@@ -22944,6 +24340,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_CasaBueno_IK (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
@@ -23030,6 +24431,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_MaloTorre_IK (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2660745578032571570, guid: 4481f666be975db45b96e04cf5b27648,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1348695981239326369, guid: 4481f666be975db45b96e04cf5b27648,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -23115,6 +24521,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Molino_BaseRedondo_IK (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 954362065397083340, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4280050106193878751, guid: fe69f108889997f4b94eff948146cfcb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -23168,6 +24579,16 @@ PrefabInstance:
     - target: {fileID: 4280050106193878751, guid: fe69f108889997f4b94eff948146cfcb,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6287609504191467896, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4880212654362576234, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -23267,6 +24688,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Medium_BuenoRecinto_IK (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5739301795789187729, guid: 94a0c4d76176bb548bff0b2553da345d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8790253841620686978, guid: 94a0c4d76176bb548bff0b2553da345d,
         type: 3}
@@ -23443,6 +24869,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_CasaBueno_IK (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -23528,6 +24959,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_CasaBueno_IK (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -23612,6 +25048,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Big_BuenoIglesia_IK (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6869973888446882353, guid: 0d18fdb89ded61243b325a77cfb8cecd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7569518543910408226, guid: 0d18fdb89ded61243b325a77cfb8cecd,
         type: 3}
@@ -23772,6 +25213,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_MaloTorre_IK (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 2660745578032571570, guid: 4481f666be975db45b96e04cf5b27648,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1348695981239326369, guid: 4481f666be975db45b96e04cf5b27648,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -23857,6 +25303,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_CasaBueno_IK (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -23931,6 +25382,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Medium_BuenoRecinto_IK (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5739301795789187729, guid: 94a0c4d76176bb548bff0b2553da345d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8790253841620686978, guid: 94a0c4d76176bb548bff0b2553da345d,
         type: 3}
@@ -24017,6 +25473,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_MaloTorre_IK (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 2660745578032571570, guid: 4481f666be975db45b96e04cf5b27648,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1348695981239326369, guid: 4481f666be975db45b96e04cf5b27648,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -24101,6 +25562,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: castillo grande flor
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751132971082430295, guid: 66459ca7c04b30c488044bb249bf0736,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6758451162887308612, guid: 66459ca7c04b30c488044bb249bf0736,
         type: 3}
@@ -24192,6 +25658,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: torre_b_02 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7777338403649477734, guid: f7ce2a9aba2f9a84488099e4b61dcccb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6752569068346224245, guid: f7ce2a9aba2f9a84488099e4b61dcccb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -24266,6 +25737,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_CasaBueno_IK (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
@@ -24510,6 +25986,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_CasaBueno_IK (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -24585,6 +26066,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: atlas_2_casas (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8781357517561090285, guid: 150585d2184e24d44888ba7ca70e4d5d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5730549025493066494, guid: 150585d2184e24d44888ba7ca70e4d5d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -24638,6 +26124,16 @@ PrefabInstance:
     - target: {fileID: 5730549025493066494, guid: 150585d2184e24d44888ba7ca70e4d5d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7880136826952963499, guid: 150585d2184e24d44888ba7ca70e4d5d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5643662138654407032, guid: 150585d2184e24d44888ba7ca70e4d5d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -24749,6 +26245,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Medium_MaloTorre_IK (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2660745578032571570, guid: 4481f666be975db45b96e04cf5b27648,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1348695981239326369, guid: 4481f666be975db45b96e04cf5b27648,
         type: 3}
@@ -25000,6 +26501,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: atlas_2_casas (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8781357517561090285, guid: 150585d2184e24d44888ba7ca70e4d5d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5730549025493066494, guid: 150585d2184e24d44888ba7ca70e4d5d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -25053,6 +26559,16 @@ PrefabInstance:
     - target: {fileID: 5730549025493066494, guid: 150585d2184e24d44888ba7ca70e4d5d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7880136826952963499, guid: 150585d2184e24d44888ba7ca70e4d5d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5643662138654407032, guid: 150585d2184e24d44888ba7ca70e4d5d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -25153,6 +26669,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Big_BuenoIglesia_IK (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6869973888446882353, guid: 0d18fdb89ded61243b325a77cfb8cecd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7569518543910408226, guid: 0d18fdb89ded61243b325a77cfb8cecd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -25237,6 +26758,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: castillo grande flor (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751132971082430295, guid: 66459ca7c04b30c488044bb249bf0736,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6758451162887308612, guid: 66459ca7c04b30c488044bb249bf0736,
         type: 3}
@@ -25613,6 +27139,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: mezquita flor
       objectReference: {fileID: 0}
+    - target: {fileID: 7234267389420387101, guid: 4705dffa1f05ec54ea5af5801c21a960,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5926207163454114062, guid: 4705dffa1f05ec54ea5af5801c21a960,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -25778,6 +27309,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Big_BuenoIglesia_IK
       objectReference: {fileID: 0}
+    - target: {fileID: 6869973888446882353, guid: 0d18fdb89ded61243b325a77cfb8cecd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7569518543910408226, guid: 0d18fdb89ded61243b325a77cfb8cecd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -25862,6 +27398,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_CasaBueno_IK
+      objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
@@ -25948,6 +27489,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_BuenoRecinto_IK (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5739301795789187729, guid: 94a0c4d76176bb548bff0b2553da345d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8790253841620686978, guid: 94a0c4d76176bb548bff0b2553da345d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -26032,6 +27578,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Big_BuenoIglesia_IK (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6869973888446882353, guid: 0d18fdb89ded61243b325a77cfb8cecd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7569518543910408226, guid: 0d18fdb89ded61243b325a77cfb8cecd,
         type: 3}
@@ -26118,6 +27669,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_CasaBueno_IK (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -26202,6 +27758,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: torre_b_02 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7777338403649477734, guid: f7ce2a9aba2f9a84488099e4b61dcccb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6752569068346224245, guid: f7ce2a9aba2f9a84488099e4b61dcccb,
         type: 3}
@@ -26368,6 +27929,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: casa mala mediana flor (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5523794241927010488, guid: 2d617dd580a19ce49b8f145516fbb913,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8859473546129091243, guid: 2d617dd580a19ce49b8f145516fbb913,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -26443,6 +28009,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: atlas_2_casas (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8781357517561090285, guid: 150585d2184e24d44888ba7ca70e4d5d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5730549025493066494, guid: 150585d2184e24d44888ba7ca70e4d5d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -26496,6 +28067,16 @@ PrefabInstance:
     - target: {fileID: 5730549025493066494, guid: 150585d2184e24d44888ba7ca70e4d5d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7880136826952963499, guid: 150585d2184e24d44888ba7ca70e4d5d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5643662138654407032, guid: 150585d2184e24d44888ba7ca70e4d5d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -26638,6 +28219,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: atlas_2_casas (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8781357517561090285, guid: 150585d2184e24d44888ba7ca70e4d5d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5730549025493066494, guid: 150585d2184e24d44888ba7ca70e4d5d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -26693,6 +28279,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7880136826952963499, guid: 150585d2184e24d44888ba7ca70e4d5d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5643662138654407032, guid: 150585d2184e24d44888ba7ca70e4d5d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 150585d2184e24d44888ba7ca70e4d5d, type: 3}
 --- !u!4 &1623447520 stripped
@@ -26712,6 +28308,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: torre_b_01 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682671210313676563, guid: 35b568310c980384ea078b6a78ea6f2e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8549918411854382336, guid: 35b568310c980384ea078b6a78ea6f2e,
         type: 3}
@@ -26787,6 +28388,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: casa mala mediana flor
+      objectReference: {fileID: 0}
+    - target: {fileID: 5523794241927010488, guid: 2d617dd580a19ce49b8f145516fbb913,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8859473546129091243, guid: 2d617dd580a19ce49b8f145516fbb913,
         type: 3}
@@ -27179,6 +28785,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: atlas_2_casas (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 8781357517561090285, guid: 150585d2184e24d44888ba7ca70e4d5d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5730549025493066494, guid: 150585d2184e24d44888ba7ca70e4d5d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -27234,6 +28845,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7880136826952963499, guid: 150585d2184e24d44888ba7ca70e4d5d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5643662138654407032, guid: 150585d2184e24d44888ba7ca70e4d5d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 150585d2184e24d44888ba7ca70e4d5d, type: 3}
 --- !u!4 &1650858870 stripped
@@ -27253,6 +28874,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Big_MaloIglesia_IK
+      objectReference: {fileID: 0}
+    - target: {fileID: 1492650135031729047, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2516857687524227460, guid: 107f7744ca1d9eb449a80996c8df5d48,
         type: 3}
@@ -27309,6 +28935,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 115945785759100226, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3717047127504533753, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1389668861886370584, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982940278985542600, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994436925206372170, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 107f7744ca1d9eb449a80996c8df5d48, type: 3}
 --- !u!4 &1651684289 stripped
@@ -27328,6 +28979,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_CasaBueno_IK (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
@@ -27654,6 +29310,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Big_MaloIglesia_IK (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1492650135031729047, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2516857687524227460, guid: 107f7744ca1d9eb449a80996c8df5d48,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -27709,6 +29370,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 115945785759100226, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3717047127504533753, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1389668861886370584, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982940278985542600, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994436925206372170, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 107f7744ca1d9eb449a80996c8df5d48, type: 3}
 --- !u!4 &1669422869 stripped
@@ -27728,6 +29414,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: torre_b_01 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682671210313676563, guid: 35b568310c980384ea078b6a78ea6f2e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8549918411854382336, guid: 35b568310c980384ea078b6a78ea6f2e,
         type: 3}
@@ -27803,6 +29494,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: castillo grande flor (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751132971082430295, guid: 66459ca7c04b30c488044bb249bf0736,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6758451162887308612, guid: 66459ca7c04b30c488044bb249bf0736,
         type: 3}
@@ -27978,6 +29674,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Big_BuenoIglesia_IK (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6869973888446882353, guid: 0d18fdb89ded61243b325a77cfb8cecd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7569518543910408226, guid: 0d18fdb89ded61243b325a77cfb8cecd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28063,6 +29764,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: casa mala mediana flor (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5523794241927010488, guid: 2d617dd580a19ce49b8f145516fbb913,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8859473546129091243, guid: 2d617dd580a19ce49b8f145516fbb913,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28137,6 +29843,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Big_BuenoIglesia_IK (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6869973888446882353, guid: 0d18fdb89ded61243b325a77cfb8cecd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7569518543910408226, guid: 0d18fdb89ded61243b325a77cfb8cecd,
         type: 3}
@@ -28222,6 +29933,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: casa mala mediana flor (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5523794241927010488, guid: 2d617dd580a19ce49b8f145516fbb913,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8859473546129091243, guid: 2d617dd580a19ce49b8f145516fbb913,
         type: 3}
@@ -28524,6 +30240,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: torre_b_01 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 4682671210313676563, guid: 35b568310c980384ea078b6a78ea6f2e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8549918411854382336, guid: 35b568310c980384ea078b6a78ea6f2e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28599,6 +30320,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Big_MaloIglesia_IK (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1492650135031729047, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2516857687524227460, guid: 107f7744ca1d9eb449a80996c8df5d48,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28654,6 +30380,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 115945785759100226, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3717047127504533753, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1389668861886370584, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982940278985542600, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994436925206372170, guid: 107f7744ca1d9eb449a80996c8df5d48,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 107f7744ca1d9eb449a80996c8df5d48, type: 3}
 --- !u!4 &1714592848 stripped
@@ -28673,6 +30424,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_CasaBueno_IK (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
@@ -28758,6 +30514,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_CasaBueno_IK (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
@@ -28936,6 +30697,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Big_BuenoIglesia_IK (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6869973888446882353, guid: 0d18fdb89ded61243b325a77cfb8cecd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7569518543910408226, guid: 0d18fdb89ded61243b325a77cfb8cecd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -29020,6 +30786,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_CasaBueno_IK (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
@@ -29179,6 +30950,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_CasaBueno_IK (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -29253,6 +31029,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_CasaBueno_IK (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
@@ -29329,6 +31110,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_CasaBueno_IK (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -29403,6 +31189,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Medium_BuenoRecinto_IK
+      objectReference: {fileID: 0}
+    - target: {fileID: 5739301795789187729, guid: 94a0c4d76176bb548bff0b2553da345d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8790253841620686978, guid: 94a0c4d76176bb548bff0b2553da345d,
         type: 3}
@@ -29489,6 +31280,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: torre_b_02 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7777338403649477734, guid: f7ce2a9aba2f9a84488099e4b61dcccb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6752569068346224245, guid: f7ce2a9aba2f9a84488099e4b61dcccb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -29564,6 +31360,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_CasaBueno_IK (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -29638,6 +31439,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_CasaBueno_IK (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
@@ -29803,6 +31609,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: torre_b_02 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7777338403649477734, guid: f7ce2a9aba2f9a84488099e4b61dcccb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6752569068346224245, guid: f7ce2a9aba2f9a84488099e4b61dcccb,
         type: 3}
@@ -29984,6 +31795,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_CasaBueno_IK
       objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -30069,6 +31885,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_CasaBueno_IK (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -30144,6 +31965,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Molino_BaseRedondo_IK (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 954362065397083340, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4280050106193878751, guid: fe69f108889997f4b94eff948146cfcb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -30199,6 +32025,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6287609504191467896, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4880212654362576234, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe69f108889997f4b94eff948146cfcb, type: 3}
 --- !u!4 &1841473395 stripped
@@ -30218,6 +32054,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: torre_b_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682671210313676563, guid: 35b568310c980384ea078b6a78ea6f2e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8549918411854382336, guid: 35b568310c980384ea078b6a78ea6f2e,
         type: 3}
@@ -30372,6 +32213,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: casa chica flor (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5775175718004455520, guid: 6c13468eee3296841b6b268c95fa551e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7385571814401575539, guid: 6c13468eee3296841b6b268c95fa551e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -30461,6 +32307,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Medium_MaloTorre_IK (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2660745578032571570, guid: 4481f666be975db45b96e04cf5b27648,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1348695981239326369, guid: 4481f666be975db45b96e04cf5b27648,
         type: 3}
@@ -30662,6 +32513,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_CasaBueno_IK (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -30746,6 +32602,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: mezquita flor
+      objectReference: {fileID: 0}
+    - target: {fileID: 7234267389420387101, guid: 4705dffa1f05ec54ea5af5801c21a960,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5926207163454114062, guid: 4705dffa1f05ec54ea5af5801c21a960,
         type: 3}
@@ -31001,6 +32862,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_MaloTorre_IK (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2660745578032571570, guid: 4481f666be975db45b96e04cf5b27648,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1348695981239326369, guid: 4481f666be975db45b96e04cf5b27648,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -31085,6 +32951,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: torre_b_02 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7777338403649477734, guid: f7ce2a9aba2f9a84488099e4b61dcccb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6752569068346224245, guid: f7ce2a9aba2f9a84488099e4b61dcccb,
         type: 3}
@@ -31497,6 +33368,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: atlas_2_casas (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 8781357517561090285, guid: 150585d2184e24d44888ba7ca70e4d5d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5730549025493066494, guid: 150585d2184e24d44888ba7ca70e4d5d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -31552,6 +33428,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7880136826952963499, guid: 150585d2184e24d44888ba7ca70e4d5d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5643662138654407032, guid: 150585d2184e24d44888ba7ca70e4d5d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 150585d2184e24d44888ba7ca70e4d5d, type: 3}
 --- !u!4 &1906838661 stripped
@@ -31571,6 +33457,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_CasaBueno_IK (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
@@ -31657,6 +33548,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: atlas_2_casas
       objectReference: {fileID: 0}
+    - target: {fileID: 8781357517561090285, guid: 150585d2184e24d44888ba7ca70e4d5d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5730549025493066494, guid: 150585d2184e24d44888ba7ca70e4d5d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -31710,6 +33606,16 @@ PrefabInstance:
     - target: {fileID: 5730549025493066494, guid: 150585d2184e24d44888ba7ca70e4d5d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7880136826952963499, guid: 150585d2184e24d44888ba7ca70e4d5d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5643662138654407032, guid: 150585d2184e24d44888ba7ca70e4d5d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -31822,6 +33728,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: torre_b_01
       objectReference: {fileID: 0}
+    - target: {fileID: 4682671210313676563, guid: 35b568310c980384ea078b6a78ea6f2e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8549918411854382336, guid: 35b568310c980384ea078b6a78ea6f2e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -31897,6 +33808,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: torre_b_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4682671210313676563, guid: 35b568310c980384ea078b6a78ea6f2e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8549918411854382336, guid: 35b568310c980384ea078b6a78ea6f2e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -31971,6 +33887,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: castillo grande flor
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751132971082430295, guid: 66459ca7c04b30c488044bb249bf0736,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6758451162887308612, guid: 66459ca7c04b30c488044bb249bf0736,
         type: 3}
@@ -32061,6 +33982,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: casa mala mediana flor (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5523794241927010488, guid: 2d617dd580a19ce49b8f145516fbb913,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8859473546129091243, guid: 2d617dd580a19ce49b8f145516fbb913,
         type: 3}
@@ -32215,6 +34141,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_CasaBueno_IK (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -32300,6 +34231,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_CasaBueno_IK (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -32374,6 +34310,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: torre_b_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682671210313676563, guid: 35b568310c980384ea078b6a78ea6f2e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8549918411854382336, guid: 35b568310c980384ea078b6a78ea6f2e,
         type: 3}
@@ -32540,6 +34481,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: torre_b_02 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7777338403649477734, guid: f7ce2a9aba2f9a84488099e4b61dcccb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6752569068346224245, guid: f7ce2a9aba2f9a84488099e4b61dcccb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -32614,6 +34560,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: mezquita flor (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7234267389420387101, guid: 4705dffa1f05ec54ea5af5801c21a960,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5926207163454114062, guid: 4705dffa1f05ec54ea5af5801c21a960,
         type: 3}
@@ -32690,6 +34641,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: torre_b_02 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7777338403649477734, guid: f7ce2a9aba2f9a84488099e4b61dcccb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6752569068346224245, guid: f7ce2a9aba2f9a84488099e4b61dcccb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -32764,6 +34720,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_CasaBueno_IK (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
@@ -33008,6 +34969,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: castillo grande flor (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7751132971082430295, guid: 66459ca7c04b30c488044bb249bf0736,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6758451162887308612, guid: 66459ca7c04b30c488044bb249bf0736,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -33244,6 +35210,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_CasaBueno_IK (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -33328,6 +35299,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_CasaBueno_IK (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
@@ -33414,6 +35390,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_CasaBueno_IK (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -33499,6 +35480,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Molino_BaseRedondo_IK (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 954362065397083340, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4280050106193878751, guid: fe69f108889997f4b94eff948146cfcb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -33554,6 +35540,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6287609504191467896, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4880212654362576234, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe69f108889997f4b94eff948146cfcb, type: 3}
 --- !u!4 &2022358942 stripped
@@ -33573,6 +35569,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: casa chica flor (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5775175718004455520, guid: 6c13468eee3296841b6b268c95fa551e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7385571814401575539, guid: 6c13468eee3296841b6b268c95fa551e,
         type: 3}
@@ -33832,6 +35833,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_CasaBueno_IK (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -33916,6 +35922,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: castillo grande flor (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751132971082430295, guid: 66459ca7c04b30c488044bb249bf0736,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6758451162887308612, guid: 66459ca7c04b30c488044bb249bf0736,
         type: 3}
@@ -34006,6 +36017,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_CasaBueno_IK (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
@@ -34249,6 +36265,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Medium_MaloTorre_IK (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2660745578032571570, guid: 4481f666be975db45b96e04cf5b27648,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1348695981239326369, guid: 4481f666be975db45b96e04cf5b27648,
         type: 3}
@@ -34503,6 +36524,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: torre_b_01 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 4682671210313676563, guid: 35b568310c980384ea078b6a78ea6f2e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8549918411854382336, guid: 35b568310c980384ea078b6a78ea6f2e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -34577,6 +36603,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Medium_MaloTorre_IK (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2660745578032571570, guid: 4481f666be975db45b96e04cf5b27648,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1348695981239326369, guid: 4481f666be975db45b96e04cf5b27648,
         type: 3}
@@ -34662,6 +36693,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_CasaBueno_IK (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
@@ -35019,6 +37055,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_CasaBueno_IK (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -35093,6 +37134,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_CasaBueno_IK (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
@@ -35169,6 +37215,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: casa mala mediana flor (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5523794241927010488, guid: 2d617dd580a19ce49b8f145516fbb913,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8859473546129091243, guid: 2d617dd580a19ce49b8f145516fbb913,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -35244,6 +37295,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_CasaBueno_IK (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -35318,6 +37374,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_CasaBueno_IK (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
@@ -35403,6 +37464,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_CasaBueno_IK (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 34823216678329418, guid: 5dd771a26050746478a3d94cce39d20c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3900379369555275353, guid: 5dd771a26050746478a3d94cce39d20c,
         type: 3}
@@ -35665,6 +37731,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: torre_b_02 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7777338403649477734, guid: f7ce2a9aba2f9a84488099e4b61dcccb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6752569068346224245, guid: f7ce2a9aba2f9a84488099e4b61dcccb,
         type: 3}
