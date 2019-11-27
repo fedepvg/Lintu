@@ -637,36 +637,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lintu
       objectReference: {fileID: 0}
-    - target: {fileID: 1450943259149521132, guid: 160755c619e561341874febe56b3ea4a,
-        type: 3}
-      propertyPath: triggerList.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1450943259149521132, guid: 160755c619e561341874febe56b3ea4a,
-        type: 3}
-      propertyPath: unloadTriggerList.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1450943259149521132, guid: 160755c619e561341874febe56b3ea4a,
-        type: 3}
-      propertyPath: triggerList.Array.data[0]
-      value: 1281810935
-      objectReference: {fileID: 0}
-    - target: {fileID: 1450943259149521132, guid: 160755c619e561341874febe56b3ea4a,
-        type: 3}
-      propertyPath: triggerList.Array.data[1]
-      value: 1281810935
-      objectReference: {fileID: 0}
-    - target: {fileID: 1450943259149521132, guid: 160755c619e561341874febe56b3ea4a,
-        type: 3}
-      propertyPath: unloadTriggerList.Array.data[0]
-      value: -358577003
-      objectReference: {fileID: 0}
-    - target: {fileID: 1450943259149521132, guid: 160755c619e561341874febe56b3ea4a,
-        type: 3}
-      propertyPath: unloadTriggerList.Array.data[1]
-      value: -358577003
-      objectReference: {fileID: 0}
     - target: {fileID: 824619557451100236, guid: 160755c619e561341874febe56b3ea4a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -762,6 +732,36 @@ PrefabInstance:
       propertyPath: BlobShadow
       value: 
       objectReference: {fileID: 1785609928}
+    - target: {fileID: 1450943259149521132, guid: 160755c619e561341874febe56b3ea4a,
+        type: 3}
+      propertyPath: triggerList.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1450943259149521132, guid: 160755c619e561341874febe56b3ea4a,
+        type: 3}
+      propertyPath: unloadTriggerList.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1450943259149521132, guid: 160755c619e561341874febe56b3ea4a,
+        type: 3}
+      propertyPath: triggerList.Array.data[0]
+      value: 1281810935
+      objectReference: {fileID: 0}
+    - target: {fileID: 1450943259149521132, guid: 160755c619e561341874febe56b3ea4a,
+        type: 3}
+      propertyPath: triggerList.Array.data[1]
+      value: 1281810935
+      objectReference: {fileID: 0}
+    - target: {fileID: 1450943259149521132, guid: 160755c619e561341874febe56b3ea4a,
+        type: 3}
+      propertyPath: unloadTriggerList.Array.data[0]
+      value: -358577003
+      objectReference: {fileID: 0}
+    - target: {fileID: 1450943259149521132, guid: 160755c619e561341874febe56b3ea4a,
+        type: 3}
+      propertyPath: unloadTriggerList.Array.data[1]
+      value: -358577003
+      objectReference: {fileID: 0}
     - target: {fileID: 6523660249029822050, guid: 160755c619e561341874febe56b3ea4a,
         type: 3}
       propertyPath: m_Layer
@@ -2247,6 +2247,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7277401053882514244, guid: 7d58e0aab3bdf2149a00bbc96980a373,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 3982610111611832390, guid: 7d58e0aab3bdf2149a00bbc96980a373,
         type: 3}
