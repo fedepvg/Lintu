@@ -198,6 +198,65 @@
 						</MusicPlaylistItem>
 					</Playlist>
 				</MusicPlaylistContainer>
+				<MusicSegment Name="Lintu" ID="{49C4C41A-9C37-4CEA-BE92-3420D32F18CE}" ShortID="615962133">
+					<PropertyList>
+						<Property Name="EndPosition" Type="Real64" Value="75857.1655328798"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D5B942A2-578C-459A-9515-894F12FD53E1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{23627151-D2E9-4F2A-903A-43CE359F8123}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicTrack Name="Lintu" ID="{6A42A46D-FF39-4F48-B203-EFBE70662121}" ShortID="881818281">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{23627151-D2E9-4F2A-903A-43CE359F8123}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Lintu" ID="{DEF410E6-B38B-415E-BC11-C394FB57D246}" ShortID="68012416">
+									<Language>SFX</Language>
+									<AudioFile>Lintu.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{FA2BF47A-23A3-4019-ABE5-ABC9BC2D3AFC}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<SequenceList>
+								<MusicTrackSequence Name="" ID="{66DB7817-8195-4A19-9C03-61B9FF2A954B}">
+									<ClipList>
+										<MusicClip Name="Lintu" ID="{4461C53C-A7D2-4C0E-96CB-350F6F9937EF}">
+											<PropertyList>
+												<Property Name="EndTrimOffset" Type="Real64" Value="75857.1655328798"/>
+												<Property Name="FadeInMode" Type="int16" Value="0"/>
+												<Property Name="FadeOutMode" Type="int16" Value="0"/>
+											</PropertyList>
+											<AudioSourceRef Name="Lintu" ID="{DEF410E6-B38B-415E-BC11-C394FB57D246}"/>
+										</MusicClip>
+									</ClipList>
+								</MusicTrackSequence>
+							</SequenceList>
+						</MusicTrack>
+					</ChildrenList>
+					<CueList>
+						<MusicCue Name="Entry Cue" ID="{8C14FD5B-BE40-41F5-BF20-E1D4B103798C}"/>
+						<MusicCue Name="Exit Cue" ID="{47C2C689-6494-4595-B262-F170FEEBFEFD}">
+							<PropertyList>
+								<Property Name="CueType" Type="int16" Value="1"/>
+								<Property Name="TimeMs" Type="Real64" Value="75857.1655328798"/>
+							</PropertyList>
+						</MusicCue>
+					</CueList>
+				</MusicSegment>
 			</ChildrenList>
 		</WorkUnit>
 	</InteractiveMusic>

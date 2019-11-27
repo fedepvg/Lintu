@@ -1894,7 +1894,7 @@ MonoBehaviour:
     valueGuidInternal: 
     groupIdInternal: 0
     groupGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 7c85781c2df529b4b953df86e3bbdfd7,
+    WwiseObjectReference: {fileID: 11400000, guid: 6b09a0013a40277449f78c6fa5bc38b8,
       type: 2}
   valueIdInternal: 0
   groupIdInternal: 0
@@ -2417,7 +2417,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 28.65
+  m_fontSize: 142.1
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1

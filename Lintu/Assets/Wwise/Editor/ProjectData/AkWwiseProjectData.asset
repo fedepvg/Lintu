@@ -47,7 +47,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: d5209640f8a20341a1f6811a6d049633
     GuidInternal: 
-    m_lastTime: -8586268357609003432
+    m_lastTime: -8586267389759452390
     List:
     - name: Barcos_Idle
       guid: 1de55918fc98a7478aa9cb3ff9fb4113
@@ -71,8 +71,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Click_Mouse
       maxAttenuation: 0
-      maxDuration: 316537
-      minDuration: 261178
+      maxDuration: 341221
+      minDuration: 281545
     - name: Colision_Agua
       guid: 16146eb05c6bd34583bd75fae2d4cd42
       id: 3661761514
@@ -83,8 +83,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Colision_Agua
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 5629981
+      minDuration: 4750296
     - name: Colision_Madera
       guid: 5eaff9e81965f84f9d9c046973014a18
       id: 3999760164
@@ -95,8 +95,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Colision_Madera
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 1305893
+      minDuration: 848830
     - name: Ganar
       guid: eb84b33fce54b842ac08698de349afe9
       id: 3575068712
@@ -131,8 +131,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Inicio_Menu
       maxAttenuation: 0
-      maxDuration: 66842544
-      minDuration: 66842544
+      maxDuration: -1
+      minDuration: -1
     - name: Inicio_Start
       guid: c2490ea9758015429df535271ea6a134
       id: 194776941
@@ -143,8 +143,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Inicio_Start
       maxAttenuation: 0
-      maxDuration: 9596750
-      minDuration: 9596750
+      maxDuration: 0
+      minDuration: 0
     - name: Menu_Creditos
       guid: 0288337fc40f8647ac6c0d3cb807c41c
       id: 1063492266
@@ -167,8 +167,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Orb_pickup
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 2455326
+      minDuration: 1858084
     - name: Pajaro_Aletea
       guid: 89fd509ba43cf04c8c44286e457862a2
       id: 4246722315
@@ -179,8 +179,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Pajaro_Aletea
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 1712907
+      minDuration: 1390047
     - name: Pajaro_Voz
       guid: d4af1be862d0dd488569f2582c994dde
       id: 2577500974
@@ -203,8 +203,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Pausa_Juego
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 659176
+      minDuration: 659176
     - name: Perder
       guid: fbb8b99d07263e40937bff6e4fe46559
       id: 2433235219
@@ -215,8 +215,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Perder
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 9596750
+      minDuration: 2931035
     - name: Restart
       guid: dc5984c9e8712a4bb025377c5aa048ce
       id: 1203400786
@@ -239,8 +239,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Volver_a_Menu
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -368,7 +368,5 @@ MonoBehaviour:
   - /Lintu_WwiseProject
   - /Lintu_WwiseProject/Events
   - /Lintu_WwiseProject/Events/Default Work Unit
-  - /Lintu_WwiseProject/SoundBanks
-  - /Lintu_WwiseProject/SoundBanks/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: Profile

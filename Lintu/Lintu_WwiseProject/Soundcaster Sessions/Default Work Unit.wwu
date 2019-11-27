@@ -4,6 +4,32 @@
 		<WorkUnit Name="Default Work Unit" ID="{3BF0CBB3-487D-4A03-A8C7-9F50758DFEC7}" PersistMode="Standalone">
 			<ChildrenList>
 				<SoundcasterSession Name="New Soundcaster Session" ID="{CEB8F96A-485B-4B0E-8600-B303CB227F09}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Inicio_Start" ID="{A90E49C2-8075-4215-9DF5-35271EA6A134}" WorkUnitID="{409620D5-A2F8-4103-A1F6-811A6D049633}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Inicio_Menu" ID="{B8F74C3B-E870-4A73-B2B3-0C9322FBCC31}" WorkUnitID="{409620D5-A2F8-4103-A1F6-811A6D049633}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Inicio_Juego" ID="{96A46A28-0944-452C-8ABB-AAF3A095821A}" WorkUnitID="{409620D5-A2F8-4103-A1F6-811A6D049633}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Perder" ID="{9DB9B8FB-2607-403E-937B-FF6E4FE46559}" WorkUnitID="{409620D5-A2F8-4103-A1F6-811A6D049633}"/>
+							<Position X="3" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Restart" ID="{C98459DC-71E8-4B2A-B025-377C5AA048CE}" WorkUnitID="{409620D5-A2F8-4103-A1F6-811A6D049633}"/>
+							<Position X="4" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Volver_a_Menu" ID="{47911190-13D2-43BE-815B-6796F79B4594}" WorkUnitID="{409620D5-A2F8-4103-A1F6-811A6D049633}"/>
+							<Position X="4" Y="3"/>
+						</Module>
+					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="Altura_Pajaro" ID="{C4E5C476-50B9-4CF3-B572-038B88CE0796}"/>

@@ -8,6 +8,15 @@
 						<Reference Name="AudioDevice">
 							<ObjectRef Name="System" ID="{A7A0F2B3-5BCA-45BC-B60C-19571494A3A4}" WorkUnitID="{A6D85772-3D53-43F4-86C4-BF0BA181ED08}"/>
 						</Reference>
+						<Reference Name="Effect0">
+							<Custom>
+								<Effect Name="Wwise_Compressor_(Custom)" ID="{B6FEAE45-6E90-4E1E-91C2-3E86AE509C98}" ShortID="417707368" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+									<PropertyList>
+										<Property Name="Ratio" Type="Real32" Value="2.3"/>
+									</PropertyList>
+								</Effect>
+							</Custom>
+						</Reference>
 					</ReferenceList>
 					<StateInfo>
 						<StateGroupList>
@@ -20,8 +29,8 @@
 								<StateRef Name="On" ID="{B50987D7-213D-4AF6-B3DD-D5A3B1C551AA}"/>
 								<CustomState Name="" ID="{0E1990E7-390B-46CA-AA2A-7553A27EC2A4}" ShortID="565456171">
 									<PropertyList>
-										<Property Name="Lowpass" Type="int16" Value="-76"/>
-										<Property Name="Pitch" Type="int32" Value="2630"/>
+										<Property Name="Lowpass" Type="int16" Value="-72"/>
+										<Property Name="Pitch" Type="int32" Value="-810"/>
 									</PropertyList>
 								</CustomState>
 							</CustomState>
