@@ -20,6 +20,9 @@ public class UIMenu : MonoBehaviour
 
     private void Update()
     {
+        if (GameManager.Instance.GameInput.UI.Navigate.triggered)
+            AkSoundEngine.PostEvent("Click_Mouse", gameObject);
+
         if (!EventSystem.current.currentSelectedGameObject && GameManager.Instance.GameInput.UI.Navigate.triggered)
             EventSystem.current.SetSelectedGameObject(EventSystem.current.firstSelectedGameObject);
 
