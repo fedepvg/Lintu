@@ -18,7 +18,6 @@ public class CameraController : MonoBehaviour
     private void Start()
     {
         BirdController.EndLevelAction = StopMovingCamera;
-
     }
 
     void Update()
