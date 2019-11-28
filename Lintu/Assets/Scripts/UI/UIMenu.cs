@@ -20,20 +20,23 @@ public class UIMenu : MonoBehaviour
 
     private void Update()
     {
+        EventSystem eventSystem = EventSystem.current;
+
         if (GameManager.Instance.GameInput.UI.Navigate.triggered)
             AkSoundEngine.PostEvent("Click_Mouse", gameObject);
 
-        if (!EventSystem.current.currentSelectedGameObject && GameManager.Instance.GameInput.UI.Navigate.triggered)
-            EventSystem.current.SetSelectedGameObject(EventSystem.current.firstSelectedGameObject);
+        if (!eventSystem.currentSelectedGameObject && GameManager.Instance.GameInput.UI.Navigate.triggered)
+            eventSystem.SetSelectedGameObject(eventSystem.firstSelectedGameObject);
 
-        GameObject ActualButton = EventSystem.current.currentSelectedGameObject;
+        GameObject ActualButton = eventSystem.currentSelectedGameObject;
 
         if (ActualButton)
         {
+            Image buttonUnderlineImage = ActualButton.GetComponent<Image>();
             if (PreviousButtonSelected != ActualButton)
             {
-                if (ActualButton.GetComponent<Image>().fillAmount == 1)
-                    ActualButton.GetComponent<Image>().fillAmount = 0;
+                if (buttonUnderlineImage.fillAmount == 1)
+                    buttonUnderlineImage.fillAmount = 0;
                 HasToFill = true;
                 if (PreviousButtonSelected)
                     PreviousButtonSelected.GetComponent<Image>().fillAmount = 0;
@@ -41,8 +44,8 @@ public class UIMenu : MonoBehaviour
             }
 
             if (HasToFill)
-                ActualButton.GetComponent<Image>().fillAmount = Mathf.Clamp01(ActualButton.GetComponent<Image>().fillAmount += Time.unscaledDeltaTime * 3);
-            if (ActualButton.GetComponent<Image>().fillAmount == 1)
+                buttonUnderlineImage.fillAmount = Mathf.Clamp01(buttonUnderlineImage.fillAmount += Time.unscaledDeltaTime * 3);
+            if (buttonUnderlineImage.fillAmount == 1)
                 HasToFill = false;
         }
     }

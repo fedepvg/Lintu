@@ -12,19 +12,21 @@ public class UIGameOver : MonoBehaviour
 
     private void Start()
     {
-        if (GameManager.Instance.Won)
+        EventSystem eventSystem = EventSystem.current;
+        bool playerWon = GameManager.Instance.Won;
+
+        WinCanvas.SetActive(playerWon);
+        LoseCanvas.SetActive(!playerWon);
+
+        if (playerWon)
         {
-            WinCanvas.SetActive(true);
-            LoseCanvas.SetActive(false);
-            EventSystem.current.firstSelectedGameObject = WinCanvasFirstButton;
-            EventSystem.current.SetSelectedGameObject(WinCanvasFirstButton);
+            eventSystem.firstSelectedGameObject = WinCanvasFirstButton;
+            eventSystem.SetSelectedGameObject(WinCanvasFirstButton);
         }
         else
         {
-            LoseCanvas.SetActive(true);
-            WinCanvas.SetActive(false);
-            EventSystem.current.firstSelectedGameObject = LoseCanvasFirstButton;
-            EventSystem.current.SetSelectedGameObject(LoseCanvasFirstButton);
+            eventSystem.firstSelectedGameObject = LoseCanvasFirstButton;
+            eventSystem.SetSelectedGameObject(LoseCanvasFirstButton);
         }
     }
 }
