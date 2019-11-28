@@ -11,10 +11,6 @@ public class BirdController : MonoBehaviour
     public float BaseGravity;
     public Vector3 MinRotation;
     public Vector3 MaxRotation;
-    public float MinXRotation;
-    public float MaxXRotation;
-    public float MinZRotation;
-    public float MaxZRotation;
     public float RotationSpeed;
     public float DownRotationCoefficient;
     public float MiddleRotationCoefficient;
@@ -30,13 +26,14 @@ public class BirdController : MonoBehaviour
     public SceneLoader SceneManagement;
     public float LevelDistanceLeft;
     public float Energy;
-    public float JumpEnergy;
+    public float JumpEnergyLoss;
     public float EnergyLossCoefficient;
     public PlayerControls PlayerInput;
     public delegate void OnEndLevel();
     public static OnEndLevel EndLevelAction;
     public float TimeToEndLevel;
     public float TimeToGameOverScreen;
+    public float OffLimitsRotationMultiplier;
     #endregion
 
     #region PrivateVariables
@@ -51,8 +48,8 @@ public class BirdController : MonoBehaviour
     float JumpGravity;
     const float LevelRayDistance = 2000f;
     float RotationCoefficient;
-    bool OffLeftLimit = false;
-    bool OffRightLimit = false;
+    public bool OffLeftLimit = false;
+    public bool OffRightLimit = false;
     bool EndedLevel = false;
     #endregion
 
@@ -99,13 +96,13 @@ public class BirdController : MonoBehaviour
             if (JumpTimer >= 0.9f)
                 IsJumping = false;
 
-            JumpEnergy = JumpGravity / 2;
+            JumpEnergyLoss = JumpGravity / 2;
         }
         else
         {
             JumpTimer = 0;
             JumpGravity = 0f;
-            JumpEnergy = 1f;
+            JumpEnergyLoss = 1f;
         }
         #endregion
 
@@ -114,14 +111,15 @@ public class BirdController : MonoBehaviour
         {
             if (FrameRotation.z > 0)
                 FrameRotation.z = 0;
-            FrameRotation.z += -6 * Time.deltaTime;
+            FrameRotation.z -= OffLimitsRotationMultiplier * Time.deltaTime;
         }
         else if (OffRightLimit)
         {
             if (FrameRotation.z < 0)
                 FrameRotation.z = 0;
-            FrameRotation.z += 6 * Time.deltaTime;
+            FrameRotation.z += OffLimitsRotationMultiplier * Time.deltaTime;
         }
+
         if (EndedLevel)
             FrameRotation.x = -2;
 
@@ -129,8 +127,7 @@ public class BirdController : MonoBehaviour
         Rotation.z += FrameRotation.z * RotationSpeed * Time.deltaTime;
 
         Rotation.x = Mathf.Clamp(Rotation.x, MinRotation.x, MaxRotation.x);
-
-        Rotation.z = Mathf.Clamp(Rotation.z, MaxRotation.z, MaxRotation.z);
+        Rotation.z = Mathf.Clamp(Rotation.z, MinRotation.z, MaxRotation.z);
 
         if (Rotation.z >= MaxRotation.z && OffRightLimit)
         {
@@ -164,7 +161,6 @@ public class BirdController : MonoBehaviour
         }
 
         SpeedMultiplier += (SpeedMultiplier * RotationCoefficient * Rotation.x) * Time.deltaTime;
-
         SpeedMultiplier = Mathf.Clamp(SpeedMultiplier, MinSpeedMultiplier, MaxSpeedMultiplier);
 
         Vector3 horizontalMovement = new Vector3
@@ -176,7 +172,7 @@ public class BirdController : MonoBehaviour
         #endregion
 
         #region EnergyCalculation
-        Energy -= EnergyLossCoefficient  * JumpEnergy * Time.deltaTime;
+        Energy -= EnergyLossCoefficient  * JumpEnergyLoss * Time.deltaTime;
         Energy = Mathf.Clamp(Energy, 0, MaxEnergy);
         #endregion
 
@@ -232,13 +228,12 @@ public class BirdController : MonoBehaviour
             if (Rigi.velocity.x > 0)
             {
                 OffRightLimit = true;
-                PlayerInput.Gameplay.Horizontal.Disable();
             }
             else
             {
                 OffLeftLimit = true;
-                PlayerInput.Gameplay.Horizontal.Disable();
             }
+                PlayerInput.Gameplay.Horizontal.Disable();
         }
 
         if (other.tag == "Finish")

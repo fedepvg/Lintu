@@ -51,10 +51,6 @@ MonoBehaviour:
   BaseGravity: -1
   MinRotation: {x: -30, y: 0, z: -30}
   MaxRotation: {x: 30, y: 0, z: 30}
-  MinXRotation: -30
-  MaxXRotation: 30
-  MinZRotation: -30
-  MaxZRotation: 30
   RotationSpeed: 60
   DownRotationCoefficient: 0.03
   MiddleRotationCoefficient: -0.1
@@ -104,10 +100,11 @@ MonoBehaviour:
   SceneManagement: {fileID: 0}
   LevelDistanceLeft: 0
   Energy: 0
-  JumpEnergy: 5
+  JumpEnergyLoss: 0
   EnergyLossCoefficient: 5
   TimeToEndLevel: 2
   TimeToGameOverScreen: 1
+  LimitsRotationMultiplier: 0.6
 --- !u!65 &821865918770499524
 BoxCollider:
   m_ObjectHideFlags: 0
