@@ -109,14 +109,10 @@ public class BirdController : MonoBehaviour
         #region Rotation
         if (OffLeftLimit)
         {
-            if (FrameRotation.z > 0)
-                FrameRotation.z = 0;
             FrameRotation.z -= OffLimitsRotationMultiplier * Time.deltaTime;
         }
         else if (OffRightLimit)
         {
-            if (FrameRotation.z < 0)
-                FrameRotation.z = 0;
             FrameRotation.z += OffLimitsRotationMultiplier * Time.deltaTime;
         }
 
@@ -162,11 +158,6 @@ public class BirdController : MonoBehaviour
 
         SpeedMultiplier += (SpeedMultiplier * RotationCoefficient * Rotation.x) * Time.deltaTime;
         SpeedMultiplier = Mathf.Clamp(SpeedMultiplier, MinSpeedMultiplier, MaxSpeedMultiplier);
-
-        Vector3 horizontalMovement = new Vector3
-        {
-            x = -Rotation.z * HorizontalSpeed * Time.deltaTime
-        };
 
         Gravity = BaseGravity / SpeedMultiplier + JumpGravity;
         #endregion
@@ -233,7 +224,7 @@ public class BirdController : MonoBehaviour
             {
                 OffLeftLimit = true;
             }
-                PlayerInput.Gameplay.Horizontal.Disable();
+            PlayerInput.Gameplay.Horizontal.Disable();
         }
 
         if (other.tag == "Finish")

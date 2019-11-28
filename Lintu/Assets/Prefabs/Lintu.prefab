@@ -104,7 +104,9 @@ MonoBehaviour:
   EnergyLossCoefficient: 5
   TimeToEndLevel: 2
   TimeToGameOverScreen: 1
-  LimitsRotationMultiplier: 0.6
+  OffLimitsRotationMultiplier: 6
+  OffLeftLimit: 0
+  OffRightLimit: 0
 --- !u!65 &821865918770499524
 BoxCollider:
   m_ObjectHideFlags: 0
