@@ -9,8 +9,8 @@ public class BirdController : MonoBehaviour
     public float Speed;
     public float HorizontalSpeed;
     public float BaseGravity;
-    public float CameraZOffset;
-    public float CameraYOffset;
+    public Vector3 MinRotation;
+    public Vector3 MaxRotation;
     public float MinXRotation;
     public float MaxXRotation;
     public float MinZRotation;
@@ -42,10 +42,8 @@ public class BirdController : MonoBehaviour
     #region PrivateVariables
     Rigidbody Rigi;
     bool IsJumping;
-    float XAxisFrameRotation;
-    float ZAxisFrameRotation;
-    float XAxisRotation;
-    float ZAxisRotation;
+    Vector3 FrameRotation;
+    Vector3 Rotation;
     Quaternion DestRotation;
     float SpeedMultiplier;
     float Gravity;
@@ -67,13 +65,13 @@ public class BirdController : MonoBehaviour
 
         IsJumping = false;
 
-        XAxisRotation = 0f;
-        ZAxisRotation = 0f;
+        Rotation.x = 0f;
+        Rotation.z = 0f;
 
-        PlayerInput.Gameplay.Horizontal.performed += ctx => ZAxisFrameRotation = -ctx.ReadValue<float>();
-        PlayerInput.Gameplay.Horizontal.canceled += ctx => ZAxisFrameRotation = 0f;
-        PlayerInput.Gameplay.Vertical.performed += ctx => XAxisFrameRotation = ctx.ReadValue<float>();
-        PlayerInput.Gameplay.Vertical.canceled += ctx => XAxisFrameRotation = 0f;
+        PlayerInput.Gameplay.Horizontal.performed += ctx => FrameRotation.z = -ctx.ReadValue<float>();
+        PlayerInput.Gameplay.Horizontal.canceled += ctx => FrameRotation.z = 0f;
+        PlayerInput.Gameplay.Vertical.performed += ctx => FrameRotation.x = ctx.ReadValue<float>();
+        PlayerInput.Gameplay.Vertical.canceled += ctx => FrameRotation.x = 0f;
 
         DestRotation = Quaternion.identity;
 
@@ -82,8 +80,7 @@ public class BirdController : MonoBehaviour
 
         OrbBehaviour.OnOrbPickup = AddEnergy;
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
         #region Jump
@@ -115,64 +112,64 @@ public class BirdController : MonoBehaviour
         #region Rotation
         if (OffLeftLimit)
         {
-            if (ZAxisFrameRotation > 0)
-                ZAxisFrameRotation = 0;
-            ZAxisFrameRotation += -6 * Time.deltaTime;
+            if (FrameRotation.z > 0)
+                FrameRotation.z = 0;
+            FrameRotation.z += -6 * Time.deltaTime;
         }
         else if (OffRightLimit)
         {
-            if (ZAxisFrameRotation < 0)
-                ZAxisFrameRotation = 0;
-            ZAxisFrameRotation += 6 * Time.deltaTime;
+            if (FrameRotation.z < 0)
+                FrameRotation.z = 0;
+            FrameRotation.z += 6 * Time.deltaTime;
         }
         if (EndedLevel)
-            XAxisFrameRotation = -2;
+            FrameRotation.x = -2;
 
-        XAxisRotation += XAxisFrameRotation * RotationSpeed * Time.deltaTime;
-        ZAxisRotation += ZAxisFrameRotation * RotationSpeed * Time.deltaTime;
+        Rotation.x += FrameRotation.x * RotationSpeed * Time.deltaTime;
+        Rotation.z += FrameRotation.z * RotationSpeed * Time.deltaTime;
 
-        XAxisRotation = Mathf.Clamp(XAxisRotation, MinXRotation, MaxXRotation);
+        Rotation.x = Mathf.Clamp(Rotation.x, MinRotation.x, MaxRotation.x);
 
-        ZAxisRotation = Mathf.Clamp(ZAxisRotation, MinZRotation, MaxZRotation);
+        Rotation.z = Mathf.Clamp(Rotation.z, MaxRotation.z, MaxRotation.z);
 
-        if (ZAxisRotation >= MaxZRotation && OffRightLimit)
+        if (Rotation.z >= MaxRotation.z && OffRightLimit)
         {
             PlayerInput.Gameplay.Horizontal.Enable();
             OffRightLimit = false;
         }
-        else if (ZAxisRotation <= MinZRotation && OffLeftLimit)
+        else if (Rotation.z <= MinRotation.z && OffLeftLimit)
         {
             PlayerInput.Gameplay.Horizontal.Enable();
             OffLeftLimit = false;
         }
 
-        DestRotation = Quaternion.Euler(XAxisRotation, 0f, ZAxisRotation);
+        DestRotation = Quaternion.Euler(Rotation.x, 0f, Rotation.z);
         #endregion
 
         #region MovementCalculations
-        if (XAxisRotation < 4f && Energy > 0)
+        if (Rotation.x < 4f && Energy > 0)
         {
             RotationCoefficient = DownRotationCoefficient;
-            if (XAxisRotation > 0)
+            if (Rotation.x > 0)
                 RotationCoefficient = MiddleRotationCoefficient;
             AnimationController.SetBool("GoingDown", false);
         }
         else
         {
             RotationCoefficient = UpRotationCoefficient;
-            if (XAxisRotation >= 4f)
+            if (Rotation.x >= 4f)
                 AnimationController.SetBool("GoingDown", true);
             else
                 AnimationController.SetBool("GoingDown", false);
         }
 
-        SpeedMultiplier += (SpeedMultiplier * RotationCoefficient * XAxisRotation) * Time.deltaTime;
+        SpeedMultiplier += (SpeedMultiplier * RotationCoefficient * Rotation.x) * Time.deltaTime;
 
         SpeedMultiplier = Mathf.Clamp(SpeedMultiplier, MinSpeedMultiplier, MaxSpeedMultiplier);
 
         Vector3 horizontalMovement = new Vector3
         {
-            x = -ZAxisRotation * HorizontalSpeed * Time.deltaTime
+            x = -Rotation.z * HorizontalSpeed * Time.deltaTime
         };
 
         Gravity = BaseGravity / SpeedMultiplier + JumpGravity;
@@ -204,7 +201,7 @@ public class BirdController : MonoBehaviour
     {
         Rigi.velocity = transform.forward * Speed * SpeedMultiplier;
         Rigi.velocity += new Vector3(0f, Gravity, 0f);
-        Rigi.velocity += Vector3.right * -ZAxisRotation * HorizontalSpeed * Time.fixedDeltaTime;
+        Rigi.velocity += Vector3.right * -Rotation.z * HorizontalSpeed * Time.fixedDeltaTime;
         Rigi.MoveRotation(DestRotation);
     }
 
