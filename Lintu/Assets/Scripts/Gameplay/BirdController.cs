@@ -36,6 +36,7 @@ public class BirdController : MonoBehaviour
     public float TimeToEndLevel;
     public float TimeToGameOverScreen;
     public float OffLimitsRotationMultiplier;
+    public GameObject DeathParticlePrefab;
     #endregion
 
     #region PrivateVariables
@@ -217,6 +218,8 @@ public class BirdController : MonoBehaviour
     {
         if (collision.gameObject.tag == "Wall" || collision.gameObject.tag == "Obstacle" || collision.gameObject.tag == "Floor")
         {
+            if(collision.gameObject.tag != "Floor")
+                Instantiate(DeathParticlePrefab, /*collision.contacts[0].point*/transform.position, Quaternion.identity);
             Die(TimeToGameOverScreen);
         }
     }
