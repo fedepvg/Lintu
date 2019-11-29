@@ -31,6 +31,8 @@ public class BirdController : MonoBehaviour
     public PlayerControls PlayerInput;
     public delegate void OnEndLevel();
     public static OnEndLevel EndLevelAction;
+    public delegate void OnPlayerMoving(float speedPorc);
+    public static OnPlayerMoving OnPlayerMovingAction;
     public float TimeToEndLevel;
     public float TimeToGameOverScreen;
     public float OffLimitsRotationMultiplier;
@@ -51,6 +53,7 @@ public class BirdController : MonoBehaviour
     public bool OffLeftLimit = false;
     public bool OffRightLimit = false;
     bool EndedLevel = false;
+    const float MaxSpeed = 70f;
     #endregion
 
     void Start()
@@ -179,6 +182,12 @@ public class BirdController : MonoBehaviour
                 LevelDistanceLeft = hit.distance;
             }
         }
+        #endregion
+
+        #region FOVModify
+        float speedPorc = Rigi.velocity.magnitude / MaxSpeed;
+        if (OnPlayerMovingAction != null)
+            OnPlayerMovingAction(speedPorc);
         #endregion
 
         UpdateBlobShadowPosition();

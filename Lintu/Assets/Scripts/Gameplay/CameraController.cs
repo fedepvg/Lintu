@@ -11,13 +11,18 @@ public class CameraController : MonoBehaviour
     public Vector3 CurrentVelocity;
     public float SmoothTime;
     public Vector3 Distance;
+    public float MaxFov;
+    public float MinFov;
 
     float CameraYSpeed;
+    float FovDifference;
     bool LevelEnded = false;
 
     private void Start()
     {
         BirdController.EndLevelAction = StopMovingCamera;
+        BirdController.OnPlayerMovingAction = SetCameraFov;
+        FovDifference = MaxFov - MinFov;
     }
 
     void Update()
@@ -46,5 +51,11 @@ public class CameraController : MonoBehaviour
     public void StopMovingCamera()
     {
         LevelEnded = true;
+    }
+
+    public void SetCameraFov(float porc)
+    {
+        float newFov = FovDifference * porc;
+        GetComponent<Camera>().fieldOfView = MinFov + newFov;
     }
 }

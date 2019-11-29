@@ -92,16 +92,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CameraYOffset: 0.3
-  CameraZOffset: 6
   CameraMaxYOffset: 0.5
-  CameraMiddleYOffset: 0.3
-  CameraMinYOffset: -0.3
   PlayerTransform: {fileID: 0}
   CameraYSpeedMultiplier: 0.3
-  CameraPosition: 0
   CurrentVelocity: {x: 0, y: 0, z: 0}
   SmoothTime: 0.05
   Distance: {x: 0, y: 0, z: -1.5}
+  MaxFov: 75
+  MinFov: 60
 --- !u!114 &2986434616411809522
 MonoBehaviour:
   m_ObjectHideFlags: 0
