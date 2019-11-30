@@ -1,12 +1,17 @@
 fileFormatVersion: 2
-guid: 3df0261c902f4ab4bbfc16f5c8c0cd2a
+guid: d9a80be2941663144ba5467ed19a651e
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable:
   - first:
       74: 1827226128182048838
     second: Take 001
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface1
+    second: {fileID: 2100000, guid: 47e0e62ec6e4a9048955bd0a67e43439, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -35,18 +40,18 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Take 001
+      name: Idle
       takeName: Take 001
       internalID: 1827226128182048838
       firstFrame: 1
-      lastFrame: 34
+      lastFrame: 13
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -99,7 +104,12 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  referencedClips: []
+  referencedClips:
+  - 0d3e7ce0d46338542a3c3fdf954b3621
+  - d0a8eef441f920e498f37bc923069b98
+  - eb235dd08158f994d96514973331f033
+  - 3df0261c902f4ab4bbfc16f5c8c0cd2a
+  - 47abcf0ec63dbb7459b8dd008ef6458f
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
