@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviourSingleton<GameManager>
 {
     public PlayerControls GameInput;
     bool HasWon = false;
+    bool IsInvertedY = true;
 
     public override void Awake()
     {
@@ -40,5 +41,11 @@ public class GameManager : MonoBehaviourSingleton<GameManager>
     public void DisableInput()
     {
         GameInput.Disable();
+    }
+
+    public bool InvertedY
+    {
+        get { return IsInvertedY; }
+        set { IsInvertedY = value; }
     }
 }

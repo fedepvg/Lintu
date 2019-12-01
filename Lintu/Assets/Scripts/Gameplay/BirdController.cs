@@ -81,11 +81,6 @@ public class BirdController : MonoBehaviour
         Rotation.x = 0f;
         Rotation.z = 0f;
 
-        PlayerInput.Gameplay.Horizontal.performed += ctx => FrameRotation.z = -ctx.ReadValue<float>();
-        PlayerInput.Gameplay.Horizontal.canceled += ctx => FrameRotation.z = 0f;
-        PlayerInput.Gameplay.Vertical.performed += ctx => FrameRotation.x = ctx.ReadValue<float>();
-        PlayerInput.Gameplay.Vertical.canceled += ctx => FrameRotation.x = 0f;
-
         DestRotation = Quaternion.identity;
 
         SpeedMultiplier = 0.8f;
@@ -94,7 +89,7 @@ public class BirdController : MonoBehaviour
         if(FinishTransform)
             LevelDistance = FinishTransform.position.z - StartTransform.position.z;
 
-        transform.position = StartTransform.position;
+        transform.position=StartTransform.position;
 
         OrbBehaviour.OnOrbPickup = AddEnergy;
     }
@@ -108,6 +103,12 @@ public class BirdController : MonoBehaviour
             AnimationController.SetTrigger("Fly");
             AkSoundEngine.PostEvent("Pajaro_Aletea", gameObject);
         }
+
+        FrameRotation.z = -PlayerInput.Gameplay.Horizontal.ReadValue<float>();
+        if(GameManager.Instance.InvertedY)
+            FrameRotation.x = PlayerInput.Gameplay.Vertical.ReadValue<float>();
+        else
+            FrameRotation.x = -PlayerInput.Gameplay.Vertical.ReadValue<float>();
 
         if (IsJumping)
         {
