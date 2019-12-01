@@ -16,14 +16,16 @@ public class UIMenu : MonoBehaviour
     {
         if(VersionText)
             VersionText.SetText("v" + Application.version);
+        PreviousButtonSelected = EventSystem.current.firstSelectedGameObject;
     }
 
     private void Update()
     {
         EventSystem eventSystem = EventSystem.current;
 
-        if (GameManager.Instance.GameInput.UI.Navigate.triggered)
-            AkSoundEngine.PostEvent("Click_Mouse", gameObject);
+        if(eventSystem.currentSelectedGameObject!=null)
+            if(eventSystem.currentSelectedGameObject != PreviousButtonSelected || GameManager.Instance.GameInput.UI.Submit.triggered)
+                AkSoundEngine.PostEvent("Click_Mouse", gameObject);
 
         if (!eventSystem.currentSelectedGameObject && GameManager.Instance.GameInput.UI.Navigate.triggered)
             eventSystem.SetSelectedGameObject(eventSystem.firstSelectedGameObject);
