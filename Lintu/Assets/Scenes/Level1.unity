@@ -4272,6 +4272,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 7.5
       objectReference: {fileID: 0}
+    - target: {fileID: 822198082457142721, guid: 91c65031e8f957447b09792d01517d92,
+        type: 3}
+      propertyPath: m_UseCustomVertexStreams
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 822198083212875536, guid: 91c65031e8f957447b09792d01517d92,
+        type: 3}
+      propertyPath: m_UseCustomVertexStreams
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91c65031e8f957447b09792d01517d92, type: 3}
 --- !u!4 &193292239 stripped
@@ -5070,6 +5080,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 822198082457142721, guid: 91c65031e8f957447b09792d01517d92,
+        type: 3}
+      propertyPath: m_UseCustomVertexStreams
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 822198083212875536, guid: 91c65031e8f957447b09792d01517d92,
+        type: 3}
+      propertyPath: m_UseCustomVertexStreams
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91c65031e8f957447b09792d01517d92, type: 3}
@@ -10449,6 +10469,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 7.5
       objectReference: {fileID: 0}
+    - target: {fileID: 822198082457142721, guid: 91c65031e8f957447b09792d01517d92,
+        type: 3}
+      propertyPath: m_UseCustomVertexStreams
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 822198083212875536, guid: 91c65031e8f957447b09792d01517d92,
+        type: 3}
+      propertyPath: m_UseCustomVertexStreams
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91c65031e8f957447b09792d01517d92, type: 3}
 --- !u!4 &523885989 stripped
@@ -12605,6 +12635,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 7.5
       objectReference: {fileID: 0}
+    - target: {fileID: 822198082457142721, guid: 91c65031e8f957447b09792d01517d92,
+        type: 3}
+      propertyPath: m_UseCustomVertexStreams
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 822198083212875536, guid: 91c65031e8f957447b09792d01517d92,
+        type: 3}
+      propertyPath: m_UseCustomVertexStreams
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91c65031e8f957447b09792d01517d92, type: 3}
 --- !u!4 &592534770 stripped
@@ -14169,6 +14209,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 822198082457142721, guid: 91c65031e8f957447b09792d01517d92,
+        type: 3}
+      propertyPath: m_UseCustomVertexStreams
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 822198083212875536, guid: 91c65031e8f957447b09792d01517d92,
+        type: 3}
+      propertyPath: m_UseCustomVertexStreams
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91c65031e8f957447b09792d01517d92, type: 3}
@@ -15984,6 +16034,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 822198082457142721, guid: 91c65031e8f957447b09792d01517d92,
+        type: 3}
+      propertyPath: m_UseCustomVertexStreams
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 822198083212875536, guid: 91c65031e8f957447b09792d01517d92,
+        type: 3}
+      propertyPath: m_UseCustomVertexStreams
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91c65031e8f957447b09792d01517d92, type: 3}
@@ -19040,6 +19100,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 822198082457142721, guid: 91c65031e8f957447b09792d01517d92,
+        type: 3}
+      propertyPath: m_UseCustomVertexStreams
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 822198083212875536, guid: 91c65031e8f957447b09792d01517d92,
+        type: 3}
+      propertyPath: m_UseCustomVertexStreams
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91c65031e8f957447b09792d01517d92, type: 3}
@@ -24841,6 +24911,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 7.5
       objectReference: {fileID: 0}
+    - target: {fileID: 822198082457142721, guid: 91c65031e8f957447b09792d01517d92,
+        type: 3}
+      propertyPath: m_UseCustomVertexStreams
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 822198083212875536, guid: 91c65031e8f957447b09792d01517d92,
+        type: 3}
+      propertyPath: m_UseCustomVertexStreams
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91c65031e8f957447b09792d01517d92, type: 3}
 --- !u!4 &1411330071 stripped
@@ -25964,6 +26044,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 7.5
       objectReference: {fileID: 0}
+    - target: {fileID: 822198082457142721, guid: 91c65031e8f957447b09792d01517d92,
+        type: 3}
+      propertyPath: m_UseCustomVertexStreams
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 822198083212875536, guid: 91c65031e8f957447b09792d01517d92,
+        type: 3}
+      propertyPath: m_UseCustomVertexStreams
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91c65031e8f957447b09792d01517d92, type: 3}
 --- !u!4 &1485054464 stripped
@@ -26223,6 +26313,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 822198082457142721, guid: 91c65031e8f957447b09792d01517d92,
+        type: 3}
+      propertyPath: m_UseCustomVertexStreams
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 822198083212875536, guid: 91c65031e8f957447b09792d01517d92,
+        type: 3}
+      propertyPath: m_UseCustomVertexStreams
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91c65031e8f957447b09792d01517d92, type: 3}
@@ -27011,6 +27111,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 822198082457142721, guid: 91c65031e8f957447b09792d01517d92,
+        type: 3}
+      propertyPath: m_UseCustomVertexStreams
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 822198083212875536, guid: 91c65031e8f957447b09792d01517d92,
+        type: 3}
+      propertyPath: m_UseCustomVertexStreams
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91c65031e8f957447b09792d01517d92, type: 3}
@@ -33178,6 +33288,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 7.5
       objectReference: {fileID: 0}
+    - target: {fileID: 822198082457142721, guid: 91c65031e8f957447b09792d01517d92,
+        type: 3}
+      propertyPath: m_UseCustomVertexStreams
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 822198083212875536, guid: 91c65031e8f957447b09792d01517d92,
+        type: 3}
+      propertyPath: m_UseCustomVertexStreams
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91c65031e8f957447b09792d01517d92, type: 3}
 --- !u!4 &1886565637 stripped
@@ -33705,6 +33825,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 822198082457142721, guid: 91c65031e8f957447b09792d01517d92,
+        type: 3}
+      propertyPath: m_UseCustomVertexStreams
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 822198083212875536, guid: 91c65031e8f957447b09792d01517d92,
+        type: 3}
+      propertyPath: m_UseCustomVertexStreams
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91c65031e8f957447b09792d01517d92, type: 3}
@@ -34947,6 +35077,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 7.5
       objectReference: {fileID: 0}
+    - target: {fileID: 822198082457142721, guid: 91c65031e8f957447b09792d01517d92,
+        type: 3}
+      propertyPath: m_UseCustomVertexStreams
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 822198083212875536, guid: 91c65031e8f957447b09792d01517d92,
+        type: 3}
+      propertyPath: m_UseCustomVertexStreams
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91c65031e8f957447b09792d01517d92, type: 3}
 --- !u!4 &2000483176 stripped
@@ -35810,6 +35950,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 822198082457142721, guid: 91c65031e8f957447b09792d01517d92,
+        type: 3}
+      propertyPath: m_UseCustomVertexStreams
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 822198083212875536, guid: 91c65031e8f957447b09792d01517d92,
+        type: 3}
+      propertyPath: m_UseCustomVertexStreams
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91c65031e8f957447b09792d01517d92, type: 3}
@@ -37052,6 +37202,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 822198082457142721, guid: 91c65031e8f957447b09792d01517d92,
+        type: 3}
+      propertyPath: m_UseCustomVertexStreams
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 822198083212875536, guid: 91c65031e8f957447b09792d01517d92,
+        type: 3}
+      propertyPath: m_UseCustomVertexStreams
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91c65031e8f957447b09792d01517d92, type: 3}
