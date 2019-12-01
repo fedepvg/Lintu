@@ -22,6 +22,7 @@ public class BirdController : MonoBehaviour
     public Animator AnimationController;
     public AnimationCurve JumpCurve;
     public LayerMask LevelRaycastLayer;
+    public LayerMask AltitudeRaycastLayer;
     public GameObject BlobShadow;
     public SceneLoader SceneManagement;
     public float LevelDistanceLeft;
@@ -37,8 +38,12 @@ public class BirdController : MonoBehaviour
     public float TimeToGameOverScreen;
     public float OffLimitsRotationMultiplier;
     public GameObject DeathParticlePrefab;
-    public AK.Wwise.RTPC EnergyRTPC;
-    public AK.Wwise.RTPC SpeedRTPC;
+    public AK.Wwise.RTPC EnergyRTPCParameter;
+    public AK.Wwise.RTPC SpeedRTPCParameter;
+    public AK.Wwise.RTPC DistanceRTPCParameter;
+    public AK.Wwise.RTPC AltitudeRTPCParameter;
+    public Transform StartTransform;
+    public Transform FinishTransform;
     #endregion
 
     #region PrivateVariables
@@ -57,6 +62,11 @@ public class BirdController : MonoBehaviour
     public bool OffRightLimit = false;
     bool EndedLevel = false;
     const float MaxSpeed = 70f;
+    const float MaxAltitude = 50f;
+    float PlayerAltitude;
+    float AltitudePorc;
+    float LevelDistance;
+    float LevelDistancePorc;
     #endregion
 
     void Start()
@@ -80,6 +90,11 @@ public class BirdController : MonoBehaviour
 
         SpeedMultiplier = 0.8f;
         Energy = MaxEnergy;
+
+        if(FinishTransform)
+            LevelDistance = FinishTransform.position.z - StartTransform.position.z;
+
+        transform.position = StartTransform.position;
 
         OrbBehaviour.OnOrbPickup = AddEnergy;
     }
@@ -183,6 +198,8 @@ public class BirdController : MonoBehaviour
             if (layerHitted == "Finish")
             {
                 LevelDistanceLeft = hit.distance;
+                LevelDistancePorc = LevelDistanceLeft / LevelDistance;
+
             }
         }
         #endregion
@@ -191,6 +208,26 @@ public class BirdController : MonoBehaviour
         float speedPorc = Rigi.velocity.magnitude / MaxSpeed;
         if (OnPlayerMovingAction != null)
             OnPlayerMovingAction(speedPorc);
+        #endregion
+
+        #region Altitude
+        if (Physics.Raycast(transform.position, Vector3.down, out hit, LevelRayDistance, AltitudeRaycastLayer))
+        {
+            layerHitted = LayerMask.LayerToName(hit.transform.gameObject.layer);
+
+            if (layerHitted == "Floor")
+            {
+                PlayerAltitude = hit.distance;
+                AltitudePorc = PlayerAltitude / MaxAltitude;
+            }
+        }
+        #endregion
+
+        #region RTPC
+        EnergyRTPCParameter.SetGlobalValue(Energy / 100);
+        SpeedRTPCParameter.SetGlobalValue(speedPorc);
+        DistanceRTPCParameter.SetGlobalValue(LevelDistancePorc);
+        AltitudeRTPCParameter.SetGlobalValue(AltitudePorc);
         #endregion
 
         UpdateBlobShadowPosition();
@@ -221,7 +258,7 @@ public class BirdController : MonoBehaviour
         if (collision.gameObject.tag == "Wall" || collision.gameObject.tag == "Obstacle" || collision.gameObject.tag == "Floor")
         {
             if(collision.gameObject.tag != "Floor")
-                Instantiate(DeathParticlePrefab, /*collision.contacts[0].point*/transform.position, Quaternion.identity);
+                Instantiate(DeathParticlePrefab, transform.position, Quaternion.identity);
             Die(TimeToGameOverScreen);
         }
     }

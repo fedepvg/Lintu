@@ -732,6 +732,16 @@ PrefabInstance:
       propertyPath: BlobShadow
       value: 
       objectReference: {fileID: 1785609928}
+    - target: {fileID: 821865918770499530, guid: 160755c619e561341874febe56b3ea4a,
+        type: 3}
+      propertyPath: StartTransform
+      value: 
+      objectReference: {fileID: 515002513}
+    - target: {fileID: 821865918770499530, guid: 160755c619e561341874febe56b3ea4a,
+        type: 3}
+      propertyPath: FinishTransform
+      value: 
+      objectReference: {fileID: 682221008}
     - target: {fileID: 1450943259149521132, guid: 160755c619e561341874febe56b3ea4a,
         type: 3}
       propertyPath: triggerList.Array.size

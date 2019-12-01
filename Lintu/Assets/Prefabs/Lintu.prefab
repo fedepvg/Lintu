@@ -96,6 +96,9 @@ MonoBehaviour:
   LevelRaycastLayer:
     serializedVersion: 2
     m_Bits: 512
+  AltitudeRaycastLayer:
+    serializedVersion: 2
+    m_Bits: 1024
   BlobShadow: {fileID: 0}
   SceneManagement: {fileID: 0}
   LevelDistanceLeft: 0
@@ -106,6 +109,26 @@ MonoBehaviour:
   TimeToGameOverScreen: 1
   OffLimitsRotationMultiplier: 6
   DeathParticlePrefab: {fileID: 0}
+  EnergyRTPCParameter:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 6aa5a807aadb92b44893df20e1d5baef,
+      type: 2}
+  SpeedRTPCParameter:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: d2f0a374d845f794b8fae649e76ae739,
+      type: 2}
+  DistanceRTPCParameter:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 82f66cf6a9632aa4c95783298f317299,
+      type: 2}
+  AltitudeRTPCParameter:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 5d73687574d931048a243fa655766752,
+      type: 2}
   OffLeftLimit: 0
   OffRightLimit: 0
 --- !u!65 &821865918770499524
