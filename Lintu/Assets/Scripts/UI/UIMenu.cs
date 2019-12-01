@@ -23,9 +23,13 @@ public class UIMenu : MonoBehaviour
     {
         EventSystem eventSystem = EventSystem.current;
 
-        if(eventSystem.currentSelectedGameObject!=null)
-            if(eventSystem.currentSelectedGameObject != PreviousButtonSelected || GameManager.Instance.GameInput.UI.Submit.triggered)
-                AkSoundEngine.PostEvent("Click_Mouse", gameObject);
+        if (eventSystem.currentSelectedGameObject != null)
+        {
+            if (eventSystem.currentSelectedGameObject != PreviousButtonSelected)
+                AkSoundEngine.PostEvent("Cursor", gameObject);
+            else if(GameManager.Instance.GameInput.UI.Submit.triggered)
+                AkSoundEngine.PostEvent("Cursor_Seleccion", gameObject);
+        }
 
         if (!eventSystem.currentSelectedGameObject && GameManager.Instance.GameInput.UI.Navigate.triggered)
             eventSystem.SetSelectedGameObject(eventSystem.firstSelectedGameObject);
