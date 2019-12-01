@@ -9,6 +9,9 @@ public class WaterBehaviour : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Player")
+        {
             Instantiate(CollisionParticlesPrefab, collision.contacts[0].point, Quaternion.identity);
+            AkSoundEngine.PostEvent("Colision_Agua", gameObject);
+        }
     }
 }
