@@ -6,6 +6,7 @@
 				<GameParameter Name="Altura_Pajaro" ID="{C4E5C476-50B9-4CF3-B572-038B88CE0796}"/>
 				<GameParameter Name="Energia_Pajaro" ID="{1BBB7369-4CCF-4E2E-8052-52C5FDD6BE07}"/>
 				<GameParameter Name="Velocidad_Pajaro" ID="{63A3F995-3419-4D84-8546-71B2C98C0595}"/>
+				<GameParameter Name="Largo_Mapa" ID="{3C3E6860-F2C0-4AA7-BE55-5663FA0C5161}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

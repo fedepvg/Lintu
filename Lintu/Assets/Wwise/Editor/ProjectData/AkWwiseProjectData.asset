@@ -24,14 +24,25 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 51716223e9d22a4f903a43ce359f8123
     GuidInternal: 
-    m_lastTime: -8586268357605593471
-    List: []
+    m_lastTime: -8586264328246864506
+    List:
+    - name: FX_espaciales
+      guid: 05288ecb07763e498f12344ddc42ced6
+      id: 1792520288
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: FX_espaciales
+        ObjectType: 1
+      Path: Default Work Unit\Master Audio Bus\FX_espaciales
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: d124bd5d8a78314ea75dff208c839db6
     GuidInternal: 
-    m_lastTime: -8586268357602355037
+    m_lastTime: -8586263847868678191
     List:
     - name: Main
       guid: 10666bd03b52b7419b47aa3e6b0a6ac8
@@ -47,7 +58,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: d5209640f8a20341a1f6811a6d049633
     GuidInternal: 
-    m_lastTime: -8586267389759452390
+    m_lastTime: -8586263852417111977
     List:
     - name: Barcos_Idle
       guid: 1de55918fc98a7478aa9cb3ff9fb4113
@@ -61,18 +72,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
-    - name: Click_Mouse
-      guid: fc55c2cef5d08e43b418887fca8cc5bd
-      id: 2013887443
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Click_Mouse
-        ObjectType: 3
-      Path: Default Work Unit\Click_Mouse
-      maxAttenuation: 0
-      maxDuration: 341221
-      minDuration: 281545
     - name: Colision_Agua
       guid: 16146eb05c6bd34583bd75fae2d4cd42
       id: 3661761514
@@ -97,6 +96,30 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 1305893
       minDuration: 848830
+    - name: Cursor
+      guid: 4ed32a3d29427c42bbde0b0561111107
+      id: 1330674255
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Cursor
+        ObjectType: 3
+      Path: Default Work Unit\Cursor
+      maxAttenuation: 0
+      maxDuration: 153218
+      minDuration: 153218
+    - name: Cursor_Seleccion
+      guid: d84d1e8879172a4d98145fc60debde36
+      id: 257651473
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Cursor_Seleccion
+        ObjectType: 3
+      Path: Default Work Unit\Cursor_Seleccion
+      maxAttenuation: 0
+      maxDuration: 229147
+      minDuration: 229147
     - name: Ganar
       guid: eb84b33fce54b842ac08698de349afe9
       id: 3575068712
@@ -107,8 +130,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Ganar
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 2385733
+      minDuration: 2385733
     - name: Inicio_Juego
       guid: 286aa49644092c458abbaaf3a095821a
       id: 1460932951
@@ -131,8 +154,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Inicio_Menu
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 119823820
+      minDuration: 119823820
     - name: Inicio_Start
       guid: c2490ea9758015429df535271ea6a134
       id: 194776941
@@ -155,8 +178,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Menu_Creditos
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 118538104
+      minDuration: 118538104
     - name: Orb_pickup
       guid: 999fb02881f4dd4c89eab0e953587c67
       id: 3042702347
@@ -246,7 +269,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 1edc21d7eb91a849a512ee400c2fbddb
     GuidInternal: 
-    m_lastTime: -8586268357608993461
+    m_lastTime: -8586263852416842163
     List:
     - name: Altura_Pajaro
       guid: 76c4e5c4b950f34cb572038b88ce0796
@@ -266,6 +289,15 @@ MonoBehaviour:
       - ElementName: Energia_Pajaro
         ObjectType: 13
       Path: Default Work Unit\Energia_Pajaro
+    - name: Largo_Mapa
+      guid: 60683e3cc0f2a74abe555663fa0c5161
+      id: 2301316308
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Largo_Mapa
+        ObjectType: 13
+      Path: Default Work Unit\Largo_Mapa
     - name: Velocidad_Pajaro
       guid: 95f9a3631934844d854671b2c98c0595
       id: 2822622896

@@ -18,6 +18,48 @@
 							</Custom>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<AuxBus Name="FX_espaciales" ID="{CB8E2805-7607-493E-8F12-344DDC42CED6}">
+							<ReferenceList>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Wwise_Delay_(Custom)" ID="{CEB28FEB-92B5-4869-B5B6-2E3A756B0DE2}" ShortID="801211459" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+											<PropertyList>
+												<Property Name="DelayTime" Type="Real32" Value="0.35"/>
+												<Property Name="Feedback" Type="Real32" Value="27.5"/>
+												<Property Name="WetDryMix" Type="Real32" Value="100"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+								<Reference Name="Effect1">
+									<Custom CreatedFrom="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}">
+										<Effect Name="Have_U_Ever_Been_Outside_(Custom)" ID="{AD57C972-C802-4FEE-83F1-21C901BC1397}" ShortID="784109637" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<PropertyList>
+												<Property Name="DecayTime" Type="Real32" Value="1"/>
+												<Property Name="Density" Type="Real32" Value="50"/>
+												<Property Name="ERLevel" Type="Real32" Value="-18"/>
+												<Property Name="ERPattern" Type="int32" Value="29"/>
+												<Property Name="Filter1Freq" Type="Real32" Value="210"/>
+												<Property Name="Filter1Gain" Type="Real32" Value="1.5"/>
+												<Property Name="Filter2Freq" Type="Real32" Value="6830"/>
+												<Property Name="Filter2Gain" Type="Real32" Value="-7.5"/>
+												<Property Name="Filter2Q" Type="Real32" Value="0.65"/>
+												<Property Name="Filter3Freq" Type="Real32" Value="8440"/>
+												<Property Name="Filter3Gain" Type="Real32" Value="-4"/>
+												<Property Name="HFDamping" Type="Real32" Value="5.05"/>
+												<Property Name="PreDelay" Type="Real32" Value="145"/>
+												<Property Name="Quality" Type="int32" Value="12"/>
+												<Property Name="ReverbLevel" Type="Real32" Value="-37"/>
+												<Property Name="RoomSize" Type="Real32" Value="73"/>
+												<Property Name="StereoWidth" Type="Real32" Value="28"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+						</AuxBus>
+					</ChildrenList>
 					<StateInfo>
 						<StateGroupList>
 							<StateGroupInfo>

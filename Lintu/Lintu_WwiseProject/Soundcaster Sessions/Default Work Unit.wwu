@@ -32,6 +32,10 @@
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
+							<GameParameterRef Name="Largo_Mapa" ID="{3C3E6860-F2C0-4AA7-BE55-5663FA0C5161}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="Altura_Pajaro" ID="{C4E5C476-50B9-4CF3-B572-038B88CE0796}"/>
 							<Value>31.0531053105311</Value>
 						</RTPCValue>

@@ -7,8 +7,8 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="Perder" ID="{9DB9B8FB-2607-403E-937B-FF6E4FE46559}" WorkUnitID="{409620D5-A2F8-4103-A1F6-811A6D049633}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Inicio_Start" ID="{A90E49C2-8075-4215-9DF5-35271EA6A134}" WorkUnitID="{409620D5-A2F8-4103-A1F6-811A6D049633}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Cursor" ID="{3D2AD34E-4229-427C-BBDE-0B0561111107}" WorkUnitID="{409620D5-A2F8-4103-A1F6-811A6D049633}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Ganar" ID="{3FB384EB-54CE-42B8-AC08-698DE349AFE9}" WorkUnitID="{409620D5-A2F8-4103-A1F6-811A6D049633}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Click_Mouse" ID="{CEC255FC-D0F5-438E-B418-887FCA8CC5BD}" WorkUnitID="{409620D5-A2F8-4103-A1F6-811A6D049633}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Volver_a_Menu" ID="{47911190-13D2-43BE-815B-6796F79B4594}" WorkUnitID="{409620D5-A2F8-4103-A1F6-811A6D049633}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Inicio_Juego" ID="{96A46A28-0944-452C-8ABB-AAF3A095821A}" WorkUnitID="{409620D5-A2F8-4103-A1F6-811A6D049633}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Colision_Agua" ID="{B06E1416-6B5C-45D3-83BD-75FAE2D4CD42}" WorkUnitID="{409620D5-A2F8-4103-A1F6-811A6D049633}" Filter="7" Origin="Manual"/>
@@ -20,6 +20,7 @@
 						<ObjectRef Name="Pausa_Juego" ID="{D47456CE-8028-4C01-BE85-A002214BA089}" WorkUnitID="{409620D5-A2F8-4103-A1F6-811A6D049633}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Orb_pickup" ID="{28B09F99-F481-4CDD-89EA-B0E953587C67}" WorkUnitID="{409620D5-A2F8-4103-A1F6-811A6D049633}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Pajaro_Aletea" ID="{9B50FD89-3CA4-4CF0-8C44-286E457862A2}" WorkUnitID="{409620D5-A2F8-4103-A1F6-811A6D049633}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Cursor_Seleccion" ID="{881E4DD8-1779-4D2A-9814-5FC60DEBDE36}" WorkUnitID="{409620D5-A2F8-4103-A1F6-811A6D049633}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Colision_Madera" ID="{E8F9AF5E-6519-4FF8-9D9C-046973014A18}" WorkUnitID="{409620D5-A2F8-4103-A1F6-811A6D049633}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

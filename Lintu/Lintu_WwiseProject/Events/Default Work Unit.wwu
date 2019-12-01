@@ -19,7 +19,7 @@
 						<Action Name="" ID="{7C1C9825-C564-4200-BE95-BD0B109D77AC}" ShortID="962318309">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Menu Music" ID="{C7319490-FC8D-4DC1-86AC-3DA590D5C454}" WorkUnitID="{08CE5524-1EAD-418D-822E-93614AC5C6C2}"/>
+									<ObjectRef Name="Lintu_Theme_Final" ID="{06995581-B3FF-4F46-8A4F-E3400360DC84}" WorkUnitID="{842A5A37-D999-45BE-8EDB-5EE895361710}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -53,7 +53,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Ganar" ID="{3FB384EB-54CE-42B8-AC08-698DE349AFE9}"/>
+				<Event Name="Ganar" ID="{3FB384EB-54CE-42B8-AC08-698DE349AFE9}">
+					<ChildrenList>
+						<Action Name="" ID="{432226C6-D386-4340-9FD0-76A39C2C42A2}" ShortID="586309326">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="HAWK Red Tailed, Scream Long" ID="{0652D93F-0A48-4596-8E4C-D0679D6B7E79}" WorkUnitID="{6FF59BFE-21E3-484D-B73F-F7C53E23C38B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 				<Event Name="Perder" ID="{9DB9B8FB-2607-403E-937B-FF6E4FE46559}">
 					<ChildrenList>
 						<Action Name="" ID="{3F2B9809-CF4D-42D6-A012-8B6D67CC56BD}" ShortID="226713116">
@@ -113,7 +123,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Menu_Creditos" ID="{7F338802-0FC4-4786-AC6C-0D3CB807C41C}"/>
+				<Event Name="Menu_Creditos" ID="{7F338802-0FC4-4786-AC6C-0D3CB807C41C}">
+					<ChildrenList>
+						<Action Name="" ID="{CEEB2661-C829-44DF-977B-20FFBA7220A1}" ShortID="288758685">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Lintu_Theme_Final" ID="{15967A81-2E08-4EF2-A0C2-C05B1358588A}" WorkUnitID="{13445996-52E9-4780-BD58-7D07B2986337}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{FE8C21E6-789E-426A-A4CB-867FA188873A}" ShortID="137354553">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Lintu_Theme_Final" ID="{15967A81-2E08-4EF2-A0C2-C05B1358588A}" WorkUnitID="{13445996-52E9-4780-BD58-7D07B2986337}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 				<Event Name="Restart" ID="{C98459DC-71E8-4B2A-B025-377C5AA048CE}">
 					<ChildrenList>
 						<Action Name="" ID="{A85DF44B-348D-4D44-A991-902288B99082}" ShortID="698357384">
@@ -194,17 +225,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Click_Mouse" ID="{CEC255FC-D0F5-438E-B418-887FCA8CC5BD}">
-					<ChildrenList>
-						<Action Name="" ID="{C5484063-E2E1-4D29-AF7A-FC06F9B391B8}" ShortID="435363297">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Mouse Click" ID="{E75419A2-773A-4755-9476-FC34A6C15DE3}" WorkUnitID="{6FF59BFE-21E3-484D-B73F-F7C53E23C38B}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Pajaro_Aletea" ID="{9B50FD89-3CA4-4CF0-8C44-286E457862A2}">
 					<ChildrenList>
 						<Action Name="" ID="{7556AD26-5F04-4207-A395-FBC0E7FB04CA}" ShortID="851435901">
@@ -236,7 +256,7 @@
 						<Action Name="" ID="{D2B6DD01-D147-4361-A5C0-5FFFF531617F}" ShortID="865021936">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Caida_al_agua" ID="{621985FD-3068-4CF6-941C-41CAF2EEF48F}" WorkUnitID="{6FF59BFE-21E3-484D-B73F-F7C53E23C38B}"/>
+									<ObjectRef Name="Colision_Agua" ID="{5EC2A259-5C38-47DD-81B4-2CDB4D53F5F6}" WorkUnitID="{6FF59BFE-21E3-484D-B73F-F7C53E23C38B}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -261,6 +281,28 @@
 					</ChildrenList>
 				</Event>
 				<Event Name="Barcos_Idle" ID="{1859E51D-98FC-47A7-8AA9-CB3FF9FB4113}"/>
+				<Event Name="Cursor" ID="{3D2AD34E-4229-427C-BBDE-0B0561111107}">
+					<ChildrenList>
+						<Action Name="" ID="{59E4B7DE-A8FF-434E-99FC-33E9A0AC628F}" ShortID="826284157">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Cursor" ID="{853E8FF6-6E67-4A55-9BC4-F6C19BF99C3B}" WorkUnitID="{13445996-52E9-4780-BD58-7D07B2986337}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Cursor_Seleccion" ID="{881E4DD8-1779-4D2A-9814-5FC60DEBDE36}">
+					<ChildrenList>
+						<Action Name="" ID="{DBBC36A1-49E1-44A9-A5A1-FE62ECFAC4FE}" ShortID="1041490686">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Seleccion" ID="{B613AD45-BDEB-4BAE-AB83-2B473ACDEA25}" WorkUnitID="{13445996-52E9-4780-BD58-7D07B2986337}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

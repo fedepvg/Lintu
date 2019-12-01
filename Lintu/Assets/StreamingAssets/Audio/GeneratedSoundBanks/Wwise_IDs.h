@@ -14,9 +14,10 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID BARCOS_IDLE = 1876704714U;
-        static const AkUniqueID CLICK_MOUSE = 2013887443U;
         static const AkUniqueID COLISION_AGUA = 3661761514U;
         static const AkUniqueID COLISION_MADERA = 3999760164U;
+        static const AkUniqueID CURSOR = 1330674255U;
+        static const AkUniqueID CURSOR_SELECCION = 257651473U;
         static const AkUniqueID GANAR = 3575068712U;
         static const AkUniqueID INICIO_JUEGO = 1460932951U;
         static const AkUniqueID INICIO_MENU = 880580374U;
@@ -62,6 +63,7 @@ namespace AK
     {
         static const AkUniqueID ALTURA_PAJARO = 1768459312U;
         static const AkUniqueID ENERGIA_PAJARO = 201235242U;
+        static const AkUniqueID LARGO_MAPA = 2301316308U;
         static const AkUniqueID VELOCIDAD_PAJARO = 2822622896U;
     } // namespace GAME_PARAMETERS
 
@@ -75,6 +77,11 @@ namespace AK
     {
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
     } // namespace BUSSES
+
+    namespace AUX_BUSSES
+    {
+        static const AkUniqueID FX_ESPACIALES = 1792520288U;
+    } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES
     {

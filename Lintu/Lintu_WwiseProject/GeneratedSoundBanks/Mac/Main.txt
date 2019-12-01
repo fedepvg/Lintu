@@ -1,12 +1,13 @@
 Event	ID	Name			Wwise Object Path	Notes
 	194776941	Inicio_Start			\Default Work Unit\Inicio_Start	
+	257651473	Cursor_Seleccion			\Default Work Unit\Cursor_Seleccion	
 	880580374	Inicio_Menu			\Default Work Unit\Inicio_Menu	
 	1063492266	Menu_Creditos			\Default Work Unit\Menu_Creditos	
 	1203400786	Restart			\Default Work Unit\Restart	
+	1330674255	Cursor			\Default Work Unit\Cursor	
 	1460932951	Inicio_Juego			\Default Work Unit\Inicio_Juego	
 	1876704714	Barcos_Idle			\Default Work Unit\Barcos_Idle	
 	1935209442	Pausa_Juego			\Default Work Unit\Pausa_Juego	
-	2013887443	Click_Mouse			\Default Work Unit\Click_Mouse	
 	2433235219	Perder			\Default Work Unit\Perder	
 	2577500974	Pajaro_Voz			\Default Work Unit\Pajaro_Voz	
 	3042702347	Orb_pickup			\Default Work Unit\Orb_pickup	
@@ -33,64 +34,70 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	1768459312	Altura_Pajaro			\Default Work Unit\Altura_Pajaro	
 
 Effect plug-ins	ID	Name	Type				Notes
-	801974700	Wwise_RoomVerb_(Custom)	Wwise RoomVerb			
-	1032199734	Wwise_Delay_(Custom)	Wwise Delay			
+	222887302	Wwise_Matrix_Reverb_(Custom)	Wwise Matrix Reverb			
+	501952202	Wwise_RoomVerb_(Custom)	Wwise RoomVerb			
+	710650202	Wwise_Matrix_Reverb_(Custom)	Wwise Matrix Reverb			
+	1031220151	Wwise_Delay_(Custom)	Wwise Delay			
+	1588715066	Echoes_Linear	Wwise Delay			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	4877514	AMB_Agua_Mid	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\AMB_Agua_Mid_7BC8BA2B.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMBIENTE\Agua\Agua Cerca\AMB_Agua_Mid		473132
 	58941351	AMB_Agua_Far	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\AMB_Agua_Far_2082D15A.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMBIENTE\Agua\Agua Lejos\AMB_Agua_Far		479704
-	66866944	MADS Fire Ball 01 Cast	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\MADS Fire Ball 01 Cast_FD14F2C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Aleteo\Flameado\MADS Fire Ball 01 Cast		272632
-	82448823	Pajaro_Voz_Idle	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\Pajaro_Voz_Idle_71734138.wem		\Actor-Mixer Hierarchy\Default Work Unit\Aleteo\Pajaro\Pajaro_Voz_Idle		133748
+	66866944	MADS Fire Ball 01 Cast	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\MADS Fire Ball 01 Cast_FD14F2C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lintu\Aleteo\Flameado\MADS Fire Ball 01 Cast		272632
+	82448823	Pajaro_Voz_Idle	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\Pajaro_Voz_Idle_71734138.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lintu\Aleteo\Pajaro\Pajaro_Voz_Idle		133748
 	91386589	AMB_Wind_Low_03	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\AMB_Wind_Low_960F0CC2.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMBIENTE\Viento\Wind_Low\AMB_Wind_Low_03		506500
-	101930290	KITE Yellow Billed, Call 01	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\KITE Yellow Billed, Call 01_7F480513.wem		\Actor-Mixer Hierarchy\Default Work Unit\Orbe_pickup\Grito\KITE Yellow Billed, Call 01		433264
-	108384617	MADS Fire Ball 01 Cast_01	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\MADS Fire Ball 01 Cast_FAB72F7F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Aleteo\Flameado\MADS Fire Ball 01 Cast_01		266952
-	117555126	CC-DS Whoosh Throw Hard 01	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\CC-DS Whoosh Throw Hard 01_427DC2F1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Golpe\CC-DS Whoosh Throw Hard 01		93916
+	101930290	KITE Yellow Billed, Call 01	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\KITE Yellow Billed, Call 01_7F480513.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lintu\Orbe_pickup\Grito\KITE Yellow Billed, Call 01		433264
+	108384617	MADS Fire Ball 01 Cast_01	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\MADS Fire Ball 01 Cast_FAB72F7F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lintu\Aleteo\Flameado\MADS Fire Ball 01 Cast_01		266952
+	117555126	CC-DS Whoosh Throw Hard 01	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\CC-DS Whoosh Throw Hard 01_427DC2F1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lintu\Golpe\Choque\CC-DS Whoosh Throw Hard 01		93916
 	140594307	AMB_Wind_Mid_03	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\AMB_Wind_Mid_CD286D9D.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMBIENTE\Viento\Wind_Mid\AMB_Wind_Mid_03		707100
 	145689268	Lintu_Musica_Demo_V1	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\Lintu_Musica_Demo_V1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Menu Music\Lintu_Musica_Demo_V1\Lintu_Musica_Demo_V1		13358068
 	151221291	AMB_Agua_Mid_03	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\AMB_Agua_Mid_C7167F42.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMBIENTE\Agua\Agua Cerca\AMB_Agua_Mid_03		499416
-	155134895	npc_dragon_wingflap_01	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\npc_dragon_wingflap_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Aleteo\Aleteo_Pajaro\npc_dragon_wingflap_01		67852
+	155134895	npc_dragon_wingflap_01	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\npc_dragon_wingflap_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lintu\Aleteo\Aleteo_Pajaro\npc_dragon_wingflap_01		67852
 	179366856	AMB_Wind_Mid	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\AMB_Wind_Mid_5DCE75EB.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMBIENTE\Viento\Wind_Mid\AMB_Wind_Mid		397976
-	191642802	UI_Click_1	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\UI_Click_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mouse Click\UI_Click_1		57428
-	223636237	Pajaro_Voz_Idle_04	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\Pajaro_Voz_Idle_FAA5BE9D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Aleteo\Pajaro\Pajaro_Voz_Idle_04		110452
+	206335611	Seleccion	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\Generic Slide 01_65ED4D4F.wem		\Actor-Mixer Hierarchy\New Work Unit_COLO\Cursor\Seleccion		44060
+	223636237	Pajaro_Voz_Idle_04	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\Pajaro_Voz_Idle_FAA5BE9D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lintu\Aleteo\Pajaro\Pajaro_Voz_Idle_04		110452
 	227184943	Pausa	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\Arcade Click Positive 14_13EA46D3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pausa		126628
 	244667752	LOW-HIT_Unseenly_Dark	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\LOW-HIT_Unseenly_Dark_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stingers\LOW-HIT_Unseenly_Dark		1842640
-	258517620	MACK Liquid Splash Water Large	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\MACK Liquid Splash Water Large_9A5A83D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Caida_al_agua\MACK Liquid Splash Water Large		1081020
-	261659988	Arcade Click Neutral 02_01	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\Arcade Click Neutral 02_F59C14DB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Orbe_pickup\Orbe\Arcade Click Neutral 02_01		266364
-	338201057	npc_dragon_wingflap_04	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\npc_dragon_wingflap_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Aleteo\Aleteo_Pajaro\npc_dragon_wingflap_04		160126
-	366168816	mag_rune_cast	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\mag_rune_cast_E5E770B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Orbe_pickup\mag_rune_cast		186792
+	258517620	MACK Liquid Splash Water Large	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\MACK Liquid Splash Water Large_9A5A83D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lintu\Colision_Agua\Caida_al_agua\MACK Liquid Splash Water Large		1081020
+	261659988	Arcade Click Neutral 02_01	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\Arcade Click Neutral 02_F59C14DB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lintu\Orbe_pickup\Orbe\Arcade Click Neutral 02_01		266364
+	316538285	HAWK Red Tailed, Scream Long	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\HAWK Red Tailed, Scream Long_B4138848.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lintu\Colision_Agua\HAWK Red Tailed, Scream Long		300532
+	338201057	npc_dragon_wingflap_04	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\npc_dragon_wingflap_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lintu\Aleteo\Aleteo_Pajaro\npc_dragon_wingflap_04		160126
+	366168816	mag_rune_cast	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\mag_rune_cast_E5E770B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lintu\Orbe_pickup\mag_rune_cast		186792
+	374637730	Cursor	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\Generic Button Wood Small 02_846482C0.wem		\Actor-Mixer Hierarchy\New Work Unit_COLO\Cursor\Cursor		29480
 	395782009	AMB_Agua_Far_01	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\AMB_Agua_Far_71992D9C.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMBIENTE\Agua\Agua Lejos\AMB_Agua_Far_01		505984
-	397509349	Arcade Click Neutral 02	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\Arcade Click Neutral 02_5C9BC215.wem		\Actor-Mixer Hierarchy\Default Work Unit\Orbe_pickup\Orbe\Arcade Click Neutral 02		326684
-	407469919	KITE Yellow Billed, Call 01_01	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\KITE Yellow Billed, Call 01_F1CDECCD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Orbe_pickup\Grito\KITE Yellow Billed, Call 01_01		471484
+	397509349	Arcade Click Neutral 02	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\Arcade Click Neutral 02_5C9BC215.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lintu\Orbe_pickup\Orbe\Arcade Click Neutral 02		326684
+	407469919	KITE Yellow Billed, Call 01_01	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\KITE Yellow Billed, Call 01_F1CDECCD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lintu\Orbe_pickup\Grito\KITE Yellow Billed, Call 01_01		471484
 	410093424	AMB_Wind_Mid_01	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\AMB_Wind_Mid_C04F3762.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMBIENTE\Viento\Wind_Mid\AMB_Wind_Mid_01		401264
-	425874530	Jingle_perder	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\Orchestral Jingle Negative 01_0A91C698.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jingle_perder		562824
+	425874530	Jingle_perder	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\Orchestral Jingle Negative 01_1D59BB6C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jingle_perder		562824
 	429338678	AMB_Wind_Low	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\AMB_Wind_Low_DC84D4BB.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMBIENTE\Viento\Wind_Low\AMB_Wind_Low		483480
-	431382840	Pajaro_Voz_Idle_02	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\Pajaro_Voz_Idle_03A0247E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Aleteo\Pajaro\Pajaro_Voz_Idle_02		150748
+	431382840	Pajaro_Voz_Idle_02	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\Pajaro_Voz_Idle_03A0247E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lintu\Aleteo\Pajaro\Pajaro_Voz_Idle_02		150748
 	447816968	AMB_Wind_Hi	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\AMB_Wind_Hi_19DB01A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMBIENTE\Viento\Wind_Hi\AMB_Wind_Hi		381536
 	451158218	AMB_Wind_Hi_01	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\AMB_Wind_Hi_A674C1EE.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMBIENTE\Viento\Wind_Hi\AMB_Wind_Hi_01		437440
-	500896006	Pajaro_Voz_Idle_03	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\Pajaro_Voz_Idle_FECF1909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Aleteo\Pajaro\Pajaro_Voz_Idle_03		138484
-	513719933	croak_tiny_01_02_short_hard	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\croak_tiny_01_02_short_hard_753BA1E7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Golpe\quejido\croak_tiny_01_02_short_hard		125428
+	500896006	Pajaro_Voz_Idle_03	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\Pajaro_Voz_Idle_FECF1909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lintu\Aleteo\Pajaro\Pajaro_Voz_Idle_03		138484
+	513719933	croak_tiny_01_02_short_hard	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\croak_tiny_01_02_short_hard_753BA1E7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lintu\Golpe\quejido\croak_tiny_01_02_short_hard		125428
 	530385853	AMB_Wind_Hi_03	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\AMB_Wind_Hi_96DDCFCE.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMBIENTE\Viento\Wind_Hi\AMB_Wind_Hi_03		513076
-	570936662	Arcade Click Neutral 02_02	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\Arcade Click Neutral 02_82FEDFA0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Orbe_pickup\Orbe\Arcade Click Neutral 02_02		323744
+	570936662	Arcade Click Neutral 02_02	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\Arcade Click Neutral 02_82FEDFA0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lintu\Orbe_pickup\Orbe\Arcade Click Neutral 02_02		323744
 	584762346	AMB_Wind_Mid_02	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\AMB_Wind_Mid_3585615B.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMBIENTE\Viento\Wind_Mid\AMB_Wind_Mid_02		480188
 	604139594	AMB_Agua_Far_02	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\AMB_Agua_Far_533763A9.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMBIENTE\Agua\Agua Lejos\AMB_Agua_Far_02		492844
 	616754748	AMB_Agua_Mid_01	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\AMB_Agua_Mid_9CE71B28.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMBIENTE\Agua\Agua Cerca\AMB_Agua_Mid_01		496128
-	620446824	croak_tiny_01_02_short_hard_03	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\croak_tiny_01_02_short_hard_A180FC6D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Golpe\quejido\croak_tiny_01_02_short_hard_03		85730
-	677773626	UI_Click_2	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\UI_Click_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mouse Click\UI_Click_2		53192
-	716734119	croak_tiny_01_02_short_hard_01	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\croak_tiny_01_02_short_hard_72945DAB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Golpe\quejido\croak_tiny_01_02_short_hard_01		81550
-	722654731	MACK Liquid Splash Water Large_03	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\MACK Liquid Splash Water Large_D10842DF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Caida_al_agua\MACK Liquid Splash Water Large_03		990940
+	620446824	croak_tiny_01_02_short_hard_03	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\croak_tiny_01_02_short_hard_A180FC6D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lintu\Golpe\quejido\croak_tiny_01_02_short_hard_03		85730
+	716734119	croak_tiny_01_02_short_hard_01	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\croak_tiny_01_02_short_hard_72945DAB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lintu\Golpe\quejido\croak_tiny_01_02_short_hard_01		81550
+	722654731	MACK Liquid Splash Water Large_03	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\MACK Liquid Splash Water Large_D10842DF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lintu\Colision_Agua\Caida_al_agua\MACK Liquid Splash Water Large_03		990940
+	724525470	Lintu_Theme_Final	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\Lintu_Theme_Final_542CF7D5.wem		\Interactive Music Hierarchy\New Work Unit_COLO\Lintu_Theme_Final\Lintu_Theme_Final		22759380
 	729757640	AMB_Wind_Low_02	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\AMB_Wind_Low_D0212B18.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMBIENTE\Viento\Wind_Low\AMB_Wind_Low_02		476904
-	758490200	npc_dragon_wingflap_03	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\npc_dragon_wingflap_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Aleteo\Aleteo_Pajaro\npc_dragon_wingflap_03		125024
+	758490200	npc_dragon_wingflap_03	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\npc_dragon_wingflap_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lintu\Aleteo\Aleteo_Pajaro\npc_dragon_wingflap_03		125024
+	775027009	Lintu_Theme_Final	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\Lintu_Theme_Final_10C4C929.wem		\Actor-Mixer Hierarchy\New Work Unit_COLO\Lintu_Theme_Final		22759380
 	798872062	AMB_Wind_Low_01	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\AMB_Wind_Low_FBE2FC0A.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMBIENTE\Viento\Wind_Low\AMB_Wind_Low_01		493344
-	808057712	MADS Fire Ball 01 Cast_02	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\MADS Fire Ball 01 Cast_73F26926.wem		\Actor-Mixer Hierarchy\Default Work Unit\Aleteo\Flameado\MADS Fire Ball 01 Cast_02		278308
-	823589046	KITE Yellow Billed, Call 01_02	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\KITE Yellow Billed, Call 01_A663A7BD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Orbe_pickup\Grito\KITE Yellow Billed, Call 01_02		356816
-	859349702	Arcade Click Neutral 02_03	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\Arcade Click Neutral 02_07C30F94.wem		\Actor-Mixer Hierarchy\Default Work Unit\Orbe_pickup\Orbe\Arcade Click Neutral 02_03		303144
+	808057712	MADS Fire Ball 01 Cast_02	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\MADS Fire Ball 01 Cast_73F26926.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lintu\Aleteo\Flameado\MADS Fire Ball 01 Cast_02		278308
+	823589046	KITE Yellow Billed, Call 01_02	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\KITE Yellow Billed, Call 01_A663A7BD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lintu\Orbe_pickup\Grito\KITE Yellow Billed, Call 01_02		356816
+	859349702	Arcade Click Neutral 02_03	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\Arcade Click Neutral 02_07C30F94.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lintu\Orbe_pickup\Orbe\Arcade Click Neutral 02_03		303144
 	889366811	AMB_Agua_Far_03	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\AMB_Agua_Far_1D3F39BA.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMBIENTE\Agua\Agua Lejos\AMB_Agua_Far_03		496132
-	894232079	npc_dragon_wingflap_02	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\npc_dragon_wingflap_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Aleteo\Aleteo_Pajaro\npc_dragon_wingflap_02		75952
+	894232079	npc_dragon_wingflap_02	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\npc_dragon_wingflap_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lintu\Aleteo\Aleteo_Pajaro\npc_dragon_wingflap_02		75952
 	945435898	AMB_Wind_Hi_02	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\AMB_Wind_Hi_F95A0E3D.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMBIENTE\Viento\Wind_Hi\AMB_Wind_Hi_02		411132
-	952612309	MACK Liquid Splash Water Large_02	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\MACK Liquid Splash Water Large_BC98EB64.wem		\Actor-Mixer Hierarchy\Default Work Unit\Caida_al_agua\MACK Liquid Splash Water Large_02		912120
+	952612309	MACK Liquid Splash Water Large_02	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\MACK Liquid Splash Water Large_BC98EB64.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lintu\Colision_Agua\Caida_al_agua\MACK Liquid Splash Water Large_02		912120
 	979312005	Incio_Partida_Stinger	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\Incio_Partida_Stinger_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stingers\Incio_Partida_Stinger		384064
-	980950205	Pajaro_Voz_Idle_01	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\Pajaro_Voz_Idle_2E0C1C53.wem		\Actor-Mixer Hierarchy\Default Work Unit\Aleteo\Pajaro\Pajaro_Voz_Idle_01		129724
-	999079411	croak_tiny_01_02_short_hard_02	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\croak_tiny_01_02_short_hard_C14879EA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Golpe\quejido\croak_tiny_01_02_short_hard_02		106624
-	1031869146	MACK Liquid Splash Water Large_01	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\MACK Liquid Splash Water Large_06BB1E4B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Caida_al_agua\MACK Liquid Splash Water Large_01		974048
+	980950205	Pajaro_Voz_Idle_01	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\Pajaro_Voz_Idle_2E0C1C53.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lintu\Aleteo\Pajaro\Pajaro_Voz_Idle_01		129724
+	999079411	croak_tiny_01_02_short_hard_02	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\croak_tiny_01_02_short_hard_C14879EA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lintu\Golpe\quejido\croak_tiny_01_02_short_hard_02		106624
+	1031869146	MACK Liquid Splash Water Large_01	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\MACK Liquid Splash Water Large_06BB1E4B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lintu\Colision_Agua\Caida_al_agua\MACK Liquid Splash Water Large_01		974048
 	1045454988	AMB_Agua_Mid_02	Z:\Contenido_Image\2A2C\DVJ3\Lintu\Lintu\Lintu_WwiseProject\.cache\Mac\SFX\AMB_Agua_Mid_C55C1FE5.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMBIENTE\Agua\Agua Cerca\AMB_Agua_Mid_02		473132
 
