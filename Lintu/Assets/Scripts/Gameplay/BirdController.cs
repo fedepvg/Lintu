@@ -37,6 +37,8 @@ public class BirdController : MonoBehaviour
     public float TimeToGameOverScreen;
     public float OffLimitsRotationMultiplier;
     public GameObject DeathParticlePrefab;
+    public AK.Wwise.RTPC EnergyRTPC;
+    public AK.Wwise.RTPC SpeedRTPC;
     #endregion
 
     #region PrivateVariables
