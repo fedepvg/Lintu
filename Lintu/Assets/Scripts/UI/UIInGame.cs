@@ -31,6 +31,7 @@ public class UIInGame : MonoBehaviour
         LevelDistance = FinishTransform.position.z - StartTransform.position.z;
         SpriteChangeTimer = 0;
         CurrentDistanceHandleSprite = LintuUI1;
+        PausePanel.SetActive(false);
     }
 
     void Update()
