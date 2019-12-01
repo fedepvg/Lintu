@@ -1,0 +1,31 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	1730564739	Musica			\Default Work Unit\Musica	
+	3092587493	Pause			\Default Work Unit\Pause	
+
+State	ID	Name	State Group			Notes
+	0	None	Musica			
+	89505537	Gameplay	Musica			
+	930712164	Off	Musica			
+	2607556080	Menu	Musica			
+	0	None	Pause			
+	930712164	Off	Pause			
+	1651971902	On	Pause			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	565456171	On	Pause	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus		
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	1792520288	FX_espaciales			\Default Work Unit\Master Audio Bus\FX_espaciales	
+
+Effect plug-ins	ID	Name	Type				Notes
+	417707368	Wwise_Compressor_(Custom)	Wwise Compressor			
+	784109637	Have_U_Ever_Been_Outside_(Custom)	Wwise RoomVerb			
+	801211459	Wwise_Delay_(Custom)	Wwise Delay			
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+
