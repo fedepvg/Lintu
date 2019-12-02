@@ -16,6 +16,11 @@ public class GameManager : MonoBehaviourSingleton<GameManager>
         GameInput.Enable();
     }
 
+    private void Start()
+    {
+        AkSoundEngine.PostEvent("Inicio_Menu", gameObject);
+    }
+
     private void Update()
     {
         Cursor.visible = false;
