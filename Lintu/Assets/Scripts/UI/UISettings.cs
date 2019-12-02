@@ -6,22 +6,32 @@ using UnityEngine.UI;
 public class UISettings : MonoBehaviour
 {
     public Toggle InvertedYToggle;
+    public Toggle HUDToggle;
     public Slider VolumeSlider;
 
-    bool CurrentToggleValue;
+    bool CurrentYToggleValue;
+    bool CurrentHUDToggleValue;
 
     void Start()
     {
         InvertedYToggle.isOn = GameManager.Instance.InvertedY;
-        CurrentToggleValue = InvertedYToggle.isOn;
+        CurrentYToggleValue = InvertedYToggle.isOn;
+        HUDToggle.isOn = GameManager.Instance.HUD;
+        CurrentHUDToggleValue = HUDToggle.isOn;
     }
 
     void Update()
     {
-        if (CurrentToggleValue != InvertedYToggle.isOn)
+        if (CurrentYToggleValue != InvertedYToggle.isOn)
         {
-            CurrentToggleValue = InvertedYToggle.isOn;
-            GameManager.Instance.InvertedY = CurrentToggleValue;
+            CurrentYToggleValue = InvertedYToggle.isOn;
+            GameManager.Instance.InvertedY = CurrentYToggleValue;
+        }
+        
+        if (CurrentHUDToggleValue != HUDToggle.isOn)
+        {
+            CurrentHUDToggleValue = HUDToggle.isOn;
+            GameManager.Instance.HUD = CurrentHUDToggleValue;
         }
     }
 }

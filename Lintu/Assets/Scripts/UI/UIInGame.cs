@@ -34,6 +34,10 @@ public class UIInGame : MonoBehaviour
         CurrentDistanceHandleSprite = LintuUI1;
         PausePanel.SetActive(false);
         PauseScript = PausePanel.GetComponent<UIPause>();
+        if (!GameManager.Instance.HUD)
+            DeactivateHUD();
+        else
+            ActivateHUD();
     }
 
     void Update()
@@ -84,5 +88,23 @@ public class UIInGame : MonoBehaviour
                 PauseScript.SwitchPanels();
             }
         }
+    }
+
+    public void ChangeHUDState()
+    {
+        EnergyBar.gameObject.SetActive(!EnergyBar.gameObject.activeSelf);
+        DistanceBar.gameObject.SetActive(!DistanceBar.gameObject.activeSelf);
+    }
+
+    public void DeactivateHUD()
+    {
+        EnergyBar.gameObject.SetActive(false);
+        DistanceBar.gameObject.SetActive(false);
+    }
+    
+    public void ActivateHUD()
+    {
+        EnergyBar.gameObject.SetActive(true);
+        DistanceBar.gameObject.SetActive(true);
     }
 }

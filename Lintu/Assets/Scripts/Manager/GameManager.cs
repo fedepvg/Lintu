@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviourSingleton<GameManager>
     public PlayerControls GameInput;
     bool HasWon = false;
     bool IsInvertedY = true;
+    bool UseHUD = true;
 
     public override void Awake()
     {
@@ -52,5 +53,11 @@ public class GameManager : MonoBehaviourSingleton<GameManager>
     {
         get { return IsInvertedY; }
         set { IsInvertedY = value; }
+    }
+    
+    public bool HUD
+    {
+        get { return UseHUD; }
+        set { UseHUD = value; }
     }
 }
