@@ -24,6 +24,7 @@ public class UIInGame : MonoBehaviour
     float SpriteChangeTimer;
     float LevelDistance;
     Sprite CurrentDistanceHandleSprite;
+    UIPause PauseScript;
 
     private void Start()
     {
@@ -32,6 +33,7 @@ public class UIInGame : MonoBehaviour
         SpriteChangeTimer = 0;
         CurrentDistanceHandleSprite = LintuUI1;
         PausePanel.SetActive(false);
+        PauseScript = PausePanel.GetComponent<UIPause>();
     }
 
     void Update()
@@ -65,14 +67,22 @@ public class UIInGame : MonoBehaviour
     {
         if (PausePanel)
         {
-            PausePanel.SetActive(!PausePanel.activeSelf);
-            if(PausePanel.activeSelf)
-                EventSystem.current.SetSelectedGameObject(EventSystem.current.firstSelectedGameObject);
-            else
-                EventSystem.current.SetSelectedGameObject(null);
+            if (!PauseScript.OnSettings)
+            {
+                PauseScript.ResetPanels();
+                PausePanel.SetActive(!PausePanel.activeSelf);
+                if (PausePanel.activeSelf)
+                    EventSystem.current.SetSelectedGameObject(EventSystem.current.firstSelectedGameObject);
+                else
+                    EventSystem.current.SetSelectedGameObject(null);
 
-            Player.enabled = !Player.enabled;
-            Time.timeScale = Mathf.Abs(Time.timeScale - 1);
+                Player.enabled = !Player.enabled;
+                Time.timeScale = Mathf.Abs(Time.timeScale - 1);
+            }
+            else
+            {
+                PauseScript.SwitchPanels();
+            }
         }
     }
 }
