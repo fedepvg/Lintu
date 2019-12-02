@@ -9,6 +9,13 @@ public class OrbBehaviour : MonoBehaviour
     public delegate void OrbPickUpAction(int energy);
     public static OrbPickUpAction OnOrbPickup;
 
+    GameObject EnergyBar;
+
+    private void Start()
+    {
+        EnergyBar = GameObject.Find("EnergySlider");
+    }
+
     // Update is called once per frame
     void Update()
     {

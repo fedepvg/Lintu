@@ -44,6 +44,7 @@ public class BirdController : MonoBehaviour
     public AK.Wwise.RTPC AltitudeRTPCParameter;
     public Transform StartTransform;
     public Transform FinishTransform;
+    public Image EnergyFilter;
     #endregion
 
     #region PrivateVariables
@@ -187,6 +188,7 @@ public class BirdController : MonoBehaviour
         #region EnergyCalculation
         Energy -= EnergyLossCoefficient  * JumpEnergyLoss * Time.deltaTime;
         Energy = Mathf.Clamp(Energy, 0, MaxEnergy);
+        EnergyFilter.color = new Vector4(0.1f, 0, 0, 1 - Energy / 100);
         #endregion
 
         #region LevelDistance
