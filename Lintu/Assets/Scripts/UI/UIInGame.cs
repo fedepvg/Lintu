@@ -25,6 +25,7 @@ public class UIInGame : MonoBehaviour
     float LevelDistance;
     Sprite CurrentDistanceHandleSprite;
     UIPause PauseScript;
+    bool HUDActive;
 
     private void Start()
     {
@@ -34,7 +35,8 @@ public class UIInGame : MonoBehaviour
         CurrentDistanceHandleSprite = LintuUI1;
         PausePanel.SetActive(false);
         PauseScript = PausePanel.GetComponent<UIPause>();
-        if (!GameManager.Instance.HUD)
+        HUDActive = GameManager.Instance.HUD;
+        if (!HUDActive)
             DeactivateHUD();
         else
             ActivateHUD();
@@ -60,6 +62,11 @@ public class UIInGame : MonoBehaviour
             DistanceBarHandle.sprite = CurrentDistanceHandleSprite;
         }
 
+        if (HUDActive != GameManager.Instance.HUD)
+        {
+            ChangeHUDState();
+            HUDActive = GameManager.Instance.HUD;
+        }
 
         if (!EventSystem.current.currentSelectedGameObject && PausePanel.activeSelf && GameManager.Instance.GameInput.UI.Navigate.triggered)
             EventSystem.current.SetSelectedGameObject(EventSystem.current.firstSelectedGameObject);
