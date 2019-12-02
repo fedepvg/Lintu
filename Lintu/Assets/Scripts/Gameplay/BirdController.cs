@@ -258,8 +258,11 @@ public class BirdController : MonoBehaviour
     {
         if (collision.gameObject.tag == "Wall" || collision.gameObject.tag == "Obstacle" || collision.gameObject.tag == "Floor")
         {
-            if(collision.gameObject.tag != "Floor")
+            if (collision.gameObject.tag != "Floor")
+            {
                 Instantiate(DeathParticlePrefab, transform.position, Quaternion.identity);
+                AkSoundEngine.PostEvent("Colision_Madera", gameObject);
+            }
             Die(TimeToGameOverScreen);
         }
     }
