@@ -18,6 +18,15 @@ public class SceneLoader : MonoBehaviour
         LoaderManager.Instance.ActualScene = ThisScene;
     }
 
+    private void Update()
+    {
+        if(GameManager.Instance.Input.UI.Cancel.triggered)
+        {
+            if (ThisScene == "CreditsScene" || ThisScene == "SettingsScene" || ThisScene == "LevelSelection" || ThisScene == "HowToPlayScene")
+                LoadPreviousScene(false);
+        }
+    }
+
     public void ReloadScene(bool fakeLoad)
     {
         LoaderManager.Instance.LoadScene(ThisScene, fakeLoad);
@@ -33,7 +42,7 @@ public class SceneLoader : MonoBehaviour
         LoaderManager.Instance.LoadScene(NextScene, fakeLoad);
     }
 
-    public void LoadLastScene(bool fakeLoad)
+    public void LoadPreviousScene(bool fakeLoad)
     {
         LoaderManager.Instance.LoadScene(PreviousScene, fakeLoad);
     }

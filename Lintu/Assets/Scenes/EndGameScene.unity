@@ -1343,7 +1343,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 254020302}
-        m_MethodName: LoadLastScene
+        m_MethodName: LoadPreviousScene
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
