@@ -36,7 +36,7 @@ public class UIMenu : MonoBehaviour
 
         GameObject ActualButton = eventSystem.currentSelectedGameObject;
 
-        if (ActualButton)
+        if (ActualButton && ActualButton.GetComponent<Button>())
         {
             Image buttonUnderlineImage = ActualButton.GetComponent<Image>();
             if (PreviousButtonSelected != ActualButton)
@@ -44,7 +44,8 @@ public class UIMenu : MonoBehaviour
                 if (buttonUnderlineImage.fillAmount == 1)
                     buttonUnderlineImage.fillAmount = 0;
                 HasToFill = true;
-                if (PreviousButtonSelected)
+
+                if (PreviousButtonSelected && PreviousButtonSelected.GetComponent<Button>())
                     PreviousButtonSelected.GetComponent<Image>().fillAmount = 0;
                 PreviousButtonSelected = ActualButton;
             }
@@ -54,5 +55,7 @@ public class UIMenu : MonoBehaviour
             if (buttonUnderlineImage.fillAmount == 1)
                 HasToFill = false;
         }
+        else if (ActualButton != PreviousButtonSelected)
+            PreviousButtonSelected = ActualButton;
     }
 }
