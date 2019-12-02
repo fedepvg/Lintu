@@ -129,6 +129,9 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 5d73687574d931048a243fa655766752,
       type: 2}
+  StartTransform: {fileID: 0}
+  FinishTransform: {fileID: 0}
+  EnergyFilter: {fileID: 0}
   OffLeftLimit: 0
   OffRightLimit: 0
 --- !u!65 &821865918770499524
@@ -172,6 +175,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bird
       objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: d9a80be2941663144ba5467ed19a651e,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 1a944efbb0f1eb0419da019a690b8a54, type: 2}
     - target: {fileID: -4216859302048453862, guid: d9a80be2941663144ba5467ed19a651e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -242,11 +250,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 25
       objectReference: {fileID: 0}
-    - target: {fileID: -6057140222963153312, guid: d9a80be2941663144ba5467ed19a651e,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 1a944efbb0f1eb0419da019a690b8a54, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9a80be2941663144ba5467ed19a651e, type: 3}
 --- !u!4 &7369543121928396403 stripped

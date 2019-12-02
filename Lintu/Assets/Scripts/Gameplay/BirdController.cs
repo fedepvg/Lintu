@@ -105,11 +105,15 @@ public class BirdController : MonoBehaviour
             AkSoundEngine.PostEvent("Pajaro_Aletea", gameObject);
         }
 
-        FrameRotation.z = -PlayerInput.Gameplay.Horizontal.ReadValue<float>();
-        if(GameManager.Instance.InvertedY)
-            FrameRotation.x = PlayerInput.Gameplay.Vertical.ReadValue<float>();
-        else
-            FrameRotation.x = -PlayerInput.Gameplay.Vertical.ReadValue<float>();
+        if(PlayerInput.Gameplay.Horizontal.enabled)
+            FrameRotation.z = -PlayerInput.Gameplay.Horizontal.ReadValue<float>();
+        if (PlayerInput.Gameplay.Vertical.enabled)
+        {
+            if (GameManager.Instance.InvertedY)
+                FrameRotation.x = PlayerInput.Gameplay.Vertical.ReadValue<float>();
+            else
+                FrameRotation.x = -PlayerInput.Gameplay.Vertical.ReadValue<float>();
+        }
 
         if (IsJumping)
         {
@@ -151,12 +155,12 @@ public class BirdController : MonoBehaviour
         if (Rotation.z >= MaxRotation.z && OffRightLimit)
         {
             PlayerInput.Gameplay.Horizontal.Enable();
-            OffRightLimit = false;
+            //OffRightLimit = false;
         }
         else if (Rotation.z <= MinRotation.z && OffLeftLimit)
         {
             PlayerInput.Gameplay.Horizontal.Enable();
-            OffLeftLimit = false;
+            //OffLeftLimit = false;
         }
 
         DestRotation = Quaternion.Euler(Rotation.x, 0f, Rotation.z);
@@ -287,6 +291,15 @@ public class BirdController : MonoBehaviour
         if (other.tag == "Finish")
         {
             StartCoroutine(EndLevel(TimeToEndLevel));
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if(other.tag=="CityLimit")
+        {
+            OffRightLimit = false;
+            OffLeftLimit = false;
         }
     }
 
