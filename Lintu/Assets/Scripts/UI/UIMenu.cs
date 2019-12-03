@@ -13,11 +13,8 @@ public class UIMenu : MonoBehaviour
     GameObject PreviousButtonSelected;
     GameObject[] SelectionVertex;
 
-    private void Start()
+    private void Awake()
     {
-        if(VersionText)
-            VersionText.SetText("v" + Application.version);
-        PreviousButtonSelected = EventSystem.current.firstSelectedGameObject;
         SelectionVertex = new GameObject[4];
         for (int i = 0; i < 4; i++)
         {
@@ -25,9 +22,17 @@ public class UIMenu : MonoBehaviour
             SelectionVertex[i].AddComponent<Image>();
             SelectionVertex[i].GetComponent<Image>().sprite = UnderlineImage[i];
             SelectionVertex[i].transform.SetParent(transform);
-            SelectionVertex[i].name="Corner" + i;
-            SelectionVertex[i].transform.localScale =new Vector3(0.5f, 0.5f, 0.5f);
+            SelectionVertex[i].name = "Corner" + i;
+            SelectionVertex[i].transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
         }
+    }
+
+    private void Start()
+    {
+        if(VersionText)
+            VersionText.SetText("v" + Application.version);
+        PreviousButtonSelected = EventSystem.current.firstSelectedGameObject;
+        
         PlaceVertexes(PreviousButtonSelected);
     }
 
