@@ -82,6 +82,7 @@ public class UIMenu : MonoBehaviour
         {
             SelectionVertex[i].transform.SetParent(destObj.transform);
             SelectionVertex[i].GetComponent<Image>().color = destObj.GetComponent<Image>().color;
+            SelectionVertex[i].transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
         }
 
         SelectionVertex[0].transform.localPosition = new Vector2(destObj.GetComponent<RectTransform>().rect.xMin, destObj.GetComponent<RectTransform>().rect.yMax); //top-left
