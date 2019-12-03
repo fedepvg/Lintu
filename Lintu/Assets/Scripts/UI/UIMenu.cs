@@ -8,15 +8,26 @@ using TMPro;
 public class UIMenu : MonoBehaviour
 {
     public TextMeshProUGUI VersionText;
+    public Sprite UnderlineImage;
 
     GameObject PreviousButtonSelected;
     bool HasToFill = false;
+    GameObject[] SelectionVertex;
 
     private void Start()
     {
         if(VersionText)
             VersionText.SetText("v" + Application.version);
         PreviousButtonSelected = EventSystem.current.firstSelectedGameObject;
+        SelectionVertex = new GameObject[4];
+        for (int i = 0; i < 4; i++)
+        {
+            SelectionVertex[i] = new GameObject();
+            SelectionVertex[i].AddComponent<Image>();
+            SelectionVertex[i].AddComponent<RectTransform>();
+            SelectionVertex[i].GetComponent<Image>().sprite = UnderlineImage;
+            SelectionVertex[i].transform.SetParent(transform);
+        }
     }
 
     private void Update()
@@ -54,6 +65,24 @@ public class UIMenu : MonoBehaviour
                 buttonUnderlineImage.fillAmount = Mathf.Clamp01(buttonUnderlineImage.fillAmount += Time.unscaledDeltaTime * 3);
             if (buttonUnderlineImage.fillAmount == 1)
                 HasToFill = false;
+
+            //SelectionVertex[0].transform.position = ActualButton.GetComponent<Image>().sprite.bounds.min;
+            //SelectionVertex[1].transform.position = new Vector2(ActualButton.GetComponent<Image>().sprite.bounds.max.x, ActualButton.GetComponent<Image>().sprite.bounds.min.y);
+            //SelectionVertex[2].transform.position = new Vector2(ActualButton.GetComponent<Image>().sprite.bounds.min.x, ActualButton.GetComponent<Image>().sprite.bounds.max.y);
+            //SelectionVertex[3].transform.position = ActualButton.GetComponent<Image>().sprite.bounds.max;
+
+            for (int i = 0; i < 4; i++)
+            {
+                SelectionVertex[i].transform.SetParent(ActualButton.transform);
+            }
+
+            SelectionVertex[0].transform.localPosition = new Vector2(ActualButton.GetComponent<RectTransform>().rect.xMin, ActualButton.GetComponent<RectTransform>().rect.yMin);
+
+            SelectionVertex[1].transform.localPosition = new Vector2(ActualButton.GetComponent<RectTransform>().rect.xMax, ActualButton.GetComponent<RectTransform>().rect.yMin);
+
+            SelectionVertex[2].transform.localPosition = new Vector2(ActualButton.GetComponent<RectTransform>().rect.xMin, ActualButton.GetComponent<RectTransform>().rect.yMax);
+
+            SelectionVertex[3].transform.localPosition = new Vector2(ActualButton.GetComponent<RectTransform>().rect.xMax, ActualButton.GetComponent<RectTransform>().rect.yMax);
         }
         else if (ActualButton != PreviousButtonSelected)
             PreviousButtonSelected = ActualButton;
