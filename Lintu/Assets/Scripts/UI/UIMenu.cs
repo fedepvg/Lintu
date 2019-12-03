@@ -39,37 +39,35 @@ public class UIMenu : MonoBehaviour
         {
             if (eventSystem.currentSelectedGameObject != PreviousButtonSelected)
                 AkSoundEngine.PostEvent("Cursor", gameObject);
-            else if(GameManager.Instance.GameInput.UI.Submit.triggered)
+            else if (GameManager.Instance.GameInput.UI.Submit.triggered)
                 AkSoundEngine.PostEvent("Cursor_Seleccion", gameObject);
         }
 
         if (!eventSystem.currentSelectedGameObject && GameManager.Instance.GameInput.UI.Navigate.triggered)
         {
-            eventSystem.SetSelectedGameObject(eventSystem.firstSelectedGameObject);
-            for (int i = 0; i < 4; i++)
-            {
-                SelectionVertex[i].SetActive(true);
-            }
+            eventSystem.SetSelectedGameObject(PreviousButtonSelected);
+            PreviousButtonSelected = null;
+            ActivateCornerImages();
         }
 
         GameObject ActualButton = eventSystem.currentSelectedGameObject;
 
-        if (ActualButton && ActualButton.GetComponent<Button>())
+        if(ActualButton != null && PreviousButtonSelected != ActualButton)
         {
-            if (PreviousButtonSelected != ActualButton)
+            PreviousButtonSelected = ActualButton;
+            if (ActualButton.GetComponent<Button>())
             {
                 PlaceVertexes(ActualButton);
-                PreviousButtonSelected = ActualButton;
+                ActivateCornerImages();
+            }
+            else
+            {
+                DeactivateCornerImages();
             }
         }
-        else if (ActualButton != PreviousButtonSelected)
-            PreviousButtonSelected = ActualButton;
-        else
+        else if(ActualButton == null)
         {
-            for (int i = 0; i < 4; i++)
-            {
-                SelectionVertex[i].SetActive(false);
-            }
+            DeactivateCornerImages();
         }
     }
 
@@ -85,5 +83,21 @@ public class UIMenu : MonoBehaviour
         SelectionVertex[1].transform.localPosition = new Vector2(destObj.GetComponent<RectTransform>().rect.xMax, destObj.GetComponent<RectTransform>().rect.yMax); //top-right
         SelectionVertex[2].transform.localPosition = new Vector2(destObj.GetComponent<RectTransform>().rect.xMin, destObj.GetComponent<RectTransform>().rect.yMin); //bottom-left
         SelectionVertex[3].transform.localPosition = new Vector2(destObj.GetComponent<RectTransform>().rect.xMax, destObj.GetComponent<RectTransform>().rect.yMin); //bottom-right
+    }
+
+    void ActivateCornerImages()
+    {
+        for (int i = 0; i < 4; i++)
+        {
+            SelectionVertex[i].SetActive(true);
+        }
+    }
+
+    void DeactivateCornerImages()
+    {
+        for (int i = 0; i < 4; i++)
+        {
+            SelectionVertex[i].SetActive(false);
+        }
     }
 }
