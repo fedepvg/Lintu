@@ -1213,7 +1213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19ef1e5c6721bfd44819c4cb6f4e1439, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ThisScene: SelectLevel
+  ThisScene: LevelSelection
   NextScene: 
   GameOverScene: EndGameScene
   MenuScene: MenuScene

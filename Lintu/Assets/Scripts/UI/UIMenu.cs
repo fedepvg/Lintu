@@ -10,7 +10,7 @@ public class UIMenu : MonoBehaviour
     public TextMeshProUGUI VersionText;
     public Sprite []UnderlineImage;
 
-    GameObject PreviousButtonSelected;
+    public GameObject PreviousButtonSelected;
     GameObject[] SelectionVertex;
 
     private void Awake()

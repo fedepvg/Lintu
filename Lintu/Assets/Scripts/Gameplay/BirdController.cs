@@ -320,7 +320,7 @@ public class BirdController : MonoBehaviour
 
     IEnumerator EndLevel(float t)
     {
-        PlayerInput.Disable();
+        PlayerInput.Gameplay.Disable();
         EndedLevel = true;
         BaseGravity = 0;
         if(EndLevelAction!=null)

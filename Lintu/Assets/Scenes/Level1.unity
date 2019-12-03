@@ -14954,12 +14954,6 @@ PrefabInstance:
       objectReference: {fileID: 924382821}
     - target: {fileID: 821865918770499530, guid: 160755c619e561341874febe56b3ea4a,
         type: 3}
-      propertyPath: DeathParticlePrefab
-      value: 
-      objectReference: {fileID: 1025285306637258, guid: d8f0099df63275647a8bcf646df1ca00,
-        type: 3}
-    - target: {fileID: 821865918770499530, guid: 160755c619e561341874febe56b3ea4a,
-        type: 3}
       propertyPath: DeathWaterParticlePrefab
       value: 
       objectReference: {fileID: 1722726733478836, guid: c1c88308ebb5d2541a282905b854ee4c,
@@ -18063,6 +18057,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.pageCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9062217408999962148, guid: dbb7018cf14c43d4a951fdf311cef417,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 2.619995
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dbb7018cf14c43d4a951fdf311cef417, type: 3}
