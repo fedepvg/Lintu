@@ -11,6 +11,7 @@ public class LevelChunkGenerator : MonoBehaviour
     public static bool FirstChunk = true;
     public Transform ObstaclesParent;
 
+    public List<GameObject> ObstaclesList;
     GameObject NextChunk;
     Vector3 NextObstaclePosition;
     Vector3 PrevObstaclePosition;
@@ -23,8 +24,11 @@ public class LevelChunkGenerator : MonoBehaviour
             GenerateNextChunk();
             FirstChunk = false;
         }
-        NextObstaclePosition = FirstObstaclePosition.transform.position;
-        GenerateObstacles();
+        else
+        {
+            NextObstaclePosition = FirstObstaclePosition.transform.position;
+            GenerateObstacles();
+        }
     }
 
     void GenerateObstacles()
@@ -35,13 +39,25 @@ public class LevelChunkGenerator : MonoBehaviour
         {
             int rand = Random.Range(0, ObstaclesPrefabs.Count);
             GameObject go = Instantiate(ObstaclesPrefabs[rand], NextObstaclePosition, Quaternion.identity);
-            go.transform.SetParent(ObstaclesParent);
-            go.transform.localScale = new Vector3(1, 1, 1);
-            go.transform.localRotation = Quaternion.identity;
+            ObstaclesList.Add(go);
+            
             PrevObstaclePosition = NextObstaclePosition;
             NextObstaclePosition += Vector3.forward * 200;
             if (NextObstaclePosition.z > ChunkFinishPosition.transform.position.z)
                 generating = false;
+            Debug.Log("zarlanga");
+        }
+
+         ReScaleObstacles();
+    }
+
+    void ReScaleObstacles()
+    {
+        foreach(GameObject go in ObstaclesList)
+        {
+            go.transform.SetParent(ObstaclesParent);
+            go.transform.localScale = new Vector3(1, 1, 1);
+            go.transform.localRotation = Quaternion.identity;
         }
     }
 
