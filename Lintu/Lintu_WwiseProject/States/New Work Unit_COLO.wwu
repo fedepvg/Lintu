@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{39E89D7A-13F9-46B2-B000-CF8100CE7978}" SchemaVersion="94">
+	<States>
+		<WorkUnit Name="New Work Unit_COLO" ID="{39E89D7A-13F9-46B2-B000-CF8100CE7978}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Gameplay" ID="{92D71306-7AAE-45C2-896F-AC7852C90D90}">
+					<ChildrenList>
+						<State Name="None" ID="{09041E10-063C-49CD-9901-727A9A8F70BC}"/>
+						<State Name="Ambiente_on" ID="{868EAD34-1167-43DE-8EC7-6C6602762386}"/>
+						<State Name="Ambiente_off" ID="{533983FF-C2F1-4F28-A18F-6F251DD3681B}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

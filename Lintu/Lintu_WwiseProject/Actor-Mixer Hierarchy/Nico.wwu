@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{7648BD0B-060E-4139-AE39-90A78BEB5D77}" SchemaVersion="94">
+	<AudioObjects>
+		<WorkUnit Name="Nico" ID="{7648BD0B-060E-4139-AE39-90A78BEB5D77}" PersistMode="Standalone">
+			<ChildrenList>
+				<RandomSequenceContainer Name="StingerGanar" ID="{C9481F86-CA7B-4F3B-922E-43C3B6DA156E}" ShortID="493456803">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D5B942A2-578C-459A-9515-894F12FD53E1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="FX" ID="{7FDB1AE7-CC10-4096-BBB1-577F61FD3C45}" WorkUnitID="{23627151-D2E9-4F2A-903A-43CE359F8123}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="WinStingers" ID="{535FA652-7317-491B-A4CF-6270BA0894F0}" ShortID="161491784">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D5B942A2-578C-459A-9515-894F12FD53E1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{23627151-D2E9-4F2A-903A-43CE359F8123}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="WinStingers" ID="{03B9CE60-AB74-44A6-B759-7584AFF677B9}" ShortID="769107222">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.311475558726808"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="2.15324407989402"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="4.06272467904532E-02"/>
+										<Property Name="TrimEnd" Type="Real64" Value="4.17291395547945"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>WinStingers.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="602246345"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="WinStingers" ID="{03B9CE60-AB74-44A6-B759-7584AFF677B9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="WinStingers_01" ID="{579CC7DD-823B-4A5A-8420-262961F990C8}" ShortID="187076451">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D5B942A2-578C-459A-9515-894F12FD53E1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{23627151-D2E9-4F2A-903A-43CE359F8123}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="WinStingers" ID="{6C40573F-4F06-4B3D-9347-D763ADBDE124}" ShortID="751388743">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.193401816025236"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="1.62289349969005"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="9.08676322412305"/>
+										<Property Name="TrimEnd" Type="Real64" Value="13.0258287034009"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>WinStingers.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="WinStingers" ID="{6C40573F-4F06-4B3D-9347-D763ADBDE124}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="WinStingers_02" ID="{75E843AC-7E7F-4AFE-ABE6-356C87FDA539}" ShortID="282591840">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D5B942A2-578C-459A-9515-894F12FD53E1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{23627151-D2E9-4F2A-903A-43CE359F8123}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="WinStingers" ID="{C120BF56-62D3-4916-A22E-BFBC66CA80A1}" ShortID="602246345">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.213666962834839"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="1.92300266551356"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="16.3276845116009"/>
+										<Property Name="TrimEnd" Type="Real64" Value="20.3872777358735"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>WinStingers.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="769107222"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="WinStingers" ID="{C120BF56-62D3-4916-A22E-BFBC66CA80A1}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

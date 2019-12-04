@@ -2,6 +2,13 @@
 <WwiseDocument Type="WorkUnit" ID="{842A5A37-D999-45BE-8EDB-5EE895361710}" SchemaVersion="94">
 	<InteractiveMusic>
 		<WorkUnit Name="New Work Unit_COLO" ID="{842A5A37-D999-45BE-8EDB-5EE895361710}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Inclusion" Type="bool">
+					<ValueList>
+						<Value>False</Value>
+					</ValueList>
+				</Property>
+			</PropertyList>
 			<ChildrenList>
 				<MusicSegment Name="Lintu_Theme_Final" ID="{06995581-B3FF-4F46-8A4F-E3400360DC84}" ShortID="902218483">
 					<PropertyList>
@@ -200,7 +207,7 @@
 														<PointList>
 															<Point>
 																<XPos>64.97697</XPos>
-																<YPos>-0</YPos>
+																<YPos>0</YPos>
 																<Flags>5</Flags>
 															</Point>
 															<Point>
@@ -219,7 +226,7 @@
 														<PointList>
 															<Point>
 																<XPos>64.97697</XPos>
-																<YPos>-0</YPos>
+																<YPos>0</YPos>
 																<Flags>5</Flags>
 															</Point>
 															<Point>

@@ -22,20 +22,21 @@
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
 				<Event Id="1876704714" Name="Barcos_Idle" ObjectPath="\Events\Default Work Unit\Barcos_Idle" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="3661761514" Name="Colision_Agua" ObjectPath="\Events\Default Work Unit\Colision_Agua" DurationType="OneShot" DurationMin="4.750296" DurationMax="5.629981"/>
+				<Event Id="3661761514" Name="Colision_Agua" ObjectPath="\Events\Default Work Unit\Colision_Agua" DurationType="OneShot" DurationMin="2.885733" DurationMax="2.885733"/>
 				<Event Id="3999760164" Name="Colision_Madera" ObjectPath="\Events\Default Work Unit\Colision_Madera" DurationType="OneShot" DurationMin="0.848830" DurationMax="1.305893"/>
-				<Event Id="1330674255" Name="Cursor" ObjectPath="\Events\Default Work Unit\Cursor" DurationType="OneShot" DurationMin="0.153218" DurationMax="0.153218"/>
+				<Event Id="1330674255" Name="Cursor" ObjectPath="\Events\Default Work Unit\Cursor" DurationType="OneShot" DurationMin="0.472588" DurationMax="0.472588"/>
 				<Event Id="257651473" Name="Cursor_Seleccion" ObjectPath="\Events\Default Work Unit\Cursor_Seleccion" DurationType="OneShot" DurationMin="0.229147" DurationMax="0.229147"/>
-				<Event Id="3575068712" Name="Ganar" ObjectPath="\Events\Default Work Unit\Ganar" DurationType="OneShot" DurationMin="2.385733" DurationMax="2.385733"/>
+				<Event Id="3575068712" Name="Ganar" ObjectPath="\Events\Default Work Unit\Ganar" DurationType="OneShot" DurationMin="3.939065" DurationMax="4.132287"/>
 				<Event Id="1460932951" Name="Inicio_Juego" ObjectPath="\Events\Default Work Unit\Inicio_Juego" DurationType="Infinite"/>
-				<Event Id="880580374" Name="Inicio_Menu" ObjectPath="\Events\Default Work Unit\Inicio_Menu" DurationType="OneShot" DurationMin="119.823822" DurationMax="119.823822"/>
+				<Event Id="880580374" Name="Inicio_Menu" ObjectPath="\Events\Default Work Unit\Inicio_Menu" DurationType="Infinite"/>
 				<Event Id="194776941" Name="Inicio_Start" ObjectPath="\Events\Default Work Unit\Inicio_Start" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="1063492266" Name="Menu_Creditos" ObjectPath="\Events\Default Work Unit\Menu_Creditos" DurationType="OneShot" DurationMin="118.538101" DurationMax="118.538101"/>
+				<Event Id="1063492266" Name="Menu_Creditos" ObjectPath="\Events\Default Work Unit\Menu_Creditos" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="3042702347" Name="Orb_pickup" ObjectPath="\Events\Default Work Unit\Orb_pickup" DurationType="OneShot" DurationMin="1.858084" DurationMax="2.455326"/>
 				<Event Id="4246722315" Name="Pajaro_Aletea" ObjectPath="\Events\Default Work Unit\Pajaro_Aletea" DurationType="OneShot" DurationMin="1.390047" DurationMax="1.712907"/>
 				<Event Id="2577500974" Name="Pajaro_Voz" ObjectPath="\Events\Default Work Unit\Pajaro_Voz" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="1935209442" Name="Pausa_Juego" ObjectPath="\Events\Default Work Unit\Pausa_Juego" DurationType="OneShot" DurationMin="0.659176" DurationMax="0.659176"/>
-				<Event Id="2433235219" Name="Perder" ObjectPath="\Events\Default Work Unit\Perder" DurationType="OneShot" DurationMin="2.931035" DurationMax="9.596750"/>
+				<Event Id="2659475283" Name="Pausa_Off" ObjectPath="\Events\Default Work Unit\Pausa_Off" DurationType="OneShot" DurationMin="0.659176" DurationMax="0.659176"/>
+				<Event Id="549173535" Name="Pausa_On" ObjectPath="\Events\Default Work Unit\Pausa_On" DurationType="OneShot" DurationMin="0.659176" DurationMax="0.659176"/>
+				<Event Id="2433235219" Name="Perder" ObjectPath="\Events\Default Work Unit\Perder" DurationType="Infinite"/>
 				<Event Id="1203400786" Name="Restart" ObjectPath="\Events\Default Work Unit\Restart" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="3332192915" Name="Volver_a_Menu" ObjectPath="\Events\Default Work Unit\Volver_a_Menu" DurationType="Infinite"/>
 			</IncludedEvents>
@@ -76,10 +77,6 @@
 					<ShortName>AMB_Wind_Mid.wav</ShortName>
 					<Path>SFX\AMB_Wind_Mid_CD286D9D.wem</Path>
 				</File>
-				<File Id="145689268" Language="SFX">
-					<ShortName>Lintu_Musica_Demo_V1.wav</ShortName>
-					<Path>SFX\Lintu_Musica_Demo_V1_D79FB2B7.wem</Path>
-				</File>
 				<File Id="151221291" Language="SFX">
 					<ShortName>AMB_Agua_Mid.wav</ShortName>
 					<Path>SFX\AMB_Agua_Mid_C7167F42.wem</Path>
@@ -87,6 +84,10 @@
 				<File Id="155134895" Language="SFX">
 					<ShortName>npc_dragon_wingflap_01.wav</ShortName>
 					<Path>SFX\npc_dragon_wingflap_01_10C4C929.wem</Path>
+				</File>
+				<File Id="160168217" Language="SFX">
+					<ShortName>148_4-4_RythmStrings.wav</ShortName>
+					<Path>SFX\148_4-4_RythmStrings_D79FB2B7.wem</Path>
 				</File>
 				<File Id="179366856" Language="SFX">
 					<ShortName>AMB_Wind_Mid.wav</ShortName>
@@ -110,11 +111,15 @@
 				</File>
 				<File Id="258517620" Language="SFX">
 					<ShortName>MACK Liquid Splash Water Large.wav</ShortName>
-					<Path>SFX\MACK Liquid Splash Water Large_9A5A83D9.wem</Path>
+					<Path>SFX\MACK Liquid Splash Water Large_23445B21.wem</Path>
 				</File>
 				<File Id="261659988" Language="SFX">
 					<ShortName>Arcade Click Neutral 02.wav</ShortName>
 					<Path>SFX\Arcade Click Neutral 02_F59C14DB.wem</Path>
+				</File>
+				<File Id="272122454" Language="SFX">
+					<ShortName>148_4-4_Loop2.wav</ShortName>
+					<Path>SFX\148_4-4_Loop2_D79FB2B7.wem</Path>
 				</File>
 				<File Id="316538285" Language="SFX">
 					<ShortName>HAWK Red Tailed, Scream Long.wav</ShortName>
@@ -131,6 +136,10 @@
 				<File Id="374637730" Language="SFX">
 					<ShortName>Generic Button Wood Small 02.wav</ShortName>
 					<Path>SFX\Generic Button Wood Small 02_846482C0.wem</Path>
+				</File>
+				<File Id="377921287" Language="SFX">
+					<ShortName>148_4-4_StaccStrings.wav</ShortName>
+					<Path>SFX\148_4-4_StaccStrings_D79FB2B7.wem</Path>
 				</File>
 				<File Id="395782009" Language="SFX">
 					<ShortName>AMB_Agua_Far.wav</ShortName>
@@ -152,6 +161,10 @@
 					<ShortName>Orchestral Jingle Negative 01.wav</ShortName>
 					<Path>SFX\Orchestral Jingle Negative 01_1D59BB6C.wem</Path>
 				</File>
+				<File Id="426249151" Language="SFX">
+					<ShortName>148_4-4_Loop1.wav</ShortName>
+					<Path>SFX\148_4-4_Loop1_D79FB2B7.wem</Path>
+				</File>
 				<File Id="429338678" Language="SFX">
 					<ShortName>AMB_Wind_Low.wav</ShortName>
 					<Path>SFX\AMB_Wind_Low_DC84D4BB.wem</Path>
@@ -164,6 +177,10 @@
 					<ShortName>AMB_Wind_Hi.wav</ShortName>
 					<Path>SFX\AMB_Wind_Hi_19DB01A6.wem</Path>
 				</File>
+				<File Id="448944401" Language="SFX">
+					<ShortName>Lintu_Theme_Final.wav</ShortName>
+					<Path>SFX\Lintu_Theme_Final_D79FB2B7.wem</Path>
+				</File>
 				<File Id="451158218" Language="SFX">
 					<ShortName>AMB_Wind_Hi.wav</ShortName>
 					<Path>SFX\AMB_Wind_Hi_A674C1EE.wem</Path>
@@ -172,9 +189,17 @@
 					<ShortName>Pajaro_Voz_Idle.wav</ShortName>
 					<Path>SFX\Pajaro_Voz_Idle_FECF1909.wem</Path>
 				</File>
+				<File Id="511989085" Language="SFX">
+					<ShortName>148_4-4_MelodyOnly.wav</ShortName>
+					<Path>SFX\148_4-4_MelodyOnly_D79FB2B7.wem</Path>
+				</File>
 				<File Id="513719933" Language="SFX">
 					<ShortName>croak_tiny_01_02_short_hard.wav</ShortName>
 					<Path>SFX\croak_tiny_01_02_short_hard_753BA1E7.wem</Path>
+				</File>
+				<File Id="517360857" Language="SFX">
+					<ShortName>148_4-4_PERC_SOLA.wav</ShortName>
+					<Path>SFX\148_4-4_PERC_SOLA_D79FB2B7.wem</Path>
 				</File>
 				<File Id="530385853" Language="SFX">
 					<ShortName>AMB_Wind_Hi.wav</ShortName>
@@ -188,6 +213,10 @@
 					<ShortName>AMB_Wind_Mid.wav</ShortName>
 					<Path>SFX\AMB_Wind_Mid_3585615B.wem</Path>
 				</File>
+				<File Id="602246345" Language="SFX">
+					<ShortName>WinStingers.wav</ShortName>
+					<Path>SFX\WinStingers_98EE9C7A.wem</Path>
+				</File>
 				<File Id="604139594" Language="SFX">
 					<ShortName>AMB_Agua_Far.wav</ShortName>
 					<Path>SFX\AMB_Agua_Far_533763A9.wem</Path>
@@ -200,29 +229,41 @@
 					<ShortName>croak_tiny_01_02_short_hard.wav</ShortName>
 					<Path>SFX\croak_tiny_01_02_short_hard_A180FC6D.wem</Path>
 				</File>
+				<File Id="635145022" Language="SFX">
+					<ShortName>148_4-4_Chelo Loop.wav</ShortName>
+					<Path>SFX\148_4-4_Chelo Loop_D79FB2B7.wem</Path>
+				</File>
+				<File Id="670387589" Language="SFX">
+					<ShortName>QP02 0261 Wind desert strong blustery with lull.wav</ShortName>
+					<Path>SFX\QP02 0261 Wind desert strong blustery with lull_6F765FD8.wem</Path>
+				</File>
+				<File Id="670387590" Language="SFX">
+					<ShortName>QP02 0261 Wind desert strong blustery with lull.wav</ShortName>
+					<Path>SFX\QP02 0261 Wind desert strong blustery with lull_10C4C929.wem</Path>
+				</File>
 				<File Id="716734119" Language="SFX">
 					<ShortName>croak_tiny_01_02_short_hard.wav</ShortName>
 					<Path>SFX\croak_tiny_01_02_short_hard_72945DAB.wem</Path>
 				</File>
 				<File Id="722654731" Language="SFX">
 					<ShortName>MACK Liquid Splash Water Large.wav</ShortName>
-					<Path>SFX\MACK Liquid Splash Water Large_D10842DF.wem</Path>
-				</File>
-				<File Id="724525470" Language="SFX">
-					<ShortName>Lintu_Theme_Final.wav</ShortName>
-					<Path>SFX\Lintu_Theme_Final_542CF7D5.wem</Path>
+					<Path>SFX\MACK Liquid Splash Water Large_F48F0B75.wem</Path>
 				</File>
 				<File Id="729757640" Language="SFX">
 					<ShortName>AMB_Wind_Low.wav</ShortName>
 					<Path>SFX\AMB_Wind_Low_D0212B18.wem</Path>
 				</File>
+				<File Id="751388743" Language="SFX">
+					<ShortName>WinStingers.wav</ShortName>
+					<Path>SFX\WinStingers_D02E40E7.wem</Path>
+				</File>
 				<File Id="758490200" Language="SFX">
 					<ShortName>npc_dragon_wingflap_03.wav</ShortName>
 					<Path>SFX\npc_dragon_wingflap_03_10C4C929.wem</Path>
 				</File>
-				<File Id="775027009" Language="SFX">
-					<ShortName>Lintu_Theme_Final.wav</ShortName>
-					<Path>SFX\Lintu_Theme_Final_10C4C929.wem</Path>
+				<File Id="769107222" Language="SFX">
+					<ShortName>WinStingers.wav</ShortName>
+					<Path>SFX\WinStingers_D2DE4DC6.wem</Path>
 				</File>
 				<File Id="798872062" Language="SFX">
 					<ShortName>AMB_Wind_Low.wav</ShortName>
@@ -236,6 +277,10 @@
 					<ShortName>KITE Yellow Billed, Call 01.wav</ShortName>
 					<Path>SFX\KITE Yellow Billed, Call 01_A663A7BD.wem</Path>
 				</File>
+				<File Id="854006711" Language="SFX">
+					<ShortName>148_4-4_Rythm1.wav</ShortName>
+					<Path>SFX\148_4-4_Rythm1_D79FB2B7.wem</Path>
+				</File>
 				<File Id="859349702" Language="SFX">
 					<ShortName>Arcade Click Neutral 02.wav</ShortName>
 					<Path>SFX\Arcade Click Neutral 02_07C30F94.wem</Path>
@@ -248,13 +293,17 @@
 					<ShortName>npc_dragon_wingflap_02.wav</ShortName>
 					<Path>SFX\npc_dragon_wingflap_02_10C4C929.wem</Path>
 				</File>
+				<File Id="916483593" Language="SFX">
+					<ShortName>baby-heartbeat-daniel_simon.wav</ShortName>
+					<Path>SFX\baby-heartbeat-daniel_simon_3A90E156.wem</Path>
+				</File>
 				<File Id="945435898" Language="SFX">
 					<ShortName>AMB_Wind_Hi.wav</ShortName>
 					<Path>SFX\AMB_Wind_Hi_F95A0E3D.wem</Path>
 				</File>
 				<File Id="952612309" Language="SFX">
 					<ShortName>MACK Liquid Splash Water Large.wav</ShortName>
-					<Path>SFX\MACK Liquid Splash Water Large_BC98EB64.wem</Path>
+					<Path>SFX\MACK Liquid Splash Water Large_1111063D.wem</Path>
 				</File>
 				<File Id="979312005" Language="SFX">
 					<ShortName>Incio_Partida_Stinger.wav</ShortName>
@@ -270,7 +319,7 @@
 				</File>
 				<File Id="1031869146" Language="SFX">
 					<ShortName>MACK Liquid Splash Water Large.wav</ShortName>
-					<Path>SFX\MACK Liquid Splash Water Large_06BB1E4B.wem</Path>
+					<Path>SFX\MACK Liquid Splash Water Large_F832AD98.wem</Path>
 				</File>
 				<File Id="1045454988" Language="SFX">
 					<ShortName>AMB_Agua_Mid.wav</ShortName>

@@ -12,10 +12,23 @@
 					</ChildrenList>
 				</StateGroup>
 				<StateGroup Name="Pause" ID="{27332A57-1742-4BD8-80D6-3EEEBE03E27D}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
+					</PropertyList>
 					<ChildrenList>
 						<State Name="None" ID="{08F5DD00-5C0D-433D-92E6-F07BA2E78D62}"/>
 						<State Name="On" ID="{B50987D7-213D-4AF6-B3DD-D5A3B1C551AA}"/>
 						<State Name="Off" ID="{11CE3462-4BB8-4BD0-8183-4AB4CB6740B0}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Silence" ID="{FB53A36D-FA5F-4330-8559-75C785CB7D28}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{94AD51B9-6593-40DA-8EB2-64D01931030E}"/>
+						<State Name="On" ID="{10C3A728-C9D1-48AC-A212-16FA113E6326}"/>
+						<State Name="Off" ID="{08FE5166-2155-4F5C-AF5C-AEA6FA1C9053}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>

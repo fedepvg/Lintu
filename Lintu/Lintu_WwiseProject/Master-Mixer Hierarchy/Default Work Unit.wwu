@@ -17,9 +17,14 @@
 								</Effect>
 							</Custom>
 						</Reference>
+						<Reference Name="Effect1">
+							<Custom>
+								<Effect Name="Wwise_Compressor_(Custom)" ID="{1E30D931-3A1E-4B0F-A7CF-EA8C3F88DC3B}" ShortID="447261355" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3"/>
+							</Custom>
+						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AuxBus Name="FX_espaciales" ID="{CB8E2805-7607-493E-8F12-344DDC42CED6}">
+						<AuxBus Name="fx_espaciales" ID="{CB8E2805-7607-493E-8F12-344DDC42CED6}">
 							<ReferenceList>
 								<Reference Name="Effect0">
 									<Custom>
@@ -59,29 +64,59 @@
 								</Reference>
 							</ReferenceList>
 						</AuxBus>
+						<Bus Name="Corazon" ID="{E18FEE5B-C221-4C38-AAFB-59F37CC977F8}"/>
+						<Bus Name="SUB-Master" ID="{18CF1CCB-014D-4646-B158-F5A8CB996155}">
+							<ChildrenList>
+								<Bus Name="Ambiente" ID="{457C550D-1E51-4CE4-805E-BA56EAB8C536}">
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="Silence" ID="{FB53A36D-FA5F-4330-8559-75C785CB7D28}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="On" ID="{10C3A728-C9D1-48AC-A212-16FA113E6326}"/>
+												<CustomState Name="" ID="{7ABBAE77-27A4-474A-9B25-77E99E826DCC}" ShortID="610884997">
+													<PropertyList>
+														<Property Name="BusVolume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Off" ID="{08FE5166-2155-4F5C-AF5C-AEA6FA1C9053}"/>
+												<CustomState Name="" ID="{B475D662-B1B1-4051-B19B-2905B96D246D}" ShortID="483322365"/>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+								</Bus>
+								<Bus Name="FX" ID="{7FDB1AE7-CC10-4096-BBB1-577F61FD3C45}">
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="Silence" ID="{FB53A36D-FA5F-4330-8559-75C785CB7D28}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="On" ID="{10C3A728-C9D1-48AC-A212-16FA113E6326}"/>
+												<CustomState Name="" ID="{2EF8909E-94DF-4D81-B2FC-511210993045}" ShortID="881040294">
+													<PropertyList>
+														<Property Name="BusVolume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Off" ID="{08FE5166-2155-4F5C-AF5C-AEA6FA1C9053}"/>
+												<CustomState Name="" ID="{9E7C99B9-D75B-4CA7-BD0F-700EB98A50E4}" ShortID="1006207623"/>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+								</Bus>
+								<Bus Name="Musica" ID="{B2DEF229-B9A1-4170-87B5-2D53E3995EBA}"/>
+							</ChildrenList>
+						</Bus>
 					</ChildrenList>
-					<StateInfo>
-						<StateGroupList>
-							<StateGroupInfo>
-								<StateGroupRef Name="Pause" ID="{27332A57-1742-4BD8-80D6-3EEEBE03E27D}"/>
-							</StateGroupInfo>
-						</StateGroupList>
-						<CustomStateList>
-							<CustomState>
-								<StateRef Name="On" ID="{B50987D7-213D-4AF6-B3DD-D5A3B1C551AA}"/>
-								<CustomState Name="" ID="{0E1990E7-390B-46CA-AA2A-7553A27EC2A4}" ShortID="565456171">
-									<PropertyList>
-										<Property Name="Lowpass" Type="int16" Value="-72"/>
-										<Property Name="Pitch" Type="int32" Value="-810"/>
-									</PropertyList>
-								</CustomState>
-							</CustomState>
-							<CustomState>
-								<StateRef Name="Off" ID="{11CE3462-4BB8-4BD0-8183-4AB4CB6740B0}"/>
-								<CustomState Name="" ID="{0A88B9CB-FCD4-4EAF-B881-7265872A9E5E}" ShortID="320154693"/>
-							</CustomState>
-						</CustomStateList>
-					</StateInfo>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>

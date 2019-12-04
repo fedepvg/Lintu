@@ -6,49 +6,38 @@
 				<SoundcasterSession Name="New Soundcaster Session" ID="{CEB8F96A-485B-4B0E-8600-B303CB227F09}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="Inicio_Start" ID="{A90E49C2-8075-4215-9DF5-35271EA6A134}" WorkUnitID="{409620D5-A2F8-4103-A1F6-811A6D049633}"/>
-							<Position X="0" Y="1"/>
+							<ObjectRef Name="Inicio_Juego" ID="{96A46A28-0944-452C-8ABB-AAF3A095821A}" WorkUnitID="{409620D5-A2F8-4103-A1F6-811A6D049633}"/>
+							<Position X="0" Y="2"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Inicio_Menu" ID="{B8F74C3B-E870-4A73-B2B3-0C9322FBCC31}" WorkUnitID="{409620D5-A2F8-4103-A1F6-811A6D049633}"/>
+							<ObjectRef Name="Pausa_On" ID="{D47456CE-8028-4C01-BE85-A002214BA089}" WorkUnitID="{409620D5-A2F8-4103-A1F6-811A6D049633}"/>
 							<Position X="1" Y="2"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Inicio_Juego" ID="{96A46A28-0944-452C-8ABB-AAF3A095821A}" WorkUnitID="{409620D5-A2F8-4103-A1F6-811A6D049633}"/>
-							<Position X="2" Y="1"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="Perder" ID="{9DB9B8FB-2607-403E-937B-FF6E4FE46559}" WorkUnitID="{409620D5-A2F8-4103-A1F6-811A6D049633}"/>
-							<Position X="3" Y="2"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="Restart" ID="{C98459DC-71E8-4B2A-B025-377C5AA048CE}" WorkUnitID="{409620D5-A2F8-4103-A1F6-811A6D049633}"/>
-							<Position X="4" Y="1"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="Volver_a_Menu" ID="{47911190-13D2-43BE-815B-6796F79B4594}" WorkUnitID="{409620D5-A2F8-4103-A1F6-811A6D049633}"/>
-							<Position X="4" Y="3"/>
+							<ObjectRef Name="Pausa_Off" ID="{877CA4D8-014F-4E57-8313-7E354CC4E1E9}" WorkUnitID="{409620D5-A2F8-4103-A1F6-811A6D049633}"/>
+							<Position X="2" Y="2"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="Largo_Mapa" ID="{3C3E6860-F2C0-4AA7-BE55-5663FA0C5161}"/>
-							<Value>50</Value>
+							<Value>0.5</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Altura_Pajaro" ID="{C4E5C476-50B9-4CF3-B572-038B88CE0796}"/>
-							<Value>31.0531053105311</Value>
+							<Value>0.540954095409541</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Velocidad_Pajaro" ID="{63A3F995-3419-4D84-8546-71B2C98C0595}"/>
-							<Value>50</Value>
+							<Value>0.388838883888389</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Energia_Pajaro" ID="{1BBB7369-4CCF-4E2E-8052-52C5FDD6BE07}"/>
-							<Value>50</Value>
+							<Value>1.00841374438507E-311</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Off" ID="{08FE5166-2155-4F5C-AF5C-AEA6FA1C9053}"/>
 						<CurrentStateRef Name="Off" ID="{11CE3462-4BB8-4BD0-8183-4AB4CB6740B0}"/>
 						<CurrentStateRef Name="Menu" ID="{1D0770CA-E911-4E29-A7C5-435687960234}"/>
 					</CurrentStateList>

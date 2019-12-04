@@ -1,27 +1,42 @@
 State Group	ID	Name			Wwise Object Path	Notes
+	89505537	Gameplay			\New Work Unit_COLO\Gameplay	
 	1730564739	Musica			\Default Work Unit\Musica	
+	3041563226	Silence			\Default Work Unit\Silence	
 	3092587493	Pause			\Default Work Unit\Pause	
 
 State	ID	Name	State Group			Notes
+	0	None	Gameplay			
+	271396146	Ambiente_off	Gameplay			
+	3465855444	Ambiente_on	Gameplay			
 	0	None	Musica			
 	89505537	Gameplay	Musica			
 	930712164	Off	Musica			
 	2607556080	Menu	Musica			
+	0	None	Silence			
+	930712164	Off	Silence			
+	1651971902	On	Silence			
 	0	None	Pause			
 	930712164	Off	Pause			
 	1651971902	On	Pause			
 
 Custom State	ID	Name	State Group	Owner		Notes
-	565456171	On	Pause	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus		
+	610884997	On	Silence	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SUB-Master\Ambiente		
+	881040294	On	Silence	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SUB-Master\FX		
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	1730564739	Musica			\Default Work Unit\Master Audio Bus\SUB-Master\Musica	
+	1802970371	FX			\Default Work Unit\Master Audio Bus\SUB-Master\FX	
+	2412407096	SUB-Master			\Default Work Unit\Master Audio Bus\SUB-Master	
+	3566516997	Corazon			\Default Work Unit\Master Audio Bus\Corazon	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	4095160060	Ambiente			\Default Work Unit\Master Audio Bus\SUB-Master\Ambiente	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
-	1792520288	FX_espaciales			\Default Work Unit\Master Audio Bus\FX_espaciales	
+	1792520288	fx_espaciales			\Default Work Unit\Master Audio Bus\fx_espaciales	
 
 Effect plug-ins	ID	Name	Type				Notes
 	417707368	Wwise_Compressor_(Custom)	Wwise Compressor			
+	447261355	Wwise_Compressor_(Custom)	Wwise Compressor			
 	784109637	Have_U_Ever_Been_Outside_(Custom)	Wwise RoomVerb			
 	801211459	Wwise_Delay_(Custom)	Wwise Delay			
 

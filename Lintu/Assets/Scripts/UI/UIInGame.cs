@@ -83,9 +83,15 @@ public class UIInGame : MonoBehaviour
                 PauseScript.ResetPanels();
                 PausePanel.SetActive(!PausePanel.activeSelf);
                 if (PausePanel.activeSelf)
+                {
                     EventSystem.current.SetSelectedGameObject(EventSystem.current.firstSelectedGameObject);
+                    AkSoundEngine.PostEvent("Pausa_On", gameObject);
+                }
                 else
+                {
                     EventSystem.current.SetSelectedGameObject(null);
+                    AkSoundEngine.PostEvent("Pausa_Off", gameObject);
+                }
 
                 Player.enabled = !Player.enabled;
                 Time.timeScale = Mathf.Abs(Time.timeScale - 1);

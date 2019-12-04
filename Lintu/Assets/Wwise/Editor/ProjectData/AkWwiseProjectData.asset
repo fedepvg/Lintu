@@ -24,9 +24,9 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 51716223e9d22a4f903a43ce359f8123
     GuidInternal: 
-    m_lastTime: -8586264328246864506
+    m_lastTime: -8586262143409139235
     List:
-    - name: FX_espaciales
+    - name: fx_espaciales
       guid: 05288ecb07763e498f12344ddc42ced6
       id: 1792520288
       PathAndIcons:
@@ -34,15 +34,15 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: Master Audio Bus
         ObjectType: 2
-      - ElementName: FX_espaciales
+      - ElementName: fx_espaciales
         ObjectType: 1
-      Path: Default Work Unit\Master Audio Bus\FX_espaciales
+      Path: Default Work Unit\Master Audio Bus\fx_espaciales
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: d124bd5d8a78314ea75dff208c839db6
     GuidInternal: 
-    m_lastTime: -8586263847868678191
+    m_lastTime: -8586261773027467916
     List:
     - name: Main
       guid: 10666bd03b52b7419b47aa3e6b0a6ac8
@@ -58,7 +58,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: d5209640f8a20341a1f6811a6d049633
     GuidInternal: 
-    m_lastTime: -8586263852417111977
+    m_lastTime: -8586261758329547292
     List:
     - name: Barcos_Idle
       guid: 1de55918fc98a7478aa9cb3ff9fb4113
@@ -82,8 +82,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Colision_Agua
       maxAttenuation: 0
-      maxDuration: 5629981
-      minDuration: 4750296
+      maxDuration: 2885733
+      minDuration: 2885733
     - name: Colision_Madera
       guid: 5eaff9e81965f84f9d9c046973014a18
       id: 3999760164
@@ -106,8 +106,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Cursor
       maxAttenuation: 0
-      maxDuration: 153218
-      minDuration: 153218
+      maxDuration: 472588
+      minDuration: 472588
     - name: Cursor_Seleccion
       guid: d84d1e8879172a4d98145fc60debde36
       id: 257651473
@@ -130,8 +130,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Ganar
       maxAttenuation: 0
-      maxDuration: 2385733
-      minDuration: 2385733
+      maxDuration: 4132287
+      minDuration: 3939065
     - name: Inicio_Juego
       guid: 286aa49644092c458abbaaf3a095821a
       id: 1460932951
@@ -154,8 +154,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Inicio_Menu
       maxAttenuation: 0
-      maxDuration: 119823820
-      minDuration: 119823820
+      maxDuration: -1
+      minDuration: -1
     - name: Inicio_Start
       guid: c2490ea9758015429df535271ea6a134
       id: 194776941
@@ -178,8 +178,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Menu_Creditos
       maxAttenuation: 0
-      maxDuration: 118538104
-      minDuration: 118538104
+      maxDuration: 0
+      minDuration: 0
     - name: Orb_pickup
       guid: 999fb02881f4dd4c89eab0e953587c67
       id: 3042702347
@@ -216,15 +216,27 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
-    - name: Pausa_Juego
-      guid: ce5674d42880014cbe85a002214ba089
-      id: 1935209442
+    - name: Pausa_Off
+      guid: d8a47c874f01574e83137e354cc4e1e9
+      id: 2659475283
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Pausa_Juego
+      - ElementName: Pausa_Off
         ObjectType: 3
-      Path: Default Work Unit\Pausa_Juego
+      Path: Default Work Unit\Pausa_Off
+      maxAttenuation: 0
+      maxDuration: 659176
+      minDuration: 659176
+    - name: Pausa_On
+      guid: ce5674d42880014cbe85a002214ba089
+      id: 549173535
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Pausa_On
+        ObjectType: 3
+      Path: Default Work Unit\Pausa_On
       maxAttenuation: 0
       maxDuration: 659176
       minDuration: 659176
@@ -238,8 +250,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Perder
       maxAttenuation: 0
-      maxDuration: 9596750
-      minDuration: 2931035
+      maxDuration: -1
+      minDuration: -1
     - name: Restart
       guid: dc5984c9e8712a4bb025377c5aa048ce
       id: 1203400786
@@ -269,7 +281,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 1edc21d7eb91a849a512ee400c2fbddb
     GuidInternal: 
-    m_lastTime: -8586263852416842163
+    m_lastTime: -8586261773027336932
     List:
     - name: Altura_Pajaro
       guid: 76c4e5c4b950f34cb572038b88ce0796
@@ -312,7 +324,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: e551c34f8c574a49a909551aab9fe874
     GuidInternal: 
-    m_lastTime: -8586268357602355037
+    m_lastTime: -8586262144115161804
     List:
     - name: Musica
       guid: 16c38de61c2b0a4db8ebd498ac81d42d
@@ -382,6 +394,74 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
+    - name: Silence
+      guid: 6da353fb5ffa3043855975c785cb7d28
+      id: 3041563226
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Silence
+        ObjectType: 9
+      Path: Default Work Unit\Silence
+      values:
+      - name: None
+        guid: b951ad949365da408eb264d01931030e
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: Off
+        guid: 6651fe0855215c4faf5caea6fa1c9053
+        id: 930712164
+        PathAndIcons:
+        - ElementName: Off
+          ObjectType: 8
+      - name: On
+        guid: 28a7c310d1c9ac48a21216fa113e6326
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: On
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  - PhysicalPath: States\New Work Unit_COLO.wwu
+    ParentPhysicalPath: 
+    guid: 7a9de839f913b246b000cf8100ce7978
+    GuidInternal: 
+    m_lastTime: -8586263787894464436
+    List:
+    - name: Gameplay
+      guid: 0613d792ae7ac245896fac7852c90d90
+      id: 89505537
+      PathAndIcons:
+      - ElementName: New Work Unit_COLO
+        ObjectType: 12
+      - ElementName: Gameplay
+        ObjectType: 9
+      Path: New Work Unit_COLO\Gameplay
+      values:
+      - name: Ambiente_off
+        guid: ff833953f1c2284fa18f6f251dd3681b
+        id: 271396146
+        PathAndIcons:
+        - ElementName: Ambiente_off
+          ObjectType: 8
+      - name: Ambiente_on
+        guid: 34ad8e866711de438ec76c6602762386
+        id: 3465855444
+        PathAndIcons:
+        - ElementName: Ambiente_on
+          ObjectType: 8
+      - name: None
+        guid: 101e04093c06cd499901727a9a8f70bc
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -402,6 +482,5 @@ MonoBehaviour:
   - /Lintu_WwiseProject/Events/Default Work Unit
   - /Lintu_WwiseProject/States
   - /Lintu_WwiseProject/States/Default Work Unit
-  - /Lintu_WwiseProject/States/Default Work Unit/Pause
   autoPopulateEnabled: 1
   CurrentPluginConfig: Profile

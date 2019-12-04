@@ -93,6 +93,8 @@ public class BirdController : MonoBehaviour
         transform.position=StartTransform.position;
 
         OrbBehaviour.OnOrbPickup = AddEnergy;
+
+        AkSoundEngine.PostEvent("Pajaro_Voz", gameObject);
     }
     
     void Update()
