@@ -1344,6 +1344,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 500c1598d8678374c95d0ecf79df01be, type: 3}
   - {fileID: 21300000, guid: c632ad0a4a2b99f4fa1c56342c1b6236, type: 3}
   - {fileID: 21300000, guid: ef93315ef38100a49a52aed3f3a9199d, type: 3}
+  PreviousButtonSelected: {fileID: 0}
 --- !u!4 &867814089
 Transform:
   m_ObjectHideFlags: 0
@@ -1564,7 +1565,7 @@ PrefabInstance:
     - target: {fileID: 9062217408589599166, guid: dbb7018cf14c43d4a951fdf311cef417,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9062217408589599157, guid: dbb7018cf14c43d4a951fdf311cef417,
         type: 3}
@@ -1674,12 +1675,12 @@ PrefabInstance:
     - target: {fileID: 9062217409617057307, guid: dbb7018cf14c43d4a951fdf311cef417,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9062217409617057307, guid: dbb7018cf14c43d4a951fdf311cef417,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3636497824663743746, guid: dbb7018cf14c43d4a951fdf311cef417,
         type: 3}
@@ -1945,7 +1946,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1335628849
 MonoBehaviour:
   m_ObjectHideFlags: 0

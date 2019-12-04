@@ -309,7 +309,7 @@ public class BirdController : MonoBehaviour
         AnimationController.SetTrigger("Death");
         if (EndLevelAction != null)
             EndLevelAction();
-        PlayerInput.Disable();
+        PlayerInput.Gameplay.Disable();
         Rigi.velocity /= 2;
         Rigi.useGravity = true;
         Rigi.mass = 100;
