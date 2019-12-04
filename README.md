@@ -26,9 +26,9 @@ This is a game (demo/protoype/vertical slice) developed by students from <a href
 ## Credits
 
 - **Federico van Gelderen** - *Programming* - </a> <a href="https://twitter.com/fedepvg"><img height="16" width="16" src="https://unpkg.com/simple-icons@latest/icons/twitter.svg" /><img height="16" width="16" src="https://unpkg.com/simple-icons@latest/icons/github.svg" />
-- **Erik Hack** - *Art* - <a href="https://www.artstation.com/erikhack"><img height="16" width="16" src="https://unpkg.com/simple-icons@latest/icons/artstation.svg" /></a>
+- **Erik Hack** - *Art* - </a href="https://www.artstation.com/erikhack"><img height="16" width="16" src="https://unpkg.com/simple-icons@latest/icons/artstation.svg" /></a>
 - **Leonel Sisterna Micuzzi** - *Art* - <a href="https://sketchfab.com/IronKiller"><img height="16" width="16" src="https://ps.w.org/sketchfab-oembed/assets/icon-128x128.png?rev=1103504" />
-- **Florencia Tassara** - *Art* - <a href="https://sketchfab.com/elenawolf"><img height="16" width="16" src="https://ps.w.org/sketchfab-oembed/assets/icon-128x128.png?rev=1103504" /><a href="https://www.artstation.com/bluwolf"><img height="16" width="16" src="https://unpkg.com/simple-icons@latest/icons/artstation.svg" /></a>
+- **Florencia Tassara** - *Art* - </a href="https://sketchfab.com/elenawolf"><img height="16" width="16" src="https://ps.w.org/sketchfab-oembed/assets/icon-128x128.png?rev=1103504" /><a href="https://www.artstation.com/bluwolf"><img height="16" width="16" src="https://unpkg.com/simple-icons@latest/icons/artstation.svg" /></a>
 - **Nicolás Requena** - *Audio* - 
 - **Leonel Suarez** - *Audio* - 
 - **Iván Fernandez** - *Testing* - 
