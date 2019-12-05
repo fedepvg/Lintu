@@ -14,7 +14,7 @@ Features:
 - Challenging levels.
 - Beautiful looking world.
 
-This is a game (demo/protoype/vertical slice) developed by students from <a href="https://www.imagecampus.edu.ar/">Image Campus</a>
+This is a game (demo) developed by students from <a href="https://www.imagecampus.edu.ar/">Image Campus</a>
 
 <p align="center">
   <a href="https://www.imagecampus.edu.ar/">
