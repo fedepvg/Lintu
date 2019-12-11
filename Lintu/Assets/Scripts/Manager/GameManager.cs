@@ -7,21 +7,16 @@ public class GameManager : MonoBehaviourSingleton<GameManager>
 {
     public PlayerControls GameInput;
     public SceneLoader SceneData;
-    public GameObject GameOverPrefab;
+    public GameObject GameOverCanvas;
     bool HasWon = false;
     bool IsInvertedY = true;
     bool UseHUD = true;
 
-    public override void Awake()
+    private void Start()
     {
-        base.Awake();
         GameInput = new PlayerControls();
         GameInput.Enable();
         BirdController.GameOverAction = Endlevel;
-    }
-
-    private void Start()
-    {
         AkSoundEngine.PostEvent("Inicio_Menu", gameObject);
     }
 
@@ -38,7 +33,7 @@ public class GameManager : MonoBehaviourSingleton<GameManager>
             if (SceneData.LastLevel)
             {
                 HasWon = won;
-                Instantiate(GameOverPrefab);
+                GameManager.Instance.GameOverCanvas.SetActive(true);
             }
             else
             {
@@ -48,7 +43,7 @@ public class GameManager : MonoBehaviourSingleton<GameManager>
         else
         {
             HasWon = false;
-            Instantiate(GameOverPrefab);
+            GameManager.Instance.GameOverCanvas.SetActive(true);
         }
     }
 

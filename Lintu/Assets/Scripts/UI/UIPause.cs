@@ -16,6 +16,7 @@ public class UIPause : MonoBehaviour
     private void Start()
     {
         CurrentPanel = PauseOptionsPanel;
+        EventSystem.current.SetSelectedGameObject(PauseOptionsFirstButtton);
     }
 
     public void SwitchPanels()
