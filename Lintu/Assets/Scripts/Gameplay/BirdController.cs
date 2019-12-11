@@ -273,8 +273,7 @@ public class BirdController : MonoBehaviour
     {
         if (collision.gameObject.tag == "Wall" || collision.gameObject.tag == "Obstacle" || collision.gameObject.tag == "Floor")
         {
-            if (IsAlive)
-            {
+            
                 if (collision.gameObject.tag != "Floor")
                 {
                     Instantiate(DeathParticlePrefab, transform.position, Quaternion.identity);
@@ -285,8 +284,8 @@ public class BirdController : MonoBehaviour
                     Instantiate(WaterDeathParticlePrefab, collision.contacts[0].point, Quaternion.identity);
                     AkSoundEngine.PostEvent("Colision_Agua", gameObject);
                 }
+            if (IsAlive)
                 StartCoroutine(Die(TimeToGameOverScreen));
-            }
         }
     }
 
