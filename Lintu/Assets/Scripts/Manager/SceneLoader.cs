@@ -9,13 +9,14 @@ public class SceneLoader : MonoBehaviour
     public string NextScene;
     public string GameOverScene;
     public string MenuScene;
-    
     public string PreviousScene;
+    public bool LastLevel;
 
     private void Start()
     {
         PreviousScene = LoaderManager.Instance.ActualScene;
         LoaderManager.Instance.ActualScene = ThisScene;
+        GameManager.Instance.SceneData = this;
     }
 
     private void Update()

@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviourSingleton<GameManager>
 {
     public PlayerControls GameInput;
+    public SceneLoader SceneData;
+    public GameObject GameOverPrefab;
     bool HasWon = false;
     bool IsInvertedY = true;
     bool UseHUD = true;
@@ -15,6 +17,7 @@ public class GameManager : MonoBehaviourSingleton<GameManager>
         base.Awake();
         GameInput = new PlayerControls();
         GameInput.Enable();
+        BirdController.GameOverAction = Endlevel;
     }
 
     private void Start()
@@ -24,8 +27,29 @@ public class GameManager : MonoBehaviourSingleton<GameManager>
 
     private void Update()
     {
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.visible = false;
+        //Cursor.lockState = CursorLockMode.Locked;
+    }
+
+    public void Endlevel(bool won)
+    {
+        if (won)
+        {
+            if (SceneData.LastLevel)
+            {
+                HasWon = won;
+                Instantiate(GameOverPrefab);
+            }
+            else
+            {
+                SceneData.LoadNextScene(true);
+            }
+        }
+        else
+        {
+            HasWon = false;
+            Instantiate(GameOverPrefab);
+        }
     }
 
     public bool Won

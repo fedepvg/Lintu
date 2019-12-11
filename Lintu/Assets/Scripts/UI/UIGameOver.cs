@@ -10,7 +10,7 @@ public class UIGameOver : MonoBehaviour
     public GameObject WinCanvasFirstButton;
     public GameObject LoseCanvasFirstButton;
 
-    private void Start()
+    private void OnEnable()
     {
         EventSystem eventSystem = EventSystem.current;
         bool playerWon = GameManager.Instance.Won;

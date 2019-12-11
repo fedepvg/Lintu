@@ -40,6 +40,8 @@ public class UIInGame : MonoBehaviour
             DeactivateHUD();
         else
             ActivateHUD();
+
+        BirdController.EndLevelAction += DestroyHUD;
     }
 
     void Update()
@@ -119,5 +121,11 @@ public class UIInGame : MonoBehaviour
     {
         EnergyBar.gameObject.SetActive(true);
         DistanceBar.gameObject.SetActive(true);
+    }
+
+    void DestroyHUD()
+    {
+        BirdController.EndLevelAction -= DestroyHUD;
+        Destroy(this);
     }
 }

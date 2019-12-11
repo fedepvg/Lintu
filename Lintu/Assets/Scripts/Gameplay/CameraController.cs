@@ -20,7 +20,7 @@ public class CameraController : MonoBehaviour
 
     private void Start()
     {
-        BirdController.EndLevelAction = StopMovingCamera;
+        BirdController.EndLevelAction += StopMovingCamera;
         BirdController.OnPlayerMovingAction = SetCameraFov;
         FovDifference = MaxFov - MinFov;
     }
@@ -51,6 +51,7 @@ public class CameraController : MonoBehaviour
     public void StopMovingCamera()
     {
         LevelEnded = true;
+        BirdController.EndLevelAction -= StopMovingCamera;
     }
 
     public void SetCameraFov(float porc)

@@ -30,6 +30,8 @@ public class BirdController : MonoBehaviour
     public float JumpEnergyLoss;
     public float EnergyLossCoefficient;
     public PlayerControls PlayerInput;
+    public delegate void OnGameOver(bool won);
+    public static OnGameOver GameOverAction;
     public delegate void OnEndLevel();
     public static OnEndLevel EndLevelAction;
     public delegate void OnPlayerMoving(float speedPorc);
@@ -68,6 +70,7 @@ public class BirdController : MonoBehaviour
     float AltitudePorc;
     float LevelDistance;
     float LevelDistancePorc;
+    bool IsAlive = true;
     #endregion
 
     void Start()
@@ -244,10 +247,13 @@ public class BirdController : MonoBehaviour
 
     void FixedUpdate()
     {
-        Rigi.velocity = transform.forward * Speed * SpeedMultiplier;
-        Rigi.velocity += new Vector3(0f, Gravity, 0f);
-        Rigi.velocity += Vector3.right * -Rotation.z * HorizontalSpeed * Time.fixedDeltaTime;
-        Rigi.MoveRotation(DestRotation);
+        if (IsAlive)
+        {
+            Rigi.velocity = transform.forward * Speed * SpeedMultiplier;
+            Rigi.velocity += new Vector3(0f, Gravity, 0f);
+            Rigi.velocity += Vector3.right * -Rotation.z * HorizontalSpeed * Time.fixedDeltaTime;
+            Rigi.MoveRotation(DestRotation);
+        }
     }
 
     void UpdateBlobShadowPosition()
@@ -266,12 +272,15 @@ public class BirdController : MonoBehaviour
     {
         if (collision.gameObject.tag == "Wall" || collision.gameObject.tag == "Obstacle" || collision.gameObject.tag == "Floor")
         {
-            if (collision.gameObject.tag != "Floor")
+            if (IsAlive)
             {
-                Instantiate(DeathParticlePrefab, transform.position, Quaternion.identity);
-                AkSoundEngine.PostEvent("Colision_Madera", gameObject);
+                if (collision.gameObject.tag != "Floor")
+                {
+                    Instantiate(DeathParticlePrefab, transform.position, Quaternion.identity);
+                    AkSoundEngine.PostEvent("Colision_Madera", gameObject);
+                }
+                StartCoroutine(Die(TimeToGameOverScreen));
             }
-            Die(TimeToGameOverScreen);
         }
     }
 
@@ -305,7 +314,7 @@ public class BirdController : MonoBehaviour
         }
     }
 
-    void Die(float t)
+    IEnumerator Die(float t)
     {
         AkSoundEngine.PostEvent("Perder", gameObject);
         AnimationController.SetTrigger("Death");
@@ -316,8 +325,14 @@ public class BirdController : MonoBehaviour
         Rigi.useGravity = true;
         Rigi.mass = 100;
         Rigi.freezeRotation = true;
-        SceneManagement.LoadGOScene(t);
-        Destroy(this);
+        IsAlive = false;
+
+        yield return new WaitForSeconds(t);
+
+        if (GameOverAction != null)
+            GameOverAction(false);
+        //Destroy(this);
+        //SceneManagement.LoadGOScene(t);
     }
 
     IEnumerator EndLevel(float t)
@@ -325,12 +340,14 @@ public class BirdController : MonoBehaviour
         PlayerInput.Gameplay.Disable();
         EndedLevel = true;
         BaseGravity = 0;
-        if(EndLevelAction!=null)
+        if (EndLevelAction != null)
             EndLevelAction();
 
         yield return new WaitForSeconds(t);
 
-        SceneManagement.LoadNextScene(true);
+        if(GameOverAction!=null)
+            GameOverAction(true);
+        //SceneManagement.LoadNextScene(true);
         Destroy(this);
     }
 }
