@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviourSingleton<GameManager>
 
     private void Update()
     {
-        //Cursor.visible = false;
+        Cursor.visible = false;
         //Cursor.lockState = CursorLockMode.Locked;
     }
 
@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviourSingleton<GameManager>
             if (SceneData.LastLevel)
             {
                 HasWon = won;
-                GameManager.Instance.GameOverCanvas.SetActive(true);
+                GameOverCanvas.SetActive(true);
             }
             else
             {
@@ -43,7 +43,7 @@ public class GameManager : MonoBehaviourSingleton<GameManager>
         else
         {
             HasWon = false;
-            GameManager.Instance.GameOverCanvas.SetActive(true);
+            GameOverCanvas.SetActive(true);
         }
     }
 

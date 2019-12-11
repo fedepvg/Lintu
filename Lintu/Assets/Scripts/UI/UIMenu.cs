@@ -106,4 +106,15 @@ public class UIMenu : MonoBehaviour
             SelectionVertex[i].SetActive(false);
         }
     }
+
+    private void OnEnable()
+    {
+        if(SelectionVertex!=null)
+            ActivateCornerImages();
+    }
+
+    private void OnDisable()
+    {
+        DeactivateCornerImages();
+    }
 }

@@ -40,12 +40,9 @@ public class UIPause : MonoBehaviour
 
     public void ResetPanels()
     {
-        if (CurrentPanel != PauseOptionsPanel)
-        {
-            SetCurrentPanel(PauseOptionsPanel, SettingsPanel);
-            EventSystem.current.firstSelectedGameObject = PauseOptionsFirstButtton;
-            EventSystem.current.SetSelectedGameObject(PauseOptionsFirstButtton);
-        }
+        SetCurrentPanel(PauseOptionsPanel, SettingsPanel);
+        EventSystem.current.firstSelectedGameObject = PauseOptionsFirstButtton;
+        EventSystem.current.SetSelectedGameObject(PauseOptionsFirstButtton);
     }
 
     void SetCurrentPanel(GameObject toActivate, GameObject toDeactivate)
