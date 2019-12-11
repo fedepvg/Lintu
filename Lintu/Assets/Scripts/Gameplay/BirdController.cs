@@ -40,6 +40,7 @@ public class BirdController : MonoBehaviour
     public float TimeToGameOverScreen;
     public float OffLimitsRotationMultiplier;
     public GameObject DeathParticlePrefab;
+    public GameObject WaterDeathParticlePrefab;
     public AK.Wwise.RTPC EnergyRTPCParameter;
     public AK.Wwise.RTPC SpeedRTPCParameter;
     public AK.Wwise.RTPC DistanceRTPCParameter;
@@ -278,6 +279,11 @@ public class BirdController : MonoBehaviour
                 {
                     Instantiate(DeathParticlePrefab, transform.position, Quaternion.identity);
                     AkSoundEngine.PostEvent("Colision_Madera", gameObject);
+                }
+                else
+                {
+                    Instantiate(WaterDeathParticlePrefab, collision.contacts[0].point, Quaternion.identity);
+                    AkSoundEngine.PostEvent("Colision_Agua", gameObject);
                 }
                 StartCoroutine(Die(TimeToGameOverScreen));
             }

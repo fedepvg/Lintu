@@ -110,6 +110,8 @@ MonoBehaviour:
   OffLimitsRotationMultiplier: 6
   DeathParticlePrefab: {fileID: 1025285306637258, guid: d8f0099df63275647a8bcf646df1ca00,
     type: 3}
+  WaterDeathParticlePrefab: {fileID: 1722726733478836, guid: c1c88308ebb5d2541a282905b854ee4c,
+    type: 3}
   EnergyRTPCParameter:
     idInternal: 0
     valueGuidInternal: 

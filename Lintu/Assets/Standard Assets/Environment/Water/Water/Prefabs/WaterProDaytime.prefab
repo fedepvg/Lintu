@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 11400000}
   - component: {fileID: 2036384175810061098}
   - component: {fileID: 5429629759062959015}
-  - component: {fileID: 3984801706709987291}
   m_Layer: 4
   m_Name: WaterProDaytime
   m_TagString: Untagged
@@ -140,17 +139,3 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300006, guid: ba6a41dc489914734857bb5924eb70ad, type: 3}
---- !u!114 &3984801706709987291
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 660cf76ff2d733c49b3ca1d27213f165, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionParticlesPrefab: {fileID: 1722726733478836, guid: c1c88308ebb5d2541a282905b854ee4c,
-    type: 3}
