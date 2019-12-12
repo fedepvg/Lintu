@@ -65,6 +65,29 @@ public class ObjectPooler : MonoBehaviour
         }
         return null;
     }
+    
+    public GameObject GetRandomPooledObject(string tag)
+    {
+        List<GameObject> goList = new List<GameObject>();
+        for (int i = 0; i < PooledObjects.Count; i++)
+        {
+            if (!PooledObjects[i].activeInHierarchy && PooledObjects[i].tag == tag)
+            {
+                //PooledObjects[i].SetActive(true);
+                //return PooledObjects[i];
+                goList.Add(PooledObjects[i]);
+            }
+        }
+
+        if (goList != null)
+        {
+            int randomObject = Random.Range(0, goList.Count);
+            goList[randomObject].SetActive(true);
+            return goList[randomObject];
+        }
+
+        return null;
+    }
 
     public void DeactivateObject(GameObject obj)
     {

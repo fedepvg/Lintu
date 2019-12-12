@@ -37,12 +37,10 @@ public class LevelChunkGenerator : MonoBehaviour
         while (generating)
         {
             int rand = Random.Range(0, ObstaclesPrefabs.Count);
-            //GameObject go = Instantiate(ObstaclesPrefabs[rand], NextObstaclePosition, Quaternion.identity);
-            GameObject go = ObjectPooler.Instance.GetPooledObject("Obstacle");
+            GameObject go = ObjectPooler.Instance.GetRandomPooledObject("Obstacle");
             go.transform.position = NextObstaclePosition;
             go.transform.rotation = Quaternion.identity;
             ObstaclesList.Add(go);
-            
             PrevObstaclePosition = NextObstaclePosition;
             NextObstaclePosition += Vector3.forward * 200;
             if (NextObstaclePosition.z > ChunkFinishPosition.transform.position.z)
@@ -67,7 +65,6 @@ public class LevelChunkGenerator : MonoBehaviour
         GameObject go = ObjectPooler.Instance.GetPooledObject("Environment");
         go.transform.position = ChunkFinishPosition.transform.position;
         go.transform.rotation = LevelChunkPrefab.transform.rotation;
-        //GameObject go = Instantiate(LevelChunkPrefab, ChunkFinishPosition.transform.position, LevelChunkPrefab.transform.rotation);
         NextChunk = go;
     }
 
@@ -79,7 +76,6 @@ public class LevelChunkGenerator : MonoBehaviour
                 Destroy(gameObject, 1f);
             else
                 StartCoroutine(DeactivateChunk(1f));
-            //Destroy(gameObject, 1f);
             NextChunk.GetComponent<LevelChunkGenerator>().GenerateNextChunk();
         }
     }
