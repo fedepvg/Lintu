@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5973182495254135211}
   m_Layer: 0
   m_Name: MolinoAzulEndless
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1674,6 +1674,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Obstacle
       objectReference: {fileID: 0}
+    - target: {fileID: 4880212654362576234, guid: fe69f108889997f4b94eff948146cfcb,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4280050106193878751, guid: fe69f108889997f4b94eff948146cfcb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1745,11 +1750,6 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6287609504191467896, guid: fe69f108889997f4b94eff948146cfcb,
-        type: 3}
-      propertyPath: m_TagString
-      value: Obstacle
-      objectReference: {fileID: 0}
-    - target: {fileID: 4880212654362576234, guid: fe69f108889997f4b94eff948146cfcb,
         type: 3}
       propertyPath: m_TagString
       value: Obstacle

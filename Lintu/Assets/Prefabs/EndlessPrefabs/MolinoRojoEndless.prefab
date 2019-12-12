@@ -1606,7 +1606,7 @@ GameObject:
   - component: {fileID: 7980778087410843749}
   m_Layer: 0
   m_Name: MolinoRojoEndless
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1670,16 +1670,6 @@ PrefabInstance:
       value: Molino_BasePunta_IK (1)
       objectReference: {fileID: 0}
     - target: {fileID: 4245451378783425569, guid: 66960c99d46f34a409e1953e6c9a42a7,
-        type: 3}
-      propertyPath: m_TagString
-      value: Obstacle
-      objectReference: {fileID: 0}
-    - target: {fileID: 8389558740724497799, guid: 66960c99d46f34a409e1953e6c9a42a7,
-        type: 3}
-      propertyPath: m_TagString
-      value: Obstacle
-      objectReference: {fileID: 0}
-    - target: {fileID: 1907897555168820817, guid: 66960c99d46f34a409e1953e6c9a42a7,
         type: 3}
       propertyPath: m_TagString
       value: Obstacle
@@ -1753,6 +1743,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1907897555168820817, guid: 66960c99d46f34a409e1953e6c9a42a7,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8389558740724497799, guid: 66960c99d46f34a409e1953e6c9a42a7,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66960c99d46f34a409e1953e6c9a42a7, type: 3}

@@ -8,7 +8,7 @@ public class LevelChunkGenerator : MonoBehaviour
     public GameObject LevelChunkPrefab;
     public GameObject FirstObstaclePosition;
     public GameObject ChunkFinishPosition;
-    public static bool FirstChunk = true;
+    public bool FirstChunk;
     public Transform ObstaclesParent;
 
     public List<GameObject> ObstaclesList;
@@ -22,7 +22,6 @@ public class LevelChunkGenerator : MonoBehaviour
         if (FirstChunk)
         {
             GenerateNextChunk();
-            FirstChunk = false;
         }
         else
         {
@@ -38,14 +37,16 @@ public class LevelChunkGenerator : MonoBehaviour
         while (generating)
         {
             int rand = Random.Range(0, ObstaclesPrefabs.Count);
-            GameObject go = Instantiate(ObstaclesPrefabs[rand], NextObstaclePosition, Quaternion.identity);
+            //GameObject go = Instantiate(ObstaclesPrefabs[rand], NextObstaclePosition, Quaternion.identity);
+            GameObject go = ObjectPooler.Instance.GetPooledObject("Obstacle");
+            go.transform.position = NextObstaclePosition;
+            go.transform.rotation = Quaternion.identity;
             ObstaclesList.Add(go);
             
             PrevObstaclePosition = NextObstaclePosition;
             NextObstaclePosition += Vector3.forward * 200;
             if (NextObstaclePosition.z > ChunkFinishPosition.transform.position.z)
                 generating = false;
-            Debug.Log("zarlanga");
         }
 
          ReScaleObstacles();
@@ -63,16 +64,39 @@ public class LevelChunkGenerator : MonoBehaviour
 
     public void GenerateNextChunk()
     {
-        GameObject go = Instantiate(LevelChunkPrefab, ChunkFinishPosition.transform.position, LevelChunkPrefab.transform.rotation);
+        GameObject go = ObjectPooler.Instance.GetPooledObject("Environment");
+        go.transform.position = ChunkFinishPosition.transform.position;
+        go.transform.rotation = LevelChunkPrefab.transform.rotation;
+        //GameObject go = Instantiate(LevelChunkPrefab, ChunkFinishPosition.transform.position, LevelChunkPrefab.transform.rotation);
         NextChunk = go;
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag=="Player")
+        if(other.tag == "Player")
         {
+            if (FirstChunk)
+                Destroy(gameObject, 1f);
+            else
+                StartCoroutine(DeactivateChunk(1f));
+            //Destroy(gameObject, 1f);
             NextChunk.GetComponent<LevelChunkGenerator>().GenerateNextChunk();
-            Destroy(gameObject, 1f);
         }
+    }
+
+    private void OnDisable()
+    {
+        foreach (GameObject go in ObstaclesList)
+        {
+            go.transform.SetParent(null);
+            go.SetActive(false);
+        }
+    }
+
+    IEnumerator DeactivateChunk(float t)
+    {
+        yield return new WaitForSeconds(t);
+
+        gameObject.SetActive(false);
     }
 }
