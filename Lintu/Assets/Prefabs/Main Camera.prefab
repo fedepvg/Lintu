@@ -100,6 +100,8 @@ MonoBehaviour:
   Distance: {x: 0, y: 0, z: -1.5}
   MaxFov: 75
   MinFov: 60
+  FarPlaneFog: {fileID: 3472116733748385469, guid: d2cbabe062806fc48a4b21d87e5b46e4,
+    type: 3}
 --- !u!114 &2986434616411809522
 MonoBehaviour:
   m_ObjectHideFlags: 0
