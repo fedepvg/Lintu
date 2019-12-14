@@ -631,7 +631,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 72bec6bac74273148b2d99121de30b64, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e7451de8cdaa6a043b07997233c96f93, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1141,6 +1141,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 500c1598d8678374c95d0ecf79df01be, type: 3}
   - {fileID: 21300000, guid: c632ad0a4a2b99f4fa1c56342c1b6236, type: 3}
   - {fileID: 21300000, guid: ef93315ef38100a49a52aed3f3a9199d, type: 3}
+  PreviousButtonSelected: {fileID: 0}
 --- !u!1 &850210998
 GameObject:
   m_ObjectHideFlags: 0
@@ -1170,6 +1171,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7255f360f591bd04091194a49e9b1033, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SceneData: {fileID: 0}
+  GameOverCanvas: {fileID: 0}
 --- !u!4 &850211000
 Transform:
   m_ObjectHideFlags: 0
@@ -1218,6 +1221,7 @@ MonoBehaviour:
   GameOverScene: EndGameScene
   MenuScene: MenuScene
   PreviousScene: 
+  LastLevel: 0
 --- !u!4 &1410484773
 Transform:
   m_ObjectHideFlags: 0
@@ -1268,8 +1272,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 79.7}
-  m_SizeDelta: {x: 147.4, y: 95.1}
+  m_AnchoredPosition: {x: 0, y: 140}
+  m_SizeDelta: {x: 193.1, y: 108.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1537696829
 MonoBehaviour:
@@ -1399,8 +1403,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 148, y: 54}
+  m_AnchoredPosition: {x: 0, y: -0.0000066757}
+  m_SizeDelta: {x: 193.1, y: 108.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1602269842
 MonoBehaviour:
@@ -1451,7 +1455,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 45.7
+  m_fontSize: 59.65
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1557,8 +1561,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -118}
-  m_SizeDelta: {x: 500, y: 150}
+  m_AnchoredPosition: {x: 0, y: -157}
+  m_SizeDelta: {x: 716.2, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1676059079
 MonoBehaviour:
@@ -1582,16 +1586,16 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Select Level
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 1832b937c64c3b444b2d9138068f7ec2, type: 2}
-  m_sharedMaterial: {fileID: 1826711859881271442, guid: 1832b937c64c3b444b2d9138068f7ec2,
+  m_fontAsset: {fileID: 11400000, guid: 0a7a9bcc2be7def47888aeaa939a862b, type: 2}
+  m_sharedMaterial: {fileID: -7679307898233133815, guid: 0a7a9bcc2be7def47888aeaa939a862b,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4280918015
+  m_fontColor: {r: 1, g: 0.62352943, b: 0.16078432, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1609,13 +1613,13 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 82.65
+  m_fontSize: 107.05
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 300
-  m_fontStyle: 0
+  m_fontStyle: 16
   m_textAlignment: 514
   m_characterSpacing: 0
   m_wordSpacing: 0

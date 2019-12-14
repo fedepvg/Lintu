@@ -1939,6 +1939,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7255f360f591bd04091194a49e9b1033, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SceneData: {fileID: 0}
+  GameOverCanvas: {fileID: 0}
 --- !u!4 &1668619389
 Transform:
   m_ObjectHideFlags: 0
@@ -2145,6 +2147,7 @@ MonoBehaviour:
   GameOverScene: EndGameScene
   MenuScene: MenuScene
   PreviousScene: 
+  LastLevel: 0
 --- !u!4 &1703560102
 Transform:
   m_ObjectHideFlags: 0
