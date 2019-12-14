@@ -486,39 +486,39 @@ MonoBehaviour:
     Parent: {fileID: 0}
   - ObjectToPool: {fileID: 2637566411089656658, guid: 7e5ae87a9134aa749813ba4cd00e27f0,
       type: 3}
-    AmountToPool: 10
+    AmountToPool: 5
     Parent: {fileID: 0}
   - ObjectToPool: {fileID: 6805953992555021642, guid: 7c27c618d0617754f8966d99fefaf5e4,
       type: 3}
-    AmountToPool: 10
+    AmountToPool: 5
     Parent: {fileID: 0}
   - ObjectToPool: {fileID: 1891951354314159008, guid: d0cbb419c7719904d93b6f82f418acd7,
       type: 3}
-    AmountToPool: 2
+    AmountToPool: 5
     Parent: {fileID: 0}
   - ObjectToPool: {fileID: 7859943214391638681, guid: 5f4b3bdffa2a3e8458d48b7f25877aa6,
       type: 3}
-    AmountToPool: 10
+    AmountToPool: 5
     Parent: {fileID: 0}
   - ObjectToPool: {fileID: 5476884471095567210, guid: 51586fc398cd87441a7e180e98ed4f13,
       type: 3}
-    AmountToPool: 10
+    AmountToPool: 5
     Parent: {fileID: 0}
   - ObjectToPool: {fileID: 8604505313017312029, guid: 46991cdc0a697a742bd4a9c9e09b7655,
       type: 3}
-    AmountToPool: 10
+    AmountToPool: 5
     Parent: {fileID: 0}
   - ObjectToPool: {fileID: 7314351948400585870, guid: 73767e88ccc0179468c5c5f787e1a54d,
       type: 3}
-    AmountToPool: 10
+    AmountToPool: 5
     Parent: {fileID: 0}
   - ObjectToPool: {fileID: 6674512983968699866, guid: 7516a4fbdec7c524d86b121b134d5017,
       type: 3}
-    AmountToPool: 10
+    AmountToPool: 5
     Parent: {fileID: 0}
   - ObjectToPool: {fileID: 5020920552587521896, guid: d6b7839601bc67a41b29f40cced3dda9,
       type: 3}
-    AmountToPool: 10
+    AmountToPool: 5
     Parent: {fileID: 0}
   PooledObjects: []
 --- !u!4 &730033226
