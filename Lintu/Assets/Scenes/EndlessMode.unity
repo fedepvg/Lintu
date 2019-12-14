@@ -504,6 +504,22 @@ MonoBehaviour:
       type: 3}
     AmountToPool: 10
     Parent: {fileID: 0}
+  - ObjectToPool: {fileID: 8604505313017312029, guid: 46991cdc0a697a742bd4a9c9e09b7655,
+      type: 3}
+    AmountToPool: 10
+    Parent: {fileID: 0}
+  - ObjectToPool: {fileID: 7314351948400585870, guid: 73767e88ccc0179468c5c5f787e1a54d,
+      type: 3}
+    AmountToPool: 10
+    Parent: {fileID: 0}
+  - ObjectToPool: {fileID: 6674512983968699866, guid: 7516a4fbdec7c524d86b121b134d5017,
+      type: 3}
+    AmountToPool: 10
+    Parent: {fileID: 0}
+  - ObjectToPool: {fileID: 5020920552587521896, guid: d6b7839601bc67a41b29f40cced3dda9,
+      type: 3}
+    AmountToPool: 10
+    Parent: {fileID: 0}
   PooledObjects: []
 --- !u!4 &730033226
 Transform:
