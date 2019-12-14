@@ -30,9 +30,12 @@ public class UIInGame : MonoBehaviour
     private void Start()
     {
         GameManager.Instance.GameInput.Gameplay.Pause.performed += ctx => SetPauseState();
-        LevelDistance = FinishTransform.position.z - StartTransform.position.z;
-        SpriteChangeTimer = 0;
-        CurrentDistanceHandleSprite = LintuUI1;
+        if (FinishTransform != null && StartTransform != null)
+        {
+            LevelDistance = FinishTransform.position.z - StartTransform.position.z;
+            SpriteChangeTimer = 0;
+            CurrentDistanceHandleSprite = LintuUI1;
+        }
         PausePanel.SetActive(false);
         PauseScript = PausePanel.GetComponent<UIPause>();
         HUDActive = GameManager.Instance.HUD;
@@ -46,22 +49,28 @@ public class UIInGame : MonoBehaviour
 
     void Update()
     {
-        EnergyBar.value = Player.Energy;
-        if (Player.Energy < 20)
-            EnergyBarFill.color = Color.red;
-        else
-            EnergyBarFill.color = Color.white;
-
-        DistanceBar.value = Player.LevelDistanceLeft * 100 / LevelDistance;
-        SpriteChangeTimer += Time.deltaTime;
-        if(SpriteChangeTimer>=DistanceHandleAnimationTime)
+        if (EnergyBar != null)
         {
-            SpriteChangeTimer = 0f;
-            if (CurrentDistanceHandleSprite == LintuUI1)
-                CurrentDistanceHandleSprite = LintuUI2;
+            EnergyBar.value = Player.Energy;
+            if (Player.Energy < 20)
+                EnergyBarFill.color = Color.red;
             else
-                CurrentDistanceHandleSprite = LintuUI1;
-            DistanceBarHandle.sprite = CurrentDistanceHandleSprite;
+                EnergyBarFill.color = Color.white;
+        }
+
+        if (DistanceBar != null)
+        {
+            DistanceBar.value = Player.LevelDistanceLeft * 100 / LevelDistance;
+            SpriteChangeTimer += Time.deltaTime;
+            if (SpriteChangeTimer >= DistanceHandleAnimationTime)
+            {
+                SpriteChangeTimer = 0f;
+                if (CurrentDistanceHandleSprite == LintuUI1)
+                    CurrentDistanceHandleSprite = LintuUI2;
+                else
+                    CurrentDistanceHandleSprite = LintuUI1;
+                DistanceBarHandle.sprite = CurrentDistanceHandleSprite;
+            }
         }
 
         if (HUDActive != GameManager.Instance.HUD)
@@ -107,20 +116,26 @@ public class UIInGame : MonoBehaviour
 
     public void ChangeHUDState()
     {
-        EnergyBar.gameObject.SetActive(!EnergyBar.gameObject.activeSelf);
-        DistanceBar.gameObject.SetActive(!DistanceBar.gameObject.activeSelf);
+        if(EnergyBar != null)
+            EnergyBar.gameObject.SetActive(!EnergyBar.gameObject.activeSelf);
+        if (DistanceBar != null)
+            DistanceBar.gameObject.SetActive(!DistanceBar.gameObject.activeSelf);
     }
 
     public void DeactivateHUD()
     {
-        EnergyBar.gameObject.SetActive(false);
-        DistanceBar.gameObject.SetActive(false);
+        if (EnergyBar != null)
+            EnergyBar.gameObject.SetActive(false);
+        if (DistanceBar != null)
+            DistanceBar.gameObject.SetActive(false);
     }
     
     public void ActivateHUD()
     {
-        EnergyBar.gameObject.SetActive(true);
-        DistanceBar.gameObject.SetActive(true);
+        if (EnergyBar != null)
+            EnergyBar.gameObject.SetActive(true);
+        if (DistanceBar != null)
+            DistanceBar.gameObject.SetActive(true);
     }
 
     void DestroyHUD()
