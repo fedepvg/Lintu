@@ -19,14 +19,14 @@ public class CameraController : MonoBehaviour
     float FovDifference;
     bool LevelEnded = false;
     GameObject FarPlaneParticleInstance;
+    float FogDistancePorc = 0.75f;
 
     private void Start()
     {
         BirdController.EndLevelAction += StopMovingCamera;
         BirdController.OnPlayerMovingAction = SetCameraFov;
         FovDifference = MaxFov - MinFov;
-        FarPlaneParticleInstance = Instantiate(FarPlaneFog, new Vector3(0f, 0f, transform.position.z + GetComponent<Camera>().farClipPlane), FarPlaneFog.transform.rotation);
-
+        FarPlaneParticleInstance = Instantiate(FarPlaneFog, new Vector3(0f, 0f, transform.position.z + GetComponent<Camera>().farClipPlane * FogDistancePorc), FarPlaneFog.transform.rotation);
     }
 
     void Update()
@@ -38,7 +38,7 @@ public class CameraController : MonoBehaviour
         }
 
         transform.LookAt(PlayerTransform.position, Vector3.up);
-        FarPlaneParticleInstance.transform.position = Vector3.forward * (transform.position.z + GetComponent<Camera>().farClipPlane);
+        FarPlaneParticleInstance.transform.position = Vector3.forward * (transform.position.z + GetComponent<Camera>().farClipPlane * FogDistancePorc);
     }
 
     private void FixedUpdate()
