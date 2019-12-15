@@ -4,22 +4,77 @@
 		<WorkUnit Name="Default Work Unit" ID="{23627151-D2E9-4F2A-903A-43CE359F8123}" PersistMode="Standalone">
 			<ChildrenList>
 				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<PropertyList>
+						<Property Name="BusVolume" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{2F2E2976-973D-4BA8-877C-5E712AC8C886}" ShortID="744146539">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Game_volume" ID="{AC94E7B9-BB03-4C00-B9C1-70CAAB4E272F}" WorkUnitID="{D721DC1E-91EB-49A8-A512-EE400C2FBDDB}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{376BDB7F-A980-415E-B3FC-BA9902BA5361}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-200</YPos>
+												<Flags>5</Flags>
+												<SegmentShape>Log2</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>0</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+						<Property Name="Highpass" Type="int16">
+							<ValueList>
+								<Value>14</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>12</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="AudioDevice">
 							<ObjectRef Name="System" ID="{A7A0F2B3-5BCA-45BC-B60C-19571494A3A4}" WorkUnitID="{A6D85772-3D53-43F4-86C4-BF0BA181ED08}"/>
 						</Reference>
 						<Reference Name="Effect0">
 							<Custom>
-								<Effect Name="Wwise_Compressor_(Custom)" ID="{B6FEAE45-6E90-4E1E-91C2-3E86AE509C98}" ShortID="417707368" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+								<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{074613E9-1857-442A-8346-9BE6092843B0}" ShortID="633815284" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
 									<PropertyList>
-										<Property Name="Ratio" Type="Real32" Value="2.3"/>
+										<Property Name="FilterTypeBand1" Type="int32" Value="6"/>
+										<Property Name="FrequencyBand1" Type="Real32" Value="390"/>
+										<Property Name="FrequencyBand2" Type="Real32" Value="2507"/>
+										<Property Name="FrequencyBand3" Type="Real32" Value="5522"/>
+										<Property Name="GainBand1" Type="Real32" Value="-1.5"/>
+										<Property Name="GainBand2" Type="Real32" Value="2"/>
+										<Property Name="GainBand3" Type="Real32" Value="1.5"/>
+										<Property Name="QFactorBand1" Type="Real32" Value="34"/>
+										<Property Name="QFactorBand2" Type="Real32" Value="58.6"/>
 									</PropertyList>
 								</Effect>
 							</Custom>
 						</Reference>
-						<Reference Name="Effect1">
-							<Custom>
-								<Effect Name="Wwise_Compressor_(Custom)" ID="{1E30D931-3A1E-4B0F-A7CF-EA8C3F88DC3B}" ShortID="447261355" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3"/>
+						<Reference Name="Effect3">
+							<Custom CreatedFrom="{2144284E-7ADD-4341-86A4-4E468BEC9A2D}">
+								<Effect Name="Brick_Wall_Minus_1dB_Peak_Fast_Release_(Custom)" ID="{EEF400FD-A71C-470B-AB3A-C73D24B290CA}" ShortID="139041486" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+									<PropertyList>
+										<Property Name="Ratio" Type="Real32" Value="50"/>
+										<Property Name="ReleaseTime" Type="Real32" Value="0.02"/>
+										<Property Name="Threshold" Type="Real32" Value="-1"/>
+									</PropertyList>
+								</Effect>
 							</Custom>
 						</Reference>
 					</ReferenceList>
@@ -64,10 +119,48 @@
 								</Reference>
 							</ReferenceList>
 						</AuxBus>
-						<Bus Name="Corazon" ID="{E18FEE5B-C221-4C38-AAFB-59F37CC977F8}"/>
+						<Bus Name="Corazon" ID="{E18FEE5B-C221-4C38-AAFB-59F37CC977F8}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+						</Bus>
 						<Bus Name="SUB-Master" ID="{18CF1CCB-014D-4646-B158-F5A8CB996155}">
 							<ChildrenList>
 								<Bus Name="Ambiente" ID="{457C550D-1E51-4CE4-805E-BA56EAB8C536}">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{901007AE-A6AF-47DC-9C3C-A0F599A627C9}" ShortID="790375119">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Energia_Pajaro" ID="{1BBB7369-4CCF-4E2E-8052-52C5FDD6BE07}" WorkUnitID="{D721DC1E-91EB-49A8-A512-EE400C2FBDDB}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{05CDE45D-1C36-492D-8A15-9089FB8DC03C}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
 									<StateInfo>
 										<StateGroupList>
 											<StateGroupInfo>
@@ -91,6 +184,41 @@
 									</StateInfo>
 								</Bus>
 								<Bus Name="FX" ID="{7FDB1AE7-CC10-4096-BBB1-577F61FD3C45}">
+									<PropertyList>
+										<Property Name="BusVolume" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{33BEE0DC-AA32-4E88-B663-D5C8C7689198}" ShortID="771486467">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Energia_Pajaro" ID="{1BBB7369-4CCF-4E2E-8052-52C5FDD6BE07}" WorkUnitID="{D721DC1E-91EB-49A8-A512-EE400C2FBDDB}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{9FFCBD2A-F7BB-4AB4-A51F-2711ACB8070E}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
 									<StateInfo>
 										<StateGroupList>
 											<StateGroupInfo>
@@ -113,7 +241,85 @@
 										</CustomStateList>
 									</StateInfo>
 								</Bus>
-								<Bus Name="Musica" ID="{B2DEF229-B9A1-4170-87B5-2D53E3995EBA}"/>
+								<Bus Name="Musica" ID="{B2DEF229-B9A1-4170-87B5-2D53E3995EBA}">
+									<PropertyList>
+										<Property Name="BusVolume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Lowpass" Type="int16">
+											<RTPCList>
+												<RTPC Name="" ID="{1CA7C05D-6DC7-4AB3-90FF-4788E7C46011}" ShortID="164856024">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Energia_Pajaro" ID="{1BBB7369-4CCF-4E2E-8052-52C5FDD6BE07}" WorkUnitID="{D721DC1E-91EB-49A8-A512-EE400C2FBDDB}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{596B8032-878E-458F-A4AA-1D81CF32AFBB}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>63</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>SCurve</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>0.5007</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+																<SegmentShape>Exp3</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{02128B4F-DA35-45C4-AF7C-4F5A7F04DCF7}" ShortID="141277760">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Energia_Pajaro" ID="{1BBB7369-4CCF-4E2E-8052-52C5FDD6BE07}" WorkUnitID="{D721DC1E-91EB-49A8-A512-EE400C2FBDDB}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{3C17F5BA-6F58-4A61-806D-383A274F15CF}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-12.0967</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Log3</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>0.49925</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList/>
+								</Bus>
 							</ChildrenList>
 						</Bus>
 					</ChildrenList>

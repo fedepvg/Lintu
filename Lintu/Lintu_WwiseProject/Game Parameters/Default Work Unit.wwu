@@ -27,6 +27,7 @@
 						<Property Name="Max" Type="Real64" Value="1"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="Game_volume" ID="{AC94E7B9-BB03-4C00-B9C1-70CAAB4E272F}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

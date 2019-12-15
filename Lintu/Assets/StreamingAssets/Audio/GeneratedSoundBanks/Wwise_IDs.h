@@ -35,17 +35,6 @@ namespace AK
 
     namespace STATES
     {
-        namespace GAMEPLAY
-        {
-            static const AkUniqueID GROUP = 89505537U;
-
-            namespace STATE
-            {
-                static const AkUniqueID AMBIENTE_OFF = 271396146U;
-                static const AkUniqueID AMBIENTE_ON = 3465855444U;
-            } // namespace STATE
-        } // namespace GAMEPLAY
-
         namespace MUSICA
         {
             static const AkUniqueID GROUP = 1730564739U;
@@ -86,6 +75,7 @@ namespace AK
     {
         static const AkUniqueID ALTURA_PAJARO = 1768459312U;
         static const AkUniqueID ENERGIA_PAJARO = 201235242U;
+        static const AkUniqueID GAME_VOLUME = 51322976U;
         static const AkUniqueID LARGO_MAPA = 2301316308U;
         static const AkUniqueID VELOCIDAD_PAJARO = 2822622896U;
     } // namespace GAME_PARAMETERS

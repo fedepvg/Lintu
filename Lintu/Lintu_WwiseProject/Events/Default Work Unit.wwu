@@ -51,13 +51,6 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{AA4EBBF9-6A63-4B88-B3D7-9B5238ECB540}" ShortID="1045221623">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="AMBIENTE" ID="{D67774C7-A766-4CB5-887C-0FB5E29C728C}" WorkUnitID="{A3351E74-BF66-41D5-A996-3E379C13D1FC}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
 						<Action Name="" ID="{67C7818A-7460-4E3E-9CF5-590755F5CB8A}" ShortID="1023376082">
 							<ReferenceList>
 								<Reference Name="Target">
@@ -65,27 +58,24 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{B31822E6-B658-4D2C-8FBA-A04FE10BED53}" ShortID="439012931">
+						<Action Name="" ID="{A8CCB2E3-C8F0-45DE-8811-3960B4ECE275}" ShortID="651242753">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="QP02 0261 Wind desert strong blustery with lull" ID="{AA332133-133B-4151-A4CC-8B73EA36FD73}" WorkUnitID="{13445996-52E9-4780-BD58-7D07B2986337}"/>
+									<ObjectRef Name="Viento_vuelo" ID="{6EE1AF29-7151-4E0C-BDBA-7C065B6D1709}" WorkUnitID="{13445996-52E9-4780-BD58-7D07B2986337}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{2E090D6F-1012-4D72-BFC3-9F6DD7E184B5}" ShortID="419611249">
+						<Action Name="" ID="{E6B7B0A7-B479-41EC-A6AF-72E87ACD1DAD}" ShortID="401416457">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="LintuVuelaRapido" ID="{34782D7F-46A4-4E49-80AE-1AE6EE51999F}" WorkUnitID="{A3351E74-BF66-41D5-A996-3E379C13D1FC}"/>
+									<ObjectRef Name="Viento_velocidad_constante" ID="{401B1D93-E217-435E-8F61-D01E7464154A}" WorkUnitID="{13445996-52E9-4780-BD58-7D07B2986337}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{24745338-BA7B-4801-A2DD-2617B55464F4}" ShortID="704253815">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="22"/>
-							</PropertyList>
+						<Action Name="" ID="{D6FFE84D-4752-4D59-8AAF-FD5FAD3A6BDD}" ShortID="656154551">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Off" ID="{11CE3462-4BB8-4BD0-8183-4AB4CB6740B0}" WorkUnitID="{4FC351E5-578C-494A-A909-551AAB9FE874}"/>
+									<ObjectRef Name="AMBIENTE" ID="{8E771905-1004-41CE-AF31-76BB3BC2DAA8}" WorkUnitID="{13445996-52E9-4780-BD58-7D07B2986337}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -93,40 +83,18 @@
 				</Event>
 				<Event Name="Ganar" ID="{3FB384EB-54CE-42B8-AC08-698DE349AFE9}">
 					<ChildrenList>
-						<Action Name="" ID="{CEBED5AD-9B45-4FF4-AA5E-8BEC5207B2BA}" ShortID="537069691">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="StingerGanar" ID="{3B14DDE3-1E0F-4649-87BB-57CA6BF1A7AA}" WorkUnitID="{A3351E74-BF66-41D5-A996-3E379C13D1FC}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{FE8767AD-C265-4EBB-BB97-CB9AC0793670}" ShortID="971299073">
+						<Action Name="" ID="{361C78E0-797B-4C73-9964-654C6FF12464}" ShortID="470018525">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="3"/>
-								<Property Name="FadeTime" Type="Real64" Value="5"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
 								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList/>
 						</Action>
-						<Action Name="" ID="{F2DDC1A5-7AA8-4D07-A3D8-144BF6C93FB9}" ShortID="743711977">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
-							</PropertyList>
+						<Action Name="" ID="{CEBED5AD-9B45-4FF4-AA5E-8BEC5207B2BA}" ShortID="537069691">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Viento_vuelo" ID="{5F526942-A478-4687-A545-6C4CB453A822}" WorkUnitID="{13445996-52E9-4780-BD58-7D07B2986337}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{C68B003F-0EA9-4E2C-846F-3796EB38758D}" ShortID="924929675">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-								<Property Name="FadeTime" Type="Real64" Value="1.5"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="AMBIENTE" ID="{8E771905-1004-41CE-AF31-76BB3BC2DAA8}" WorkUnitID="{13445996-52E9-4780-BD58-7D07B2986337}"/>
+									<ObjectRef Name="StingerGanar" ID="{3B14DDE3-1E0F-4649-87BB-57CA6BF1A7AA}" WorkUnitID="{A3351E74-BF66-41D5-A996-3E379C13D1FC}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -137,7 +105,7 @@
 						<Action Name="" ID="{F8755001-F5D6-466C-AFE8-A3B1108628BF}" ShortID="794283725">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="3"/>
-								<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
 								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList/>
@@ -152,33 +120,16 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{DEAA1AFE-71B9-4EF1-B875-C1913986EA48}" ShortID="331613317">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="22"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="On" ID="{10C3A728-C9D1-48AC-A212-16FA113E6326}" WorkUnitID="{4FC351E5-578C-494A-A909-551AAB9FE874}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{BCFF2B55-E49C-43C0-BC6F-4A5E9C3DBF4B}" ShortID="359758770">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="AMBIENTE" ID="{D67774C7-A766-4CB5-887C-0FB5E29C728C}" WorkUnitID="{A3351E74-BF66-41D5-A996-3E379C13D1FC}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Pausa_On" ID="{D47456CE-8028-4C01-BE85-A002214BA089}">
 					<ChildrenList>
-						<Action Name="" ID="{2E0E56CF-BE3E-4D1A-A418-0AE94B97A1A9}" ShortID="424646411">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Pausa" ID="{3E76190F-899E-4331-A057-885B60333ADF}" WorkUnitID="{6FF59BFE-21E3-484D-B73F-F7C53E23C38B}"/>
-								</Reference>
-							</ReferenceList>
+						<Action Name="" ID="{ADB97F45-EC0D-4D59-ACE6-12EB870BD410}" ShortID="725600971">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="8"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList/>
 						</Action>
 						<Action Name="" ID="{0D9526C0-8A1C-4B51-B78F-AAE826C58336}" ShortID="763653982">
 							<PropertyList>
@@ -188,6 +139,13 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="On" ID="{B50987D7-213D-4AF6-B3DD-D5A3B1C551AA}" WorkUnitID="{4FC351E5-578C-494A-A909-551AAB9FE874}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{2E0E56CF-BE3E-4D1A-A418-0AE94B97A1A9}" ShortID="424646411">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Pausa" ID="{3E76190F-899E-4331-A057-885B60333ADF}" WorkUnitID="{6FF59BFE-21E3-484D-B73F-F7C53E23C38B}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -294,7 +252,31 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Barcos_Idle" ID="{1859E51D-98FC-47A7-8AA9-CB3FF9FB4113}"/>
+				<Event Name="Barcos_Idle" ID="{1859E51D-98FC-47A7-8AA9-CB3FF9FB4113}">
+					<ChildrenList>
+						<Action Name="" ID="{3A42789B-3568-4B36-9275-830F8F6F3C00}" ShortID="76575230">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Madera" ID="{6C7F5B03-5344-4F1F-8F95-0706449AB3DF}" WorkUnitID="{13445996-52E9-4780-BD58-7D07B2986337}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{E592ABE7-D748-4F10-891C-C52AD9A3AC6D}" ShortID="631165536">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Campana" ID="{A4B6DC2E-DC14-41DE-8B39-84408D3052A1}" WorkUnitID="{13445996-52E9-4780-BD58-7D07B2986337}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{91EFB317-9141-4D0E-B50F-D7800BA230FC}" ShortID="190892117">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Velas" ID="{A2E3999C-EEF4-4841-8ACA-954C7778E697}" WorkUnitID="{13445996-52E9-4780-BD58-7D07B2986337}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 				<Event Name="Cursor" ID="{3D2AD34E-4229-427C-BBDE-0B0561111107}">
 					<ChildrenList>
 						<Action Name="" ID="{B53D6F13-6E5E-497F-89FF-35FC3320E591}" ShortID="297173169">
@@ -329,12 +311,12 @@
 				</Event>
 				<Event Name="Pausa_Off" ID="{877CA4D8-014F-4E57-8313-7E354CC4E1E9}">
 					<ChildrenList>
-						<Action Name="" ID="{6A36DB22-EEF1-4DCA-9750-050437A31617}" ShortID="455503036">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Pausa" ID="{3E76190F-899E-4331-A057-885B60333ADF}" WorkUnitID="{6FF59BFE-21E3-484D-B73F-F7C53E23C38B}"/>
-								</Reference>
-							</ReferenceList>
+						<Action Name="" ID="{887015BF-36D8-4A14-83E1-86D11E47C1F8}" ShortID="219206767">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="10"/>
+								<Property Name="Delay" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList/>
 						</Action>
 						<Action Name="" ID="{D9B2FFC4-ED84-4D79-B07D-2412DC3A4BB8}" ShortID="1049079180">
 							<PropertyList>
@@ -343,6 +325,13 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Off" ID="{11CE3462-4BB8-4BD0-8183-4AB4CB6740B0}" WorkUnitID="{4FC351E5-578C-494A-A909-551AAB9FE874}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{6A36DB22-EEF1-4DCA-9750-050437A31617}" ShortID="455503036">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Pausa" ID="{3E76190F-899E-4331-A057-885B60333ADF}" WorkUnitID="{6FF59BFE-21E3-484D-B73F-F7C53E23C38B}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 51716223e9d22a4f903a43ce359f8123
     GuidInternal: 
-    m_lastTime: -8586262143409139235
+    m_lastTime: -8586255826235279185
     List:
     - name: fx_espaciales
       guid: 05288ecb07763e498f12344ddc42ced6
@@ -58,7 +58,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: d5209640f8a20341a1f6811a6d049633
     GuidInternal: 
-    m_lastTime: -8586261758329547292
+    m_lastTime: -8586255722409358347
     List:
     - name: Barcos_Idle
       guid: 1de55918fc98a7478aa9cb3ff9fb4113
@@ -70,8 +70,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Barcos_Idle
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Colision_Agua
       guid: 16146eb05c6bd34583bd75fae2d4cd42
       id: 3661761514
@@ -106,8 +106,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Cursor
       maxAttenuation: 0
-      maxDuration: 472588
-      minDuration: 472588
+      maxDuration: 208096
+      minDuration: 208096
     - name: Cursor_Seleccion
       guid: d84d1e8879172a4d98145fc60debde36
       id: 257651473
@@ -250,8 +250,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Perder
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 2931035
+      minDuration: 2931035
     - name: Restart
       guid: dc5984c9e8712a4bb025377c5aa048ce
       id: 1203400786
@@ -281,7 +281,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 1edc21d7eb91a849a512ee400c2fbddb
     GuidInternal: 
-    m_lastTime: -8586261773027336932
+    m_lastTime: -8586257456004621935
     List:
     - name: Altura_Pajaro
       guid: 76c4e5c4b950f34cb572038b88ce0796
@@ -301,6 +301,15 @@ MonoBehaviour:
       - ElementName: Energia_Pajaro
         ObjectType: 13
       Path: Default Work Unit\Energia_Pajaro
+    - name: Game_volume
+      guid: b9e794ac03bb004cb9c170caab4e272f
+      id: 51322976
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Game_volume
+        ObjectType: 13
+      Path: Default Work Unit\Game_volume
     - name: Largo_Mapa
       guid: 60683e3cc0f2a74abe555663fa0c5161
       id: 2301316308
@@ -429,45 +438,14 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 7a9de839f913b246b000cf8100ce7978
     GuidInternal: 
-    m_lastTime: -8586263787894464436
-    List:
-    - name: Gameplay
-      guid: 0613d792ae7ac245896fac7852c90d90
-      id: 89505537
-      PathAndIcons:
-      - ElementName: New Work Unit_COLO
-        ObjectType: 12
-      - ElementName: Gameplay
-        ObjectType: 9
-      Path: New Work Unit_COLO\Gameplay
-      values:
-      - name: Ambiente_off
-        guid: ff833953f1c2284fa18f6f251dd3681b
-        id: 271396146
-        PathAndIcons:
-        - ElementName: Ambiente_off
-          ObjectType: 8
-      - name: Ambiente_on
-        guid: 34ad8e866711de438ec76c6602762386
-        id: 3465855444
-        PathAndIcons:
-        - ElementName: Ambiente_on
-          ObjectType: 8
-      - name: None
-        guid: 101e04093c06cd499901727a9a8f70bc
-        id: 748895195
-        PathAndIcons:
-        - ElementName: None
-          ObjectType: 8
-      ValueGuids: []
-      ValueIcons: []
-      valuesInternal: []
+    m_lastTime: -8586257918290170633
+    List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: d923c3652e58ca42b01c925600dcc99a
     GuidInternal: 
-    m_lastTime: -8586268357602345077
+    m_lastTime: -8586256611412993019
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu

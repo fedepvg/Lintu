@@ -14,7 +14,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-5</Value>
+										<Value>-3</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -23,7 +23,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D5B942A2-578C-459A-9515-894F12FD53E1}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{23627151-D2E9-4F2A-903A-43CE359F8123}"/>
+									<ObjectRef Name="Ambiente" ID="{457C550D-1E51-4CE4-805E-BA56EAB8C536}" WorkUnitID="{23627151-D2E9-4F2A-903A-43CE359F8123}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -62,9 +62,14 @@
 								</Sound>
 								<Sound Name="QP02 0148 Wind modern whining elevator shaft" ID="{EB9C8E0F-3CCB-4050-B012-BD0A9AF3F291}" ShortID="746409568">
 									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>130</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>4</Value>
+												<Value>10</Value>
 											</ValueList>
 											<RTPCList>
 												<RTPC Name="" ID="{7620C796-D482-427A-89D8-A313CC3767CA}" ShortID="493229496">
@@ -194,7 +199,7 @@
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D5B942A2-578C-459A-9515-894F12FD53E1}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{23627151-D2E9-4F2A-903A-43CE359F8123}"/>
+													<ObjectRef Name="FX" ID="{7FDB1AE7-CC10-4096-BBB1-577F61FD3C45}" WorkUnitID="{23627151-D2E9-4F2A-903A-43CE359F8123}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -358,7 +363,7 @@
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D5B942A2-578C-459A-9515-894F12FD53E1}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{23627151-D2E9-4F2A-903A-43CE359F8123}"/>
+													<ObjectRef Name="FX" ID="{7FDB1AE7-CC10-4096-BBB1-577F61FD3C45}" WorkUnitID="{23627151-D2E9-4F2A-903A-43CE359F8123}"/>
 												</Reference>
 												<Reference Name="UserAuxSend0">
 													<ObjectRef Name="fx_espaciales" ID="{CB8E2805-7607-493E-8F12-344DDC42CED6}" WorkUnitID="{23627151-D2E9-4F2A-903A-43CE359F8123}"/>
@@ -507,7 +512,7 @@
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D5B942A2-578C-459A-9515-894F12FD53E1}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{23627151-D2E9-4F2A-903A-43CE359F8123}"/>
+													<ObjectRef Name="FX" ID="{7FDB1AE7-CC10-4096-BBB1-577F61FD3C45}" WorkUnitID="{23627151-D2E9-4F2A-903A-43CE359F8123}"/>
 												</Reference>
 												<Reference Name="UserAuxSend0">
 													<ObjectRef Name="fx_espaciales" ID="{CB8E2805-7607-493E-8F12-344DDC42CED6}" WorkUnitID="{23627151-D2E9-4F2A-903A-43CE359F8123}"/>
@@ -615,7 +620,7 @@
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D5B942A2-578C-459A-9515-894F12FD53E1}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{23627151-D2E9-4F2A-903A-43CE359F8123}"/>
+													<ObjectRef Name="FX" ID="{7FDB1AE7-CC10-4096-BBB1-577F61FD3C45}" WorkUnitID="{23627151-D2E9-4F2A-903A-43CE359F8123}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -736,7 +741,7 @@
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D5B942A2-578C-459A-9515-894F12FD53E1}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{23627151-D2E9-4F2A-903A-43CE359F8123}"/>
+													<ObjectRef Name="FX" ID="{7FDB1AE7-CC10-4096-BBB1-577F61FD3C45}" WorkUnitID="{23627151-D2E9-4F2A-903A-43CE359F8123}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -774,7 +779,7 @@
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D5B942A2-578C-459A-9515-894F12FD53E1}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{23627151-D2E9-4F2A-903A-43CE359F8123}"/>
+													<ObjectRef Name="FX" ID="{7FDB1AE7-CC10-4096-BBB1-577F61FD3C45}" WorkUnitID="{23627151-D2E9-4F2A-903A-43CE359F8123}"/>
 												</Reference>
 												<Reference Name="UserAuxSend0">
 													<ObjectRef Name="fx_espaciales" ID="{CB8E2805-7607-493E-8F12-344DDC42CED6}" WorkUnitID="{23627151-D2E9-4F2A-903A-43CE359F8123}"/>
@@ -884,7 +889,7 @@
 													<ObjectRef Name="Have_U_Ever_Been_Outside" ID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{23627151-D2E9-4F2A-903A-43CE359F8123}"/>
+													<ObjectRef Name="FX" ID="{7FDB1AE7-CC10-4096-BBB1-577F61FD3C45}" WorkUnitID="{23627151-D2E9-4F2A-903A-43CE359F8123}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -1110,7 +1115,7 @@
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D5B942A2-578C-459A-9515-894F12FD53E1}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{23627151-D2E9-4F2A-903A-43CE359F8123}"/>
+													<ObjectRef Name="FX" ID="{7FDB1AE7-CC10-4096-BBB1-577F61FD3C45}" WorkUnitID="{23627151-D2E9-4F2A-903A-43CE359F8123}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -1376,127 +1381,84 @@
 										</RandomSequenceContainer>
 									</ChildrenList>
 								</Folder>
-								<RandomSequenceContainer Name="Viento_vuelo" ID="{5F526942-A478-4687-A545-6C4CB453A822}" ShortID="266491523">
-									<PropertyList>
-										<Property Name="Highpass" Type="int16">
-											<ValueList>
-												<Value>23</Value>
-											</ValueList>
-										</Property>
-										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-										<Property Name="Pitch" Type="int32">
-											<RTPCList>
-												<RTPC Name="" ID="{D3B2A5DE-4FAC-45AD-B77D-38D8EC32269B}" ShortID="481714888">
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<ObjectRef Name="Velocidad_Pajaro" ID="{63A3F995-3419-4D84-8546-71B2C98C0595}" WorkUnitID="{D721DC1E-91EB-49A8-A512-EE400C2FBDDB}"/>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{B16B69C8-AF5A-4355-86C0-18ABB127E9EB}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="65537"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>0</YPos>
-																<Flags>5</Flags>
-															</Point>
-															<Point>
-																<XPos>1</XPos>
-																<YPos>3200</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
-										</Property>
-										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-7</Value>
-											</ValueList>
-											<RTPCList>
-												<RTPC Name="" ID="{4651E485-033F-4F66-ABE6-B5CFE83D72FB}" ShortID="20083471">
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<ObjectRef Name="Velocidad_Pajaro" ID="{63A3F995-3419-4D84-8546-71B2C98C0595}" WorkUnitID="{D721DC1E-91EB-49A8-A512-EE400C2FBDDB}"/>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{FF839AF1-BD2A-41DA-88A1-EBEA480D037B}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="3"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>-13.06425</YPos>
-																<Flags>5</Flags>
-																<SegmentShape>InvertedSCurve</SegmentShape>
-															</Point>
-															<Point>
-																<XPos>1</XPos>
-																<YPos>0</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D5B942A2-578C-459A-9515-894F12FD53E1}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{23627151-D2E9-4F2A-903A-43CE359F8123}"/>
-										</Reference>
-									</ReferenceList>
+								<Folder Name="Viento_Vuelo" ID="{F1E7475E-CF99-4373-8A71-604A329D78C3}" ShortID="1043513254">
 									<ChildrenList>
-										<Sound Name="QP02 0261 Wind desert strong blustery with lull" ID="{AA332133-133B-4151-A4CC-8B73EA36FD73}" ShortID="738993723">
+										<RandomSequenceContainer Name="Viento_vuelo" ID="{6EE1AF29-7151-4E0C-BDBA-7C065B6D1709}" ShortID="644933889">
 											<PropertyList>
-												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D5B942A2-578C-459A-9515-894F12FD53E1}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{23627151-D2E9-4F2A-903A-43CE359F8123}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="QP02 0261 Wind desert strong blustery with lull" ID="{B39ED848-A1DE-4A72-B836-EE58ACD5272F}" ShortID="670387589">
-													<PropertyList>
-														<Property Name="CrossfadeDuration" Type="Real64" Value="2005.356"/>
-														<Property Name="LoopBegin" Type="Real64" Value="1.30485480878995"/>
-														<Property Name="LoopEnd" Type="Real64" Value="12.2656352026256"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>QP02 0261 Wind desert strong blustery with lull.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="QP02 0261 Wind desert strong blustery with lull" ID="{B39ED848-A1DE-4A72-B836-EE58ACD5272F}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="QP02 0261 Wind desert strong blustery with lull_01" ID="{A8074BE8-D164-4650-97CA-A13AD8D783CB}" ShortID="1035166119">
-											<PropertyList>
-												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>10</Value>
+													</ValueList>
+												</Property>
 												<Property Name="Lowpass" Type="int16">
 													<ValueList>
 														<Value>26</Value>
 													</ValueList>
 												</Property>
+												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+												<Property Name="Pitch" Type="int32">
+													<RTPCList>
+														<RTPC Name="" ID="{8E1ACF84-9BC3-4909-9C31-90493A845852}" ShortID="958959647">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Velocidad_Pajaro" ID="{63A3F995-3419-4D84-8546-71B2C98C0595}" WorkUnitID="{D721DC1E-91EB-49A8-A512-EE400C2FBDDB}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{7652CB88-090A-46EA-BADA-9D7506814D1F}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>3302</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>8</Value>
+														<Value>-6</Value>
 													</ValueList>
+													<RTPCList>
+														<RTPC Name="" ID="{A90222C6-3E74-49C8-A256-47CA745CE2D4}" ShortID="888801179">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Velocidad_Pajaro" ID="{63A3F995-3419-4D84-8546-71B2C98C0595}" WorkUnitID="{D721DC1E-91EB-49A8-A512-EE400C2FBDDB}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{DFB94B84-FD35-4560-9080-3197CE8D92DE}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-11.04894</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>SCurve</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>4.73717</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
 												</Property>
 											</PropertyList>
 											<ReferenceList>
@@ -1504,83 +1466,261 @@
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D5B942A2-578C-459A-9515-894F12FD53E1}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{23627151-D2E9-4F2A-903A-43CE359F8123}"/>
+													<ObjectRef Name="FX" ID="{7FDB1AE7-CC10-4096-BBB1-577F61FD3C45}" WorkUnitID="{23627151-D2E9-4F2A-903A-43CE359F8123}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="QP02 0261 Wind desert strong blustery with lull" ID="{760FF545-A2B9-4DF9-BBC2-ACB41E8C758B}" ShortID="792650684">
-													<PropertyList>
-														<Property Name="CrossfadeDuration" Type="Real64" Value="2005.356"/>
-														<Property Name="LoopBegin" Type="Real64" Value="55.4563293735731"/>
-														<Property Name="LoopEnd" Type="Real64" Value="68.6353629423516"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>QP02 0261 Wind desert strong blustery with lull.wav</AudioFile>
-												</AudioFileSource>
+												<Sound Name="QP02 0261 Wind desert strong blustery with lull" ID="{AA332133-133B-4151-A4CC-8B73EA36FD73}" ShortID="738993723">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D5B942A2-578C-459A-9515-894F12FD53E1}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{23627151-D2E9-4F2A-903A-43CE359F8123}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="QP02 0261 Wind desert strong blustery with lull" ID="{B39ED848-A1DE-4A72-B836-EE58ACD5272F}" ShortID="670387589">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="3.91456442636986"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="6.00233212043379"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="14.6143738584475"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>QP02 0261 Wind desert strong blustery with lull.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="QP02 0261 Wind desert strong blustery with lull" ID="{B39ED848-A1DE-4A72-B836-EE58ACD5272F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="QP02 0261 Wind desert strong blustery with lull_01" ID="{08881C4B-85C7-4441-892F-EC706779F86F}" ShortID="276360851">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D5B942A2-578C-459A-9515-894F12FD53E1}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{23627151-D2E9-4F2A-903A-43CE359F8123}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="QP02 0261 Wind desert strong blustery with lull" ID="{2B81C39F-23F0-4A20-BEA0-AFA60580260C}" ShortID="511721457">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="1.17436932791096"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="1.69631125142694"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="31.8384573344749"/>
+																<Property Name="TrimEnd" Type="Real64" Value="43.9736070562215"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>QP02 0261 Wind desert strong blustery with lull.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="QP02 0261 Wind desert strong blustery with lull" ID="{2B81C39F-23F0-4A20-BEA0-AFA60580260C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="QP02 0261 Wind desert strong blustery with lull_02" ID="{203CDB2C-FF3E-4BE3-B4C7-CC3958815880}" ShortID="760149002">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D5B942A2-578C-459A-9515-894F12FD53E1}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{23627151-D2E9-4F2A-903A-43CE359F8123}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="QP02 0261 Wind desert strong blustery with lull" ID="{D8218C7D-6B67-47F0-A782-E4F4E113AF8B}" ShortID="222314968">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="1.82679673230594"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="4.17553538812786"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="43.1906941709475"/>
+																<Property Name="TrimEnd" Type="Real64" Value="58.4574954337899"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>QP02 0261 Wind desert strong blustery with lull.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="QP02 0261 Wind desert strong blustery with lull" ID="{D8218C7D-6B67-47F0-A782-E4F4E113AF8B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="QP02 0261 Wind desert strong blustery with lull_03" ID="{1004BDD8-DB62-47FA-85CD-37FC03C47782}" ShortID="767327283">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D5B942A2-578C-459A-9515-894F12FD53E1}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{23627151-D2E9-4F2A-903A-43CE359F8123}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="QP02 0261 Wind desert strong blustery with lull" ID="{A73A6FB8-C6FC-426D-890C-BDF96AABFCDC}" ShortID="444518258">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="1.17436932791096"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="1.04388384703196"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="68.2439064997147"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>QP02 0261 Wind desert strong blustery with lull.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="QP02 0261 Wind desert strong blustery with lull" ID="{A73A6FB8-C6FC-426D-890C-BDF96AABFCDC}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="QP02 0261 Wind desert strong blustery with lull_04" ID="{0C7FDA72-3F82-4C0C-8C27-7B627CD13F50}" ShortID="985564208">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D5B942A2-578C-459A-9515-894F12FD53E1}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{23627151-D2E9-4F2A-903A-43CE359F8123}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="QP02 0261 Wind desert strong blustery with lull" ID="{67275A3C-5626-4D0F-A220-7E0C25B3E54B}" ShortID="368437903">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="1.95728221318493"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="2.08776769406393"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="32.2299137771119"/>
+																<Property Name="TrimEnd" Type="Real64" Value="68.3743919805936"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>QP02 0261 Wind desert strong blustery with lull.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="QP02 0261 Wind desert strong blustery with lull" ID="{67275A3C-5626-4D0F-A220-7E0C25B3E54B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="QP02 0261 Wind desert strong blustery with lull_05" ID="{A4239BEC-CE0B-4A1E-8675-1B85C3F6F8D3}" ShortID="1001320517">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D5B942A2-578C-459A-9515-894F12FD53E1}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{23627151-D2E9-4F2A-903A-43CE359F8123}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="QP02 0261 Wind desert strong blustery with lull" ID="{F7CE8BC2-F183-4520-BB50-823335A9AD62}" ShortID="619784258">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="3.91456442636986"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="5.21941923515982"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="17.0935979951484"/>
+																<Property Name="TrimEnd" Type="Real64" Value="69.1573048658675"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>QP02 0261 Wind desert strong blustery with lull.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="QP02 0261 Wind desert strong blustery with lull" ID="{F7CE8BC2-F183-4520-BB50-823335A9AD62}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
 											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="QP02 0261 Wind desert strong blustery with lull" ID="{760FF545-A2B9-4DF9-BBC2-ACB41E8C758B}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="QP02 0261 Wind desert strong blustery with lull_02" ID="{91C6189B-4E00-42DC-A428-132E31CD8BCC}" ShortID="706018148">
+										</RandomSequenceContainer>
+										<Sound Name="Viento_velocidad_constante" ID="{401B1D93-E217-435E-8F61-D01E7464154A}" ShortID="690505674">
 											<PropertyList>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>26</Value>
+													</ValueList>
+												</Property>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<RTPCList>
+														<RTPC Name="" ID="{1F6603AF-1A39-4D39-A5F4-1970DC9E060F}" ShortID="81410776">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Velocidad_Pajaro" ID="{63A3F995-3419-4D84-8546-71B2C98C0595}" WorkUnitID="{D721DC1E-91EB-49A8-A512-EE400C2FBDDB}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{53887233-7955-4C6A-83A4-ED8EAF28B5BD}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>428</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+													<RTPCList>
+														<RTPC Name="" ID="{4A16F6AA-62E5-4F5B-AB8F-7026A9A6DB55}" ShortID="680913839">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Velocidad_Pajaro" ID="{63A3F995-3419-4D84-8546-71B2C98C0595}" WorkUnitID="{D721DC1E-91EB-49A8-A512-EE400C2FBDDB}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{94672ADA-3C6F-4B44-B4E5-542536DFF80C}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-11.04894</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>SCurve</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>4.73716999999999</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D5B942A2-578C-459A-9515-894F12FD53E1}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{23627151-D2E9-4F2A-903A-43CE359F8123}"/>
+													<ObjectRef Name="FX" ID="{7FDB1AE7-CC10-4096-BBB1-577F61FD3C45}" WorkUnitID="{23627151-D2E9-4F2A-903A-43CE359F8123}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="QP02 0261 Wind desert strong blustery with lull" ID="{21982834-27C0-4129-97DD-29F7D35241FC}" ShortID="680946092">
+												<AudioFileSource Name="amb_wind_snowblowing_a_02_lp" ID="{8B4BB428-848C-44FD-97FC-032318C8AC74}" ShortID="213949291">
 													<PropertyList>
-														<Property Name="CrossfadeDuration" Type="Real64" Value="2005.356"/>
-														<Property Name="LoopBegin" Type="Real64" Value="43.4516651327055"/>
-														<Property Name="LoopEnd" Type="Real64" Value="55.84778581621"/>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="375.162"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0.37105104880137"/>
+														<Property Name="LoopEnd" Type="Real64" Value="5.38020895761986"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 													</PropertyList>
 													<Language>SFX</Language>
-													<AudioFile>QP02 0261 Wind desert strong blustery with lull.wav</AudioFile>
+													<AudioFile>amb_wind_snowblowing_a_02_lp.wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="QP02 0261 Wind desert strong blustery with lull" ID="{21982834-27C0-4129-97DD-29F7D35241FC}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="QP02 0261 Wind desert strong blustery with lull_03" ID="{A3C5B812-9C5D-4C83-BA9D-8C553F57BD6D}" ShortID="971590232">
-											<PropertyList>
-												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D5B942A2-578C-459A-9515-894F12FD53E1}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{23627151-D2E9-4F2A-903A-43CE359F8123}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="QP02 0261 Wind desert strong blustery with lull" ID="{4467D707-C1E5-4407-B6C3-5932A6D5F37A}" ShortID="654412178">
-													<PropertyList>
-														<Property Name="CrossfadeDuration" Type="Real64" Value="2005.356"/>
-														<Property Name="LoopBegin" Type="Real64" Value="68.6353629423516"/>
-														<Property Name="LoopEnd" Type="Real64" Value="75.8120643906963"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>QP02 0261 Wind desert strong blustery with lull.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="QP02 0261 Wind desert strong blustery with lull" ID="{4467D707-C1E5-4407-B6C3-5932A6D5F37A}" Platform="Linked"/>
+												<ActiveSource Name="amb_wind_snowblowing_a_02_lp" ID="{8B4BB428-848C-44FD-97FC-032318C8AC74}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
-								</RandomSequenceContainer>
+								</Folder>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Cursor" ID="{616D9039-3EB9-4EE4-A492-E4D58A50AE6D}" ShortID="134878666">
@@ -1624,7 +1764,7 @@
 											</Custom>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{23627151-D2E9-4F2A-903A-43CE359F8123}"/>
+											<ObjectRef Name="FX" ID="{7FDB1AE7-CC10-4096-BBB1-577F61FD3C45}" WorkUnitID="{23627151-D2E9-4F2A-903A-43CE359F8123}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -1653,12 +1793,12 @@
 										</Property>
 										<Property Name="Pitch" Type="int32">
 											<ValueList>
-												<Value>-1950</Value>
+												<Value>-530</Value>
 											</ValueList>
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>2</Value>
+												<Value>-2</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1667,6 +1807,15 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D5B942A2-578C-459A-9515-894F12FD53E1}"/>
 										</Reference>
 										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise_Gain_(Custom)" ID="{5CB3EF98-A668-444F-BE99-2C0A95DA38A1}" ShortID="534001667" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3">
+													<PropertyList>
+														<Property Name="FullBandGain" Type="Real32" Value="24"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="Effect1">
 											<Custom>
 												<Effect Name="Wwise_Matrix_Reverb_(Custom)" ID="{05D6D7E7-AF45-4D8F-BB44-99FBD1122F60}" ShortID="222887302" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
 													<PropertyList>
@@ -1679,7 +1828,7 @@
 											</Custom>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{23627151-D2E9-4F2A-903A-43CE359F8123}"/>
+											<ObjectRef Name="FX" ID="{7FDB1AE7-CC10-4096-BBB1-577F61FD3C45}" WorkUnitID="{23627151-D2E9-4F2A-903A-43CE359F8123}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -1706,13 +1855,13 @@
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="Lowpass" Type="int16">
 							<ValueList>
-								<Value>74</Value>
+								<Value>65</Value>
 							</ValueList>
 						</Property>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>2</Value>
+								<Value>5</Value>
 							</ValueList>
 							<RTPCList>
 								<RTPC Name="" ID="{E3D8A54A-0A76-4DFE-9D96-08C346274C43}" ShortID="416286088">
@@ -1755,6 +1904,18 @@
 						</Reference>
 						<Reference Name="Effect0">
 							<Custom>
+								<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{7017392C-437B-4C88-8C66-44C50C0CB1C0}" ShortID="522402128" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+									<PropertyList>
+										<Property Name="FilterTypeBand1" Type="int32" Value="6"/>
+										<Property Name="FrequencyBand1" Type="Real32" Value="79"/>
+										<Property Name="GainBand1" Type="Real32" Value="1"/>
+										<Property Name="QFactorBand1" Type="Real32" Value="100"/>
+									</PropertyList>
+								</Effect>
+							</Custom>
+						</Reference>
+						<Reference Name="Effect1">
+							<Custom>
 								<Effect Name="Wwise_Time_Stretch_(Custom)" ID="{CB054199-1A0B-4E16-82BE-6239E52D203A}" ShortID="97410344" PluginName="Wwise Time Stretch" CompanyID="0" PluginID="130" PluginType="3">
 									<PropertyList>
 										<Property Name="TimeStretch" Type="Real32" Value="54">
@@ -1772,7 +1933,7 @@
 														<PointList>
 															<Point>
 																<XPos>0</XPos>
-																<YPos>50</YPos>
+																<YPos>43.80917</YPos>
 																<Flags>5</Flags>
 																<SegmentShape>Log3</SegmentShape>
 															</Point>
@@ -1790,7 +1951,7 @@
 								</Effect>
 							</Custom>
 						</Reference>
-						<Reference Name="Effect1" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+						<Reference Name="Effect2" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
 							<ObjectRef Name="Room_Medium_Tiled" ID="{0C0A3A92-A571-4FDB-AB40-ACFED04E0217}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 						</Reference>
 						<Reference Name="OutputBus">
@@ -1835,6 +1996,207 @@
 								<ActiveSource Name="Lintu_Theme_Final" ID="{236752DF-BDEB-49CB-A92B-BA659D387ABC}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Barco" ID="{2F86BAE0-A2F2-4FEC-8F3B-ADB4123BC9CA}" ShortID="906920279">
+					<ChildrenList>
+						<Sound Name="Velas" ID="{A2E3999C-EEF4-4841-8ACA-954C7778E697}" ShortID="1065959935">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>14</Value>
+									</ValueList>
+								</Property>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-14</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D5B942A2-578C-459A-9515-894F12FD53E1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="FX" ID="{7FDB1AE7-CC10-4096-BBB1-577F61FD3C45}" WorkUnitID="{23627151-D2E9-4F2A-903A-43CE359F8123}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="zapsplat_foley_flag_flap_strong_wind_001_43532" ID="{0CC45F4A-E382-413E-8BD7-8BA05404A91A}" ShortID="476275684">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="1775.46"/>
+										<Property Name="LoopBegin" Type="Real64" Value="2.09659246575342"/>
+										<Property Name="LoopEnd" Type="Real64" Value="20.8803494548504"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="23.0197295219458"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>zapsplat_foley_flag_flap_strong_wind_001_43532.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="zapsplat_foley_flag_flap_strong_wind_001_43532" ID="{0CC45F4A-E382-413E-8BD7-8BA05404A91A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<RandomSequenceContainer Name="Campana" ID="{A4B6DC2E-DC14-41DE-8B39-84408D3052A1}" ShortID="711103584">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>28</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>13</Value>
+									</ValueList>
+								</Property>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-13</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D5B942A2-578C-459A-9515-894F12FD53E1}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+									<ObjectRef Name="Have_U_Ever_Been_Outside" ID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="FX" ID="{7FDB1AE7-CC10-4096-BBB1-577F61FD3C45}" WorkUnitID="{23627151-D2E9-4F2A-903A-43CE359F8123}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="bell_medium_small_bell_ring_2" ID="{4CE19F3F-3E7D-4473-A73D-B4E6AEE4409B}" ShortID="5851546">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D5B942A2-578C-459A-9515-894F12FD53E1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{23627151-D2E9-4F2A-903A-43CE359F8123}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="bell_medium_small_bell_ring_2" ID="{3A03C093-C945-4D93-A0CD-EA3697435450}" ShortID="828305690">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.08030899574442"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.08030899574442"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>bell_medium_small_bell_ring_2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="bell_medium_small_bell_ring_2" ID="{3A03C093-C945-4D93-A0CD-EA3697435450}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Silencio" ID="{4A3AD988-BCEA-4B64-A533-DD04F53A9BDF}" ShortID="191842456">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D5B942A2-578C-459A-9515-894F12FD53E1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{23627151-D2E9-4F2A-903A-43CE359F8123}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Wwise Silence" ID="{BBFD1AA0-9889-43C8-974F-E5AA78190BB8}" ShortID="741467829" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+											<PropertyList>
+												<Property Name="LengthMax" Type="Real32" Value="2"/>
+											</PropertyList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wwise Silence" ID="{BBFD1AA0-9889-43C8-974F-E5AA78190BB8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<Playlist>
+								<ItemRef Name="bell_medium_small_bell_ring_2" ID="{4CE19F3F-3E7D-4473-A73D-B4E6AEE4409B}"/>
+								<ItemRef Name="Silencio" ID="{4A3AD988-BCEA-4B64-A533-DD04F53A9BDF}"/>
+							</Playlist>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Madera" ID="{6C7F5B03-5344-4F1F-8F95-0706449AB3DF}" ShortID="389684560">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-1240</Value>
+									</ValueList>
+								</Property>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D5B942A2-578C-459A-9515-894F12FD53E1}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+									<ObjectRef Name="Have_U_Ever_Been_Outside" ID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="FX" ID="{7FDB1AE7-CC10-4096-BBB1-577F61FD3C45}" WorkUnitID="{23627151-D2E9-4F2A-903A-43CE359F8123}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="household_door_wooden_internal_creaking_old_001" ID="{60A6D8EA-2AE4-48B2-A400-01D3476AE3D2}" ShortID="12525861">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>43</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D5B942A2-578C-459A-9515-894F12FD53E1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{23627151-D2E9-4F2A-903A-43CE359F8123}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="household_door_wooden_internal_creaking_old_001" ID="{14FF6527-0759-44CD-890E-2F2EE2C4B086}" ShortID="956486266">
+											<Language>SFX</Language>
+											<AudioFile>household_door_wooden_internal_creaking_old_001.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="household_door_wooden_internal_creaking_old_001" ID="{14FF6527-0759-44CD-890E-2F2EE2C4B086}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Silencio" ID="{7CBB405B-BA9E-4922-A7B3-3797182103D6}" ShortID="201706213">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D5B942A2-578C-459A-9515-894F12FD53E1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{23627151-D2E9-4F2A-903A-43CE359F8123}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Wwise Silence" ID="{97875CE2-11DC-47F7-AC8F-D407B0222586}" ShortID="766914944" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+											<PropertyList>
+												<Property Name="Length" Type="Real32" Value="1.5"/>
+												<Property Name="LengthMax" Type="Real32" Value="2.5"/>
+												<Property Name="LengthMin" Type="Real32" Value="-0.5"/>
+											</PropertyList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wwise Silence" ID="{97875CE2-11DC-47F7-AC8F-D407B0222586}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
