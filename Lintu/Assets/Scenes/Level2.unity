@@ -727,6 +727,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameOverCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 8165114581544573771, guid: 11d8375d211ce224c854e5804c94578d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8165114581544573764, guid: 11d8375d211ce224c854e5804c94578d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2656,6 +2661,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CanvasLoader
+      objectReference: {fileID: 0}
+    - target: {fileID: 9062217408589599166, guid: dbb7018cf14c43d4a951fdf311cef417,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9062217408589599157, guid: dbb7018cf14c43d4a951fdf311cef417,
         type: 3}
@@ -13074,6 +13084,31 @@ PrefabInstance:
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 1307242456417492625, guid: 2dbd4a012d31bcb46a5aad836925a12b,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6202003300918922439, guid: 2dbd4a012d31bcb46a5aad836925a12b,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1732809863285636981, guid: 2dbd4a012d31bcb46a5aad836925a12b,
+        type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1732809863285636981, guid: 2dbd4a012d31bcb46a5aad836925a12b,
+        type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1732809863285636981, guid: 2dbd4a012d31bcb46a5aad836925a12b,
+        type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 785398708104949564, guid: 2dbd4a012d31bcb46a5aad836925a12b,
         type: 3}
       propertyPath: triggerList.Array.size
@@ -13088,6 +13123,26 @@ PrefabInstance:
         type: 3}
       propertyPath: triggerList.Array.data[1]
       value: 1151176110
+      objectReference: {fileID: 0}
+    - target: {fileID: 8298852738300765367, guid: 2dbd4a012d31bcb46a5aad836925a12b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610707816250225997, guid: 2dbd4a012d31bcb46a5aad836925a12b,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610707816250225997, guid: 2dbd4a012d31bcb46a5aad836925a12b,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610707816250225997, guid: 2dbd4a012d31bcb46a5aad836925a12b,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dbd4a012d31bcb46a5aad836925a12b, type: 3}
