@@ -526,6 +526,7 @@ MonoBehaviour:
   - {fileID: 342688413951839646}
   GateMovementTime: 2
   GearRotationSpeed: 100
+  StopTime: 0.25
 --- !u!1 &4518612867396831139
 GameObject:
   m_ObjectHideFlags: 0
