@@ -304,7 +304,7 @@ public class BirdController : MonoBehaviour
             PlayerInput.Gameplay.Horizontal.Disable();
         }
 
-        if (other.tag == "Finish")
+        if (other.tag == "Finish" && IsAlive)
         {
             StartCoroutine(EndLevel(TimeToEndLevel));
         }
