@@ -61016,6 +61016,7 @@ MonoBehaviour:
   LintuUI2: {fileID: 21300000, guid: 2b008267a6b3b834386611bce1c09d06, type: 3}
   DistanceHandleAnimationTime: 0.5
   DistanceBarHandle: {fileID: 783472551}
+  TimeText: {fileID: 0}
 --- !u!1001 &1762322319
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -74991,7 +74992,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 653e73696c86c664eb529c39a11c6b2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerList: f7e1664c
+  triggerList: d1bbb3b5
   useOtherObject: 0
   actionOnEventType: 0
   curveInterpolation: 4
@@ -74999,7 +75000,8 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 9a44d0e626763294daa8b014456e3a8a,
+      type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0

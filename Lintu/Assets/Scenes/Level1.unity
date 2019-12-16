@@ -1151,6 +1151,7 @@ MonoBehaviour:
   LintuUI2: {fileID: 21300000, guid: 2b008267a6b3b834386611bce1c09d06, type: 3}
   DistanceHandleAnimationTime: 0.5
   DistanceBarHandle: {fileID: 1877329752}
+  TimeText: {fileID: 0}
 --- !u!114 &58671611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31523,7 +31524,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: be3c3587360b8c54eaf84da146296142,
+    WwiseObjectReference: {fileID: 11400000, guid: 9a44d0e626763294daa8b014456e3a8a,
       type: 2}
   useCallbacks: 0
   Callbacks: []

@@ -341,6 +341,7 @@ public class BirdController : MonoBehaviour
 
     IEnumerator EndLevel(float t)
     {
+        AkSoundEngine.PostEvent("Ganar", gameObject);
         PlayerInput.Gameplay.Disable();
         EndedLevel = true;
         BaseGravity = 0;
