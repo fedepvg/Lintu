@@ -14131,11 +14131,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ThisScene: Level3
-  NextScene: EndGameScene
+  NextScene: Level4
   GameOverScene: EndGameScene
   MenuScene: MenuScene
   PreviousScene: 
-  LastLevel: 1
+  LastLevel: 0
 --- !u!4 &1243345020
 Transform:
   m_ObjectHideFlags: 0
