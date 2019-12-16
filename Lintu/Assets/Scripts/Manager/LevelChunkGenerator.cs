@@ -39,21 +39,24 @@ public class LevelChunkGenerator : MonoBehaviour
         while (generating)
         {
             GameObject go = ObjectPooler.Instance.GetRandomPooledObject("Obstacle");
-            if(PrevObstacleName == go.name)
+            if (go != null)
             {
-                go.SetActive(false);
-                go = ObjectPooler.Instance.GetRandomPooledObject("Obstacle");
-            }
-            PrevObstacleName = go.name;
-            go.transform.SetParent(ObstaclesParent);
-            go.transform.localScale = new Vector3(1, 1, 1);
-            go.transform.localRotation = Quaternion.identity;
-            go.transform.position = NextObstaclePosition;
+                if (PrevObstacleName == go.name)
+                {
+                    go.SetActive(false);
+                    go = ObjectPooler.Instance.GetRandomPooledObject("Obstacle");
+                }
+                PrevObstacleName = go.name;
+                go.transform.SetParent(ObstaclesParent);
+                go.transform.localScale = new Vector3(1, 1, 1);
+                go.transform.localRotation = Quaternion.identity;
+                go.transform.position = NextObstaclePosition;
 
-            EndlessObstacle obstacleScript = go.GetComponent<EndlessObstacle>();
-            if (obstacleScript != null)
-                NextObstaclePosition += Vector3.forward * obstacleScript.GetDistanceToFinalPos();
-            ObstaclesList.Add(go);
+                EndlessObstacle obstacleScript = go.GetComponent<EndlessObstacle>();
+                if (obstacleScript != null)
+                    NextObstaclePosition += Vector3.forward * obstacleScript.GetDistanceToFinalPos();
+                ObstaclesList.Add(go);
+            }
 
             float nextObstacleDistance = Random.Range(MinObstacleDistance, MaxObstacleDistance);
             NextObstaclePosition += Vector3.forward * nextObstacleDistance;
