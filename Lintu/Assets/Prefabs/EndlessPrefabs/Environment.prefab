@@ -1424,7 +1424,10 @@ MonoBehaviour:
   ChunkFinishPosition: {fileID: 1883425998446789541}
   FirstChunk: 0
   ObstaclesParent: {fileID: 7564041580554163864}
+  MinObstacleDistance: 40
+  MaxObstacleDistance: 150
   ObstaclesList: []
+  NextObstaclePosition: {x: 0, y: 0, z: 0}
 --- !u!65 &880167919376370836
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -10,11 +10,13 @@ public class LevelChunkGenerator : MonoBehaviour
     public GameObject ChunkFinishPosition;
     public bool FirstChunk;
     public Transform ObstaclesParent;
-
+    public int MinObstacleDistance;
+    public int MaxObstacleDistance;
     public List<GameObject> ObstaclesList;
+
     GameObject NextChunk;
     Vector3 NextObstaclePosition;
-    Vector3 PrevObstaclePosition;
+    string PrevObstacleName;
 
     // Start is called before the first frame update
     void Start()
@@ -36,27 +38,27 @@ public class LevelChunkGenerator : MonoBehaviour
 
         while (generating)
         {
-            int rand = Random.Range(0, ObstaclesPrefabs.Count);
             GameObject go = ObjectPooler.Instance.GetRandomPooledObject("Obstacle");
-            go.transform.position = NextObstaclePosition;
-            go.transform.rotation = Quaternion.identity;
-            ObstaclesList.Add(go);
-            PrevObstaclePosition = NextObstaclePosition;
-            NextObstaclePosition += Vector3.forward * 200;
-            if (NextObstaclePosition.z > ChunkFinishPosition.transform.position.z)
-                generating = false;
-        }
-
-         ReScaleObstacles();
-    }
-
-    void ReScaleObstacles()
-    {
-        foreach(GameObject go in ObstaclesList)
-        {
+            if(PrevObstacleName == go.name)
+            {
+                go.SetActive(false);
+                go = ObjectPooler.Instance.GetRandomPooledObject("Obstacle");
+            }
+            PrevObstacleName = go.name;
             go.transform.SetParent(ObstaclesParent);
             go.transform.localScale = new Vector3(1, 1, 1);
             go.transform.localRotation = Quaternion.identity;
+            go.transform.position = NextObstaclePosition;
+
+            EndlessObstacle obstacleScript = go.GetComponent<EndlessObstacle>();
+            if (obstacleScript != null)
+                NextObstaclePosition += Vector3.forward * obstacleScript.GetDistanceToFinalPos();
+            ObstaclesList.Add(go);
+
+            float nextObstacleDistance = Random.Range(MinObstacleDistance, MaxObstacleDistance);
+            NextObstaclePosition += Vector3.forward * nextObstacleDistance;
+            if (NextObstaclePosition.z > ChunkFinishPosition.transform.position.z)
+                generating = false;
         }
     }
 

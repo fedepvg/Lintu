@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3871400835269656925}
   m_LocalRotation: {x: -0.12940891, y: 0.982963, z: 0.12940893, w: 0.01704037}
-  m_LocalPosition: {x: -2.8653545, y: -34.31074, z: 12.157074}
+  m_LocalPosition: {x: -31.4, y: -34.31074, z: 12.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8327131103606704524}
@@ -58,7 +58,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3886764194567659125}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0.00000295043}
-  m_LocalPosition: {x: 9.3, y: -17.2, z: 3.3}
+  m_LocalPosition: {x: -19.2, y: -17.2, z: 3.3}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children: []
   m_Father: {fileID: 7955188151886788401}
@@ -226,6 +226,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7955188151886788401}
+  - component: {fileID: -2463657651254733697}
   m_Layer: 0
   m_Name: StoneDoubleBrigeEndless
   m_TagString: Obstacle
@@ -241,15 +242,31 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5020920552587521896}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.70710677}
-  m_LocalPosition: {x: 429.4, y: 0, z: -0}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 264541027849694310}
   - {fileID: 8071286991286483996}
   - {fileID: 1105131887157818941}
+  - {fileID: 4208137205393384379}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90.00001, z: 0}
+--- !u!114 &-2463657651254733697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5020920552587521896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ae6cee1484cf7d4b811f3be420956b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OrbPositions: []
+  OrbPrefab: {fileID: 0}
+  FinalPosition: {fileID: 6714047337544377783}
 --- !u!1 &5031840499632405407
 GameObject:
   m_ObjectHideFlags: 0
@@ -367,10 +384,40 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5399030719400184700}
   m_LocalRotation: {x: 0.1294088, y: 0.982963, z: -0.12940882, w: 0.017040519}
-  m_LocalPosition: {x: -2.3952694, y: -35.236416, z: -8.80661}
+  m_LocalPosition: {x: -30.9, y: -35.236416, z: -8.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 926376786453234605}
   m_Father: {fileID: 7955188151886788401}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 15.000001, y: 180.00002, z: 15.000001}
+--- !u!1 &6714047337544377783
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4208137205393384379}
+  m_Layer: 0
+  m_Name: FinalPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4208137205393384379
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6714047337544377783}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.70710677}
+  m_LocalPosition: {x: -50.2, y: 0, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7955188151886788401}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

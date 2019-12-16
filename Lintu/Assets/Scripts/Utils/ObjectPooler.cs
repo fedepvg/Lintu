@@ -30,27 +30,10 @@ public class ObjectPooler : MonoBehaviour
                 obj.SetActive(false);
                 if(item.Parent!=null)
                     obj.transform.parent = item.Parent.transform;
-                obj.name = item.ObjectToPool.name + i;
+                obj.name = item.ObjectToPool.name;
                 PooledObjects.Add(obj);
             }
         }
-    }
-
-    public void Start()
-    {
-        //PooledObjects = new List<GameObject>();
-        //
-        //foreach (ObjectPoolItem item in ItemsToPool)
-        //{
-        //    for (int i = 0; i < item.AmountToPool; i++)
-        //    {
-        //        GameObject obj = (GameObject)Instantiate(item.ObjectToPool);
-        //        obj.SetActive(false);
-        //        obj.transform.parent = item.Parent.transform;
-        //        obj.name = item.ObjectToPool.name + i;
-        //        PooledObjects.Add(obj);
-        //    }
-        //}
     }
 
     public GameObject GetPooledObject(string tag)
