@@ -36,4 +36,16 @@ public class BoatMovement : MonoBehaviour
 
         transform.position += transform.forward * Speed * DirectionMultiplier * Time.deltaTime;
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player")
+            AkSoundEngine.PostEvent("Barcos_Idle", gameObject);
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Player")
+            AkSoundEngine.StopAll(gameObject);
+    }
 }
