@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 3592929271936723909}
   - component: {fileID: 3968922627830419063}
   - component: {fileID: 4621755465378965634}
-  m_Layer: 0
+  - component: {fileID: 4685572160476409024}
+  m_Layer: 13
   m_Name: Grua
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -78,6 +79,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &4685572160476409024
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97153184399353358}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 2347988302985034495, guid: 9c0a360233364ca44bed4c773eb12a26, type: 3}
 --- !u!1 &168311446339431401
 GameObject:
   m_ObjectHideFlags: 0
@@ -89,9 +104,10 @@ GameObject:
   - component: {fileID: 8382185411355173598}
   - component: {fileID: 8076156912425723282}
   - component: {fileID: 1229780770222961969}
-  m_Layer: 0
+  - component: {fileID: 3319893330620108668}
+  m_Layer: 13
   m_Name: Cuerda
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -157,6 +173,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &3319893330620108668
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168311446339431401}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 22585505669034275, guid: 9c0a360233364ca44bed4c773eb12a26, type: 3}
 --- !u!1 &5155680426898402782
 GameObject:
   m_ObjectHideFlags: 0
@@ -167,9 +197,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8203291124805165005}
   - component: {fileID: 5240426361091003132}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: CraneBlue
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -216,9 +246,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6920459108142530416}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: OrbBase
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -246,9 +276,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4809525602448249448}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: CuerdaBottom
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -278,9 +308,10 @@ GameObject:
   - component: {fileID: 8310509331545467553}
   - component: {fileID: 5595200247915826280}
   - component: {fileID: 5974826509480442133}
-  m_Layer: 0
+  - component: {fileID: 768291133862101399}
+  m_Layer: 13
   m_Name: Base1
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -346,3 +377,17 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &768291133862101399
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8801653549140146023}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 3188861999907982402, guid: 9c0a360233364ca44bed4c773eb12a26, type: 3}
