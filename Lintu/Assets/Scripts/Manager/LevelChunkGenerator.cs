@@ -13,19 +13,25 @@ public class LevelChunkGenerator : MonoBehaviour
     public int MinObstacleDistance;
     public int MaxObstacleDistance;
     public List<GameObject> ObstaclesList;
+    IEnumerator DeactivateChunkCorutine;
+    bool CanBeDeactivated = true;
 
     GameObject NextChunk;
     Vector3 NextObstaclePosition;
     string PrevObstacleName;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
+        BirdController.EndLevelAction += StopDestroying;
         if (FirstChunk)
         {
             GenerateNextChunk();
         }
-        else
+    }
+
+    private void OnEnable()
+    {
+        if (!FirstChunk)
         {
             NextObstaclePosition = FirstObstaclePosition.transform.position;
             GenerateObstacles();
@@ -54,7 +60,10 @@ public class LevelChunkGenerator : MonoBehaviour
 
                 EndlessObstacle obstacleScript = go.GetComponent<EndlessObstacle>();
                 if (obstacleScript != null)
+                {
                     NextObstaclePosition += Vector3.forward * obstacleScript.GetDistanceToFinalPos();
+                    obstacleScript.GenerateOrb();
+                }
                 ObstaclesList.Add(go);
             }
 
@@ -71,6 +80,14 @@ public class LevelChunkGenerator : MonoBehaviour
         go.transform.position = ChunkFinishPosition.transform.position;
         go.transform.rotation = LevelChunkPrefab.transform.rotation;
         NextChunk = go;
+        go.GetComponent<LevelChunkGenerator>().FirstObstaclePosition.transform.position = NextObstaclePosition;
+    }
+
+    void StopDestroying()
+    {
+        CanBeDeactivated = false;
+        if(DeactivateChunkCorutine != null)
+            StopCoroutine(DeactivateChunkCorutine);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -78,9 +95,15 @@ public class LevelChunkGenerator : MonoBehaviour
         if(other.tag == "Player")
         {
             if (FirstChunk)
-                Destroy(gameObject, 1f);
+            {
+                DeactivateChunkCorutine = DestroyChunk(1f);
+                StartCoroutine(DeactivateChunkCorutine);
+            }
             else
-                StartCoroutine(DeactivateChunk(1f));
+            {
+                DeactivateChunkCorutine = DeactivateChunk(1f);
+                StartCoroutine(DeactivateChunkCorutine);
+            }
             NextChunk.GetComponent<LevelChunkGenerator>().GenerateNextChunk();
         }
     }
@@ -94,10 +117,24 @@ public class LevelChunkGenerator : MonoBehaviour
         }
     }
 
+    private void OnDestroy()
+    {
+        BirdController.EndLevelAction -= StopDestroying;
+    }
+
     IEnumerator DeactivateChunk(float t)
     {
         yield return new WaitForSeconds(t);
 
-        gameObject.SetActive(false);
+        if(CanBeDeactivated)
+            gameObject.SetActive(false);
+    }
+
+    IEnumerator DestroyChunk(float t)
+    {
+        yield return new WaitForSeconds(t);
+
+        if(CanBeDeactivated)
+            Destroy(gameObject);
     }
 }

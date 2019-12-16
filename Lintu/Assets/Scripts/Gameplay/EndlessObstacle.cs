@@ -10,16 +10,15 @@ public class EndlessObstacle : MonoBehaviour
 
     bool HasOrb;
 
-    // Start is called before the first frame update
-    void Start()
+    public void GenerateOrb()
     {
         OrbProbability = 100f;
         if (Random.Range(0f, 100f) <= OrbProbability)
             HasOrb = true;
-        else 
+        else
             HasOrb = false;
 
-        if(HasOrb)
+        if (HasOrb)
         {
             int rand = Random.Range(0, OrbPositions.Count);
             GameObject orb = ObjectPooler.Instance.GetPooledObject("Orb");

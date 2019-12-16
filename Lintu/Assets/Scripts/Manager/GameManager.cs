@@ -11,19 +11,48 @@ public class GameManager : MonoBehaviourSingleton<GameManager>
     bool HasWon = false;
     bool IsInvertedY = true;
     bool UseHUD = true;
+    float GameTime;
+    float BestGameTime;
+    bool Counting;
+    bool MadeHighscore;
 
     private void Start()
     {
         GameInput = new PlayerControls();
         GameInput.Enable();
         BirdController.GameOverAction = Endlevel;
+        BirdController.EndLevelAction = StopCountingTime;
         AkSoundEngine.PostEvent("Inicio_Menu", gameObject);
+        if(PlayerPrefs.HasKey("BestTime"))
+            BestGameTime = PlayerPrefs.GetFloat("BestTime");
+        MadeHighscore = false;
     }
 
     private void Update()
     {
         Cursor.visible = false;
-        //Cursor.lockState = CursorLockMode.Locked;
+        if(Counting)
+        {
+            GameTime += Time.deltaTime;
+        }
+    }
+
+    public void StartCountingTime()
+    {
+        Counting = true;
+        GameTime = 0f;
+        MadeHighscore = false;
+    }
+
+    public void StopCountingTime()
+    {
+        Counting = false;
+        if (BestGameTime < GameTime)
+        {
+            BestGameTime = GameTime;
+            PlayerPrefs.SetFloat("BestTime", GameTime);
+            MadeHighscore = true;
+        }
     }
 
     public void Endlevel(bool won)
@@ -78,5 +107,27 @@ public class GameManager : MonoBehaviourSingleton<GameManager>
     {
         get { return UseHUD; }
         set { UseHUD = value; }
+    }
+
+    public float TimePlayingLevel
+    {
+        get { return GameTime; }
+        set { GameTime = value; }
+    }
+
+    public bool CountingTime
+    {
+        get { return Counting; }
+        set { Counting = value; }
+    }
+
+    public bool IsHighscore
+    {
+        get { return MadeHighscore; }
+    }
+
+    public float Highscore
+    {
+        get { return BestGameTime; }
     }
 }

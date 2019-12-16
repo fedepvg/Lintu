@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
+using TMPro;
 
 public class UIInGame : MonoBehaviour
 {
@@ -19,6 +20,7 @@ public class UIInGame : MonoBehaviour
     public Sprite LintuUI2;
     public float DistanceHandleAnimationTime;
     public Image DistanceBarHandle;
+    public TextMeshProUGUI TimeText;
     #endregion
 
     float SpriteChangeTimer;
@@ -26,6 +28,7 @@ public class UIInGame : MonoBehaviour
     Sprite CurrentDistanceHandleSprite;
     UIPause PauseScript;
     bool HUDActive;
+    float PrevFrameTime;
 
     private void Start()
     {
@@ -70,6 +73,17 @@ public class UIInGame : MonoBehaviour
                 else
                     CurrentDistanceHandleSprite = LintuUI1;
                 DistanceBarHandle.sprite = CurrentDistanceHandleSprite;
+            }
+        }
+
+        if(TimeText != null)
+        {
+            if (PrevFrameTime != GameManager.Instance.TimePlayingLevel)
+            {
+                PrevFrameTime = GameManager.Instance.TimePlayingLevel;
+                int minutes = (int)(PrevFrameTime / 60);
+                int seconds = (int)(PrevFrameTime % 60);
+                TimeText.text = string.Format("{0:0}:{1:00}",minutes,seconds);
             }
         }
 

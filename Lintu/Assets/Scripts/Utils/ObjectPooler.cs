@@ -75,7 +75,7 @@ public class ObjectPooler : MonoBehaviour
             }
         }
 
-        if (goList != null)
+        if (goList.Count > 0)
         {
             int randomObject = Random.Range(0, goList.Count);
             goList[randomObject].SetActive(true);

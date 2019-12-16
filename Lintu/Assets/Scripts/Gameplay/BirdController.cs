@@ -99,6 +99,7 @@ public class BirdController : MonoBehaviour
         OrbBehaviour.OnOrbPickup = AddEnergy;
 
         AkSoundEngine.PostEvent("Pajaro_Voz", gameObject);
+        GameManager.Instance.StartCountingTime();
     }
     
     void Update()
@@ -336,8 +337,6 @@ public class BirdController : MonoBehaviour
 
         if (GameOverAction != null)
             GameOverAction(false);
-        //Destroy(this);
-        //SceneManagement.LoadGOScene(t);
     }
 
     IEnumerator EndLevel(float t)
@@ -352,7 +351,6 @@ public class BirdController : MonoBehaviour
 
         if(GameOverAction!=null)
             GameOverAction(true);
-        //SceneManagement.LoadNextScene(true);
         Destroy(this);
     }
 }
