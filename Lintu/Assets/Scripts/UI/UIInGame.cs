@@ -26,7 +26,7 @@ public class UIInGame : MonoBehaviour
     float SpriteChangeTimer;
     float LevelDistance;
     Sprite CurrentDistanceHandleSprite;
-    UIPause PauseScript;
+    UIPanelManagement PauseScript;
     bool HUDActive;
     float PrevFrameTime;
 
@@ -40,7 +40,7 @@ public class UIInGame : MonoBehaviour
             CurrentDistanceHandleSprite = LintuUI1;
         }
         PausePanel.SetActive(false);
-        PauseScript = PausePanel.GetComponent<UIPause>();
+        PauseScript = PausePanel.GetComponent<UIPanelManagement>();
         HUDActive = GameManager.Instance.HUD;
         if (!HUDActive)
             DeactivateHUD();
@@ -103,7 +103,7 @@ public class UIInGame : MonoBehaviour
     {
         if (PausePanel)
         {
-            if (!PauseScript.OnSettings)
+            if (!PauseScript.OnSecondPanel)
             {
                 PauseScript.ResetPanels();
                 PausePanel.SetActive(!PausePanel.activeSelf);

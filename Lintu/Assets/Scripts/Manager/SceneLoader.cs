@@ -23,7 +23,7 @@ public class SceneLoader : MonoBehaviour
     {
         if(GameManager.Instance.Input.UI.Cancel.triggered)
         {
-            if (ThisScene == "CreditsScene" || ThisScene == "SettingsScene" || ThisScene == "LevelSelection" || ThisScene == "HowToPlayScene")
+            if (ThisScene == "CreditsScene" || ThisScene == "SettingsScene" || ThisScene == "HowToPlayScene")
                 LoadPreviousScene(false);
         }
     }

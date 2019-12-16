@@ -12,6 +12,7 @@ public class UIMenu : MonoBehaviour
 
     public GameObject PreviousButtonSelected;
     GameObject[] SelectionVertex;
+    bool TriggeredButtonPrevFrame;
 
     private void Awake()
     {
@@ -42,10 +43,15 @@ public class UIMenu : MonoBehaviour
 
         if (eventSystem.currentSelectedGameObject != null)
         {
-            if (eventSystem.currentSelectedGameObject != PreviousButtonSelected)
-                AkSoundEngine.PostEvent("Cursor", gameObject);
-            else if (GameManager.Instance.GameInput.UI.Submit.triggered)
+            if (GameManager.Instance.GameInput.UI.Submit.triggered || GameManager.Instance.GameInput.UI.Cancel.triggered)
+            {
                 AkSoundEngine.PostEvent("Cursor_Seleccion", gameObject);
+                TriggeredButtonPrevFrame = true;
+            }
+            else if (eventSystem.currentSelectedGameObject != PreviousButtonSelected && !TriggeredButtonPrevFrame)
+                AkSoundEngine.PostEvent("Cursor", gameObject);
+            else
+                TriggeredButtonPrevFrame = false;
         }
 
         if (!eventSystem.currentSelectedGameObject && GameManager.Instance.GameInput.UI.Navigate.triggered)

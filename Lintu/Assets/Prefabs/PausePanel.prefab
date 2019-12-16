@@ -3045,11 +3045,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e20f761aa6f77214ba93f2c84dd65625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PauseOptionsPanel: {fileID: 1931815890115841033}
-  PauseOptionsFirstButtton: {fileID: 6310973449299159604}
-  SettingsPanel: {fileID: 8298852738300765367}
-  SettingsFirstButtton: {fileID: 2235847862592383644}
-  OnSettings: 0
+  FirstPanel: {fileID: 1931815890115841033}
+  FirstPanelFirstButtton: {fileID: 6310973449299159604}
+  FirstPanelReturnButtton: {fileID: 6310973449299159604}
+  SecondPanel: {fileID: 8298852738300765367}
+  SecondPanelFirstButtton: {fileID: 5229922903257700953}
+  SecondPanelReturnButtton: {fileID: 2235847862592383644}
+  OnSecondPanel: 0
 --- !u!1 &7209960125576863309
 GameObject:
   m_ObjectHideFlags: 0
