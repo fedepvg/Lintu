@@ -3741,11 +3741,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19ef1e5c6721bfd44819c4cb6f4e1439, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ThisScene: Level1
-  NextScene: Level2
+  ThisScene: EndlessMode
+  NextScene: 
   GameOverScene: EndGameScene
   MenuScene: MenuScene
-  PreviousScene: 
+  PreviousScene: MenuScene
   LastLevel: 0
 --- !u!4 &1057153482
 Transform:
@@ -4657,7 +4657,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2117819302}
     - target: {fileID: 6310973449122319154, guid: 2dbd4a012d31bcb46a5aad836925a12b,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_Target
@@ -4667,6 +4667,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgument
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6310973449122319154, guid: 2dbd4a012d31bcb46a5aad836925a12b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: SetActive
       objectReference: {fileID: 0}
     - target: {fileID: 6310973449299159602, guid: 2dbd4a012d31bcb46a5aad836925a12b,
         type: 3}
@@ -5563,7 +5568,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 2117819299}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 2117819302}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0eea91b617339284aa5ff7a6d56af6fd, type: 3}
@@ -5572,6 +5577,12 @@ MonoBehaviour:
 --- !u!4 &2117819301 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 824619557451100236, guid: 160755c619e561341874febe56b3ea4a,
+    type: 3}
+  m_PrefabInstance: {fileID: 2117819299}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2117819302 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 821865918770499526, guid: 160755c619e561341874febe56b3ea4a,
     type: 3}
   m_PrefabInstance: {fileID: 2117819299}
   m_PrefabAsset: {fileID: 0}
@@ -5879,7 +5890,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1057153481}
         m_MethodName: QuitGame
         m_Mode: 1
         m_Arguments:
@@ -6292,8 +6303,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: LoadPreviousScene
+      - m_Target: {fileID: 1057153481}
+        m_MethodName: ReloadScene
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6570,7 +6581,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1057153481}
         m_MethodName: LoadMenuScene
         m_Mode: 6
         m_Arguments:
