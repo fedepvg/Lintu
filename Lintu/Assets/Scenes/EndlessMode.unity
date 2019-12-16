@@ -520,6 +520,11 @@ MonoBehaviour:
       type: 3}
     AmountToPool: 5
     Parent: {fileID: 0}
+  OrbsToPool:
+    ObjectToPool: {fileID: 5133368402464788663, guid: 91c65031e8f957447b09792d01517d92,
+      type: 3}
+    AmountToPool: 10
+    Parent: {fileID: 0}
   PooledObjects: []
 --- !u!4 &730033226
 Transform:

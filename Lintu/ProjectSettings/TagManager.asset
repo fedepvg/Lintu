@@ -9,6 +9,7 @@ TagManager:
   - Obstacle
   - CityLimit
   - Environment
+  - Orb
   layers:
   - Default
   - TransparentFX

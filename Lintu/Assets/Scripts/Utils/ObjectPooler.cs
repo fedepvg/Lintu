@@ -14,7 +14,10 @@ public class ObjectPooler : MonoBehaviour
 {
     public static ObjectPooler Instance;
 
+    [Header("Environment and Obstacles")]
     public List<ObjectPoolItem> ItemsToPool;
+    [Header("Orbs")]
+    public ObjectPoolItem OrbsToPool;
     public List<GameObject> PooledObjects;
 
     public void Awake()
@@ -26,13 +29,23 @@ public class ObjectPooler : MonoBehaviour
         {
             for (int i = 0; i < item.AmountToPool; i++)
             {
-                GameObject obj = (GameObject)Instantiate(item.ObjectToPool);
+                GameObject obj = Instantiate(item.ObjectToPool);
                 obj.SetActive(false);
                 if(item.Parent!=null)
                     obj.transform.parent = item.Parent.transform;
                 obj.name = item.ObjectToPool.name;
                 PooledObjects.Add(obj);
             }
+        }
+
+        for (int i = 0; i < OrbsToPool.AmountToPool; i++)
+        {
+            GameObject obj = Instantiate(OrbsToPool.ObjectToPool);
+            obj.SetActive(false);
+            if (OrbsToPool.Parent != null)
+                obj.transform.parent = OrbsToPool.Parent.transform;
+            obj.name = OrbsToPool.ObjectToPool.name;
+            PooledObjects.Add(obj);
         }
     }
 

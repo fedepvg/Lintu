@@ -5,19 +5,30 @@ using UnityEngine;
 public class EndlessObstacle : MonoBehaviour
 {
     public List<GameObject> OrbPositions;
-    public GameObject OrbPrefab;
     public GameObject FinalPosition;
+    public float OrbProbability;
+
+    bool HasOrb;
 
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
+        OrbProbability = 100f;
+        if (Random.Range(0f, 100f) <= OrbProbability)
+            HasOrb = true;
+        else 
+            HasOrb = false;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if(HasOrb)
+        {
+            int rand = Random.Range(0, OrbPositions.Count);
+            GameObject orb = ObjectPooler.Instance.GetPooledObject("Orb");
+            if (orb != null)
+            {
+                orb.transform.SetParent(OrbPositions[rand].transform);
+                orb.transform.position = OrbPositions[rand].transform.position;
+            }
+        }
     }
 
     public float GetDistanceToFinalPos()
