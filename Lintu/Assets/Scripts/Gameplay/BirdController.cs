@@ -350,7 +350,8 @@ public class BirdController : MonoBehaviour
 
         yield return new WaitForSeconds(t);
 
-        if(GameOverAction!=null)
+        EnergyRTPCParameter.SetGlobalValue(1);
+        if (GameOverAction!=null)
             GameOverAction(true);
         Destroy(this);
     }
