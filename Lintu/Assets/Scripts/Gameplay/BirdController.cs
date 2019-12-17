@@ -60,7 +60,7 @@ public class BirdController : MonoBehaviour
     float Gravity;
     float JumpTimer;
     float JumpGravity;
-    const float LevelRayDistance = 2000f;
+    const float LevelRayDistance = 3000f;
     float RotationCoefficient;
     public bool OffLeftLimit = false;
     public bool OffRightLimit = false;

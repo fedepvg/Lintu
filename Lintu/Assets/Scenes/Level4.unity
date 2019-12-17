@@ -27847,8 +27847,8 @@ MonoBehaviour:
   DistanceBar: {fileID: 783472553}
   Player: {fileID: 528997800879448088}
   PausePanel: {fileID: 2076349237}
-  StartTransform: {fileID: 0}
-  FinishTransform: {fileID: 0}
+  StartTransform: {fileID: 2052707036}
+  FinishTransform: {fileID: 2018683339}
   LintuUI1: {fileID: 21300000, guid: dcfe979e1f8af5a49aae4436d3095573, type: 3}
   LintuUI2: {fileID: 21300000, guid: 2b008267a6b3b834386611bce1c09d06, type: 3}
   DistanceHandleAnimationTime: 0.5
