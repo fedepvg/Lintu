@@ -2297,6 +2297,11 @@ PrefabInstance:
       propertyPath: isStaticObject
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5391636980980797406, guid: 05ac6d5fe8f9bb549841ea57de7161a4,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7856279778102822218, guid: 05ac6d5fe8f9bb549841ea57de7161a4,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -5051,7 +5056,7 @@ PrefabInstance:
     - target: {fileID: 9062217408589599166, guid: dbb7018cf14c43d4a951fdf311cef417,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9062217408589599157, guid: dbb7018cf14c43d4a951fdf311cef417,
         type: 3}
@@ -5161,7 +5166,7 @@ PrefabInstance:
     - target: {fileID: 9062217409617057307, guid: dbb7018cf14c43d4a951fdf311cef417,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3636497824663743746, guid: dbb7018cf14c43d4a951fdf311cef417,
         type: 3}

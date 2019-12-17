@@ -17,7 +17,7 @@ public class LevelChunkGenerator : MonoBehaviour
     bool CanBeDeactivated = true;
 
     GameObject NextChunk;
-    Vector3 NextObstaclePosition;
+    public Vector3 NextObstaclePosition;
     string PrevObstacleName;
 
     private void Start()
@@ -25,6 +25,7 @@ public class LevelChunkGenerator : MonoBehaviour
         BirdController.EndLevelAction += StopDestroying;
         if (FirstChunk)
         {
+            NextObstaclePosition = ChunkFinishPosition.transform.position;
             GenerateNextChunk();
         }
     }
@@ -33,14 +34,17 @@ public class LevelChunkGenerator : MonoBehaviour
     {
         if (!FirstChunk)
         {
-            NextObstaclePosition = FirstObstaclePosition.transform.position;
-            GenerateObstacles();
+            StartCoroutine(CreateObstacles(0.5f));
+            //NextObstaclePosition = FirstObstaclePosition.transform.position;
+            //GenerateObstacles();
         }
     }
 
     void GenerateObstacles()
     {
         bool generating = true;
+
+        NextObstaclePosition = FirstObstaclePosition.transform.position;
 
         while (generating)
         {
@@ -62,10 +66,12 @@ public class LevelChunkGenerator : MonoBehaviour
                 if (obstacleScript != null)
                 {
                     NextObstaclePosition += Vector3.forward * obstacleScript.GetDistanceToFinalPos();
-                    obstacleScript.GenerateOrb();
+                    obstacleScript.GenerateOrb(GameManager.Instance.TimePlayingLevel);
                 }
                 ObstaclesList.Add(go);
             }
+
+            Debug.Log("zarlanga");
 
             float nextObstacleDistance = Random.Range(MinObstacleDistance, MaxObstacleDistance);
             NextObstaclePosition += Vector3.forward * nextObstacleDistance;
@@ -115,6 +121,7 @@ public class LevelChunkGenerator : MonoBehaviour
             go.transform.SetParent(null);
             go.SetActive(false);
         }
+        ObstaclesList.Clear();
     }
 
     private void OnDestroy()
@@ -136,5 +143,12 @@ public class LevelChunkGenerator : MonoBehaviour
 
         if(CanBeDeactivated)
             Destroy(gameObject);
+    }
+
+    IEnumerator CreateObstacles(float t)
+    {
+        yield return new WaitForEndOfFrame();
+
+        GenerateObstacles();
     }
 }

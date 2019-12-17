@@ -9,10 +9,17 @@ public class EndlessObstacle : MonoBehaviour
     public float OrbProbability;
 
     bool HasOrb;
+    float InitialOrbProbability = 100f;
+    float TimeToLoseOrbChance = 10f;
+    float ChanceLostByTime = 5f;
+    float MinOrbChance = 20f;
 
-    public void GenerateOrb()
+    public void GenerateOrb(float time)
     {
-        OrbProbability = 100f;
+        OrbProbability = InitialOrbProbability - ChanceLostByTime * (time / TimeToLoseOrbChance);
+        if (OrbProbability <= 20f)
+            OrbProbability = 20f;
+
         if (Random.Range(0f, 100f) <= OrbProbability)
             HasOrb = true;
         else
