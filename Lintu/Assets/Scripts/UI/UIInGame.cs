@@ -134,6 +134,8 @@ public class UIInGame : MonoBehaviour
             EnergyBar.gameObject.SetActive(!EnergyBar.gameObject.activeSelf);
         if (DistanceBar != null)
             DistanceBar.gameObject.SetActive(!DistanceBar.gameObject.activeSelf);
+        if (TimeText != null)
+            TimeText.gameObject.SetActive(!TimeText.gameObject.activeSelf);
     }
 
     public void DeactivateHUD()
@@ -142,6 +144,8 @@ public class UIInGame : MonoBehaviour
             EnergyBar.gameObject.SetActive(false);
         if (DistanceBar != null)
             DistanceBar.gameObject.SetActive(false);
+        if (TimeText != null)
+            TimeText.gameObject.SetActive(false);
     }
     
     public void ActivateHUD()
@@ -150,6 +154,8 @@ public class UIInGame : MonoBehaviour
             EnergyBar.gameObject.SetActive(true);
         if (DistanceBar != null)
             DistanceBar.gameObject.SetActive(true);
+        if (TimeText != null)
+            TimeText.gameObject.SetActive(true);
     }
 
     void DestroyHUD()

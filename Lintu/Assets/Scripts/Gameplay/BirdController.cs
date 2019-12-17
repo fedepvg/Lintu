@@ -355,4 +355,9 @@ public class BirdController : MonoBehaviour
             GameOverAction(true);
         Destroy(this);
     }
+
+    private void OnDestroy()
+    {
+        EnergyRTPCParameter.SetGlobalValue(1);
+    }
 }
