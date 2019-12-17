@@ -3052,6 +3052,7 @@ MonoBehaviour:
   SecondPanelFirstButtton: {fileID: 5229922903257700953}
   SecondPanelReturnButtton: {fileID: 2235847862592383644}
   OnSecondPanel: 0
+  AcceptInput: 1
 --- !u!1 &7209960125576863309
 GameObject:
   m_ObjectHideFlags: 0
