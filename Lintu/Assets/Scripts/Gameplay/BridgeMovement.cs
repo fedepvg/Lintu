@@ -8,7 +8,7 @@ public class BridgeMovement : MonoBehaviour
     public GameObject RightPart;
     public float  RotSpeed;
 
-    float MaxRot = 25;
+    float MaxRot = 15;
     int LeftDirectionMultiplier = -1;
     int RightDirectionMultiplier = 1;
 

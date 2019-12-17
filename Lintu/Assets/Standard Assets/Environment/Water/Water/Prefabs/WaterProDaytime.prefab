@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 11400000}
   - component: {fileID: 2036384175810061098}
   - component: {fileID: 5429629759062959015}
-  m_Layer: 4
+  m_Layer: 10
   m_Name: WaterProDaytime
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

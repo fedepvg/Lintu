@@ -9,6 +9,7 @@ public class OrbBehaviour : MonoBehaviour
     public delegate void OrbPickUpAction(int energy);
     public static OrbPickUpAction OnOrbPickup;
 
+    // Update is called once per frame
     void Update()
     {
         transform.Rotate(Vector3.up * RotationSpeed * Time.deltaTime);
@@ -20,8 +21,7 @@ public class OrbBehaviour : MonoBehaviour
         {
             if (OnOrbPickup != null)
                 OnOrbPickup(EnergyRecovered);
-            gameObject.SetActive(false);
-            transform.parent = null;
+            Destroy(gameObject);
         }
     }
 }

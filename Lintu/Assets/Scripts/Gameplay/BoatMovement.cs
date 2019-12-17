@@ -23,8 +23,7 @@ public class BoatMovement : MonoBehaviour
         Vector3 LeftRayPos = transform.position + Vector3.left * MeshXExtent;
         Vector3 RightRayPos = transform.position + Vector3.right * MeshXExtent;
 
-        if (Physics.Raycast(RightRayPos, Vector3.right, out hit, 2, RaycastLayer) ||
-            Physics.Raycast(LeftRayPos, Vector3.left, out hit, 2, RaycastLayer))
+        if (Physics.Raycast(RightRayPos, Vector3.right, out hit, 2, RaycastLayer))
         {
             layerHitted = LayerMask.LayerToName(hit.transform.gameObject.layer);
             if (layerHitted == "Wall")
@@ -33,19 +32,29 @@ public class BoatMovement : MonoBehaviour
                 Debug.DrawRay(RightRayPos, Vector3.right, Color.red);
             }
         }
+        if (Physics.Raycast(LeftRayPos, Vector3.left, out hit, 2, RaycastLayer))
+        {
+            layerHitted = LayerMask.LayerToName(hit.transform.gameObject.layer);
+            if(layerHitted == "Wall")
+            {
+                DirectionMultiplier *= -1;
+                Debug.DrawRay(LeftRayPos, -Vector3.right,Color.red);
+            }
+        }
 
         transform.position += transform.forward * Speed * DirectionMultiplier * Time.deltaTime;
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        if(other.tag=="Player")
+        {
             AkSoundEngine.PostEvent("Barcos_Idle", gameObject);
+        }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.tag == "Player")
-            AkSoundEngine.StopAll(gameObject);
+        AkSoundEngine.StopAll(gameObject);
     }
 }
