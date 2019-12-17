@@ -667,7 +667,7 @@ MonoBehaviour:
   Rope: {fileID: 3604339263838105929}
   RopeBottom: {fileID: 2006706055947383397}
   OrbBase: {fileID: 7556510486561083267}
-  LerpSpeed: 0.5
+  LerpSpeed: 0.3
 --- !u!1 &3604339263838105929
 GameObject:
   m_ObjectHideFlags: 0
@@ -864,7 +864,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6889660263986691502}
-  - component: {fileID: 5695245817822799570}
   m_Layer: 13
   m_Name: FinalPos
   m_TagString: Obstacle
@@ -886,22 +885,6 @@ Transform:
   m_Father: {fileID: 5022281163427330233}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5695245817822799570
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4005271818734022927}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ae6cee1484cf7d4b811f3be420956b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OrbPositions:
-  - {fileID: 1196633709439825543}
-  FinalPosition: {fileID: 4005271818734022927}
-  OrbProbability: 0
 --- !u!1 &5019717084949822767
 GameObject:
   m_ObjectHideFlags: 0
@@ -1842,6 +1825,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5022281163427330233}
+  - component: {fileID: 9192587631911527965}
   m_Layer: 13
   m_Name: RightCraneEndless
   m_TagString: Obstacle
@@ -1882,6 +1866,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9192587631911527965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8430820286475287958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ae6cee1484cf7d4b811f3be420956b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OrbPositions:
+  - {fileID: 1196633709439825543}
+  FinalPosition: {fileID: 4005271818734022927}
+  OrbProbability: 0
 --- !u!1 &8905407486468550181
 GameObject:
   m_ObjectHideFlags: 0

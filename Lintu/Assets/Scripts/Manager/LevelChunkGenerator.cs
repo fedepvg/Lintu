@@ -34,7 +34,7 @@ public class LevelChunkGenerator : MonoBehaviour
     {
         if (!FirstChunk)
         {
-            StartCoroutine(CreateObstacles(0.5f));
+            StartCoroutine(CreateObstacles());
             //NextObstaclePosition = FirstObstaclePosition.transform.position;
             //GenerateObstacles();
         }
@@ -145,7 +145,7 @@ public class LevelChunkGenerator : MonoBehaviour
             Destroy(gameObject);
     }
 
-    IEnumerator CreateObstacles(float t)
+    IEnumerator CreateObstacles()
     {
         yield return new WaitForEndOfFrame();
 

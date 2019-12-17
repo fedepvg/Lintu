@@ -1814,7 +1814,7 @@ MonoBehaviour:
   Rope: {fileID: 9043967370406308656}
   RopeBottom: {fileID: 2688519795376687948}
   OrbBase: {fileID: 428571436802045886}
-  LerpSpeed: 0.5
+  LerpSpeed: 0.3
 --- !u!1 &9043967370406308656
 GameObject:
   m_ObjectHideFlags: 0
